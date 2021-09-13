@@ -5,6 +5,7 @@
 #include "Funciones.h"
 #include "Arbol.c"
 #include <stdbool.h>
+//Para trabajar con linux quita lo que esta comentado
 
 // Variables Globales
 int i, j, k;
