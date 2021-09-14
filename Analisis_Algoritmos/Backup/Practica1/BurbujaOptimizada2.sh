@@ -1,10 +1,10 @@
 #!/bin/bash
 echo Hola Estas apunto de ejecutar el programa:
 gcc PruebasAlgoritmo.c -lm -o PruebasAlgoritmo
-echo: Burbuja Optimizada 2
+
 ./PruebasAlgoritmo 3 100 >numeros.txt
-./PruebasAlgoritmo 3 1000>>numeros.txt
-./PruebasAlgoritmo 3 5000>>numeros.txt
+./PruebasAlgoritmo 3 1000 >>numeros.txt
+./PruebasAlgoritmo 3 5000 >>numeros.txt
 # ./PruebasAlgoritmo 3 10000
 # ./PruebasAlgoritmo 3 50000
 # ./PruebasAlgoritmo 3 100000
