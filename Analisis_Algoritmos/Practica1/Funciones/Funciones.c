@@ -7,9 +7,7 @@
 #include "../Arbol/Arbol.h"
 #include "../Arbol/Arbol.c"
 #include <stdbool.h>
-
 double utime0, stime0, wtime0, utime1, stime1, wtime1; //Variables para medición de tiempos
-
 int *LeerArchivo(int *A, int n)
 {
     int i;
@@ -23,7 +21,6 @@ int *LeerArchivo(int *A, int n)
     {
         fscanf(numeros, "%d", &A[i]);
     }
-
     fclose(numeros);
 }
 
