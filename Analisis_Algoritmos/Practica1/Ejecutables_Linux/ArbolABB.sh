@@ -25,3 +25,4 @@ gcc PruebasAlgoritmo.c -lm -o PruebasAlgoritmo
 ./PruebasAlgoritmo 7 10000000 >>ArbolT.txt
 
 
+
