@@ -3,8 +3,8 @@
 #include <string.h>
 #include <math.h>
 // #include "../MediciondeTiempos/tiempo.h"
-#include "Funciones.h"
-#include "Funciones.c"
+#include "./Funciones/Funciones.c"
+#include "./Funciones/Funciones.h"
 // numeros = Arreglo leido
 // n = tamaño del arreglo
 

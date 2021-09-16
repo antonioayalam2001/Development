@@ -2,9 +2,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-// #include "tiempo.c"
+// #include "../MediciondeTiempos/tiempo.c"
 #include "Funciones.h"
-#include "Arbol.c"
+#include "../Arbol/Arbol.h"
+#include "../Arbol/Arbol.c"
 #include <stdbool.h>
 
 double utime0, stime0, wtime0, utime1, stime1, wtime1; //Variables para medición de tiempos

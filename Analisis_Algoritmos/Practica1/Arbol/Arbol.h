@@ -1,3 +1,5 @@
+#ifndef Arbol
+#define Arbol
 #define TRUE 1
 #define FALSE 0
 
@@ -22,3 +24,4 @@ void Insertar(arbolBinario **Raiz,int DatoRecibido);
 arbolBinario * InicializarArbol (int numDato);
 // Colocara en orden los elementos del arreglo (Recibe un arbol binario,arreglo de numeros)
 int * Inorden (arbolBinario *Raiz, int *numeros);
+#endif
