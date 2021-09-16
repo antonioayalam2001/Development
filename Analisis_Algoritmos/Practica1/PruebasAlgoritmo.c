@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-// #include "../MediciondeTiempos/tiempo.h"
+#include "../MediciondeTiempos/tiempo.h"
 #include "./Funciones/Funciones.c"
 #include "./Funciones/Funciones.h"
 // numeros = Arreglo leido

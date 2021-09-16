@@ -29,7 +29,7 @@ int *LeerArchivo(int *A, int n)
 void Burbuja(int *A, int n)
 {
     int i, j, aux;
-    // uswtime(&utime0, &stime0, &wtime0);
+    uswtime(&utime0, &stime0, &wtime0);
 
     for (i = 0; i < (n - 1); i++)
     {
@@ -43,16 +43,16 @@ void Burbuja(int *A, int n)
             }
         }
     }
-    // uswtime(&utime1, &stime1, &wtime1);
+    uswtime(&utime1, &stime1, &wtime1);
 
     // imprimirArreglo(A, n);
-    // ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
+    ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
 }
 
 void BurbujaOptimizada(int *A, int n)
 {
     int i, j, aux;
-    // uswtime(&utime0, &stime0, &wtime0);
+    uswtime(&utime0, &stime0, &wtime0);
     for (i = 0; i < (n - 1); i++)
     {
         for (j = 0; j < (n - 1) - i; j++)
@@ -65,9 +65,9 @@ void BurbujaOptimizada(int *A, int n)
             }
         }
     }
-    // uswtime(&utime1, &stime1, &wtime1);
+    uswtime(&utime1, &stime1, &wtime1);
     // imprimirArreglo(A, n);
-    // ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
+    ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
 
 }
 
@@ -76,7 +76,7 @@ void Burbuja2(int *A, int n)
     bool cambio = true;
     int i = 1;
     int j, aux;
-    // uswtime(&utime0, &stime0, &wtime0);
+    uswtime(&utime0, &stime0, &wtime0);
 
     while (i <= (n - 1) && cambio != false)
     {
@@ -93,17 +93,17 @@ void Burbuja2(int *A, int n)
         }
         i = i + 1;
     }
-    // uswtime(&utime1, &stime1, &wtime1);
+    uswtime(&utime1, &stime1, &wtime1);
 
     // imprimirArreglo(A, n);
-    // ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
+    ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
 
 }
 
 void Insercion(int *A, int n)
 {
     int i, j, temp;
-        // uswtime(&utime0, &stime0, &wtime0);
+        uswtime(&utime0, &stime0, &wtime0);
     for (i = 0; i <= n - 1; i++)
     {
         j = i;
@@ -116,16 +116,16 @@ void Insercion(int *A, int n)
         A[j] = temp;
     }
     
-    // uswtime(&utime1, &stime1, &wtime1);
+    uswtime(&utime1, &stime1, &wtime1);
     // imprimirArreglo(A, n);
-    // ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
+    ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
 
 }
 
 void Selection(int *A, int n)
 {
     int i, k, p, temp;
-    // uswtime(&utime0, &stime0, &wtime0);
+    uswtime(&utime0, &stime0, &wtime0);
     for (k = 0; k < (n - 1); k++)
     {
         p = k;
@@ -138,17 +138,16 @@ void Selection(int *A, int n)
         A[p] = A[k];
         A[k] = temp;
     }
-    // uswtime(&utime1, &stime1, &wtime1);
-
-    imprimirArreglo(A, n);
-    // ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
+    uswtime(&utime1, &stime1, &wtime1);
+    // imprimirArreglo(A, n);
+    ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
 
 }
 
 void Shell(int *A, int n)
 {
     int i, j, k, b, temp;
-    // uswtime(&utime0, &stime0, &wtime0);
+    uswtime(&utime0, &stime0, &wtime0);
     k = ceil(n / 2);
     while (k >= 1)
     {
@@ -169,10 +168,10 @@ void Shell(int *A, int n)
         }
         k = ceil(k / 2);
     }
-    // uswtime(&utime1, &stime1, &wtime1);
+    uswtime(&utime1, &stime1, &wtime1);
 
     imprimirArreglo(A, n);
-    // ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
+    ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
 }
 
 int parteEntera(double n)
@@ -194,7 +193,7 @@ void MergeSort(int *A, int p, int r)
 
 void Merge(int *A, int p, int q, int r)
 {
-    // uswtime(&utime0, &stime0, &wtime0);
+    uswtime(&utime0, &stime0, &wtime0);
     int l = r - p + 1, i = p, j = q + 1, k, *C;
     C = malloc(sizeof(int *) * l);
 
@@ -229,15 +228,15 @@ void Merge(int *A, int p, int q, int r)
         A[i] = C[j];
     }
     free(C);
-    // uswtime(&utime1, &stime1, &wtime1);
-    // ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
+    uswtime(&utime1, &stime1, &wtime1);
+    ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
 
 }
 
 void Quicksort2(int *A, int primero, int ultimo)
 {
     int piv, i, j, central, aux;
-    // uswtime(&utime0, &stime0, &wtime0);
+    uswtime(&utime0, &stime0, &wtime0);
 
     central = (primero + ultimo) / 2;
     piv = A[central], i = primero, j = ultimo;
@@ -268,18 +267,18 @@ void Quicksort2(int *A, int primero, int ultimo)
     {
         Quicksort2(A, i, ultimo);
     }
-    // uswtime(&utime1, &stime1, &wtime1);
-    // ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
+    uswtime(&utime1, &stime1, &wtime1);
+    ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
 
 }
 
 void ArbolBinario(int *A, int n)
 {
-    // uswtime(&utime0, &stime0, &wtime0);
+    uswtime(&utime0, &stime0, &wtime0);
     A = InsertarABB(A, n);
-    // uswtime(&utime1, &stime1, &wtime1);
+    uswtime(&utime1, &stime1, &wtime1);
     imprimirArreglo(A, n);
-    // ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
+    ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
 
 }
 
