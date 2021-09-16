@@ -10,7 +10,6 @@
 
 double utime0, stime0, wtime0, utime1, stime1, wtime1; //Variables para medición de tiempos
 
-
 int *LeerArchivo(int *A, int n)
 {
     int i;
@@ -20,8 +19,10 @@ int *LeerArchivo(int *A, int n)
     {
         puts("Error en la apertura del archivo");
     }
-    for (i = 0; i < n; i++){
-        fscanf(numeros, "%d", &A[i]); }
+    for (i = 0; i < n; i++)
+    {
+        fscanf(numeros, "%d", &A[i]);
+    }
 
     fclose(numeros);
 }
@@ -68,7 +69,6 @@ void BurbujaOptimizada(int *A, int n)
     uswtime(&utime1, &stime1, &wtime1);
     ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
     // imprimirArreglo(A, n);
-
 }
 
 void Burbuja2(int *A, int n)
@@ -97,13 +97,12 @@ void Burbuja2(int *A, int n)
 
     // imprimirArreglo(A, n);
     ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
-
 }
 
 void Insercion(int *A, int n)
 {
     int i, j, temp;
-        uswtime(&utime0, &stime0, &wtime0);
+    uswtime(&utime0, &stime0, &wtime0);
     for (i = 0; i <= n - 1; i++)
     {
         j = i;
@@ -115,11 +114,10 @@ void Insercion(int *A, int n)
         }
         A[j] = temp;
     }
-    
-    uswtime(&utime1, &stime1, &wtime1);
-    // imprimirArreglo(A, n);
-    ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
 
+    uswtime(&utime1, &stime1, &wtime1);
+    ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
+    // imprimirArreglo(A, n);
 }
 
 void Selection(int *A, int n)
@@ -141,7 +139,6 @@ void Selection(int *A, int n)
     uswtime(&utime1, &stime1, &wtime1);
     // imprimirArreglo(A, n);
     ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
-
 }
 
 void Shell(int *A, int n)
@@ -170,7 +167,7 @@ void Shell(int *A, int n)
     }
     uswtime(&utime1, &stime1, &wtime1);
 
-    imprimirArreglo(A, n);
+    // imprimirArreglo(A, n);
     ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
 }
 
@@ -193,10 +190,10 @@ void MergeSort(int *A, int p, int r)
 
 void Merge(int *A, int p, int q, int r)
 {
-    uswtime(&utime0, &stime0, &wtime0);
     int l = r - p + 1, i = p, j = q + 1, k, *C;
     C = malloc(sizeof(int *) * l);
 
+    uswtime(&utime0, &stime0, &wtime0);
     for (k = 0; k <= l; k++)
     {
         if (i <= q && j <= r)
@@ -227,17 +224,15 @@ void Merge(int *A, int p, int q, int r)
     {
         A[i] = C[j];
     }
-    free(C);
     uswtime(&utime1, &stime1, &wtime1);
     ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
-
+    free(C);
 }
 
 void Quicksort2(int *A, int primero, int ultimo)
 {
     int piv, i, j, central, aux;
     uswtime(&utime0, &stime0, &wtime0);
-
     central = (primero + ultimo) / 2;
     piv = A[central], i = primero, j = ultimo;
     do
@@ -269,7 +264,6 @@ void Quicksort2(int *A, int primero, int ultimo)
     }
     uswtime(&utime1, &stime1, &wtime1);
     ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
-
 }
 
 void ArbolBinario(int *A, int n)
@@ -277,9 +271,8 @@ void ArbolBinario(int *A, int n)
     uswtime(&utime0, &stime0, &wtime0);
     A = InsertarABB(A, n);
     uswtime(&utime1, &stime1, &wtime1);
-    imprimirArreglo(A, n);
+    // imprimirArreglo(A, n);
     ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
-
 }
 
 void MenuSeleccion(int *A, int n, int opc)
@@ -317,12 +310,12 @@ void MenuSeleccion(int *A, int n, int opc)
     case 8:
         puts("Metodo de MergeSort");
         MergeSort(A, 0, n - 1);
-        imprimirArreglo(A, n);
+        // imprimirArreglo(A, n);
         break;
     case 9:
         puts("Metodo de QuickSort");
         Quicksort2(A, 0, n - 1);
-        imprimirArreglo(A, n);
+        // imprimirArreglo(A, n);
         break;
     default:
         break;
@@ -339,26 +332,23 @@ void imprimirArreglo(int *A, int n)
     }
 }
 
-
-void ImprimirTiempos(double utime0, double stime0, double wtime0, double utime1, double stime1, double wtime1){
+void ImprimirTiempos(double utime0, double stime0, double wtime0, double utime1, double stime1, double wtime1)
+{
     printf("\n");
-	printf("real (Tiempo total)  %.10f s\n",  wtime1 - wtime0);
-	printf("user (Tiempo de procesamiento en CPU) %.10f s\n",  utime1 - utime0);
-	printf("sys (Tiempo en acciónes de E/S)  %.10f s\n",  stime1 - stime0);
-	printf("CPU/Wall   %.10f %% \n",100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
-	printf("\n");
+    printf("real (Tiempo total)  %.10f s\n", wtime1 - wtime0);
+    printf("user (Tiempo de procesamiento en CPU) %.10f s\n", utime1 - utime0);
+    printf("sys (Tiempo en acciónes de E/S)  %.10f s\n", stime1 - stime0);
+    printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+    printf("\n");
 
-	// Mostrar los tiempos en formato exponecial
-	printf("\n");
-	printf("real (Tiempo total)  %.10e s\n",  wtime1 - wtime0);
-	printf("user (Tiempo de procesamiento en CPU) %.10e s\n",  utime1 - utime0);
-	printf("sys (Tiempo en acciónes de E/S)  %.10e s\n",  stime1 - stime0);
-	printf("CPU/Wall   %.10f %% \n",100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
-	printf("\n");
-
+    // Mostrar los tiempos en formato exponecial
+    printf("\n");
+    printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
+    printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
+    printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
+    printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+    printf("\n");
 }
-
-
 
 //// Metodo del Profesor (No me salio)
 int Pivote(int *A, int p, int n)
