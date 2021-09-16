@@ -24,4 +24,3 @@ gcc PruebasAlgoritmo.c -lm -o PruebasAlgoritmo
 # ./PruebasAlgoritmo 1 9000000 >>BurbujaT.txt
 # ./PruebasAlgoritmo 1 10000000 >>BurbujaT.txt
 
-
