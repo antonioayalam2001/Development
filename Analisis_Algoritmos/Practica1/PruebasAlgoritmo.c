@@ -4,7 +4,7 @@
 #include <math.h>
 #include "./MediciondeTiempos/tiempo.h"
 // Para Linux debe ser solo con un punto
-// #include "./MediciondeTiempos/tiempo.c" 
+#include "./MediciondeTiempos/tiempo.c" 
 #include "./Funciones/Funciones.c"
 #include "./Funciones/Funciones.h"
 // numeros = Arreglo leido
