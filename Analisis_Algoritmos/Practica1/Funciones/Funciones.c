@@ -66,8 +66,8 @@ void BurbujaOptimizada(int *A, int n)
         }
     }
     uswtime(&utime1, &stime1, &wtime1);
-    // imprimirArreglo(A, n);
     ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
+    // imprimirArreglo(A, n);
 
 }
 
