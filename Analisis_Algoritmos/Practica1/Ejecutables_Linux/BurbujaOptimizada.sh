@@ -8,13 +8,18 @@ gcc PruebasAlgoritmo.c -lm -o PruebasAlgoritmo
 ./PruebasAlgoritmo 2 5000 >>BurbujaOT.txt
 ./PruebasAlgoritmo 2 10000 >>BurbujaOT.txt
 ./PruebasAlgoritmo 2 50000 >>BurbujaOT.txt
-./PruebasAlgoritmo 2 100000 >>BurbujaOT.txt
+./PruebasAlgoritmo 2 100000 >>BurbujaOT.txt 
+./PruebasAlgoritmo 2 125000 >>BurbujaOT.txt 
+./PruebasAlgoritmo 2 175000 >>BurbujaOT.txt 
 ./PruebasAlgoritmo 2 200000 >>BurbujaOT.txt
+./PruebasAlgoritmo 2 225000 >>BurbujaOT.txt
+./PruebasAlgoritmo 2 275000 >>BurbujaOT.txt
+./PruebasAlgoritmo 2 300000 >>BurbujaOT.txt
+./PruebasAlgoritmo 2 325000 >>BurbujaOT.txt
+./PruebasAlgoritmo 2 375000 >>BurbujaOT.txt
 ./PruebasAlgoritmo 2 400000 >>BurbujaOT.txt
-./PruebasAlgoritmo 2 600000 >>BurbujaOT.txt
-./PruebasAlgoritmo 2 800000 >>BurbujaOT.txt
-./PruebasAlgoritmo 2 1000000 >>BurbujaOT.txt
-./PruebasAlgoritmo 2 2000000 >>BurbujaOT.txt
+./PruebasAlgoritmo 2 425000 >>BurbujaOT.txt
+./PruebasAlgoritmo 2 500000 >>BurbujaOT.txt
 # ./PruebasAlgoritmo 2 3000000 >>BurbujaOT.txt
 # ./PruebasAlgoritmo 2 4000000 >>BurbujaOT.txt
 # ./PruebasAlgoritmo 2 5000000 >>BurbujaOT.txt

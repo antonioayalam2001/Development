@@ -8,14 +8,18 @@ gcc PruebasAlgoritmo.c -lm -o PruebasAlgoritmo
 ./PruebasAlgoritmo 3 5000 >>BurbujaO2T.txt
 ./PruebasAlgoritmo 3 10000 >>BurbujaO2T.txt
 ./PruebasAlgoritmo 3 50000 >>BurbujaO2T.txt
-./PruebasAlgoritmo 3 100000 >>BurbujaO2T.txt
+./PruebasAlgoritmo 3 100000 >>BurbujaO2T.txt 
+./PruebasAlgoritmo 3 125000 >>BurbujaO2T.txt 
+./PruebasAlgoritmo 3 175000 >>BurbujaO2T.txt 
 ./PruebasAlgoritmo 3 200000 >>BurbujaO2T.txt
+./PruebasAlgoritmo 3 225000 >>BurbujaO2T.txt
+./PruebasAlgoritmo 3 275000 >>BurbujaO2T.txt
+./PruebasAlgoritmo 3 300000 >>BurbujaO2T.txt
+./PruebasAlgoritmo 3 325000 >>BurbujaO2T.txt
+./PruebasAlgoritmo 3 375000 >>BurbujaO2T.txt
 ./PruebasAlgoritmo 3 400000 >>BurbujaO2T.txt
-./PruebasAlgoritmo 3 600000 >>BurbujaO2T.txt
-./PruebasAlgoritmo 3 800000 >>BurbujaO2T.txt
-./PruebasAlgoritmo 3 1000000 >>BurbujaO2T.txt
-./PruebasAlgoritmo 3 2000000 >>BurbujaO2T.txt
-./PruebasAlgoritmo 3 3000000 >>BurbujaO2T.txt
+./PruebasAlgoritmo 3 425000 >>BurbujaO2T.txt
+./PruebasAlgoritmo 3 500000 >>BurbujaO2T.txt
 # ./PruebasAlgoritmo 3 4000000 >>BurbujaO2T.txt
 # ./PruebasAlgoritmo 3 5000000 >>BurbujaO2T.txt
 # ./PruebasAlgoritmo 3 6000000 >>BurbujaO2T.txt

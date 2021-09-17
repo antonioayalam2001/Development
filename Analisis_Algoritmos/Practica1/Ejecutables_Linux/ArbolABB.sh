@@ -6,11 +6,20 @@ gcc PruebasAlgoritmo.c -lm -o PruebasAlgoritmo
 ./PruebasAlgoritmo 7 100 >ArbolT.txt
 ./PruebasAlgoritmo 7 1000 >>ArbolT.txt
 ./PruebasAlgoritmo 7 5000 >>ArbolT.txt
-# ./PruebasAlgoritmo 7 10000 >>ArbolT.txt
-# ./PruebasAlgoritmo 7 50000 >>ArbolT.txt
-# ./PruebasAlgoritmo 7 100000 >>ArbolT.txt
-# ./PruebasAlgoritmo 7 200000 >>ArbolT.txt
-# ./PruebasAlgoritmo 7 400000 >>ArbolT.txt
+./PruebasAlgoritmo 7 10000 >>ArbolT.txt
+./PruebasAlgoritmo 7 50000 >>ArbolT.txt
+./PruebasAlgoritmo 7 100000 >>ArbolT.txt 
+./PruebasAlgoritmo 7 125000 >>ArbolT.txt 
+./PruebasAlgoritmo 7 175000 >>ArbolT.txt 
+./PruebasAlgoritmo 7 200000 >>ArbolT.txt
+./PruebasAlgoritmo 7 225000 >>ArbolT.txt
+./PruebasAlgoritmo 7 275000 >>ArbolT.txt
+./PruebasAlgoritmo 7 300000 >>ArbolT.txt
+./PruebasAlgoritmo 7 325000 >>ArbolT.txt
+./PruebasAlgoritmo 7 375000 >>ArbolT.txt
+./PruebasAlgoritmo 7 400000 >>ArbolT.txt
+./PruebasAlgoritmo 7 425000 >>ArbolT.txt
+./PruebasAlgoritmo 7 500000 >>ArbolT.txt
 # ./PruebasAlgoritmo 7 600000 >>ArbolT.txt
 # ./PruebasAlgoritmo 7 800000 >>ArbolT.txt
 # ./PruebasAlgoritmo 7 1000000 >>ArbolT.txt
