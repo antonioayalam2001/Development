@@ -1,0 +1,13 @@
+Realizaste la seleccion de: Metodo de Seleccion
+
+real (Tiempo total)  942.2368450165 s
+user (Tiempo de procesamiento en CPU) 940.4586680000 s
+sys (Tiempo en acciónes de E/S)  0.2608450000 s
+CPU/Wall   99.8389649031 % 
+
+
+real (Tiempo total)  9.4223684502e+02 s
+user (Tiempo de procesamiento en CPU) 9.4045866800e+02 s
+sys (Tiempo en acciónes de E/S)  2.6084500000e-01 s
+CPU/Wall   99.8389649031 % 
+

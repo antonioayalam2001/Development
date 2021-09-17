@@ -175,7 +175,9 @@ int parteEntera(double n)
 }
 
 void MergeSort(int *A, int p, int r)
-{
+{    
+    
+
     if (p < r)
     {
         int q = parteEntera((p + r) / 2);
@@ -183,6 +185,9 @@ void MergeSort(int *A, int p, int r)
         MergeSort(A, q + 1, r);
         Merge(A, p, q, r);
     }
+
+    
+    
 }
 
 void Merge(int *A, int p, int q, int r)
@@ -190,7 +195,6 @@ void Merge(int *A, int p, int q, int r)
     int l = r - p + 1, i = p, j = q + 1, k, *C;
     C = malloc(sizeof(int *) * l);
 
-    uswtime(&utime0, &stime0, &wtime0);
     for (k = 0; k <= l; k++)
     {
         if (i <= q && j <= r)
@@ -221,15 +225,13 @@ void Merge(int *A, int p, int q, int r)
     {
         A[i] = C[j];
     }
-    uswtime(&utime1, &stime1, &wtime1);
-    ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
+    
     free(C);
 }
 
 void Quicksort2(int *A, int primero, int ultimo)
 {
     int piv, i, j, central, aux;
-    uswtime(&utime0, &stime0, &wtime0);
     central = (primero + ultimo) / 2;
     piv = A[central], i = primero, j = ultimo;
     do
@@ -259,8 +261,6 @@ void Quicksort2(int *A, int primero, int ultimo)
     {
         Quicksort2(A, i, ultimo);
     }
-    uswtime(&utime1, &stime1, &wtime1);
-    ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
 }
 
 void ArbolBinario(int *A, int n)
@@ -306,12 +306,21 @@ void MenuSeleccion(int *A, int n, int opc)
         break;
     case 8:
         puts("Metodo de MergeSort");
+        uswtime(&utime0, &stime0, &wtime0);
         MergeSort(A, 0, n - 1);
+        uswtime(&utime1, &stime1, &wtime1);
+        ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
+
         // imprimirArreglo(A, n);
         break;
     case 9:
         puts("Metodo de QuickSort");
+        uswtime(&utime0, &stime0, &wtime0);
         Quicksort2(A, 0, n - 1);
+        uswtime(&utime1, &stime1, &wtime1);
+
+        ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
+
         // imprimirArreglo(A, n);
         break;
     default:

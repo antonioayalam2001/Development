@@ -1,0 +1,13 @@
+Realizaste la seleccion de: Metodo de QuickSort
+
+real (Tiempo total)  0.1420881748 s
+user (Tiempo de procesamiento en CPU) 0.1415390000 s
+sys (Tiempo en acciónes de E/S)  0.0002320000 s
+CPU/Wall   99.7767760615 % 
+
+
+real (Tiempo total)  1.4208817482e-01 s
+user (Tiempo de procesamiento en CPU) 1.4153900000e-01 s
+sys (Tiempo en acciónes de E/S)  2.3200000000e-04 s
+CPU/Wall   99.7767760615 % 
+

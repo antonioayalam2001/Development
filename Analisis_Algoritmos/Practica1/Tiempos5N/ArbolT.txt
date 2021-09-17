@@ -1,0 +1,13 @@
+Realizaste la seleccion de: Ordenamiento basado en ABB
+
+real (Tiempo total)  0.6759548187 s
+user (Tiempo de procesamiento en CPU) 0.6607840000 s
+sys (Tiempo en acciónes de E/S)  0.0126360000 s
+CPU/Wall   99.6250017523 % 
+
+
+real (Tiempo total)  6.7595481873e-01 s
+user (Tiempo de procesamiento en CPU) 6.6078400000e-01 s
+sys (Tiempo en acciónes de E/S)  1.2636000000e-02 s
+CPU/Wall   99.6250017523 % 
+

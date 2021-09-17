@@ -1,0 +1,13 @@
+Realizaste la seleccion de: Metodo de Shell
+
+real (Tiempo total)  1.9870009422 s
+user (Tiempo de procesamiento en CPU) 1.9798090000 s
+sys (Tiempo en acciónes de E/S)  0.0041420000 s
+CPU/Wall   99.8465052449 % 
+
+
+real (Tiempo total)  1.9870009422e+00 s
+user (Tiempo de procesamiento en CPU) 1.9798090000e+00 s
+sys (Tiempo en acciónes de E/S)  4.1420000000e-03 s
+CPU/Wall   99.8465052449 % 
+

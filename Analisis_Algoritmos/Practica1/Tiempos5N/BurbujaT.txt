@@ -1,0 +1,13 @@
+Realizaste la seleccion de: Metodo de Burbuja
+
+real (Tiempo total)  2922.7142400742 s
+user (Tiempo de procesamiento en CPU) 2918.0603180000 s
+sys (Tiempo en acciónes de E/S)  1.0237500000 s
+CPU/Wall   99.8757944918 % 
+
+
+real (Tiempo total)  2.9227142401e+03 s
+user (Tiempo de procesamiento en CPU) 2.9180603180e+03 s
+sys (Tiempo en acciónes de E/S)  1.0237500000e+00 s
+CPU/Wall   99.8757944918 % 
+

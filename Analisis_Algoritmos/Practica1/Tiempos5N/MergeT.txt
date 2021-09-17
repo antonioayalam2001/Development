@@ -1,0 +1,13 @@
+Realizaste la seleccion de: Metodo de MergeSort
+
+real (Tiempo total)  0.2999100685 s
+user (Tiempo de procesamiento en CPU) 0.2988930000 s
+sys (Tiempo en acciónes de E/S)  0.0002090000 s
+CPU/Wall   99.7305630598 % 
+
+
+real (Tiempo total)  2.9991006851e-01 s
+user (Tiempo de procesamiento en CPU) 2.9889300000e-01 s
+sys (Tiempo en acciónes de E/S)  2.0900000000e-04 s
+CPU/Wall   99.7305630598 % 
+

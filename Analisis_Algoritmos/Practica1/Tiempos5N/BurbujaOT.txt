@@ -1,0 +1,13 @@
+Realizaste la seleccion de: Metodo de Burbuja Optimizada 1
+
+real (Tiempo total)  1941.3159689903 s
+user (Tiempo de procesamiento en CPU) 1940.8575040000 s
+sys (Tiempo en acciónes de E/S)  0.0719630000 s
+CPU/Wall   99.9800907221 % 
+
+
+real (Tiempo total)  1.9413159690e+03 s
+user (Tiempo de procesamiento en CPU) 1.9408575040e+03 s
+sys (Tiempo en acciónes de E/S)  7.1963000000e-02 s
+CPU/Wall   99.9800907221 % 
+

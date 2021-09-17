@@ -1,0 +1,13 @@
+Realizaste la seleccion de: Metodo de Insercion
+
+real (Tiempo total)  656.2500579357 s
+user (Tiempo de procesamiento en CPU) 656.0607480000 s
+sys (Tiempo en acciónes de E/S)  0.0680620000 s
+CPU/Wall   99.9815241257 % 
+
+
+real (Tiempo total)  6.5625005794e+02 s
+user (Tiempo de procesamiento en CPU) 6.5606074800e+02 s
+sys (Tiempo en acciónes de E/S)  6.8062000000e-02 s
+CPU/Wall   99.9815241257 % 
+
