@@ -7,10 +7,19 @@ gcc PruebasAlgoritmo.c -lm -o PruebasAlgoritmo
 ./PruebasAlgoritmo 4 1000 >>InsercionT.txt
 ./PruebasAlgoritmo 4 5000 >>InsercionT.txt
 ./PruebasAlgoritmo 4 10000 >>InsercionT.txt
-# ./PruebasAlgoritmo 4 50000 >>InsercionT.txt
-# ./PruebasAlgoritmo 4 100000 >>InsercionT.txt
-# ./PruebasAlgoritmo 4 200000 >>InsercionT.txt
-# ./PruebasAlgoritmo 4 400000 >>InsercionT.txt
+./PruebasAlgoritmo 4 50000 >>InsercionT.txt
+./PruebasAlgoritmo 4 100000 >>InsercionT.txt 
+./PruebasAlgoritmo 4 125000 >>InsercionT.txt 
+./PruebasAlgoritmo 4 175000 >>InsercionT.txt 
+./PruebasAlgoritmo 4 200000 >>InsercionT.txt
+./PruebasAlgoritmo 4 225000 >>InsercionT.txt
+./PruebasAlgoritmo 4 275000 >>InsercionT.txt
+./PruebasAlgoritmo 4 300000 >>InsercionT.txt
+./PruebasAlgoritmo 4 325000 >>InsercionT.txt
+./PruebasAlgoritmo 4 375000 >>InsercionT.txt
+./PruebasAlgoritmo 4 400000 >>InsercionT.txt
+./PruebasAlgoritmo 4 425000 >>InsercionT.txt
+./PruebasAlgoritmo 4 500000 >>InsercionT.txt
 # ./PruebasAlgoritmo 4 600000 >>InsercionT.txt
 # ./PruebasAlgoritmo 4 800000 >>InsercionT.txt
 # ./PruebasAlgoritmo 4 1000000 >>InsercionT.txt
