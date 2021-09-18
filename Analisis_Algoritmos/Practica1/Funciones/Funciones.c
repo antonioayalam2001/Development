@@ -1,3 +1,7 @@
+// Funciones Algoritmos de Ordenamiento
+// 3CM12
+// Analisis de Algoritmos
+// Autores: Mora Ayala Jose, Antonio, 
 //Para trabajar con linux quita lo que esta comentado
 #include <stdio.h>
 #include <stdlib.h>
@@ -175,8 +179,7 @@ int parteEntera(double n)
 }
 
 void MergeSort(int *A, int p, int r)
-{    
-    
+{
 
     if (p < r)
     {
@@ -185,9 +188,6 @@ void MergeSort(int *A, int p, int r)
         MergeSort(A, q + 1, r);
         Merge(A, p, q, r);
     }
-
-    
-    
 }
 
 void Merge(int *A, int p, int q, int r)
@@ -225,7 +225,7 @@ void Merge(int *A, int p, int q, int r)
     {
         A[i] = C[j];
     }
-    
+
     free(C);
 }
 
@@ -355,52 +355,3 @@ void ImprimirTiempos(double utime0, double stime0, double wtime0, double utime1,
     printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
     printf("\n");
 }
-
-//// Metodo del Profesor (No me salio)
-int Pivote(int *A, int p, int n)
-{
-    int piv, i, j;
-    piv = A[(p + n) / 2], i = p, j = n;
-    do
-    {
-        while (A[i] < piv)
-        {
-            i++;
-        }
-        while (A[j] > piv)
-        {
-            j--;
-        }
-        if (p <= j)
-        {
-            Intercambiar(A, p, j);
-            return j;
-        }
-        else
-        {
-            Intercambiar(A, i, n);
-            return j;
-        }
-
-    } while (i <= j);
-}
-
-void Intercambiar(int *A, int i, int j)
-{
-    int temp;
-    temp = A[i];
-    A[i] = A[j];
-    A[j] = temp;
-}
-
-void QuickSort(int *A, int p, int n)
-{
-    int j;
-    if (p < n)
-    {
-        j = Pivote(A, p, n);
-        QuickSort(A, p, j - 1);
-        QuickSort(A, j + 1, n);
-    }
-}
-///////////////////////////

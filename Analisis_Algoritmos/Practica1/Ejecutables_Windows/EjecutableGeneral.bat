@@ -1,0 +1,10 @@
+ArbolO.bat
+Burbuja.bat
+BurbujaO.bat
+BurbujaO2.bat
+InsercionO.bat
+MergeO.bat
+QuickO.bat
+SeleccionO.bat
+ShellO.bat
+pause

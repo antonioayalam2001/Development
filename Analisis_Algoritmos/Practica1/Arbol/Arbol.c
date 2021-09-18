@@ -1,8 +1,7 @@
 // Arbol de Busqueda Binaria
 // Analisis de Algoritmos
 // Autores: Mora Ayala Jose, Antonio, 
-
-// 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
+// 3CM12
 #include <stdlib.h>
 #include "Arbol.h"
 
