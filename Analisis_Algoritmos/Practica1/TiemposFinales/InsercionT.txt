@@ -1,0 +1,221 @@
+Realizaste la seleccion de: Metodo de Insercion
+
+real (Tiempo total)  0.0000321865 s
+user (Tiempo de procesamiento en CPU) 0.0000410000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   127.3825659259 % 
+
+
+real (Tiempo total)  3.2186508179e-05 s
+user (Tiempo de procesamiento en CPU) 4.1000000000e-05 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   127.3825659259 % 
+
+Realizaste la seleccion de: Metodo de Insercion
+
+real (Tiempo total)  0.0027008057 s
+user (Tiempo de procesamiento en CPU) 0.0026790000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   99.1926237288 % 
+
+
+real (Tiempo total)  2.7008056641e-03 s
+user (Tiempo de procesamiento en CPU) 2.6790000000e-03 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   99.1926237288 % 
+
+Realizaste la seleccion de: Metodo de Insercion
+
+real (Tiempo total)  0.0660920143 s
+user (Tiempo de procesamiento en CPU) 0.0660980000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   100.0090565968 % 
+
+
+real (Tiempo total)  6.6092014313e-02 s
+user (Tiempo de procesamiento en CPU) 6.6098000000e-02 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   100.0090565968 % 
+
+Realizaste la seleccion de: Metodo de Insercion
+
+real (Tiempo total)  0.2604928017 s
+user (Tiempo de procesamiento en CPU) 0.2604950000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   100.0008439134 % 
+
+
+real (Tiempo total)  2.6049280167e-01 s
+user (Tiempo de procesamiento en CPU) 2.6049500000e-01 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   100.0008439134 % 
+
+Realizaste la seleccion de: Metodo de Insercion
+
+real (Tiempo total)  6.5696890354 s
+user (Tiempo de procesamiento en CPU) 6.5667100000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   99.9546548490 % 
+
+
+real (Tiempo total)  6.5696890354e+00 s
+user (Tiempo de procesamiento en CPU) 6.5667100000e+00 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   99.9546548490 % 
+
+Realizaste la seleccion de: Metodo de Insercion
+
+real (Tiempo total)  26.2622759342 s
+user (Tiempo de procesamiento en CPU) 26.2308700000 s
+sys (Tiempo en acciónes de E/S)  0.0002080000 s
+CPU/Wall   99.8812062812 % 
+
+
+real (Tiempo total)  2.6262275934e+01 s
+user (Tiempo de procesamiento en CPU) 2.6230870000e+01 s
+sys (Tiempo en acciónes de E/S)  2.0800000000e-04 s
+CPU/Wall   99.8812062812 % 
+
+Realizaste la seleccion de: Metodo de Insercion
+
+real (Tiempo total)  40.8815491199 s
+user (Tiempo de procesamiento en CPU) 40.8594680000 s
+sys (Tiempo en acciónes de E/S)  0.0039990000 s
+CPU/Wall   99.9557694844 % 
+
+
+real (Tiempo total)  4.0881549120e+01 s
+user (Tiempo de procesamiento en CPU) 4.0859468000e+01 s
+sys (Tiempo en acciónes de E/S)  3.9990000000e-03 s
+CPU/Wall   99.9557694844 % 
+
+Realizaste la seleccion de: Metodo de Insercion
+
+real (Tiempo total)  80.0885229111 s
+user (Tiempo de procesamiento en CPU) 80.0757490000 s
+sys (Tiempo en acciónes de E/S)  0.0039990000 s
+CPU/Wall   99.9890434849 % 
+
+
+real (Tiempo total)  8.0088522911e+01 s
+user (Tiempo de procesamiento en CPU) 8.0075749000e+01 s
+sys (Tiempo en acciónes de E/S)  3.9990000000e-03 s
+CPU/Wall   99.9890434849 % 
+
+Realizaste la seleccion de: Metodo de Insercion
+
+real (Tiempo total)  104.7459719181 s
+user (Tiempo de procesamiento en CPU) 104.7249440000 s
+sys (Tiempo en acciónes de E/S)  0.0001010000 s
+CPU/Wall   99.9800212670 % 
+
+
+real (Tiempo total)  1.0474597192e+02 s
+user (Tiempo de procesamiento en CPU) 1.0472494400e+02 s
+sys (Tiempo en acciónes de E/S)  1.0100000000e-04 s
+CPU/Wall   99.9800212670 % 
+
+Realizaste la seleccion de: Metodo de Insercion
+
+real (Tiempo total)  132.8725268841 s
+user (Tiempo de procesamiento en CPU) 132.6833870000 s
+sys (Tiempo en acciónes de E/S)  0.0478410000 s
+CPU/Wall   99.8936583149 % 
+
+
+real (Tiempo total)  1.3287252688e+02 s
+user (Tiempo de procesamiento en CPU) 1.3268338700e+02 s
+sys (Tiempo en acciónes de E/S)  4.7841000000e-02 s
+CPU/Wall   99.8936583149 % 
+
+Realizaste la seleccion de: Metodo de Insercion
+
+real (Tiempo total)  198.4807000160 s
+user (Tiempo de procesamiento en CPU) 198.2720790000 s
+sys (Tiempo en acciónes de E/S)  0.1599750000 s
+CPU/Wall   99.9754908079 % 
+
+
+real (Tiempo total)  1.9848070002e+02 s
+user (Tiempo de procesamiento en CPU) 1.9827207900e+02 s
+sys (Tiempo en acciónes de E/S)  1.5997500000e-01 s
+CPU/Wall   99.9754908079 % 
+
+Realizaste la seleccion de: Metodo de Insercion
+
+real (Tiempo total)  236.2985651493 s
+user (Tiempo de procesamiento en CPU) 236.1045030000 s
+sys (Tiempo en acciónes de E/S)  0.0398890000 s
+CPU/Wall   99.9347549363 % 
+
+
+real (Tiempo total)  2.3629856515e+02 s
+user (Tiempo de procesamiento en CPU) 2.3610450300e+02 s
+sys (Tiempo en acciónes de E/S)  3.9889000000e-02 s
+CPU/Wall   99.9347549363 % 
+
+Realizaste la seleccion de: Metodo de Insercion
+
+real (Tiempo total)  277.4753861427 s
+user (Tiempo de procesamiento en CPU) 277.1323830000 s
+sys (Tiempo en acciónes de E/S)  0.1239830000 s
+CPU/Wall   99.9210668212 % 
+
+
+real (Tiempo total)  2.7747538614e+02 s
+user (Tiempo de procesamiento en CPU) 2.7713238300e+02 s
+sys (Tiempo en acciónes de E/S)  1.2398300000e-01 s
+CPU/Wall   99.9210668212 % 
+
+Realizaste la seleccion de: Metodo de Insercion
+
+real (Tiempo total)  369.4124670029 s
+user (Tiempo de procesamiento en CPU) 369.1932520000 s
+sys (Tiempo en acciónes de E/S)  0.0602390000 s
+CPU/Wall   99.9569651766 % 
+
+
+real (Tiempo total)  3.6941246700e+02 s
+user (Tiempo de procesamiento en CPU) 3.6919325200e+02 s
+sys (Tiempo en acciónes de E/S)  6.0239000000e-02 s
+CPU/Wall   99.9569651766 % 
+
+Realizaste la seleccion de: Metodo de Insercion
+
+real (Tiempo total)  420.4529309273 s
+user (Tiempo de procesamiento en CPU) 419.7287470000 s
+sys (Tiempo en acciónes de E/S)  0.5078480000 s
+CPU/Wall   99.9485469332 % 
+
+
+real (Tiempo total)  4.2045293093e+02 s
+user (Tiempo de procesamiento en CPU) 4.1972874700e+02 s
+sys (Tiempo en acciónes de E/S)  5.0784800000e-01 s
+CPU/Wall   99.9485469332 % 
+
+Realizaste la seleccion de: Metodo de Insercion
+
+real (Tiempo total)  475.3116998672 s
+user (Tiempo de procesamiento en CPU) 474.6678200000 s
+sys (Tiempo en acciónes de E/S)  0.4678830000 s
+CPU/Wall   99.9629723259 % 
+
+
+real (Tiempo total)  4.7531169987e+02 s
+user (Tiempo de procesamiento en CPU) 4.7466782000e+02 s
+sys (Tiempo en acciónes de E/S)  4.6788300000e-01 s
+CPU/Wall   99.9629723259 % 
+
+Realizaste la seleccion de: Metodo de Insercion
+
+real (Tiempo total)  658.6025900841 s
+user (Tiempo de procesamiento en CPU) 657.2594900000 s
+sys (Tiempo en acciónes de E/S)  0.9238110000 s
+CPU/Wall   99.9363365571 % 
+
+
+real (Tiempo total)  6.5860259008e+02 s
+user (Tiempo de procesamiento en CPU) 6.5725949000e+02 s
+sys (Tiempo en acciónes de E/S)  9.2381100000e-01 s
+CPU/Wall   99.9363365571 % 
+

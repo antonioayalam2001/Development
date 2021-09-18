@@ -1,0 +1,221 @@
+Realizaste la seleccion de: Metodo de QuickSort
+
+real (Tiempo total)  0.0000171661 s
+user (Tiempo de procesamiento en CPU) 0.0000270000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   157.2864000000 % 
+
+
+real (Tiempo total)  1.7166137695e-05 s
+user (Tiempo de procesamiento en CPU) 2.7000000000e-05 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   157.2864000000 % 
+
+Realizaste la seleccion de: Metodo de QuickSort
+
+real (Tiempo total)  0.0001828671 s
+user (Tiempo de procesamiento en CPU) 0.0001920000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   104.9943113429 % 
+
+
+real (Tiempo total)  1.8286705017e-04 s
+user (Tiempo de procesamiento en CPU) 1.9200000000e-04 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   104.9943113429 % 
+
+Realizaste la seleccion de: Metodo de QuickSort
+
+real (Tiempo total)  0.0009818077 s
+user (Tiempo de procesamiento en CPU) 0.0009890000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   100.7325559981 % 
+
+
+real (Tiempo total)  9.8180770874e-04 s
+user (Tiempo de procesamiento en CPU) 9.8900000000e-04 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   100.7325559981 % 
+
+Realizaste la seleccion de: Metodo de QuickSort
+
+real (Tiempo total)  0.0020828247 s
+user (Tiempo de procesamiento en CPU) 0.0020950000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   100.5845567766 % 
+
+
+real (Tiempo total)  2.0828247070e-03 s
+user (Tiempo de procesamiento en CPU) 2.0950000000e-03 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   100.5845567766 % 
+
+Realizaste la seleccion de: Metodo de QuickSort
+
+real (Tiempo total)  0.0136921406 s
+user (Tiempo de procesamiento en CPU) 0.0126260000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   92.2134850058 % 
+
+
+real (Tiempo total)  1.3692140579e-02 s
+user (Tiempo de procesamiento en CPU) 1.2626000000e-02 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   92.2134850058 % 
+
+Realizaste la seleccion de: Metodo de QuickSort
+
+real (Tiempo total)  0.0263009071 s
+user (Tiempo de procesamiento en CPU) 0.0253240000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   96.2856523161 % 
+
+
+real (Tiempo total)  2.6300907135e-02 s
+user (Tiempo de procesamiento en CPU) 2.5324000000e-02 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   96.2856523161 % 
+
+Realizaste la seleccion de: Metodo de QuickSort
+
+real (Tiempo total)  0.0325479507 s
+user (Tiempo de procesamiento en CPU) 0.0315550000 s
+sys (Tiempo en acciónes de E/S)  0.0000780000 s
+CPU/Wall   97.1889144364 % 
+
+
+real (Tiempo total)  3.2547950745e-02 s
+user (Tiempo de procesamiento en CPU) 3.1555000000e-02 s
+sys (Tiempo en acciónes de E/S)  7.8000000000e-05 s
+CPU/Wall   97.1889144364 % 
+
+Realizaste la seleccion de: Metodo de QuickSort
+
+real (Tiempo total)  0.0458989143 s
+user (Tiempo de procesamiento en CPU) 0.0459050000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   100.0132588383 % 
+
+
+real (Tiempo total)  4.5898914337e-02 s
+user (Tiempo de procesamiento en CPU) 4.5905000000e-02 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   100.0132588383 % 
+
+Realizaste la seleccion de: Metodo de QuickSort
+
+real (Tiempo total)  0.0531249046 s
+user (Tiempo de procesamiento en CPU) 0.0530780000 s
+sys (Tiempo en acciónes de E/S)  0.0000530000 s
+CPU/Wall   100.0114736534 % 
+
+
+real (Tiempo total)  5.3124904633e-02 s
+user (Tiempo de procesamiento en CPU) 5.3078000000e-02 s
+sys (Tiempo en acciónes de E/S)  5.3000000000e-05 s
+CPU/Wall   100.0114736534 % 
+
+Realizaste la seleccion de: Metodo de QuickSort
+
+real (Tiempo total)  0.0600759983 s
+user (Tiempo de procesamiento en CPU) 0.0600460000 s
+sys (Tiempo en acciónes de E/S)  0.0000380000 s
+CPU/Wall   100.0133192855 % 
+
+
+real (Tiempo total)  6.0075998306e-02 s
+user (Tiempo de procesamiento en CPU) 6.0046000000e-02 s
+sys (Tiempo en acciónes de E/S)  3.8000000000e-05 s
+CPU/Wall   100.0133192855 % 
+
+Realizaste la seleccion de: Metodo de QuickSort
+
+real (Tiempo total)  0.0754139423 s
+user (Tiempo de procesamiento en CPU) 0.0751430000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   99.6407264643 % 
+
+
+real (Tiempo total)  7.5413942337e-02 s
+user (Tiempo de procesamiento en CPU) 7.5143000000e-02 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   99.6407264643 % 
+
+Realizaste la seleccion de: Metodo de QuickSort
+
+real (Tiempo total)  0.0841670036 s
+user (Tiempo de procesamiento en CPU) 0.0841240000 s
+sys (Tiempo en acciónes de E/S)  0.0000380000 s
+CPU/Wall   99.9940551150 % 
+
+
+real (Tiempo total)  8.4167003632e-02 s
+user (Tiempo de procesamiento en CPU) 8.4124000000e-02 s
+sys (Tiempo en acciónes de E/S)  3.8000000000e-05 s
+CPU/Wall   99.9940551150 % 
+
+Realizaste la seleccion de: Metodo de QuickSort
+
+real (Tiempo total)  0.0882260799 s
+user (Tiempo de procesamiento en CPU) 0.0881880000 s
+sys (Tiempo en acciónes de E/S)  0.0000400000 s
+CPU/Wall   100.0021762944 % 
+
+
+real (Tiempo total)  8.8226079941e-02 s
+user (Tiempo de procesamiento en CPU) 8.8188000000e-02 s
+sys (Tiempo en acciónes de E/S)  4.0000000000e-05 s
+CPU/Wall   100.0021762944 % 
+
+Realizaste la seleccion de: Metodo de QuickSort
+
+real (Tiempo total)  0.1035649776 s
+user (Tiempo de procesamiento en CPU) 0.1035690000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   100.0038838942 % 
+
+
+real (Tiempo total)  1.0356497765e-01 s
+user (Tiempo de procesamiento en CPU) 1.0356900000e-01 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   100.0038838942 % 
+
+Realizaste la seleccion de: Metodo de QuickSort
+
+real (Tiempo total)  0.1111161709 s
+user (Tiempo de procesamiento en CPU) 0.1111120000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   99.9962463761 % 
+
+
+real (Tiempo total)  1.1111617088e-01 s
+user (Tiempo de procesamiento en CPU) 1.1111200000e-01 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   99.9962463761 % 
+
+Realizaste la seleccion de: Metodo de QuickSort
+
+real (Tiempo total)  0.1166541576 s
+user (Tiempo de procesamiento en CPU) 0.1165980000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   99.9518597196 % 
+
+
+real (Tiempo total)  1.1665415764e-01 s
+user (Tiempo de procesamiento en CPU) 1.1659800000e-01 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   99.9518597196 % 
+
+Realizaste la seleccion de: Metodo de QuickSort
+
+real (Tiempo total)  0.1396911144 s
+user (Tiempo de procesamiento en CPU) 0.1396620000 s
+sys (Tiempo en acciónes de E/S)  0.0000330000 s
+CPU/Wall   100.0027815472 % 
+
+
+real (Tiempo total)  1.3969111443e-01 s
+user (Tiempo de procesamiento en CPU) 1.3966200000e-01 s
+sys (Tiempo en acciónes de E/S)  3.3000000000e-05 s
+CPU/Wall   100.0027815472 % 
+

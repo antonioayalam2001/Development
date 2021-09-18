@@ -1,0 +1,221 @@
+Realizaste la seleccion de: Metodo de MergeSort
+
+real (Tiempo total)  0.0000419617 s
+user (Tiempo de procesamiento en CPU) 0.0000520000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   123.9226181818 % 
+
+
+real (Tiempo total)  4.1961669922e-05 s
+user (Tiempo de procesamiento en CPU) 5.2000000000e-05 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   123.9226181818 % 
+
+Realizaste la seleccion de: Metodo de MergeSort
+
+real (Tiempo total)  0.0003890991 s
+user (Tiempo de procesamiento en CPU) 0.0003980000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   102.2875607843 % 
+
+
+real (Tiempo total)  3.8909912109e-04 s
+user (Tiempo de procesamiento en CPU) 3.9800000000e-04 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   102.2875607843 % 
+
+Realizaste la seleccion de: Metodo de MergeSort
+
+real (Tiempo total)  0.0022430420 s
+user (Tiempo de procesamiento en CPU) 0.0022520000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   100.3993687075 % 
+
+
+real (Tiempo total)  2.2430419922e-03 s
+user (Tiempo de procesamiento en CPU) 2.2520000000e-03 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   100.3993687075 % 
+
+Realizaste la seleccion de: Metodo de MergeSort
+
+real (Tiempo total)  0.0049219131 s
+user (Tiempo de procesamiento en CPU) 0.0047020000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   95.5319579926 % 
+
+
+real (Tiempo total)  4.9219131470e-03 s
+user (Tiempo de procesamiento en CPU) 4.7020000000e-03 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   95.5319579926 % 
+
+Realizaste la seleccion de: Metodo de MergeSort
+
+real (Tiempo total)  0.0269448757 s
+user (Tiempo de procesamiento en CPU) 0.0264730000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   98.2487367093 % 
+
+
+real (Tiempo total)  2.6944875717e-02 s
+user (Tiempo de procesamiento en CPU) 2.6473000000e-02 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   98.2487367093 % 
+
+Realizaste la seleccion de: Metodo de MergeSort
+
+real (Tiempo total)  0.0555701256 s
+user (Tiempo de procesamiento en CPU) 0.0555340000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   99.9349910056 % 
+
+
+real (Tiempo total)  5.5570125580e-02 s
+user (Tiempo de procesamiento en CPU) 5.5534000000e-02 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   99.9349910056 % 
+
+Realizaste la seleccion de: Metodo de MergeSort
+
+real (Tiempo total)  0.0691978931 s
+user (Tiempo de procesamiento en CPU) 0.0688790000 s
+sys (Tiempo en acciónes de E/S)  0.0002980000 s
+CPU/Wall   99.9698066780 % 
+
+
+real (Tiempo total)  6.9197893143e-02 s
+user (Tiempo de procesamiento en CPU) 6.8879000000e-02 s
+sys (Tiempo en acciónes de E/S)  2.9800000000e-04 s
+CPU/Wall   99.9698066780 % 
+
+Realizaste la seleccion de: Metodo de MergeSort
+
+real (Tiempo total)  0.0999829769 s
+user (Tiempo de procesamiento en CPU) 0.0997880000 s
+sys (Tiempo en acciónes de E/S)  0.0001570000 s
+CPU/Wall   99.9620166206 % 
+
+
+real (Tiempo total)  9.9982976913e-02 s
+user (Tiempo de procesamiento en CPU) 9.9788000000e-02 s
+sys (Tiempo en acciónes de E/S)  1.5700000000e-04 s
+CPU/Wall   99.9620166206 % 
+
+Realizaste la seleccion de: Metodo de MergeSort
+
+real (Tiempo total)  0.1148200035 s
+user (Tiempo de procesamiento en CPU) 0.1148250000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   100.0043515854 % 
+
+
+real (Tiempo total)  1.1482000351e-01 s
+user (Tiempo de procesamiento en CPU) 1.1482500000e-01 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   100.0043515854 % 
+
+Realizaste la seleccion de: Metodo de MergeSort
+
+real (Tiempo total)  0.1290678978 s
+user (Tiempo de procesamiento en CPU) 0.1290350000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   99.9745112478 % 
+
+
+real (Tiempo total)  1.2906789780e-01 s
+user (Tiempo de procesamiento en CPU) 1.2903500000e-01 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   99.9745112478 % 
+
+Realizaste la seleccion de: Metodo de MergeSort
+
+real (Tiempo total)  0.1586890221 s
+user (Tiempo de procesamiento en CPU) 0.1506960000 s
+sys (Tiempo en acciónes de E/S)  0.0079900000 s
+CPU/Wall   99.9980956060 % 
+
+
+real (Tiempo total)  1.5868902206e-01 s
+user (Tiempo de procesamiento en CPU) 1.5069600000e-01 s
+sys (Tiempo en acciónes de E/S)  7.9900000000e-03 s
+CPU/Wall   99.9980956060 % 
+
+Realizaste la seleccion de: Metodo de MergeSort
+
+real (Tiempo total)  0.1742370129 s
+user (Tiempo de procesamiento en CPU) 0.1701970000 s
+sys (Tiempo en acciónes de E/S)  0.0039780000 s
+CPU/Wall   99.9644089036 % 
+
+
+real (Tiempo total)  1.7423701286e-01 s
+user (Tiempo de procesamiento en CPU) 1.7019700000e-01 s
+sys (Tiempo en acciónes de E/S)  3.9780000000e-03 s
+CPU/Wall   99.9644089036 % 
+
+Realizaste la seleccion de: Metodo de MergeSort
+
+real (Tiempo total)  0.1902508736 s
+user (Tiempo de procesamiento en CPU) 0.1901750000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   99.9601192025 % 
+
+
+real (Tiempo total)  1.9025087357e-01 s
+user (Tiempo de procesamiento en CPU) 1.9017500000e-01 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   99.9601192025 % 
+
+Realizaste la seleccion de: Metodo de MergeSort
+
+real (Tiempo total)  0.2212579250 s
+user (Tiempo de procesamiento en CPU) 0.2132890000 s
+sys (Tiempo en acciónes de E/S)  0.0079680000 s
+CPU/Wall   99.9995819207 % 
+
+
+real (Tiempo total)  2.2125792503e-01 s
+user (Tiempo de procesamiento en CPU) 2.1328900000e-01 s
+sys (Tiempo en acciónes de E/S)  7.9680000000e-03 s
+CPU/Wall   99.9995819207 % 
+
+Realizaste la seleccion de: Metodo de MergeSort
+
+real (Tiempo total)  0.2396440506 s
+user (Tiempo de procesamiento en CPU) 0.2354470000 s
+sys (Tiempo en acciónes de E/S)  0.0040000000 s
+CPU/Wall   99.9177736323 % 
+
+
+real (Tiempo total)  2.3964405060e-01 s
+user (Tiempo de procesamiento en CPU) 2.3544700000e-01 s
+sys (Tiempo en acciónes de E/S)  4.0000000000e-03 s
+CPU/Wall   99.9177736323 % 
+
+Realizaste la seleccion de: Metodo de MergeSort
+
+real (Tiempo total)  0.2550990582 s
+user (Tiempo de procesamiento en CPU) 0.2508930000 s
+sys (Tiempo en acciónes de E/S)  0.0041900000 s
+CPU/Wall   99.9937051311 % 
+
+
+real (Tiempo total)  2.5509905815e-01 s
+user (Tiempo de procesamiento en CPU) 2.5089300000e-01 s
+sys (Tiempo en acciónes de E/S)  4.1900000000e-03 s
+CPU/Wall   99.9937051311 % 
+
+Realizaste la seleccion de: Metodo de MergeSort
+
+real (Tiempo total)  0.3009991646 s
+user (Tiempo de procesamiento en CPU) 0.3006160000 s
+sys (Tiempo en acciónes de E/S)  0.0000650000 s
+CPU/Wall   99.8942971879 % 
+
+
+real (Tiempo total)  3.0099916458e-01 s
+user (Tiempo de procesamiento en CPU) 3.0061600000e-01 s
+sys (Tiempo en acciónes de E/S)  6.5000000000e-05 s
+CPU/Wall   99.8942971879 % 
+

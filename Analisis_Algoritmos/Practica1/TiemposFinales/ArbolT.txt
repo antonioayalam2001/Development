@@ -1,0 +1,221 @@
+Realizaste la seleccion de: Ordenamiento basado en ABB
+
+real (Tiempo total)  0.0000259876 s
+user (Tiempo de procesamiento en CPU) 0.0000000000 s
+sys (Tiempo en acciónes de E/S)  0.0000370000 s
+CPU/Wall   142.3754568807 % 
+
+
+real (Tiempo total)  2.5987625122e-05 s
+user (Tiempo de procesamiento en CPU) 0.0000000000e+00 s
+sys (Tiempo en acciónes de E/S)  3.7000000000e-05 s
+CPU/Wall   142.3754568807 % 
+
+Realizaste la seleccion de: Ordenamiento basado en ABB
+
+real (Tiempo total)  0.0003089905 s
+user (Tiempo de procesamiento en CPU) 0.0000000000 s
+sys (Tiempo en acciónes de E/S)  0.0003210000 s
+CPU/Wall   103.8866962963 % 
+
+
+real (Tiempo total)  3.0899047852e-04 s
+user (Tiempo de procesamiento en CPU) 0.0000000000e+00 s
+sys (Tiempo en acciónes de E/S)  3.2100000000e-04 s
+CPU/Wall   103.8866962963 % 
+
+Realizaste la seleccion de: Ordenamiento basado en ABB
+
+real (Tiempo total)  0.0019111633 s
+user (Tiempo de procesamiento en CPU) 0.0019210000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   100.5146954092 % 
+
+
+real (Tiempo total)  1.9111633301e-03 s
+user (Tiempo de procesamiento en CPU) 1.9210000000e-03 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   100.5146954092 % 
+
+Realizaste la seleccion de: Ordenamiento basado en ABB
+
+real (Tiempo total)  0.0055539608 s
+user (Tiempo de procesamiento en CPU) 0.0044270000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   79.7088809101 % 
+
+
+real (Tiempo total)  5.5539608002e-03 s
+user (Tiempo de procesamiento en CPU) 4.4270000000e-03 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   79.7088809101 % 
+
+Realizaste la seleccion de: Ordenamiento basado en ABB
+
+real (Tiempo total)  0.0453269482 s
+user (Tiempo de procesamiento en CPU) 0.0350600000 s
+sys (Tiempo en acciónes de E/S)  0.0078310000 s
+CPU/Wall   94.6258279799 % 
+
+
+real (Tiempo total)  4.5326948166e-02 s
+user (Tiempo de procesamiento en CPU) 3.5060000000e-02 s
+sys (Tiempo en acciónes de E/S)  7.8310000000e-03 s
+CPU/Wall   94.6258279799 % 
+
+Realizaste la seleccion de: Ordenamiento basado en ABB
+
+real (Tiempo total)  0.1062209606 s
+user (Tiempo de procesamiento en CPU) 0.0958830000 s
+sys (Tiempo en acciónes de E/S)  0.0050860000 s
+CPU/Wall   95.0556268871 % 
+
+
+real (Tiempo total)  1.0622096062e-01 s
+user (Tiempo de procesamiento en CPU) 9.5883000000e-02 s
+sys (Tiempo en acciónes de E/S)  5.0860000000e-03 s
+CPU/Wall   95.0556268871 % 
+
+Realizaste la seleccion de: Ordenamiento basado en ABB
+
+real (Tiempo total)  0.1427850723 s
+user (Tiempo de procesamiento en CPU) 0.1334080000 s
+sys (Tiempo en acciónes de E/S)  0.0039040000 s
+CPU/Wall   96.1669156044 % 
+
+
+real (Tiempo total)  1.4278507233e-01 s
+user (Tiempo de procesamiento en CPU) 1.3340800000e-01 s
+sys (Tiempo en acciónes de E/S)  3.9040000000e-03 s
+CPU/Wall   96.1669156044 % 
+
+Realizaste la seleccion de: Ordenamiento basado en ABB
+
+real (Tiempo total)  0.2109310627 s
+user (Tiempo de procesamiento en CPU) 0.2031750000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   96.3229395428 % 
+
+
+real (Tiempo total)  2.1093106270e-01 s
+user (Tiempo de procesamiento en CPU) 2.0317500000e-01 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   96.3229395428 % 
+
+Realizaste la seleccion de: Ordenamiento basado en ABB
+
+real (Tiempo total)  0.2085521221 s
+user (Tiempo de procesamiento en CPU) 0.1966570000 s
+sys (Tiempo en acciónes de E/S)  0.0117850000 s
+CPU/Wall   99.9471968374 % 
+
+
+real (Tiempo total)  2.0855212212e-01 s
+user (Tiempo de procesamiento en CPU) 1.9665700000e-01 s
+sys (Tiempo en acciónes de E/S)  1.1785000000e-02 s
+CPU/Wall   99.9471968374 % 
+
+Realizaste la seleccion de: Ordenamiento basado en ABB
+
+real (Tiempo total)  0.2393138409 s
+user (Tiempo de procesamiento en CPU) 0.2313330000 s
+sys (Tiempo en acciónes de E/S)  0.0079850000 s
+CPU/Wall   100.0017379412 % 
+
+
+real (Tiempo total)  2.3931384087e-01 s
+user (Tiempo de procesamiento en CPU) 2.3133300000e-01 s
+sys (Tiempo en acciónes de E/S)  7.9850000000e-03 s
+CPU/Wall   100.0017379412 % 
+
+Realizaste la seleccion de: Ordenamiento basado en ABB
+
+real (Tiempo total)  0.3060569763 s
+user (Tiempo de procesamiento en CPU) 0.3018250000 s
+sys (Tiempo en acciónes de E/S)  0.0042080000 s
+CPU/Wall   99.9921660605 % 
+
+
+real (Tiempo total)  3.0605697632e-01 s
+user (Tiempo de procesamiento en CPU) 3.0182500000e-01 s
+sys (Tiempo en acciónes de E/S)  4.2080000000e-03 s
+CPU/Wall   99.9921660605 % 
+
+Realizaste la seleccion de: Ordenamiento basado en ABB
+
+real (Tiempo total)  0.3437330723 s
+user (Tiempo de procesamiento en CPU) 0.3276330000 s
+sys (Tiempo en acciónes de E/S)  0.0159830000 s
+CPU/Wall   99.9659409320 % 
+
+
+real (Tiempo total)  3.4373307228e-01 s
+user (Tiempo de procesamiento en CPU) 3.2763300000e-01 s
+sys (Tiempo en acciónes de E/S)  1.5983000000e-02 s
+CPU/Wall   99.9659409320 % 
+
+Realizaste la seleccion de: Ordenamiento basado en ABB
+
+real (Tiempo total)  0.4032440186 s
+user (Tiempo de procesamiento en CPU) 0.3952320000 s
+sys (Tiempo en acciónes de E/S)  0.0079880000 s
+CPU/Wall   99.9940436675 % 
+
+
+real (Tiempo total)  4.0324401855e-01 s
+user (Tiempo de procesamiento en CPU) 3.9523200000e-01 s
+sys (Tiempo en acciónes de E/S)  7.9880000000e-03 s
+CPU/Wall   99.9940436675 % 
+
+Realizaste la seleccion de: Ordenamiento basado en ABB
+
+real (Tiempo total)  0.4864580631 s
+user (Tiempo de procesamiento en CPU) 0.4663920000 s
+sys (Tiempo en acciónes de E/S)  0.0199040000 s
+CPU/Wall   99.9666850777 % 
+
+
+real (Tiempo total)  4.8645806313e-01 s
+user (Tiempo de procesamiento en CPU) 4.6639200000e-01 s
+sys (Tiempo en acciónes de E/S)  1.9904000000e-02 s
+CPU/Wall   99.9666850777 % 
+
+Realizaste la seleccion de: Ordenamiento basado en ABB
+
+real (Tiempo total)  0.4782321453 s
+user (Tiempo de procesamiento en CPU) 0.4740850000 s
+sys (Tiempo en acciónes de E/S)  0.0040780000 s
+CPU/Wall   99.9855414760 % 
+
+
+real (Tiempo total)  4.7823214531e-01 s
+user (Tiempo de procesamiento en CPU) 4.7408500000e-01 s
+sys (Tiempo en acciónes de E/S)  4.0780000000e-03 s
+CPU/Wall   99.9855414760 % 
+
+Realizaste la seleccion de: Ordenamiento basado en ABB
+
+real (Tiempo total)  0.5112390518 s
+user (Tiempo de procesamiento en CPU) 0.5111550000 s
+sys (Tiempo en acciónes de E/S)  0.0000790000 s
+CPU/Wall   99.9990118480 % 
+
+
+real (Tiempo total)  5.1123905182e-01 s
+user (Tiempo de procesamiento en CPU) 5.1115500000e-01 s
+sys (Tiempo en acciónes de E/S)  7.9000000000e-05 s
+CPU/Wall   99.9990118480 % 
+
+Realizaste la seleccion de: Ordenamiento basado en ABB
+
+real (Tiempo total)  0.6258950233 s
+user (Tiempo de procesamiento en CPU) 0.6174480000 s
+sys (Tiempo en acciónes de E/S)  0.0079260000 s
+CPU/Wall   99.9167554739 % 
+
+
+real (Tiempo total)  6.2589502335e-01 s
+user (Tiempo de procesamiento en CPU) 6.1744800000e-01 s
+sys (Tiempo en acciónes de E/S)  7.9260000000e-03 s
+CPU/Wall   99.9167554739 % 
+

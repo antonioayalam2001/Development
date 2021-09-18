@@ -1,0 +1,221 @@
+Realizaste la seleccion de: Metodo de Burbuja
+
+real (Tiempo total)  0.0001158714 s
+user (Tiempo de procesamiento en CPU) 0.0000000000 s
+sys (Tiempo en acciónes de E/S)  0.0001270000 s
+CPU/Wall   109.6042403292 % 
+
+
+real (Tiempo total)  1.1587142944e-04 s
+user (Tiempo de procesamiento en CPU) 0.0000000000e+00 s
+sys (Tiempo en acciónes de E/S)  1.2700000000e-04 s
+CPU/Wall   109.6042403292 % 
+
+Realizaste la seleccion de: Metodo de Burbuja
+
+real (Tiempo total)  0.0114159584 s
+user (Tiempo de procesamiento en CPU) 0.0114250000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   100.0792013700 % 
+
+
+real (Tiempo total)  1.1415958405e-02 s
+user (Tiempo de procesamiento en CPU) 1.1425000000e-02 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   100.0792013700 % 
+
+Realizaste la seleccion de: Metodo de Burbuja
+
+real (Tiempo total)  0.2931468487 s
+user (Tiempo de procesamiento en CPU) 0.2887280000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   98.4926160051 % 
+
+
+real (Tiempo total)  2.9314684868e-01 s
+user (Tiempo de procesamiento en CPU) 2.8872800000e-01 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   98.4926160051 % 
+
+Realizaste la seleccion de: Metodo de Burbuja
+
+real (Tiempo total)  1.1458001137 s
+user (Tiempo de procesamiento en CPU) 1.1430720000 s
+sys (Tiempo en acciónes de E/S)  0.0000000000 s
+CPU/Wall   99.7619031762 % 
+
+
+real (Tiempo total)  1.1458001137e+00 s
+user (Tiempo de procesamiento en CPU) 1.1430720000e+00 s
+sys (Tiempo en acciónes de E/S)  0.0000000000e+00 s
+CPU/Wall   99.7619031762 % 
+
+Realizaste la seleccion de: Metodo de Burbuja
+
+real (Tiempo total)  28.5287501812 s
+user (Tiempo de procesamiento en CPU) 28.5190190000 s
+sys (Tiempo en acciónes de E/S)  0.0044740000 s
+CPU/Wall   99.9815723396 % 
+
+
+real (Tiempo total)  2.8528750181e+01 s
+user (Tiempo de procesamiento en CPU) 2.8519019000e+01 s
+sys (Tiempo en acciónes de E/S)  4.4740000000e-03 s
+CPU/Wall   99.9815723396 % 
+
+Realizaste la seleccion de: Metodo de Burbuja
+
+real (Tiempo total)  114.7260301113 s
+user (Tiempo de procesamiento en CPU) 113.9965930000 s
+sys (Tiempo en acciónes de E/S)  0.0319980000 s
+CPU/Wall   99.3920829383 % 
+
+
+real (Tiempo total)  1.1472603011e+02 s
+user (Tiempo de procesamiento en CPU) 1.1399659300e+02 s
+sys (Tiempo en acciónes de E/S)  3.1998000000e-02 s
+CPU/Wall   99.3920829383 % 
+
+Realizaste la seleccion de: Metodo de Burbuja
+
+real (Tiempo total)  178.1267731190 s
+user (Tiempo de procesamiento en CPU) 178.0062700000 s
+sys (Tiempo en acciónes de E/S)  0.0239380000 s
+CPU/Wall   99.9457885430 % 
+
+
+real (Tiempo total)  1.7812677312e+02 s
+user (Tiempo de procesamiento en CPU) 1.7800627000e+02 s
+sys (Tiempo en acciónes de E/S)  2.3938000000e-02 s
+CPU/Wall   99.9457885430 % 
+
+Realizaste la seleccion de: Metodo de Burbuja
+
+real (Tiempo total)  349.2288482189 s
+user (Tiempo de procesamiento en CPU) 349.2182090000 s
+sys (Tiempo en acciónes de E/S)  0.0480060000 s
+CPU/Wall   100.0106997979 % 
+
+
+real (Tiempo total)  3.4922884822e+02 s
+user (Tiempo de procesamiento en CPU) 3.4921820900e+02 s
+sys (Tiempo en acciónes de E/S)  4.8006000000e-02 s
+CPU/Wall   100.0106997979 % 
+
+Realizaste la seleccion de: Metodo de Burbuja
+
+real (Tiempo total)  459.6296892166 s
+user (Tiempo de procesamiento en CPU) 459.4378890000 s
+sys (Tiempo en acciónes de E/S)  0.0879900000 s
+CPU/Wall   99.9774143797 % 
+
+
+real (Tiempo total)  4.5962968922e+02 s
+user (Tiempo de procesamiento en CPU) 4.5943788900e+02 s
+sys (Tiempo en acciónes de E/S)  8.7990000000e-02 s
+CPU/Wall   99.9774143797 % 
+
+Realizaste la seleccion de: Metodo de Burbuja
+
+real (Tiempo total)  584.3167641163 s
+user (Tiempo de procesamiento en CPU) 583.9824400000 s
+sys (Tiempo en acciónes de E/S)  0.2400510000 s
+CPU/Wall   99.9838660942 % 
+
+
+real (Tiempo total)  5.8431676412e+02 s
+user (Tiempo de procesamiento en CPU) 5.8398244000e+02 s
+sys (Tiempo en acciónes de E/S)  2.4005100000e-01 s
+CPU/Wall   99.9838660942 % 
+
+Realizaste la seleccion de: Metodo de Burbuja
+
+real (Tiempo total)  882.3207721710 s
+user (Tiempo de procesamiento en CPU) 880.4709860000 s
+sys (Tiempo en acciónes de E/S)  0.3279050000 s
+CPU/Wall   99.8275138454 % 
+
+
+real (Tiempo total)  8.8232077217e+02 s
+user (Tiempo de procesamiento en CPU) 8.8047098600e+02 s
+sys (Tiempo en acciónes de E/S)  3.2790500000e-01 s
+CPU/Wall   99.8275138454 % 
+
+Realizaste la seleccion de: Metodo de Burbuja
+
+real (Tiempo total)  1052.0619018078 s
+user (Tiempo de procesamiento en CPU) 1051.8487880000 s
+sys (Tiempo en acciónes de E/S)  0.0234810000 s
+CPU/Wall   99.9819751283 % 
+
+
+real (Tiempo total)  1.0520619018e+03 s
+user (Tiempo de procesamiento en CPU) 1.0518487880e+03 s
+sys (Tiempo en acciónes de E/S)  2.3481000000e-02 s
+CPU/Wall   99.9819751283 % 
+
+Realizaste la seleccion de: Metodo de Burbuja
+
+real (Tiempo total)  1226.2575240135 s
+user (Tiempo de procesamiento en CPU) 1225.9128440000 s
+sys (Tiempo en acciónes de E/S)  0.1160830000 s
+CPU/Wall   99.9813581561 % 
+
+
+real (Tiempo total)  1.2262575240e+03 s
+user (Tiempo de procesamiento en CPU) 1.2259128440e+03 s
+sys (Tiempo en acciónes de E/S)  1.1608300000e-01 s
+CPU/Wall   99.9813581561 % 
+
+Realizaste la seleccion de: Metodo de Burbuja
+
+real (Tiempo total)  1622.8964459896 s
+user (Tiempo de procesamiento en CPU) 1622.2603960000 s
+sys (Tiempo en acciónes de E/S)  0.2959060000 s
+CPU/Wall   99.9790409308 % 
+
+
+real (Tiempo total)  1.6228964460e+03 s
+user (Tiempo de procesamiento en CPU) 1.6222603960e+03 s
+sys (Tiempo en acciónes de E/S)  2.9590600000e-01 s
+CPU/Wall   99.9790409308 % 
+
+Realizaste la seleccion de: Metodo de Burbuja
+
+real (Tiempo total)  1857.4671328068 s
+user (Tiempo de procesamiento en CPU) 1855.1837550000 s
+sys (Tiempo en acciónes de E/S)  0.2759060000 s
+CPU/Wall   99.8919242354 % 
+
+
+real (Tiempo total)  1.8574671328e+03 s
+user (Tiempo de procesamiento en CPU) 1.8551837550e+03 s
+sys (Tiempo en acciónes de E/S)  2.7590600000e-01 s
+CPU/Wall   99.8919242354 % 
+
+Realizaste la seleccion de: Metodo de Burbuja
+
+real (Tiempo total)  2214.4727659225 s
+user (Tiempo de procesamiento en CPU) 2094.5957610000 s
+sys (Tiempo en acciónes de E/S)  0.9637470000 s
+CPU/Wall   94.6301774512 % 
+
+
+real (Tiempo total)  2.2144727659e+03 s
+user (Tiempo de procesamiento en CPU) 2.0945957610e+03 s
+sys (Tiempo en acciónes de E/S)  9.6374700000e-01 s
+CPU/Wall   94.6301774512 % 
+
+Realizaste la seleccion de: Metodo de Burbuja
+
+real (Tiempo total)  3019.2747120857 s
+user (Tiempo de procesamiento en CPU) 2908.5529160000 s
+sys (Tiempo en acciónes de E/S)  2.7995940000 s
+CPU/Wall   96.4255587061 % 
+
+
+real (Tiempo total)  3.0192747121e+03 s
+user (Tiempo de procesamiento en CPU) 2.9085529160e+03 s
+sys (Tiempo en acciónes de E/S)  2.7995940000e+00 s
+CPU/Wall   96.4255587061 % 
+
