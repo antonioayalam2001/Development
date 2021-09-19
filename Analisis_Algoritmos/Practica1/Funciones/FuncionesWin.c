@@ -1,13 +1,15 @@
+// Funciones Algoritmos de Ordenamiento
+// 3CM12
+// Analisis de Algoritmos
+// Autores: Mora Ayala Jose, Antonio, 
 //Para trabajar con linux quita lo que esta comentado
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-// #include "../MediciondeTiempos/tiempo.c"
 #include "Funciones.h"
 #include "../Arbol/Arbol.h"
 #include "../Arbol/Arbol.c"
 #include <stdbool.h>
-double utime0, stime0, wtime0, utime1, stime1, wtime1; //Variables para medición de tiempos
 int *LeerArchivo(int *A, int n)
 {
     int i;
@@ -27,8 +29,6 @@ int *LeerArchivo(int *A, int n)
 void Burbuja(int *A, int n)
 {
     int i, j, aux;
-    //uswtime(&utime0, &stime0, &wtime0);
-
     for (i = 0; i < (n - 1); i++)
     {
         for (j = 0; j < (n - 1); j++)
@@ -41,16 +41,12 @@ void Burbuja(int *A, int n)
             }
         }
     }
-    //uswtime(&utime1, &stime1, &wtime1);
-
     imprimirArreglo(A, n);
-    //ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
 }
 
 void BurbujaOptimizada(int *A, int n)
 {
     int i, j, aux;
-    //uswtime(&utime0, &stime0, &wtime0);
     for (i = 0; i < (n - 1); i++)
     {
         for (j = 0; j < (n - 1) - i; j++)
@@ -63,8 +59,6 @@ void BurbujaOptimizada(int *A, int n)
             }
         }
     }
-    //uswtime(&utime1, &stime1, &wtime1);
-    //ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
     imprimirArreglo(A, n);
 }
 
@@ -73,8 +67,6 @@ void Burbuja2(int *A, int n)
     bool cambio = true;
     int i = 1;
     int j, aux;
-    //uswtime(&utime0, &stime0, &wtime0);
-
     while (i <= (n - 1) && cambio != false)
     {
         cambio = false;
@@ -90,16 +82,12 @@ void Burbuja2(int *A, int n)
         }
         i = i + 1;
     }
-    //uswtime(&utime1, &stime1, &wtime1);
-
     imprimirArreglo(A, n);
-    //ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
 }
 
 void Insercion(int *A, int n)
 {
     int i, j, temp;
-    //uswtime(&utime0, &stime0, &wtime0);
     for (i = 0; i <= n - 1; i++)
     {
         j = i;
@@ -111,16 +99,12 @@ void Insercion(int *A, int n)
         }
         A[j] = temp;
     }
-
-    //uswtime(&utime1, &stime1, &wtime1);
-    //ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
     imprimirArreglo(A, n);
 }
 
 void Selection(int *A, int n)
 {
     int i, k, p, temp;
-    //uswtime(&utime0, &stime0, &wtime0);
     for (k = 0; k < (n - 1); k++)
     {
         p = k;
@@ -133,15 +117,12 @@ void Selection(int *A, int n)
         A[p] = A[k];
         A[k] = temp;
     }
-    //uswtime(&utime1, &stime1, &wtime1);
     imprimirArreglo(A, n);
-    //ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
 }
 
 void Shell(int *A, int n)
 {
     int i, j, k, b, temp;
-    //uswtime(&utime0, &stime0, &wtime0);
     k = ceil(n / 2);
     while (k >= 1)
     {
@@ -162,10 +143,7 @@ void Shell(int *A, int n)
         }
         k = ceil(k / 2);
     }
-    //uswtime(&utime1, &stime1, &wtime1);
-
     imprimirArreglo(A, n);
-    //ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
 }
 
 int parteEntera(double n)
@@ -190,7 +168,6 @@ void Merge(int *A, int p, int q, int r)
     int l = r - p + 1, i = p, j = q + 1, k, *C;
     C = malloc(sizeof(int *) * l);
 
-    //uswtime(&utime0, &stime0, &wtime0);
     for (k = 0; k <= l; k++)
     {
         if (i <= q && j <= r)
@@ -221,15 +198,12 @@ void Merge(int *A, int p, int q, int r)
     {
         A[i] = C[j];
     }
-    //uswtime(&utime1, &stime1, &wtime1);
-    //ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
     free(C);
 }
 
 void Quicksort2(int *A, int primero, int ultimo)
 {
     int piv, i, j, central, aux;
-    //uswtime(&utime0, &stime0, &wtime0);
     central = (primero + ultimo) / 2;
     piv = A[central], i = primero, j = ultimo;
     do
@@ -259,17 +233,12 @@ void Quicksort2(int *A, int primero, int ultimo)
     {
         Quicksort2(A, i, ultimo);
     }
-    //uswtime(&utime1, &stime1, &wtime1);
-    //ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
 }
 
 void ArbolBinario(int *A, int n)
 {
-    //uswtime(&utime0, &stime0, &wtime0);
     A = InsertarABB(A, n);
-    //uswtime(&utime1, &stime1, &wtime1);
     imprimirArreglo(A, n);
-    //ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
 }
 
 void MenuSeleccion(int *A, int n, int opc)
@@ -328,21 +297,3 @@ void imprimirArreglo(int *A, int n)
         aux++;
     }
 }
-
-// void //ImprimirTiempos(double utime0, double stime0, double wtime0, double utime1, double stime1, double wtime1)
-// {
-//     printf("\n");
-//     printf("real (Tiempo total)  %.10f s\n", wtime1 - wtime0);
-//     printf("user (Tiempo de procesamiento en CPU) %.10f s\n", utime1 - utime0);
-//     printf("sys (Tiempo en acciónes de E/S)  %.10f s\n", stime1 - stime0);
-//     printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
-//     printf("\n");
-
-//     // Mostrar los tiempos en formato exponecial
-//     printf("\n");
-//     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
-//     printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
-//     printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
-//     printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
-//     printf("\n");
-// }
