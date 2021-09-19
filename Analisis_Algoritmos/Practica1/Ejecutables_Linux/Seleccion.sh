@@ -1,5 +1,5 @@
 #!/bin/bash
-echo Hola Estas apunto de ejecutar el programa:
+echo Estas apunto de ejecutar el programa: Seleccion
 cd ..
 gcc mainLin.c -lm -o mainLin
 
