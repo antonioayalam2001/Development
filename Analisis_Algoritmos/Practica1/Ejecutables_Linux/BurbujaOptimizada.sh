@@ -1,32 +1,32 @@
 #!/bin/bash
 echo Hola Estas apunto de ejecutar el programa:
 cd ..
-gcc PruebasAlgoritmo.c -lm -o PruebasAlgoritmo
+gcc mainLin.c -lm -o mainLin
 
-./PruebasAlgoritmo 2 100 >BurbujaOT.txt
-./PruebasAlgoritmo 2 1000 >>BurbujaOT.txt
-./PruebasAlgoritmo 2 5000 >>BurbujaOT.txt
-./PruebasAlgoritmo 2 10000 >>BurbujaOT.txt
-./PruebasAlgoritmo 2 50000 >>BurbujaOT.txt
-./PruebasAlgoritmo 2 100000 >>BurbujaOT.txt 
-./PruebasAlgoritmo 2 125000 >>BurbujaOT.txt 
-./PruebasAlgoritmo 2 175000 >>BurbujaOT.txt 
-./PruebasAlgoritmo 2 200000 >>BurbujaOT.txt
-./PruebasAlgoritmo 2 225000 >>BurbujaOT.txt
-./PruebasAlgoritmo 2 275000 >>BurbujaOT.txt
-./PruebasAlgoritmo 2 300000 >>BurbujaOT.txt
-./PruebasAlgoritmo 2 325000 >>BurbujaOT.txt
-./PruebasAlgoritmo 2 375000 >>BurbujaOT.txt
-./PruebasAlgoritmo 2 400000 >>BurbujaOT.txt
-./PruebasAlgoritmo 2 425000 >>BurbujaOT.txt
-./PruebasAlgoritmo 2 500000 >>BurbujaOT.txt
-# ./PruebasAlgoritmo 2 3000000 >>BurbujaOT.txt
-# ./PruebasAlgoritmo 2 4000000 >>BurbujaOT.txt
-# ./PruebasAlgoritmo 2 5000000 >>BurbujaOT.txt
-# ./PruebasAlgoritmo 2 6000000 >>BurbujaOT.txt
-# ./PruebasAlgoritmo 2 7000000 >>BurbujaOT.txt
-# ./PruebasAlgoritmo 2 8000000 >>BurbujaOT.txt
-# ./PruebasAlgoritmo 2 9000000 >>BurbujaOT.txt
-# ./PruebasAlgoritmo 2 10000000 >>BurbujaOT.txt
+./mainLin 2 100 >BurbujaOT.txt
+./mainLin 2 1000 >>BurbujaOT.txt
+./mainLin 2 5000 >>BurbujaOT.txt
+./mainLin 2 10000 >>BurbujaOT.txt
+./mainLin 2 50000 >>BurbujaOT.txt
+./mainLin 2 100000 >>BurbujaOT.txt 
+./mainLin 2 125000 >>BurbujaOT.txt 
+./mainLin 2 175000 >>BurbujaOT.txt 
+./mainLin 2 200000 >>BurbujaOT.txt
+./mainLin 2 225000 >>BurbujaOT.txt
+./mainLin 2 275000 >>BurbujaOT.txt
+./mainLin 2 300000 >>BurbujaOT.txt
+./mainLin 2 325000 >>BurbujaOT.txt
+./mainLin 2 375000 >>BurbujaOT.txt
+./mainLin 2 400000 >>BurbujaOT.txt
+./mainLin 2 425000 >>BurbujaOT.txt
+./mainLin 2 500000 >>BurbujaOT.txt
+# ./mainLin 2 3000000 >>BurbujaOT.txt
+# ./mainLin 2 4000000 >>BurbujaOT.txt
+# ./mainLin 2 5000000 >>BurbujaOT.txt
+# ./mainLin 2 6000000 >>BurbujaOT.txt
+# ./mainLin 2 7000000 >>BurbujaOT.txt
+# ./mainLin 2 8000000 >>BurbujaOT.txt
+# ./mainLin 2 9000000 >>BurbujaOT.txt
+# ./mainLin 2 10000000 >>BurbujaOT.txt
 
 

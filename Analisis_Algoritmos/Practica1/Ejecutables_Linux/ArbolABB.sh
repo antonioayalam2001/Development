@@ -1,37 +1,37 @@
 #!/bin/bash
 echo Hola Estas apunto de ejecutar el programa:
 cd ..
-gcc PruebasAlgoritmo.c -lm -o PruebasAlgoritmo
+gcc mainLin.c -lm -o mainLin
 
-./PruebasAlgoritmo 7 100 >ArbolT.txt
-./PruebasAlgoritmo 7 1000 >>ArbolT.txt
-./PruebasAlgoritmo 7 5000 >>ArbolT.txt
-./PruebasAlgoritmo 7 10000 >>ArbolT.txt
-./PruebasAlgoritmo 7 50000 >>ArbolT.txt
-./PruebasAlgoritmo 7 100000 >>ArbolT.txt 
-./PruebasAlgoritmo 7 125000 >>ArbolT.txt 
-./PruebasAlgoritmo 7 175000 >>ArbolT.txt 
-./PruebasAlgoritmo 7 200000 >>ArbolT.txt
-./PruebasAlgoritmo 7 225000 >>ArbolT.txt
-./PruebasAlgoritmo 7 275000 >>ArbolT.txt
-./PruebasAlgoritmo 7 300000 >>ArbolT.txt
-./PruebasAlgoritmo 7 325000 >>ArbolT.txt
-./PruebasAlgoritmo 7 375000 >>ArbolT.txt
-./PruebasAlgoritmo 7 400000 >>ArbolT.txt
-./PruebasAlgoritmo 7 425000 >>ArbolT.txt
-./PruebasAlgoritmo 7 500000 >>ArbolT.txt
-# ./PruebasAlgoritmo 7 600000 >>ArbolT.txt
-# ./PruebasAlgoritmo 7 800000 >>ArbolT.txt
-# ./PruebasAlgoritmo 7 1000000 >>ArbolT.txt
-# ./PruebasAlgoritmo 7 2000000 >>ArbolT.txt
-# ./PruebasAlgoritmo 7 3000000 >>ArbolT.txt
-# ./PruebasAlgoritmo 7 4000000 >>ArbolT.txt
-# ./PruebasAlgoritmo 7 5000000 >>ArbolT.txt
-# ./PruebasAlgoritmo 7 6000000 >>ArbolT.txt
-# ./PruebasAlgoritmo 7 7000000 >>ArbolT.txt
-# ./PruebasAlgoritmo 7 8000000 >>ArbolT.txt
-# ./PruebasAlgoritmo 7 9000000 >>ArbolT.txt
-# ./PruebasAlgoritmo 7 10000000 >>ArbolT.txt
+./mainLin 7 100 >ArbolT.txt
+./mainLin 7 1000 >>ArbolT.txt
+./mainLin 7 5000 >>ArbolT.txt
+./mainLin 7 10000 >>ArbolT.txt
+./mainLin 7 50000 >>ArbolT.txt
+./mainLin 7 100000 >>ArbolT.txt 
+./mainLin 7 125000 >>ArbolT.txt 
+./mainLin 7 175000 >>ArbolT.txt 
+./mainLin 7 200000 >>ArbolT.txt
+./mainLin 7 225000 >>ArbolT.txt
+./mainLin 7 275000 >>ArbolT.txt
+./mainLin 7 300000 >>ArbolT.txt
+./mainLin 7 325000 >>ArbolT.txt
+./mainLin 7 375000 >>ArbolT.txt
+./mainLin 7 400000 >>ArbolT.txt
+./mainLin 7 425000 >>ArbolT.txt
+./mainLin 7 500000 >>ArbolT.txt
+# ./mainLin 7 600000 >>ArbolT.txt
+# ./mainLin 7 800000 >>ArbolT.txt
+# ./mainLin 7 1000000 >>ArbolT.txt
+# ./mainLin 7 2000000 >>ArbolT.txt
+# ./mainLin 7 3000000 >>ArbolT.txt
+# ./mainLin 7 4000000 >>ArbolT.txt
+# ./mainLin 7 5000000 >>ArbolT.txt
+# ./mainLin 7 6000000 >>ArbolT.txt
+# ./mainLin 7 7000000 >>ArbolT.txt
+# ./mainLin 7 8000000 >>ArbolT.txt
+# ./mainLin 7 9000000 >>ArbolT.txt
+# ./mainLin 7 10000000 >>ArbolT.txt
 
 
 
