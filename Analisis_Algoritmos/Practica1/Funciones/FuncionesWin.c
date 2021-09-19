@@ -1,8 +1,8 @@
-// Funciones Algoritmos de Ordenamiento
+// Programa Principal de implementacion de funciones para ser usadas en Windows
 // 3CM12
 // Analisis de Algoritmos
-// Autores: Mora Ayala Jose, Antonio, 
-//Para trabajar con linux quita lo que esta comentado
+// Autores: Mora Ayala Jose, Antonio, Lopez Lopez Oscar Manual
+// Jeon Jeong Paola, Lemus Ruiz Mariana ELizabeth 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -10,6 +10,12 @@
 #include "../Arbol/Arbol.h"
 #include "../Arbol/Arbol.c"
 #include <stdbool.h>
+
+
+// Uso: LeerArchivo(int *A,int n);
+// Realiza la lectura del archivo de 10 millones de numeros
+// A: Arreglo de numeros no vacio (Obligatorio)
+// n: Cantidad de elementos que queremos tomar (Obligatorio)
 int *LeerArchivo(int *A, int n)
 {
     int i;
@@ -26,6 +32,11 @@ int *LeerArchivo(int *A, int n)
     fclose(numeros);
 }
 
+
+    // Uso: Burbuja(int *A,int n);
+    // Realiza el ordenamiento de tipo burbuja
+    //A: Arreglo de numeros no vacio (Obligatorio)
+    // n: Cantidad de elementos del arreglo (Obligatorio)
 void Burbuja(int *A, int n)
 {
     int i, j, aux;
@@ -43,7 +54,10 @@ void Burbuja(int *A, int n)
     }
     imprimirArreglo(A, n);
 }
-
+    // Uso: BurbujaOptimizada(int *A,int n);
+    // Realiza el ordenamiento de tipo burbuja Optimizada 1
+    // A: Arreglo de numeros no vacio (Obligatorio)
+    // n: Cantidad de elementos del arreglo (Obligatorio)
 void BurbujaOptimizada(int *A, int n)
 {
     int i, j, aux;
@@ -61,7 +75,10 @@ void BurbujaOptimizada(int *A, int n)
     }
     imprimirArreglo(A, n);
 }
-
+    // Uso: imprimeArreglo (A,n);
+    // Imprime el arreglo ordenado
+    // A: Arreglo de elementos no vacío (Obligatorio)
+    // n: longitud del arreglo 
 void Burbuja2(int *A, int n)
 {
     bool cambio = true;
@@ -84,7 +101,10 @@ void Burbuja2(int *A, int n)
     }
     imprimirArreglo(A, n);
 }
-
+    // Uso: Insercion(A,n);
+    // Realiza el ordenamiento de tipo Insercion 
+    // A: Arreglo de numeros no vacio (Obligatorio)
+    // n: Cantidad de elementos del arreglo (Obligatorio)
 void Insercion(int *A, int n)
 {
     int i, j, temp;
@@ -101,7 +121,10 @@ void Insercion(int *A, int n)
     }
     imprimirArreglo(A, n);
 }
-
+    // Uso: Selection(A,n)
+    // Realiza el ordenamiento de la forma de Seleccion
+    // A: Arreglo de numeros no vacio (Obligatorio)
+    // n: Cantidad de elementos del arreglo (Obligatorio)
 void Selection(int *A, int n)
 {
     int i, k, p, temp;
@@ -119,7 +142,10 @@ void Selection(int *A, int n)
     }
     imprimirArreglo(A, n);
 }
-
+    // Uso: Shell(A,n);
+    // Realiza el ordenamiento de Tipo Shell
+    // A: Arreglo de elementos no vacío (Obligatorio)
+    // n: longitud del arreglo 
 void Shell(int *A, int n)
 {
     int i, j, k, b, temp;
@@ -151,7 +177,11 @@ int parteEntera(double n)
     double entero = floor(n);
     return (int)entero;
 }
-
+    // Uso: MergeSort(A,0,n-1)
+    // Realiza el ordenamiento de elementos de forma recursiva 
+    // A: Arreglo de elementos no vacio
+    // p : Primera posicion 
+    // r = n-1 (tamaño del arreglo menos una posicion, por la forma en que se indexa) 
 void MergeSort(int *A, int p, int r)
 {
     if (p < r)
@@ -162,7 +192,10 @@ void MergeSort(int *A, int p, int r)
         Merge(A, p, q, r);
     }
 }
-
+    // A: Arreglo de elementos no vacio
+    // p: posicion del primer elemento
+    // q: Parte entera obtenida a partir de la division de p/r realizada en la implementacion de la funcion
+    // r: ultima posicion 
 void Merge(int *A, int p, int q, int r)
 {
     int l = r - p + 1, i = p, j = q + 1, k, *C;
@@ -200,7 +233,13 @@ void Merge(int *A, int p, int q, int r)
     }
     free(C);
 }
-
+    // Uso: QuickSort2(A,0,n-1) 
+    // Realiza el ordenamiento mediante QuickSort, el cual funciona de manera recursiva, recibe un arreglo
+    // no vacio, asi como la cantidad de elementos que contiene -1 (debido a que buscamos obtener la
+    // utlima posicion)
+    // A: Arreglo de elementos no vacio
+    // i  (primer elemento) con respecto al cual queremos realizar el ordenamiento (en este caso 0)
+    // n -1 : Tamaño del arreglo - 1
 void Quicksort2(int *A, int primero, int ultimo)
 {
     int piv, i, j, central, aux;
@@ -234,6 +273,7 @@ void Quicksort2(int *A, int primero, int ultimo)
         Quicksort2(A, i, ultimo);
     }
 }
+    // Recibe un arreglo y tamaño del arreglo
 
 void ArbolBinario(int *A, int n)
 {
@@ -241,6 +281,8 @@ void ArbolBinario(int *A, int n)
     imprimirArreglo(A, n);
 }
 
+// Permite realizar la seleccion de alguno de los algoritmos conforme al parametro que fue 
+// seleccionado al momento de ejecutar el programa 
 void MenuSeleccion(int *A, int n, int opc)
 {
     switch (opc)
@@ -287,7 +329,10 @@ void MenuSeleccion(int *A, int n, int opc)
         break;
     }
 }
-
+    // Uso: imprimeArreglo (A,n);
+    // Imprime el arreglo ordenado
+    // A: Arreglo de elementos no vacío (Obligatorio)
+    // n: longitud del arreglo 
 void imprimirArreglo(int *A, int n)
 {
     int aux = 1;

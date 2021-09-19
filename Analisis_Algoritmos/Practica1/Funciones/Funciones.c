@@ -1,17 +1,20 @@
-// Funciones Algoritmos de Ordenamiento
+// Funciones para ser usado en Linux
+// Si este archivo es visualizado desde Windows marcara un error con el include 
+// de la medicion de tiempos, pues estamos ocupando funciones exclusivas de 
+// Linux (Por favor pasa a mainWin)
 // 3CM12
 // Analisis de Algoritmos
-// Autores: Mora Ayala Jose, Antonio, 
-//Para trabajar con linux quita lo que esta comentado
+// Autores: Mora Ayala Jose, Antonio, Lopez Lopez Oscar Manual
+// Jeon Jeong Paola, Lemus Ruiz Mariana ELizabeth 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-// #include "../MediciondeTiempos/tiempo.c"
 #include "Funciones.h"
 #include "../Arbol/Arbol.h"
 #include "../Arbol/Arbol.c"
 #include <stdbool.h>
-double utime0, stime0, wtime0, utime1, stime1, wtime1; //Variables para medición de tiempos
+//Variables para medición de tiempos
+double utime0, stime0, wtime0, utime1, stime1, wtime1; 
 int *LeerArchivo(int *A, int n)
 {
     int i;
@@ -167,7 +170,6 @@ void Shell(int *A, int n)
         k = ceil(k / 2);
     }
     uswtime(&utime1, &stime1, &wtime1);
-
     // imprimirArreglo(A, n);
     ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
 }
@@ -310,7 +312,6 @@ void MenuSeleccion(int *A, int n, int opc)
         MergeSort(A, 0, n - 1);
         uswtime(&utime1, &stime1, &wtime1);
         ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
-
         // imprimirArreglo(A, n);
         break;
     case 9:
@@ -318,7 +319,6 @@ void MenuSeleccion(int *A, int n, int opc)
         uswtime(&utime0, &stime0, &wtime0);
         Quicksort2(A, 0, n - 1);
         uswtime(&utime1, &stime1, &wtime1);
-
         ImprimirTiempos(utime0, stime0, wtime0, utime1, stime1, wtime1);
 
         // imprimirArreglo(A, n);

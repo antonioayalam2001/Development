@@ -1,7 +1,13 @@
+// Archivo de cabecera de las funciones
+// 3CM12
+// Analisis de Algoritmos
+// Autores: Mora Ayala Jose, Antonio, Lopez Lopez Oscar Manual
+// Jeon Jeong Paola, Lemus Ruiz Mariana ELizabeth 
 #ifndef Funciones
 #define Funciones
 // Documentar Funciones
 int *LeerArchivo(int *A, int n);
+    // 
     // Realiza la lectura del archivo de 10 millones de numeros 
     // Uso: LeerArchivo(int *A,int n);
     // A: Arreglo de numeros no vacio (Obligatorio)
