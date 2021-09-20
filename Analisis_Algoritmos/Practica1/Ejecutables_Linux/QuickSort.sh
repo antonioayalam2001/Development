@@ -2,7 +2,7 @@
 echo Estas apunto de ejecutar el programa: QuickSort
 cd ..
 gcc mainLin.c -lm -o mainLin
-
+./mainLin
 ./mainLin 9 100 >QST.txt
 ./mainLin 9 1000 >>QST.txt
 ./mainLin 9 5000 >>QST.txt

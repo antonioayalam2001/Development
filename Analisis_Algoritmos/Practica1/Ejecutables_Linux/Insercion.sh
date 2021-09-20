@@ -2,7 +2,7 @@
 echo Estas apunto de ejecutar el programa: Insercion
 cd ..
 gcc mainLin.c -lm -o mainLin
-
+./mainLin
 ./mainLin 4 100 >InsercionT.txt
 ./mainLin 4 1000 >>InsercionT.txt
 ./mainLin 4 5000 >>InsercionT.txt

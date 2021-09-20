@@ -2,7 +2,7 @@
 echo Estas apunto de ejecutar el programa: Seleccion
 cd ..
 gcc mainLin.c -lm -o mainLin
-
+./mainLin
 ./mainLin 5 100 >SelectT.txt
 ./mainLin 5 1000 >>SelectT.txt
 ./mainLin 5 5000 >>SelectT.txt

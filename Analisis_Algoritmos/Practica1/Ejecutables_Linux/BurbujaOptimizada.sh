@@ -2,7 +2,7 @@
 echo Estas apunto de ejecutar el programa: Burbuja BurbujaOptimizada
 cd ..
 gcc mainLin.c -lm -o mainLin
-
+./mainLin
 ./mainLin 2 100 >BurbujaOT.txt
 ./mainLin 2 1000 >>BurbujaOT.txt
 ./mainLin 2 5000 >>BurbujaOT.txt

@@ -2,7 +2,7 @@
 echo Estas apunto de ejecutar el programa: Shell
 cd ..
 gcc mainLin.c -lm -o mainLin
-
+./mainLin
 ./mainLin 6 100 >ShellT.txt
 ./mainLin 6 1000 >>ShellT.txt
 ./mainLin 6 5000 >>ShellT.txt

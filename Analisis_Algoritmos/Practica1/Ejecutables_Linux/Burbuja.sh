@@ -2,7 +2,7 @@
 echo Estas apunto de ejecutar el programa:Burbuja Simple
 cd ..
 gcc mainLin.c -lm -o mainLin
-
+./mainLin
 ./mainLin 1 100 >BurbujaT.txt
 ./mainLin 1 1000 >>BurbujaT.txt
 ./mainLin 1 5000 >>BurbujaT.txt

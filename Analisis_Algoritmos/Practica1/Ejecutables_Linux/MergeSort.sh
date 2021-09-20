@@ -2,7 +2,7 @@
 echo Estas apunto de ejecutar el programa: MergeSort
 cd ..
 gcc mainLin.c -lm -o mainLin
-
+./mainLin
 ./mainLin 8 100 >MergeT.txt
 ./mainLin 8 1000 >>MergeT.txt
 ./mainLin 8 5000 >>MergeT.txt

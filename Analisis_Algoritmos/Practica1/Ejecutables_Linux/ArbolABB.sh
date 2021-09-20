@@ -2,7 +2,7 @@
 echo Estas apunto de ejecutar el programa: ArbolABB
 cd ..
 gcc mainLin.c -lm -o mainLin
-
+./mainLin
 ./mainLin 7 100 >ArbolT.txt
 ./mainLin 7 1000 >>ArbolT.txt
 ./mainLin 7 5000 >>ArbolT.txt
