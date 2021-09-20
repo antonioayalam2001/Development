@@ -20,9 +20,9 @@ gcc mainLin.c -lm -o mainLin
 ./mainLin 7 400000 >>ArbolT.txt
 ./mainLin 7 425000 >>ArbolT.txt
 ./mainLin 7 500000 >>ArbolT.txt
-# ./mainLin 7 600000 >>ArbolT.txt
-# ./mainLin 7 800000 >>ArbolT.txt
-# ./mainLin 7 1000000 >>ArbolT.txt
+./mainLin 7 600000 >>ArbolT.txt
+./mainLin 7 800000 >>ArbolT.txt
+./mainLin 7 1000000 >>ArbolT.txt
 # ./mainLin 7 2000000 >>ArbolT.txt
 # ./mainLin 7 3000000 >>ArbolT.txt
 # ./mainLin 7 4000000 >>ArbolT.txt

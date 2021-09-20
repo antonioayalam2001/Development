@@ -20,13 +20,13 @@ gcc mainLin.c -lm -o mainLin
 ./mainLin 2 400000 >>BurbujaOT.txt
 ./mainLin 2 425000 >>BurbujaOT.txt
 ./mainLin 2 500000 >>BurbujaOT.txt
-# ./mainLin 2 3000000 >>BurbujaOT.txt
-# ./mainLin 2 4000000 >>BurbujaOT.txt
-# ./mainLin 2 5000000 >>BurbujaOT.txt
-# ./mainLin 2 6000000 >>BurbujaOT.txt
-# ./mainLin 2 7000000 >>BurbujaOT.txt
-# ./mainLin 2 8000000 >>BurbujaOT.txt
-# ./mainLin 2 9000000 >>BurbujaOT.txt
-# ./mainLin 2 10000000 >>BurbujaOT.txt
+./mainLin 2 3000000 >>BurbujaOT.txt
+./mainLin 2 4000000 >>BurbujaOT.txt
+./mainLin 2 5000000 >>BurbujaOT.txt
+./mainLin 2 6000000 >>BurbujaOT.txt
+./mainLin 2 7000000 >>BurbujaOT.txt
+./mainLin 2 8000000 >>BurbujaOT.txt
+./mainLin 2 9000000 >>BurbujaOT.txt
+./mainLin 2 10000000 >>BurbujaOT.txt
 
 

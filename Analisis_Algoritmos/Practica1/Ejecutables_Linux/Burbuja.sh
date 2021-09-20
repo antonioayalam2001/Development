@@ -20,9 +20,9 @@ gcc mainLin.c -lm -o mainLin
 ./mainLin 1 400000 >>BurbujaT.txt
 ./mainLin 1 425000 >>BurbujaT.txt
 ./mainLin 1 500000 >>BurbujaT.txt
-# ./mainLin 1 600000 >>BurbujaT.txt
-# ./mainLin 1 800000 >>BurbujaT.txt
-# ./mainLin 1 1000000 >>BurbujaT.txt
+./mainLin 1 600000 >>BurbujaT.txt
+./mainLin 1 800000 >>BurbujaT.txt
+./mainLin 1 1000000 >>BurbujaT.txt
 # ./mainLin 1 2000000 >>BurbujaT.txt
 # ./mainLin 1 3000000 >>BurbujaT.txt
 # ./mainLin 1 4000000 >>BurbujaT.txt
