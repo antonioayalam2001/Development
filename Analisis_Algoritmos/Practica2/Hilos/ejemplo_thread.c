@@ -14,7 +14,8 @@
 #include <pthread.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include "tiempo.h"
+#include "tiempo.c"
+#include "lector.c"
 
 //*****************************************************************
 //VARIABLES GLOBALES

@@ -9,7 +9,8 @@
  * */
 #include <pthread.h>
 #include <stdlib.h>
-#include "arbol.h"
+#include "Arbol.c"
+#include "Funciones.h"
 
 // Estructura auxiliar para la búsqueda
 // en árbol con hilos

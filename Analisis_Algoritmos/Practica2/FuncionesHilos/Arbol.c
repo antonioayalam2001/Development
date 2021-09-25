@@ -1,4 +1,4 @@
-#include "arbol.h"
+#include "Arbol.h"
 #include <stdlib.h>
 #include <stdio.h>
 

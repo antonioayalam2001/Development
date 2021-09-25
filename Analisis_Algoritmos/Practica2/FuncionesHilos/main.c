@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "./Tiempo/tiempo.h"
+#include "../Tiempo/tiempo.c"
+#include "Funciones.c"
 #include "Funciones.h"
+#include "lector.c"
 
-#define N 20
-#define TOTALARCHIVO 200000
+#define N 10
+#define TOTALARCHIVO 10
 
 
 void Shell(int * array, int n);
@@ -21,10 +23,7 @@ int main(int argc, char** argv)
 
 	int cantidadABuscar = N;
 	int numerosABuscar[N] = 
-	{	89344946,14700764,595857862,1872304343,
-		4480, 	61396, 2147472445, 2147445644, 1048955290,
-		450057883, 187645041, 1980098116, 152503, 5000, 7500,
-		214826, 15000, 1360839354, 559833307, 865429016};
+	{1,2,3,4,5,6,7,8,9,10};
 
 	// El tamano del arreglo a procesar
 	int cantidadNumeros = atoi(argv[1]);
