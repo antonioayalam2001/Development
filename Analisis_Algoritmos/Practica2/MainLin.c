@@ -5,6 +5,7 @@
 // Jeon Jeong Paola, Lemus Ruiz Mariana ELizabeth 
 
 #include "./Funciones/Funciones.c"
+#include "./Funciones/FuncionesH.c"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

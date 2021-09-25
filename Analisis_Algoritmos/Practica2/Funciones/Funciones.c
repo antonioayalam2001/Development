@@ -10,10 +10,10 @@
 #include<math.h>
 #include "../Arbol/Arbol.c"
 // //          Busqueda Lineal           // //
-// //
-// //
-// //
-// //
+// //Recibe:
+// //Devuelve:
+// //Funcion:
+// //Uso:
 // //
 int BusquedaLineal(int *A, int n, int elem){
     //- Variables para el ciclo
@@ -93,7 +93,6 @@ int min(int x, int y) { return (x <= y) ? x : y; }
 /* Returns index of x if present,  else returns -1 */
 int fibMonaccianSearch(int *A, int x, int n)
 {
-    /* Initialize fibonacci numbers */
     int fibMMm2 = 0; // (m-2)'th Fibonacci No.
     int fibMMm1 = 1; // (m-1)'th Fibonacci No.
     int fibM = fibMMm2 + fibMMm1; // m'th Fibonacci
@@ -152,21 +151,25 @@ int fibMonaccianSearch(int *A, int x, int n)
 // //
 // //
 // //
-void BusquedaEnArbol(int * arreglo, int n, int valorABuscar, int * bandera)
-{
-	// Variable para "almacenar" el árbol
-	arbol t;
-	// Creamos nuestro árbols
-	Iniciar(&t);
-	// Rellenamos el arbol
-	int ix;
-	for(ix=0;ix < n; ix++)
-	{
-		NuevoNodo(&t,arreglo[ix]);
-	}
-	// Lanzamos la búsqueda sin hilos
-	BuscaValor(&t, valorABuscar, bandera);
-}
+// void BusquedaEnArbol(int * arreglo, int n, int valorABuscar, int * bandera)
+// {
+// 	// Variable para "almacenar" el árbol
+// 	arbol t;
+// 	// Creamos nuestro árbols
+// 	Iniciar(&t);
+// 	// Rellenamos el arbol
+// 	int ix;
+// 	for(ix=0;ix < n; ix++)
+// 	{
+// 		NuevoNodo(&t,arreglo[ix]);
+// 	}
+// 	// Lanzamos la búsqueda sin hilos
+// 	BuscaValor(&t, valorABuscar, bandera);
+// }
+
+
+
+
 
 // . Menu de seleccion
 void MenuSeleccion(int *A, int n, int elem ,int opc)
@@ -193,8 +196,13 @@ void MenuSeleccion(int *A, int n, int elem ,int opc)
         break;
     case 5:
         puts("Metodo de Busqueda Arbol");
-        BusquedaEnArbol(A, n, elem,&encontrado);
+        // BusquedaEnArbol(A, n, elem,&encontrado);
+        A=InsertarABB(A,n);
         break;
+    case 6:
+        puts("Lineal Hilos");
+        int encontrado = -1;
+        BusquedaLinealHilos(A,elem,0,n-1,&encontrado);
     default:
         break;
     }
@@ -205,7 +213,7 @@ int *LeerArchivo(int *A, int n)
 {
     int i;
     FILE *numeros;
-    numeros = fopen("numeros10millones.txt", "r");
+    numeros = fopen("10millones.txt", "r");
     if (numeros == NULL)
     {
         puts("Error en la apertura del archivo");
