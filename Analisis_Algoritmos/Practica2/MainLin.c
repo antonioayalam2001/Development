@@ -24,7 +24,15 @@ int main(int argc, char const *argv[])
     //- int *Arreglo;
     int Arreglo[8]={1,2,3,4,5,6,7,8};
     int encontrado=-1;
+    
+
+
     BusquedaLinealHilos(Arreglo,3,0,8,&encontrado);
+    if (encontrado>0)
+    {
+            printf("Si entre");
+    }
+    
 
 
     
