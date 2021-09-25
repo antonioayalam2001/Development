@@ -1,6 +1,8 @@
 #include "FuncionesH.h"
 #include <pthread.h>
 #include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 // Estructura auxiliar para la búsqueda
 // lineal
 typedef struct auxiliarBusquedaLineal{
