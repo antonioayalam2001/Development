@@ -56,3 +56,33 @@ void BusquedaLinealHilos(int * arreglo, int valorABuscar, int inicio, int final,
 		free(thread);
 	}	
 }
+
+// . Menu de seleccion
+void MenuSeleccion(int *A, int n, int elem ,int opc)
+{
+    int encontrado=-1;
+    switch (opc)
+    {
+    case 1:
+        puts("Metodo de Lineal");
+        break;
+    case 2:
+        puts("Metodo de Busqueda Binaria");
+        break;
+    case 3:
+        puts("Metodo de Busqueda Exponencial");
+        break;
+    case 4:
+        puts("Metodo de Busqueda Fibbonacci");
+        break;
+    case 5:
+        puts("Metodo de Busqueda Arbol");
+        // BusquedaEnArbol(A, n, elem,&encontrado);
+        break;
+    case 6:
+        puts("Lineal Hilos");
+        BusquedaLinealHilos(A,elem,0,n-1,&encontrado);
+    default:
+        break;
+    }
+}
