@@ -11,9 +11,35 @@ typedef struct auxiliarBusquedaLineal{
 	int * encontrado;
 }AuxiliarLineal;
 // Prototipos internos
-void * procesarBusquedaArbol(void* busqueda);
-void * procesarBusquedaBinaria(void* busqueda);
+
 void * procesarBusquedaLineal(void* busqueda);
+//  * Función que busca en un arreglo mediante el uso
+//  * del algoritmo de búsqueda secuencial
+//  * Parámetros:
+//  *	arreglo - el arreglo en el que se desea buscar
+//  *	valorABuscar - el valor a buscar dentro del arreglo
+//  * 	inicio - el punto inicial del segmento dentro del arreglo para buscar
+//  * 	final - el punto final del segmento dentro del arreglo para buscar
+//  *	bandera - nos indicará si el valor fue encontrado
+//  *
+//  * */	
+void BusquedaLineal(int * arreglo, int valorABuscar, int inicio, int final, int * encontrado)
+{
+	int n;
+	for(n = inicio; n < final; n++)
+	{
+		if(*encontrado >= 0)
+		{
+			break;
+		}
+		if (arreglo[n] == valorABuscar )
+		{ 
+			*encontrado=valorABuscar;
+      		}
+	}
+}
+
+
 void BusquedaLinealHilos(int * arreglo, int valorABuscar, int inicio, int final, int * encontrado)
 {
 	int puntoMedio = (final - inicio) / 2;
