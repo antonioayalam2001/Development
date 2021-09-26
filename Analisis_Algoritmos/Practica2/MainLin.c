@@ -20,7 +20,7 @@
 int main(int argc, char const *argv[])
 {
     double utime0, stime0, wtime0, utime1, stime1, wtime1; //Variables para medición de tiempos
-    int i,l,m,n;                                                 //Variables para loops
+    int i,l,m;                                                 //Variables para loops
     // int *Arreglo;
     int n = 100, opc, *A;
     //- int *Arreglo;
