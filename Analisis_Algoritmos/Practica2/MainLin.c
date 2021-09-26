@@ -22,17 +22,34 @@ int main(int argc, char const *argv[])
     // int *Arreglo;
     int n=100,opc,*A;
     //- int *Arreglo;
-    int Arreglo[10]={1,2,3,4,5,6,7,8,9,10};
+    int Arreglo[4]={197,236,485,902};
     int aviso= -1;
 
-    // !Tratando de leer el archivo
+    int j;
     A=(int*)malloc(n*sizeof(int));
 
     LeerArchivo(A, 100);
-    BusquedaLinealHilos(A,11560,0,n,&aviso);
+    for ( j = 0; j < 4; j++)
+    {
+        BusquedaLinealHilos(A,Arreglo[j],0,n,&aviso);
+        if (aviso>0)
+        {
+            printf("Lo encontre 1");
+        }
+
+        aviso=-1;
+        
+    }
+    
 
 
-    // !
+    // -Tratando de leer el archivo (Ya funciona asi)
+    // A=(int*)malloc(n*sizeof(int));
+
+    // LeerArchivo(A, 100);
+    // BusquedaLinealHilos(A,11560,0,n,&aviso);
+
+    // -
 
     // - Pruebas normales funcionando 
     // BusquedaLinealHilos(Arreglo,7,0,n,&aviso);
