@@ -112,7 +112,6 @@ void BusquedaBinaria(int *A,int inicio, int final,int elem,int *aviso){
         {
 			*aviso=elem;			
             printf("Enontraste el emento en la posicion:");
-			pthread_exit(NULL);
 
         }
 }
