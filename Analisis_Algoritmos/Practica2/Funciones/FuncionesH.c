@@ -103,17 +103,17 @@ void BusquedaBinaria(int *A,int inicio, int final,int elem,int *aviso){
     while (inicio<=final)
     {
         mitad=(inicio + final)/2;
-        if (A[mitad]==elem)
-        {
-			*aviso=elem;			
-            printf("Enontraste el emento en la posicion: %d\n",mitad);
-			break;
-        }
         if (A[mitad]<elem)
             {inicio=mitad+1;}
         else{final=mitad-1;}        
         
     }    
+        if (A[mitad]==elem)
+        {
+			*aviso=elem;			
+            printf("Enontraste el emento en la posicion: %d");
+			break;
+        }
 }
 
 // // Busqueda Binaria Hilos // //
