@@ -92,6 +92,26 @@ int main(int argc, char const *argv[])
 
         aviso = -1;
     }
+    m=0;
+        for (m = 0; m < 4; m++)
+    {
+        uswtime(&utime0, &stime0, &wtime0);
+        BusquedaBinariaHilos(A,0,n, Arreglo[m], &aviso);
+        uswtime(&utime1, &stime1, &wtime1);
+
+        if (aviso > 0)
+        {
+            printf("BH %d\n",m);
+            printf("\n");
+            printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
+            printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
+            printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
+            printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+            printf("\n");
+        }
+
+        aviso = -1;
+    }
 
 
     return 0;
