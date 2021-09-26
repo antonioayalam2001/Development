@@ -94,25 +94,25 @@ int main(int argc, char const *argv[])
     }
     int h;
     h=0;
-        for (h = 0; h < 4; h++)
-    {
-        uswtime(&utime0, &stime0, &wtime0);
+    //     for (h = 0; h < 4; h++)
+    // {
+    //     uswtime(&utime0, &stime0, &wtime0);
         BusquedaBinariaHilos(A,0,n, Arreglo[h], &aviso);
-        uswtime(&utime1, &stime1, &wtime1);
+    //     uswtime(&utime1, &stime1, &wtime1);
 
-        if (aviso > 0)
-        {
-            printf("BH %d\n",h);
-            printf("\n");
-            printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
-            printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
-            printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
-            printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
-            printf("\n");
-        }
+    //     if (aviso > 0)
+    //     {
+    //         printf("BH %d\n",h);
+    //         printf("\n");
+    //         printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
+    //         printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
+    //         printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
+    //         printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+    //         printf("\n");
+    //     }
 
-        aviso = -1;
-    }
+    //     aviso = -1;
+    // }
 
 
     return 0;
