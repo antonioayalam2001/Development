@@ -20,7 +20,7 @@
 int main(int argc, char const *argv[])
 {
     // int *Arreglo;
-    int n=10,opc,*A;
+    int n=100,opc,*A;
     //- int *Arreglo;
     int Arreglo[10]={1,2,3,4,5,6,7,8,9,10};
     int aviso= -1;
@@ -29,7 +29,7 @@ int main(int argc, char const *argv[])
     A=(int*)malloc(n*sizeof(int));
 
     LeerArchivo(A, 100);
-    BusquedaLinealHilos(A,8028,0,100,&aviso);
+    BusquedaLinealHilos(A,11560,0,n,&aviso);
 
 
     // !
