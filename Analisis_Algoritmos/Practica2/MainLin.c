@@ -20,7 +20,7 @@
 int main(int argc, char const *argv[])
 {
     double utime0, stime0, wtime0, utime1, stime1, wtime1; //Variables para medición de tiempos
-    int i;                                                 //Variables para loops
+    int i,l,m,n;                                                 //Variables para loops
     // int *Arreglo;
     int n = 100, opc, *A;
     //- int *Arreglo;
@@ -31,6 +31,26 @@ int main(int argc, char const *argv[])
     A = (int *)malloc(n * sizeof(int));
 
     LeerArchivo(A, 100);
+
+    for (m = 0; m < 4; m++)
+    {
+        uswtime(&utime0, &stime0, &wtime0);
+        BusquedaLineal(A,0,n, Arreglo[m], &aviso);
+        uswtime(&utime1, &stime1, &wtime1);
+
+        if (aviso > 0)
+        {
+            printf("Lineal",m);
+            printf("\n");
+            printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
+            printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
+            printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
+            printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+            printf("\n");
+        }
+
+        aviso = -1;
+    }
     for (j = 0; j < 4; j++)
     {
         uswtime(&utime0, &stime0, &wtime0);
@@ -39,7 +59,7 @@ int main(int argc, char const *argv[])
 
         if (aviso > 0)
         {
-            printf("Vuelta numero 1",j);
+            printf("Lineal Hilos",j);
             printf("\n");
             printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
             printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
