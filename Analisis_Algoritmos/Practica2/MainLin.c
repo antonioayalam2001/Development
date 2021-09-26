@@ -22,7 +22,7 @@ int main(int argc, char const *argv[])
     // int *Arreglo;
     int n=100,opc,*A;
     //- int *Arreglo;
-    int Arreglo[4]={197,236,485,902};
+    int Arreglo[4]={197,236,3035,902};
     int aviso= -1;
 
     int j;
