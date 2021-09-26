@@ -105,7 +105,8 @@ void BusquedaBinaria(int *A,int inicio, int final,int elem,int *aviso){
         mitad=(inicio + final)/2;
         if (A[mitad]==elem)
         {
-            printf("Enontraste el emento en la posicion: %d",mitad);
+			*aviso=elem;			
+            printf("Enontraste el emento en la posicion: %d\n",mitad);
 			break;
         }
         if (A[mitad]<elem)
@@ -127,13 +128,13 @@ void BusquedaBinariaHilos(int * A, int valorABuscar, int inicio, int final, int 
 		pthread_t *hilo;
 		hilo= malloc (2*sizeof(pthread_t));
 		//- Repartiendo el arreglo mediante el uso de las estructuras que creamos
-		AuxiliarLineal *der= (AuxiliarLineal *)malloc(sizeof(AuxiliarLineal));
+		AuxiliarBinaria *der= (AuxiliarBinaria *)malloc(sizeof(AuxiliarBinaria));
 			der->arrelgo=A;
 			der->valorABuscar= valorABuscar;
 			der->inicio=puntomedio+1;
 			der->final=final;
 			der->encontrado=aviso;
-		AuxiliarLineal *izq= (AuxiliarLineal *)malloc(sizeof(AuxiliarLineal));
+		AuxiliarBinaria *izq= (AuxiliarBinaria *)malloc(sizeof(AuxiliarBinaria));
 			izq->arrelgo=A;
 			izq->valorABuscar= valorABuscar;
 			izq->inicio=inicio;
@@ -142,12 +143,12 @@ void BusquedaBinariaHilos(int * A, int valorABuscar, int inicio, int final, int 
 
 		// -Creando los Hilos
 		//- La funcion naturalmente devuelve 0 en caso de que el hilo se haya creado de forma exitosa, de lo contrario devolvera otro valor
-		if (pthread_create(&hilo[0],NULL,lanzarBusquedaLineal,(void*)izq)!=0)
+		if (pthread_create(&hilo[0],NULL,lanzarBusquedaBinaria,(void*)izq)!=0)
 		{
 			perror("El hilo nos e pudo crear");
 			exit(-1);
 		}
-		if (pthread_create(&hilo[1],NULL,lanzarBusquedaLineal,(void*)der)!=0)
+		if (pthread_create(&hilo[1],NULL,lanzarBusquedaBinaria,(void*)der)!=0)
 		{
 			perror("El hilo nos e pudo crear");
 			exit(-1);
@@ -265,7 +266,7 @@ void * lanzarBusquedaLineal(void* busqueda)
 
 void * lanzarBusquedaBinaria(void* busqueda){
 	AuxiliarBinaria *a = (AuxiliarBinaria *)busqueda;
-	BusquedaLineal(a->arrelgo,a->inicio,a->final,a->valorABuscar,a->encontrado);
+	BusquedaBinaria(a->arrelgo,a->inicio,a->final,a->valorABuscar,a->encontrado);
 }
 
 
