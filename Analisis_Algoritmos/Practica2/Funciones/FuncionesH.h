@@ -12,7 +12,7 @@ void MenuSeleccion(int *A, int n, int elem ,int opc);
 // //Funcion: 
 // //Uso:
 // //
-int BusquedaLineal(int *A, int inicio ,int final, int elemn, int *aviso);
-void BusquedaLinealHilos(int * A, int valorABuscar, int inicio, int final, int * encontrado);
+void BusquedaLineal(int *A, int inicio ,int final, int elemn, int *aviso);
+void BusquedaLinealHilos(int * A, int valorABuscar, int inicio, int final, int * aviso);
 
 #endif

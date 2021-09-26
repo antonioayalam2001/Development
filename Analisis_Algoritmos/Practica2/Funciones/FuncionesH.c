@@ -26,26 +26,28 @@ void * lanzarBusquedaLineal(void* busqueda);
 //  *
 //  * */	
 // // Busqueda Lienal Hilos
-int BusquedaLineal(int *A, int inicio ,int final, int elem, int *aviso){
+void BusquedaLineal(int *A, int inicio ,int final, int elem, int *aviso){
     //- Variables para el ciclo
-    int i;
-    for (i = inicio; i < final; i++)
+    
+    int n;
+    for (n = inicio; n < final; n++)
     {
-        if(A[i]==elem){
-			*aviso=1;
-            printf("El elemento fue encontrado en la posicion numero: %d ", i);
-			if(*aviso!=0){
-				break;
-			}
+
+    	if (*aviso>=0)
+    	{
+    		break;
+    	}
+
+        if(A[n]==elem){
+            printf("El elemento fue encontrado en la posicion numero: %d ", n);
+			*aviso=elem;
         }
-		else{
-		}
+		
     }    
 }
 // // Busqueda Lineal Hilos
-void BusquedaLinealHilos(int * A, int valorABuscar, int inicio, int final, int * encontrado){
-	// - Variables manejo de ciclo for
-	int i;
+void BusquedaLinealHilos(int * A, int valorABuscar, int inicio, int final, int * aviso){
+	
 	// - Variables para el manejo del algoritmo
 	int puntomedio = (final-inicio)/2;
 	if (puntomedio >0)
@@ -54,18 +56,18 @@ void BusquedaLinealHilos(int * A, int valorABuscar, int inicio, int final, int *
 		pthread_t *hilo;
 		hilo= malloc (2*sizeof(pthread_t));
 		//- Repartiendo el arreglo mediante el uso de las estructuras que creamos
-		AuxiliarLineal *der;
+		AuxiliarLineal *der= (AuxiliarLineal *)malloc(sizeof(AuxiliarLineal));
 			der->arrelgo=A;
 			der->valorABuscar= valorABuscar;
-			der->inicio=inicio;
-			der->final=puntomedio;
-			der->encontrado=encontrado;
-		AuxiliarLineal *izq;
+			der->inicio=puntomedio+1;
+			der->final=final;
+			der->encontrado=aviso;
+		AuxiliarLineal *izq= (AuxiliarLineal *)malloc(sizeof(AuxiliarLineal));
 			izq->arrelgo=A;
 			izq->valorABuscar= valorABuscar;
-			izq->inicio=puntomedio+1;
-			izq->final=final;
-			izq->encontrado=encontrado;
+			izq->inicio=inicio;
+			izq->final=puntomedio;
+			izq->encontrado=aviso;
 
 		// -Creando los Hilos
 		//- La funcion naturalmente devuelve 0 en caso de que el hilo se haya creado de forma exitosa, de lo contrario devolvera otro valor
@@ -74,11 +76,13 @@ void BusquedaLinealHilos(int * A, int valorABuscar, int inicio, int final, int *
 			perror("El hilo nos e pudo crear");
 			exit(-1);
 		}
-		if (pthread_create(&hilo[0],NULL,lanzarBusquedaLineal,(void*)der)!=0)
+		if (pthread_create(&hilo[1],NULL,lanzarBusquedaLineal,(void*)der)!=0)
 		{
 			perror("El hilo nos e pudo crear");
 			exit(-1);
 		}
+		// - Variables manejo de ciclo for
+		int i;
 		// - Hace que los hilos terminen y posteriormente se vuelvan a unir al programa principal (Hasta que los hilos acaben acaba todo)
 		// -Si el main termina primero tendra que mantenerse en espera
 		for (i=0; i<2; i++) pthread_join (hilo[i], NULL);
@@ -186,7 +190,7 @@ void MenuSeleccion(int *A, int n, int elem ,int opc)
 void * lanzarBusquedaLineal(void* busqueda)
 {
 	AuxiliarLineal * l = (AuxiliarLineal *)busqueda;
-	BusquedaLineal((l)->arrelgo, (l)->valorABuscar,(l)->inicio, (l)->final, (l)->encontrado);
+	BusquedaLineal(l->arrelgo, l->inicio,l->final, l->valorABuscar, l->encontrado);
     printf("Hola");
 
 }

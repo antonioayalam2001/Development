@@ -22,16 +22,16 @@ int main(int argc, char const *argv[])
     // int *Arreglo;
     int n=10,opc;
     //- int *Arreglo;
-    int Arreglo[8]={1,2,3,4,5,6,7,8};
-    int aviso=-1;
+    int Arreglo[10]={1,2,3,4,5,6,7,8,9,10};
+    int aviso= -1;
     
 
-
-    BusquedaLinealHilos(Arreglo,6,0,8,&aviso);
+    BusquedaLinealHilos(Arreglo,7,0,n,&aviso);
     if (aviso>0)
     {
             printf("Si lo encontre");
     }
+            printf("Si lo encontre %d",aviso);
     
 
 
