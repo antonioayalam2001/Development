@@ -20,18 +20,27 @@
 int main(int argc, char const *argv[])
 {
     // int *Arreglo;
-    int n=10,opc;
+    int n=10,opc,*A;
     //- int *Arreglo;
     int Arreglo[10]={1,2,3,4,5,6,7,8,9,10};
     int aviso= -1;
-    
 
-    BusquedaLinealHilos(Arreglo,7,0,n,&aviso);
-    if (aviso>0)
-    {
-            printf("Si lo encontre");
-    }
-            printf("Si lo encontre %d",aviso);
+    // !Tratando de leer el archivo
+    A=(int*)malloc(n*sizeof(int));
+
+    LeerArchivo(*A, 100);
+    BusquedaLinealHilos(A,8028,0,100,&aviso);
+
+
+    // !
+
+    // - Pruebas normales funcionando 
+    // BusquedaLinealHilos(Arreglo,7,0,n,&aviso);
+    // if (aviso>0)
+    // {
+    //         printf("Si lo encontre");
+    // }
+    //         printf("Si lo encontre %d",aviso);
     
 
 

@@ -14,5 +14,6 @@ void MenuSeleccion(int *A, int n, int elem ,int opc);
 // //
 void BusquedaLineal(int *A, int inicio ,int final, int elemn, int *aviso);
 void BusquedaLinealHilos(int * A, int valorABuscar, int inicio, int final, int * aviso);
+int *LeerArchivo(int *A, int n);
 
 #endif

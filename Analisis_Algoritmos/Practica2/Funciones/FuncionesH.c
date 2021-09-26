@@ -194,3 +194,20 @@ void * lanzarBusquedaLineal(void* busqueda)
     printf("Hola");
 
 }
+
+// .Lectura del Archivo
+int *LeerArchivo(int *A, int n)
+{
+    int i;
+    FILE *numeros;
+    numeros = fopen("10millones.txt", "r");
+    if (numeros == NULL)
+    {
+        puts("Error en la apertura del archivo");
+    }
+    for (i = 0; i < n; i++)
+    {
+        fscanf(numeros, "%d", &A[i]);
+    }
+    fclose(numeros);
+}
