@@ -35,9 +35,10 @@ void BusquedaLineal(int * arreglo, int valorABuscar, int inicio, int final, int 
 			break;
 		}
 		if (arreglo[n] == valorABuscar )
-		{ 
+		{
+            printf("Encontraste el elemento en la posicion %d",n); 
 			*encontrado=valorABuscar;
-      		}
+      	}
 	}
 }
 
