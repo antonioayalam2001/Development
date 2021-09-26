@@ -110,8 +110,8 @@ void BusquedaBinaria(int *A,int inicio, int final,int elem,int *aviso){
 			break;
         }
         if (A[mitad]<elem)
-            {inicio=mitad;}
-        else{final=mitad;}        
+            {inicio=mitad+1;}
+        else{final=mitad-1;}        
         
     }    
 }
