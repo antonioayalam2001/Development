@@ -110,7 +110,7 @@ void MenuSeleccion(int *A, int n, int elem ,int opc)
         break;
     case 6:
         printf("Lineal Hilos");
-        BusquedaLinealHilos(A,3,0,9,&encontrado);
+        BusquedaLinealHilos(A,3,0,8,&encontrado);
     default:
         break;
     }
