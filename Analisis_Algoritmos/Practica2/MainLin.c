@@ -32,10 +32,51 @@ int main(int argc, char const *argv[])
 
     LeerArchivo(A, 100);
 
-    for (m = 0; m < 4; m++)
+    //- Ya funcionan lineal
+    // for (m = 0; m < 4; m++)
+    // {
+    //     uswtime(&utime0, &stime0, &wtime0);
+    //     BusquedaLineal(A,0,n, Arreglo[m], &aviso);
+    //     uswtime(&utime1, &stime1, &wtime1);
+
+    //     if (aviso > 0)
+    //     {
+    //         printf("Lineal %d\n",m);
+    //         printf("\n");
+    //         printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
+    //         printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
+    //         printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
+    //         printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+    //         printf("\n");
+    //     }
+
+    //     aviso = -1;
+    // }
+    // for (j = 0; j < 4; j++)
+    // {
+    //     uswtime(&utime0, &stime0, &wtime0);
+    //     BusquedaLinealHilos(A, Arreglo[j], 0, n, &aviso);
+    //     uswtime(&utime1, &stime1, &wtime1);
+
+    //     if (aviso > 0)
+    //     {
+    //         printf("Lineal Hilos %d\n",j);
+    //         printf("\n");
+    //         printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
+    //         printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
+    //         printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
+    //         printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+    //         printf("\n");
+    //     }
+
+    //     aviso = -1;
+    // }
+
+    //!Prueba Binaria
+        for (m = 0; m < 4; m++)
     {
         uswtime(&utime0, &stime0, &wtime0);
-        BusquedaLineal(A,0,n, Arreglo[m], &aviso);
+        BusquedaBinaria(A,0,n, Arreglo[m], &aviso);
         uswtime(&utime1, &stime1, &wtime1);
 
         if (aviso > 0)
@@ -51,41 +92,7 @@ int main(int argc, char const *argv[])
 
         aviso = -1;
     }
-    for (j = 0; j < 4; j++)
-    {
-        uswtime(&utime0, &stime0, &wtime0);
-        BusquedaLinealHilos(A, Arreglo[j], 0, n, &aviso);
-        uswtime(&utime1, &stime1, &wtime1);
 
-        if (aviso > 0)
-        {
-            printf("Lineal Hilos %d\n",j);
-            printf("\n");
-            printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
-            printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
-            printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
-            printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
-            printf("\n");
-        }
-
-        aviso = -1;
-    }
-
-    // -Tratando de leer el archivo (Ya funciona asi)
-    // A=(int*)malloc(n*sizeof(int));
-
-    // LeerArchivo(A, 100);
-    // BusquedaLinealHilos(A,11560,0,n,&aviso);
-
-    // -
-
-    // - Pruebas normales funcionando
-    // BusquedaLinealHilos(Arreglo,7,0,n,&aviso);
-    // if (aviso>0)
-    // {
-    //         printf("Si lo encontre");
-    // }
-    //         printf("Si lo encontre %d",aviso);
 
     return 0;
 }
