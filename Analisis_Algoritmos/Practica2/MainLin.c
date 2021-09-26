@@ -97,7 +97,7 @@ int main(int argc, char const *argv[])
     //     for (h = 0; h < 4; h++)
     // {
     //     uswtime(&utime0, &stime0, &wtime0);
-        BusquedaBinariaHilos(A,0,n, Arreglo[h], &aviso);
+        BusquedaBinariaHilos(A,0,n, 3035, &aviso);
     //     uswtime(&utime1, &stime1, &wtime1);
 
     //     if (aviso > 0)
