@@ -27,7 +27,7 @@ int main(int argc, char const *argv[])
     
 
 
-    BusquedaLinealHilos(Arreglo,0,n,8,&aviso);
+    BusquedaLinealHilos(Arreglo,6,0,8,&aviso);
     if (aviso>0)
     {
             printf("Si lo encontre");
