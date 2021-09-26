@@ -264,7 +264,7 @@ void * lanzarBusquedaLineal(void* busqueda)
 
 void * lanzarBusquedaBinaria(void* busqueda){
 	AuxiliarBinaria *a = (AuxiliarBinaria *)busqueda;
-	BusquedaBinaria(a->arrelgo,a->inicio,a->final,a->valorABuscar,a->encontrado);
+	BusquedaLineal(a->arrelgo,a->inicio,a->final,a->valorABuscar,a->encontrado);
 }
 
 
