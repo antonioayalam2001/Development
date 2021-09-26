@@ -126,13 +126,13 @@ void BusquedaBinariaHilos(int * A, int valorABuscar, int inicio, int final, int 
 		pthread_t *hilo;
 		hilo= malloc (2*sizeof(pthread_t));
 		//- Repartiendo el arreglo mediante el uso de las estructuras que creamos
-		AuxiliarBinaria *der= (AuxiliarBinaria *)malloc(sizeof(AuxiliarBinaria));
+		AuxiliarLineal *der= (AuxiliarLineal *)malloc(sizeof(AuxiliarLineal));
 			der->arrelgo=A;
 			der->valorABuscar= valorABuscar;
 			der->inicio=puntomedio+1;
 			der->final=final;
 			der->encontrado=aviso;
-		AuxiliarBinaria *izq= (AuxiliarBinaria *)malloc(sizeof(AuxiliarBinaria));
+		AuxiliarLineal *izq= (AuxiliarLineal *)malloc(sizeof(AuxiliarLineal));
 			izq->arrelgo=A;
 			izq->valorABuscar= valorABuscar;
 			izq->inicio=inicio;
