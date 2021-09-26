@@ -141,12 +141,12 @@ void BusquedaBinariaHilos(int * A, int valorABuscar, int inicio, int final, int 
 
 		// -Creando los Hilos
 		//- La funcion naturalmente devuelve 0 en caso de que el hilo se haya creado de forma exitosa, de lo contrario devolvera otro valor
-		if (pthread_create(&hilo[0],NULL,lanzarBusquedaBinaria,(void*)izq)!=0)
+		if (pthread_create(&hilo[0],NULL,lanzarBusquedaLineal,(void*)izq)!=0)
 		{
 			perror("El hilo nos e pudo crear");
 			exit(-1);
 		}
-		if (pthread_create(&hilo[1],NULL,lanzarBusquedaBinaria,(void*)der)!=0)
+		if (pthread_create(&hilo[1],NULL,lanzarBusquedaLineal,(void*)der)!=0)
 		{
 			perror("El hilo nos e pudo crear");
 			exit(-1);
