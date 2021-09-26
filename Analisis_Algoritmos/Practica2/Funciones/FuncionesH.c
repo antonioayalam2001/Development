@@ -99,22 +99,21 @@ void BusquedaLinealHilos(int * A, int valorABuscar, int inicio, int final, int *
 
 void BusquedaBinaria(int *A,int inicio, int final,int elem,int *aviso){
     // -Variables para algoritmo de busqueda
-	int mitad,res;
+	int mitad;
     while (inicio<=final)
     {
         mitad=(inicio + final)/2;
         if (A[mitad]<elem)
             {inicio=mitad+1;}
-        else{final=mitad-1;
-		res=mitad;}        
+        else{final=mitad-1;}        
         
-    }    
-        if (A[res]==elem)
+        if (A[mitad]==elem)
         {
 			*aviso=elem;			
-            printf("Enontraste el emento en la posicion:");
-
+            printf("Enontraste el emento en la posicion: %d\n",mitad);
+			break;
         }
+    }    
 }
 
 // // Busqueda Binaria Hilos // //
