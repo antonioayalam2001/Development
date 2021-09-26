@@ -99,7 +99,7 @@ void BusquedaLinealHilos(int * A, int valorABuscar, int inicio, int final, int *
 
 void BusquedaBinaria(int *A,int inicio, int final,int elem,int *aviso){
     // -Variables para algoritmo de busqueda
- 
+	int mitad;
     while (inicio<=final)
     {
         mitad=(inicio + final)/2;

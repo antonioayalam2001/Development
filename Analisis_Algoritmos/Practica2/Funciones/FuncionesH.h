@@ -15,7 +15,7 @@ int *LeerArchivo(int *A, int n);
 // //
 void BusquedaLineal(int *A, int inicio ,int final, int elemn, int *aviso);
 void BusquedaLinealHilos(int * A, int valorABuscar, int inicio, int final, int * aviso);
-int BusquedaBinaria(int *A,int inicio, int final,int elem,int *aviso);
+void BusquedaBinaria(int *A,int inicio, int final,int elem,int *aviso);
 void BusquedaBinariaHilos(int * A, int valorABuscar, int inicio, int final, int * aviso);
 
 #endif
