@@ -22,7 +22,7 @@ int main(int argc, char const *argv[])
     double utime0, stime0, wtime0, utime1, stime1, wtime1; //Variables para medición de tiempos
     int i,l,m;                                                 //Variables para loops
     // int *Arreglo;
-    int n = 100, opc, *A;
+    int n =60, opc, *A;
     //- int *Arreglo;
     int Arreglo[4] = {197, 236, 3035, 902};
     int aviso = -1;
@@ -30,7 +30,7 @@ int main(int argc, char const *argv[])
     int j;
     A = (int *)malloc(n * sizeof(int));
 
-    LeerArchivo(A, 100);
+    LeerArchivo(A, n);
 
     //- Ya funcionan lineal
     // for (m = 0; m < 4; m++)

@@ -106,6 +106,7 @@ void BusquedaBinaria(int *A,int inicio, int final,int elem,int *aviso){
         if (A[mitad]==elem)
         {
             printf("Enontraste el emento en la posicion: %d",mitad);
+			break;
         }
         if (A[mitad]<elem)
             {inicio=mitad;}
