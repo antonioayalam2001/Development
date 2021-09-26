@@ -28,7 +28,7 @@ int main(int argc, char const *argv[])
     // !Tratando de leer el archivo
     A=(int*)malloc(n*sizeof(int));
 
-    LeerArchivo(*A, 100);
+    LeerArchivo(A, 100);
     BusquedaLinealHilos(A,8028,0,100,&aviso);
 
 
