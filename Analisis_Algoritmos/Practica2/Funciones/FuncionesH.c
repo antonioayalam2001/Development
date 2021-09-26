@@ -120,7 +120,7 @@ void MenuSeleccion(int *A, int n, int elem ,int opc)
 void * procesarBusquedaLineal(void* busqueda)
 {
 	AuxiliarLineal * l = (AuxiliarLineal *)busqueda;
-	BusquedaLineal((*l).arrelgo, (*l).valorABuscar,(*l).inicio, (*l).final, (*l).encontrado);
+	BusquedaLineal((l)->arrelgo, (l)->valorABuscar,(l)->inicio, (l)->final, (l)->encontrado);
                 printf("Hola");
 
 }
