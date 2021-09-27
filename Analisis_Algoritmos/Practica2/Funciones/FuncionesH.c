@@ -277,15 +277,18 @@ void BusquedaEnArbolHilos(int * arreglo, int n, int valorABuscar, int * aviso)
 	// Variable para "almacenar" el árbol
 	arbolBinario t;
 	// Creamos nuestro árbol
-	t= InsertarABB(arreglo,n,valorABuscar,aviso);	// Rellenamos el arbol
-	
-	
+	t=Iniciar(&t);
+		for (int i = 0; i < n; ++i)
+	// Recorriendo la lista para ir insertando cada numero en el arbol
+	Insertar(&t,A[i]);
+
+
 	/* Parte de hilos */
 	// Comprobamos si nuestro valor a buscar
 	// no está en la raíz:
-	if((*t).valor == valorABuscar) 
+	if((*t).dato == valorABuscar) 
 	{
-		*aviso = (*t).valor;
+		*aviso = (*t).dato;
 	}
 	else
 	{
