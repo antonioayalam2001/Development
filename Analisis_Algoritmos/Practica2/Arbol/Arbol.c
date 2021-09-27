@@ -148,7 +148,7 @@
 // n Longitud del arreglo
 // DatoRecibido = Numeros de la lista obtenidos mediante el for
 
-void Iniciar(arbol* a){
+void Iniciar(arbolBinario* a){
 	*a = NULL;
 	return;
 }
