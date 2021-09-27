@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include <pthread.h>
 // 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
+
 #include "./Tiempo/tiempo.c"
 
 int *LeerArchivo(int *A, int n);

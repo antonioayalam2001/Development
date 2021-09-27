@@ -41,7 +41,7 @@ int main(int argc, char const *argv[])
     do
     {
         printf("Metodos de busqueda:\n");
-        printf("1. Metodo de Lineal\n2.LinealHilos");
+        printf("1. Metodo de Lineal\n2.LinealHilos\n");
         printf("3. Metodo de Binario\n4.BinarioHilos\n");
         printf("5.Metodo de Exponencial\n6.ExponencialHilos\n");
         printf("7.Metodo Fibo\n8.Metodo Fibo\n");
