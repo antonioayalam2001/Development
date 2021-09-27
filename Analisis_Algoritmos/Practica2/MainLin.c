@@ -143,7 +143,7 @@ int main(int argc, char const *argv[])
             for (m = 0; m < 4; m++)
             {
                 uswtime(&utime0, &stime0, &wtime0);
-                aviso = fibMonaccianSearch(A,Arreglo[m],n);
+                aviso = fibMonaccianSearch(A, Arreglo[m], n);
                 uswtime(&utime1, &stime1, &wtime1);
 
                 if (aviso > 0)
@@ -161,6 +161,29 @@ int main(int argc, char const *argv[])
             }
             // BusquedaEnArbol(A, n, elem,&encontrado);
             break;
+
+        case 6:
+            printf("Metodo de Arbol");
+            for (m = 0; m < 4; m++)
+            {
+                uswtime(&utime0, &stime0, &wtime0);
+                BusquedaArbol(A,n, Arreglo[m], &aviso);
+                uswtime(&utime1, &stime1, &wtime1);
+
+                if (aviso > 0)
+                {
+                    printf("Busqueda Fibo\n");
+                    printf("\n");
+                    printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
+                    printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
+                    printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
+                    printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+                    printf("\n");
+                }
+
+                aviso = -1;
+            }
+        break
         default:
             break;
         }

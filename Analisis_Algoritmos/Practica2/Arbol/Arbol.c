@@ -148,7 +148,7 @@
 // n Longitud del arreglo
 // DatoRecibido = Numeros de la lista obtenidos mediante el for
 
-int * InsertarABB (int * A, int n)
+int * InsertarABB (int * A, int n,int valorABuscar,int *aviso)
 {
 	// Declarando raiz del arbol
 	arbolBinario *Raiz;
@@ -162,7 +162,7 @@ int * InsertarABB (int * A, int n)
 		
 	// A = Inorden(Raiz,A);
 	//- BusquedaArbol(Raiz,902);
-	BusquedaArbol(Raiz,2);
+	BusquedaArbol(Raiz,valorABuscar,aviso);
 }
 
 void Insertar(arbolBinario **Raiz,int DatoRecibido)
@@ -238,16 +238,16 @@ int * Inorden (arbolBinario * Raiz, int *A)
 	return A;
 }
 
-int BusquedaArbol(arbolBinario *Raiz, int valor){
+int BusquedaArbol(arbolBinario *Raiz, int valor,int *aviso){
 	arbolBinario *aux = Raiz;
-	int x=0,aviso=-1;
+	int x=0;
 			// printf("Ya fue encontrado");
 
 	while (aux!=NULL)
 	{
 		if ((aux->dato) == valor)
 		{
-			aviso=1;
+			*aviso=1;
 			printf("Ya fue encontrado el valor numero %d",valor);
 			break;
 		}
