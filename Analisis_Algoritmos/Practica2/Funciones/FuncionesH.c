@@ -169,6 +169,27 @@ void BusquedaBinariaHilos(int * A, int valorABuscar, int inicio, int final, int 
 	
 }
 
+// //Exponencial
+void BusquedaExponencial(int *A,int inicio, int final,int elem,int *aviso){
+        // -Variables para algoritmo de busqueda
+	int i,mitad;
+    while (i<final && A[i]!=elem)
+    {
+        i=i*2;
+    }
+    printf("%d",i);
+        mitad=((i/2) + final)/2;
+        if (A[mitad]==elem)
+        {
+            printf("Enontraste el elemento en la posicion: %d",mitad);
+            *aviso=mitad;
+			break;
+        }
+        if (A[mitad]<elem)
+            {inicio=mitad;}
+        else{final=mitad;}  
+}
+
 
 
 

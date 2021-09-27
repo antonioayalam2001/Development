@@ -18,5 +18,6 @@ void BusquedaLineal(int *A, int inicio ,int final, int elemn, int *aviso);
 void BusquedaLinealHilos(int * A, int valorABuscar, int inicio, int final, int * aviso);
 void BusquedaBinaria(int *A,int inicio, int final,int elem,int *aviso);
 void BusquedaBinariaHilos(int * A, int valorABuscar, int inicio, int final, int * aviso);
+void BusquedaExponencial(int *A,int inicio, int final,int elem,int *aviso);
 
 #endif

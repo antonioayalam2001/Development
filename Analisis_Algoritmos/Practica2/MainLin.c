@@ -40,11 +40,11 @@ int main(int argc, char const *argv[])
     do
     {
         printf("Metodos de busqueda:\n");
-        printf("Metodo de Lineal\n");
-        printf("Metodo de Binario\n");
-        printf("Metodo de Exponencial\n");
-        printf("Metodo de Fibbo\n");
-        printf("Metodo de Arbol\n");
+        printf("1. Metodo de Lineal\n2.LinealHilos");
+        printf("3. Metodo de Binario\n4.BinarioHilos\n");
+        printf("5.Metodo de Exponencial\n6.ExponencialHilos\n");
+        printf("7.Metodo Fibo\n8.Metodo Fibo\n");
+        printf("9.Metodo de Arbol\n10.Metodo de Arbol Hilos");
         printf("Ingresa opcion:\n");
         scanf("%d", &opc);
         switch (opc)
@@ -139,7 +139,26 @@ int main(int argc, char const *argv[])
             }
             break;
         case 5:
-            printf("Metodo de Busqueda Arbol");
+            printf("Metodo de Exponencial");
+            for (m = 0; m < 4; m++)
+            {
+                uswtime(&utime0, &stime0, &wtime0);
+                BusquedaExponencial(A, 0, n, Arreglo[m], &aviso);
+                uswtime(&utime1, &stime1, &wtime1);
+
+                if (aviso > 0)
+                {
+                    printf("Busqueda Exponencial\n");
+                    printf("\n");
+                    printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
+                    printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
+                    printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
+                    printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+                    printf("\n");
+                }
+
+                aviso = -1;
+            }
             // BusquedaEnArbol(A, n, elem,&encontrado);
             break;
         default:
