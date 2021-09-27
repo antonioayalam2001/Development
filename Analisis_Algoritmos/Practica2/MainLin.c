@@ -126,7 +126,7 @@ int main(int argc, char const *argv[])
 
                 if (aviso > 0)
                 {
-                    printf("BH %d");
+                    printf("BH");
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
                     printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
