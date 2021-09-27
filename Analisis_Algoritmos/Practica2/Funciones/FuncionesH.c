@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include "../Arbol/Arbol.c"
+#include "../FuncionesHilos/Arbol.c"
 
 // // Estrucutras auxiliares para la ejecucion de los códigos
 //  //Nos ofrecen la alternativa de almacenar los valores dependiento de cada uno de los hilos
@@ -259,46 +259,40 @@ int fibMonaccianSearch(int *A, int x, int n)
 
 
 //Busqueda en Arbol
-void BusquedaEnArbol(int *arreglo, int n, int valorABuscar, int *aviso)
+void BusquedaEnArbol(int * arreglo, int n, int valorABuscar, int * aviso)
 {
 	// Variable para "almacenar" el árbol
+	arbol t;
 	// Creamos nuestro árbols
-	// arreglo = InsertarABB(arreglo, n, valorABuscar, aviso);
-	// arbolBinario arbol;
-	// arbol=InsertarABB;
-	// BusquedaArbol(arbol,valorABuscar,aviso);
-	// Rellenamos el arbol
-	arbolBinario t;
-	// Creamos nuestro árbol
-	int i;
 	Iniciar(&t);
-
-		for (i = 0; i < n; i++)
-	// Recorriendo la lista para ir insertando cada numero en el arbol
-	NuevoNodo(&t,arreglo[i]);
-
-		BuscaValor(&t, valorABuscar, aviso);
-
+	// Rellenamos el arbol
+	int ix = 0;
+	for(;ix < n; ++ix)
+	{
+		NuevoNodo(&t,arreglo[ix]);
+	}
 	// Lanzamos la búsqueda sin hilos
+	BuscaValor(&t, valorABuscar, aviso);
 }
 
 void BusquedaEnArbolHilos(int * arreglo, int n, int valorABuscar, int * aviso)
 {
 	// Variable para "almacenar" el árbol
-	arbolBinario t;
+	arbol t;
 	// Creamos nuestro árbol
 	Iniciar(&t);
-		for (int i = 0; i < n; i++)
-	// Recorriendo la lista para ir insertando cada numero en el arbol
-	NuevoNodo(&t,arreglo[i]);
-
-	
+	// Rellenamos el arbol
+	int ix = 0;
+	for(;ix < n; ++ix)
+	{
+		NuevoNodo(&t,arreglo[ix]);
+	}
 	/* Parte de hilos */
 	// Comprobamos si nuestro valor a buscar
 	// no está en la raíz:
-	if(t->dato == valorABuscar) 
+	if((*t).valor == valorABuscar) 
 	{
-		*aviso = t->dato;
+		*aviso = (*t).valor;
 	}
 	else
 	{
@@ -308,13 +302,13 @@ void BusquedaEnArbolHilos(int * arreglo, int n, int valorABuscar, int * aviso)
 		thread = malloc(2*sizeof(pthread_t));
 		// Creamos los auxiliares 
 		AuxiliarArbol * izq = (AuxiliarArbol *)malloc(sizeof(AuxiliarArbol));
-		(*izq).t = t->izq;
+		(*izq).t = (*t).izquierdo;
 		(*izq).valorABuscar = valorABuscar;
 		(*izq).encontrado = aviso;
 
 		
 		AuxiliarArbol * der = (AuxiliarArbol *)malloc(sizeof(AuxiliarArbol));
-		(*der).t = t->der;
+		(*der).t = (*t).derecho;
 		(*der).valorABuscar = valorABuscar;
 		(*der).encontrado = aviso;
 
