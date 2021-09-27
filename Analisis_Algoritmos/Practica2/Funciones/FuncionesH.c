@@ -63,6 +63,12 @@ void BusquedaLineal(int *A, int inicio, int final, int elem, int *aviso)
 	}
 }
 // // Busqueda Lineal Hilos
+//Recibimos un arreglo que contiene los numeros del archivo 10 millones
+// inicio : Inicio del arreglo
+//Un entero "final" para especificar el tamaño del arreglo
+//Un entero llamado elemento el cual tiene el número que deseamos encontrar,
+//dentro del arreglo
+// *aviso: Bandera que nos ayudara a determianr si el elemento ya fue encontrado o no
 void BusquedaLinealHilos(int *A, int valorABuscar, int inicio, int final, int *aviso)
 {
 
@@ -110,6 +116,12 @@ void BusquedaLinealHilos(int *A, int valorABuscar, int inicio, int final, int *a
 }
 
 // // Busqueda Binaria
+//Recibimos un arreglo que contiene los numeros del archivo 10 millones
+// inicio : Inicio del arreglo
+//Un entero "final" para especificar el tamaño del arreglo
+//Un entero llamado elemento el cual tiene el número que deseamos encontrar,
+//dentro del arreglo
+// *aviso: Bandera que nos ayudara a determianr si el elemento ya fue encontrado o no
 
 void BusquedaBinaria(int *A, int inicio, int final, int elem, int *aviso)
 {
@@ -137,6 +149,13 @@ void BusquedaBinaria(int *A, int inicio, int final, int elem, int *aviso)
 }
 
 // // Busqueda Binaria Hilos // //
+// // Busqueda Binaria
+//Recibimos un arreglo que contiene los numeros del archivo 10 millones
+// inicio : Inicio del arreglo
+//Un entero "final" para especificar el tamaño del arreglo
+//Un entero llamado elemento el cual tiene el número que deseamos encontrar,
+//dentro del arreglo
+// *aviso: Bandera que nos ayudara a determianr si el elemento ya fue encontrado o no
 
 void BusquedaBinariaHilos(int *A, int valorABuscar, int inicio, int final, int *aviso)
 {
