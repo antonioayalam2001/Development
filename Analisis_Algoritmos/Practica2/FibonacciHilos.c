@@ -1,8 +1,13 @@
 //Librerias incluidas
+// 3CM12
+// Analisis de Algoritmos
+// Autores: Mora Ayala Jose, Antonio, Lopez Lopez Oscar Manual
+// Jeon Jeong Paola, Lemus Ruiz Mariana ELizabeth
+// Algoritmo de Busqueda por Fibonacci con la implementacion de hilos 
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
-
+// 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
 #include "./Tiempo/tiempo.c"
 
 int *LeerArchivo(int *A, int n);

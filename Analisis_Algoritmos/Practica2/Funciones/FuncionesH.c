@@ -1,3 +1,8 @@
+// 3CM12
+// Analisis de Algoritmos
+// Autores: Mora Ayala Jose, Antonio, Lopez Lopez Oscar Manual
+// Jeon Jeong Paola, Lemus Ruiz Mariana ELizabeth
+// Implementacion de funciones
 #include "FuncionesH.h"
 #include <pthread.h>
 #include <stdlib.h>
@@ -281,13 +286,14 @@ void BusquedaEnArbol(int * arreglo, int n, int valorABuscar, int * aviso)
 {
 	// Variable para "almacenar" el árbol
 	arbol t;
-	// Creamos nuestro árbols
+	// Inicializando arbol
 	Iniciar(&t);
 	// Rellenamos el arbol
-	int ix = 0;
-	for(;ix < n; ++ix)
+	int i;
+	// Variable para poder controlar el ciclo
+	for(i=0;i < n; i++)
 	{
-		NuevoNodo(&t,arreglo[ix]);
+		NuevoNodo(&t,arreglo[i]);
 	}
 	// Lanzamos la búsqueda sin hilos
 	BuscaValor(&t, valorABuscar, aviso);
@@ -300,10 +306,10 @@ void BusquedaEnArbolHilos(int * arreglo, int n, int valorABuscar, int * aviso)
 	// Creamos nuestro árbol
 	Iniciar(&t);
 	// Rellenamos el arbol
-	int ix = 0;
-	for(;ix < n; ++ix)
+	int i;
+	for(i=0;i < n; i++)
 	{
-		NuevoNodo(&t,arreglo[ix]);
+		NuevoNodo(&t,arreglo[i]);
 	}
 	/* Parte de hilos */
 	// Comprobamos si nuestro valor a buscar
@@ -320,15 +326,15 @@ void BusquedaEnArbolHilos(int * arreglo, int n, int valorABuscar, int * aviso)
 		thread = malloc(2*sizeof(pthread_t));
 		// Creamos los auxiliares 
 		AuxiliarArbol * izq = (AuxiliarArbol *)malloc(sizeof(AuxiliarArbol));
-		(*izq).t = (*t).izquierdo;
-		(*izq).valorABuscar = valorABuscar;
-		(*izq).encontrado = aviso;
+		izq->t = (*t).izquierdo;
+		izq->valorABuscar = valorABuscar;
+		izq->encontrado = aviso;
 
 		
 		AuxiliarArbol * der = (AuxiliarArbol *)malloc(sizeof(AuxiliarArbol));
-		(*der).t = (*t).derecho;
-		(*der).valorABuscar = valorABuscar;
-		(*der).encontrado = aviso;
+		der->t = (*t).derecho;
+		der->valorABuscar = valorABuscar;
+		der->encontrado = aviso;
 
 		// Creamos los hilos
 		if(pthread_create(&thread[0], NULL, procesarBusquedaArbol, (void *)izq) != 0)

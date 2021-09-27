@@ -1,4 +1,3 @@
-// Programa Principal para ser ejecutado en Windows
 // 3CM12
 // Analisis de Algoritmos
 // Autores: Mora Ayala Jose, Antonio, Lopez Lopez Oscar Manual
@@ -28,15 +27,17 @@ int main(int argc, char const *argv[])
     int Arreglo[4] = {197, 236, 3035, 902};
     // .Arreglo Solicitado;
     // int Arreglo[20] = {322486,14700764,3128036,6337399,61396,10393545,214744564,1295390003,450057883,187645041,1980098116,152503,4000,1493283650,214826,1843349527,136083,2109248666,2147470852,0};
-    // Bandera que nos servira de apoyo para saber cuando un elemento ya haya sido encontrado
-    // En todos los casos cuando bandera>0 el elemento habra sido encontrado
+    // Aviso que nos servira de apoyo para saber cuando un elemento ya haya sido encontrado
+    // En todos los casos cuando aviso>0 el elemento habra sido encontrado
     int aviso = -1;
 
     // Asignacion de memoria del arreglo con respecto al tamaño de problema solicitado
     A = (int *)malloc(n * sizeof(int));
     // Lectura y asignacion de valores al arreglo en cuestion
     LeerArchivo(A, n);
-
+    // Ciclo para poder proporcionar un menu de opcion y seleccionar el algoritmo deseado
+    // Durante el ciclo de acuerdo a la opcion seleccionada proporcionara los resultados en caso de que el valor del
+    // aviso haya cambiado 
     do
     {
         printf("Metodos de busqueda:\n");
