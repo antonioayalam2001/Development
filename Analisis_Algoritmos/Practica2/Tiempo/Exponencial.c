@@ -72,7 +72,6 @@ void main(int argc, char *argv[]){
 
 	//Comenzamos el algoritmo exponencial
 	uswtime(&utime0, &stime0, &wtime0);
-
 	if(numeros[0]==target){
 		//Aqui salimos del programa de una buena vez
 		uswtime(&utime1, &stime1, &wtime1); 
