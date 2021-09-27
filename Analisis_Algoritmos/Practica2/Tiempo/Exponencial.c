@@ -55,7 +55,7 @@ void main(int argc, char *argv[]){
 	numeros = (int*)malloc(sizeof(int)*n);
 	
 	for(i=0;i<4;i++){
-		margs[i] =(argumentos*) malloc(sizeof(struct argumentos));
+		margs[i] =(struct argumentos *)malloc(sizeof(struct argumentos));
 	}
 
 	if(numeros==NULL)
