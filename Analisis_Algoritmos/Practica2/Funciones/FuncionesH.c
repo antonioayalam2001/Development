@@ -179,16 +179,23 @@ void BusquedaExponencial(int *A,int inicio, int final,int elem,int *aviso){
         i=i*2;
     }
     printf("%d",i);
-        mitad=((i/2) + final)/2;
+        inicio=i/2;
+		mitad=((i/2) + final)/2;
+		
+		while ((inicio)<final))
+		{
         if (A[mitad]==elem)
         {
             printf("Enontraste el elemento en la posicion: %d",mitad);
             *aviso=mitad;
-			return;
+			break;
         }
         if (A[mitad]<elem)
             {inicio=mitad;}
         else{final=mitad;}  
+			/* code */
+		}
+		
 }
 
 
