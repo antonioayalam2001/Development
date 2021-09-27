@@ -286,9 +286,9 @@ void BusquedaEnArbolHilos(int * arreglo, int n, int valorABuscar, int * aviso)
 	/* Parte de hilos */
 	// Comprobamos si nuestro valor a buscar
 	// no está en la raíz:
-	if((*t).dato == valorABuscar) 
+	if(t->dato == valorABuscar) 
 	{
-		*aviso = (*t).dato;
+		*aviso = ->dato;
 	}
 	else
 	{
@@ -298,15 +298,15 @@ void BusquedaEnArbolHilos(int * arreglo, int n, int valorABuscar, int * aviso)
 		thread = malloc(2*sizeof(pthread_t));
 		// Creamos los auxiliares 
 		AuxiliarArbol * izq = (AuxiliarArbol *)malloc(sizeof(AuxiliarArbol));
-		(*izq).t = (*t).izquierdo;
+		(*izq).t = t->izquierdo;
 		(*izq).valorABuscar = valorABuscar;
-		(*izq).encontrado = bandera;
+		(*izq).encontrado = aviso;
 
 		
 		AuxiliarArbol * der = (AuxiliarArbol *)malloc(sizeof(AuxiliarArbol));
-		(*der).t = (*t).derecho;
+		(*der).t = t->derecho;
 		(*der).valorABuscar = valorABuscar;
-		(*der).encontrado = bandera;
+		(*der).encontrado = aviso;
 
 		// Creamos los hilos
 		if(pthread_create(&thread[0], NULL, procesarBusquedaArbol, (void *)izq) != 0)
