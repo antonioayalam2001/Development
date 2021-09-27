@@ -148,6 +148,11 @@
 // n Longitud del arreglo
 // DatoRecibido = Numeros de la lista obtenidos mediante el for
 
+void Iniciar(arbol* a){
+	*a = NULL;
+	return;
+}
+
 int * InsertarABB (int * A, int n,int valorABuscar,int *aviso)
 {
 	// Declarando raiz del arbol
