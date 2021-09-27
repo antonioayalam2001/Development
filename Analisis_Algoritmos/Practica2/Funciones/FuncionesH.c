@@ -282,11 +282,7 @@ void *lanzarBusquedaBinaria(void *busqueda)
 	BusquedaBinaria(a->arrelgo, a->inicio, a->final - 1, a->valorABuscar, a->encontrado);
 }
 
-void * procesarBusquedaArbol(void* busqueda)
-{
-	AuxiliarArbol * b = (AuxiliarArbol *)busqueda;
-	BuscaValor(&((*b).t), (*b).valorABuscar, (*b).encontrado);
-}
+
 
 // .Lectura del Archivo
 // .Recibe:  Arreglo con memoria suficiente para almacenar n cantidad de enteros

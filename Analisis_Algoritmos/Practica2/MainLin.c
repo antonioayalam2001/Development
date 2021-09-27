@@ -167,7 +167,7 @@ int main(int argc, char const *argv[])
             for (m = 0; m < 4; m++)
             {
                 uswtime(&utime0, &stime0, &wtime0);
-                BusquedaArbol(A,n, Arreglo[m], &aviso);
+                BusquedaEnArbol(A,n, Arreglo[m], &aviso);
                 uswtime(&utime1, &stime1, &wtime1);
 
                 if (aviso > 0)

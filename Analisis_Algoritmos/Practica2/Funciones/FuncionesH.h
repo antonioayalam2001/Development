@@ -20,7 +20,6 @@ void BusquedaBinaria(int *A,int inicio, int final,int elem,int *aviso);
 void BusquedaBinariaHilos(int * A, int valorABuscar, int inicio, int final, int * aviso);
 void BusquedaExponencial(int *A,int inicio, int final,int elem,int *aviso);
 void BusquedaEnArbol(int * arreglo, int n, int valorABuscar, int * aviso);
-void BusquedaEnArbolHilos(int * arreglo, int n, int valorABuscar, int * aviso);
 int min(int x, int y); 
 int fibMonaccianSearch(int *A, int x, int n);
 #endif
