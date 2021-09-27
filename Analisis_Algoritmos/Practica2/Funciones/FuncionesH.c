@@ -264,10 +264,20 @@ void BusquedaEnArbol(int *arreglo, int n, int valorABuscar, int *aviso)
 	// Variable para "almacenar" el árbol
 	// Creamos nuestro árbols
 	// arreglo = InsertarABB(arreglo, n, valorABuscar, aviso);
-	arbolBinario arbol;
-	arbol=InsertarABB;
-	BusquedaArbol(arbol,valorABuscar,aviso);
+	// arbolBinario arbol;
+	// arbol=InsertarABB;
+	// BusquedaArbol(arbol,valorABuscar,aviso);
 	// Rellenamos el arbol
+	arbolBinario t;
+	// Creamos nuestro árbol
+	int i;
+	Iniciar(&t);
+
+		for (i = 0; i < n; i++)
+	// Recorriendo la lista para ir insertando cada numero en el arbol
+	NuevoNodo(&t,arreglo[i]);
+
+		BuscaValor(&t, valorABuscar, aviso);
 
 	// Lanzamos la búsqueda sin hilos
 }
@@ -278,9 +288,9 @@ void BusquedaEnArbolHilos(int * arreglo, int n, int valorABuscar, int * aviso)
 	arbolBinario t;
 	// Creamos nuestro árbol
 	Iniciar(&t);
-		for (int i = 0; i < n; ++i)
+		for (int i = 0; i < n; i++)
 	// Recorriendo la lista para ir insertando cada numero en el arbol
-	Insertar(**t,arreglo[i]);
+	NuevoNodo(&t,arreglo[i]);
 
 	
 	/* Parte de hilos */
