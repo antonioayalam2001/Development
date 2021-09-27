@@ -25,111 +25,29 @@ int main(int argc, char const *argv[])
     int n = 60, opc, *A;
     //- int *Arreglo;
     // . Arreglo Pruebas;
-    // int Arreglo[4] = {197, 236, 3035, 902};
+    int Arreglo[4] = {197, 236, 3035, 902};
     // .Arreglo Solicitado;
     // int Arreglo[20] = {322486,14700764,3128036,6337399,61396,10393545,214744564,1295390003,450057883,187645041,1980098116,152503,4000,1493283650,214826,1843349527,136083,2109248666,2147470852,0};
     // Bandera que nos servira de apoyo para saber cuando un elemento ya haya sido encontrado
     // En todos los casos cuando bandera>0 el elemento habra sido encontrado
     int aviso = -1;
 
-
     // Asignacion de memoria del arreglo con respecto al tamaño de problema solicitado
     A = (int *)malloc(n * sizeof(int));
     // Lectura y asignacion de valores al arreglo en cuestion
     LeerArchivo(A, n);
 
-    //- Ya funcionan lineal
-    // for (m = 0; m < 4; m++)
-    // {
-    //     uswtime(&utime0, &stime0, &wtime0);
-    //     BusquedaLineal(A,0,n, Arreglo[m], &aviso);
-    //     uswtime(&utime1, &stime1, &wtime1);
-
-    //     if (aviso > 0)
-    //     {
-    //         printf("Lineal %d\n",m);
-    //         printf("\n");
-    //         printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
-    //         printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
-    //         printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
-    //         printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
-    //         printf("\n");
-    //     }
-
-    //     aviso = -1;
-    // }
-    // for (j = 0; j < 4; j++)
-    // {
-    //     uswtime(&utime0, &stime0, &wtime0);
-    //     BusquedaLinealHilos(A, Arreglo[j], 0, n, &aviso);
-    //     uswtime(&utime1, &stime1, &wtime1);
-
-    //     if (aviso > 0)
-    //     {
-    //         printf("Lineal Hilos %d\n",j);
-    //         printf("\n");
-    //         printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
-    //         printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
-    //         printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
-    //         printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
-    //         printf("\n");
-    //     }
-
-    //     aviso = -1;
-    // }
-
-    // //!Prueba Binaria
-    //     for (m = 0; m < 4; m++)
-    // {
-    //     uswtime(&utime0, &stime0, &wtime0);
-    //     BusquedaBinaria(A,0,n, Arreglo[m], &aviso);
-    //     uswtime(&utime1, &stime1, &wtime1);
-
-    //     if (aviso > 0)
-    //     {
-    //         printf("Lineal %d\n",m);
-    //         printf("\n");
-    //         printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
-    //         printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
-    //         printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
-    //         printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
-    //         printf("\n");
-    //     }
-
-    //     aviso = -1;
-    // }
-    // int h;
-    // h=0;
-    //     for (h = 0; h < 4; h++)
-    // {
-    //     uswtime(&utime0, &stime0, &wtime0);
-    //     BusquedaBinariaHilos(A,Arreglo[h],0,n, &aviso);
-    //     uswtime(&utime1, &stime1, &wtime1);
-
-    //     if (aviso > 0)
-    //     {
-    //         printf("BH %d\n",h);
-    //         printf("\n");
-    //         printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
-    //         printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
-    //         printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
-    //         printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
-    //         printf("\n");
-    //     }
-
-    //     aviso = -1;
-    // }
-int opc=0;
+    int opc = 0;
     do
     {
-        printf("Ingresa opcion:\n");
-        scanf("%d"&opc);
         printf("Metodos de busqueda:\n");
         printf("Metodo de Lineal\n");
         printf("Metodo de Binario\n");
         printf("Metodo de Exponencial\n");
         printf("Metodo de Fibbo\n");
         printf("Metodo de Arbol\n");
+        printf("Ingresa opcion:\n");
+        scanf("%d", &opc);
         switch (opc)
         {
         case 1:
@@ -141,7 +59,7 @@ int opc=0;
 
                 if (aviso > 0)
                 {
-                    printf("Lineal %d\n", m);
+                    printf("Busqueda Lineal\n");
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
                     printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
@@ -176,10 +94,50 @@ int opc=0;
             }
             break;
         case 3:
-            printf("Metodo de Busqueda Exponencial");
+            printf("Metodo de Busqueda Binaria");
+            for (m = 0; m < 4; m++)
+            {
+                uswtime(&utime0, &stime0, &wtime0);
+                BusquedaBinaria(A, 0, n, Arreglo[m], &aviso);
+                uswtime(&utime1, &stime1, &wtime1);
+
+                if (aviso > 0)
+                {
+                    printf("Binaria\n");
+                    printf("\n");
+                    printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
+                    printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
+                    printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
+                    printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+                    printf("\n");
+                }
+
+                aviso = -1;
+            }
             break;
         case 4:
-            printf("Metodo de Busqueda Fibbonacci");
+            printf("Metodo de Busqueda Binaria Hilos");
+            int h;
+            h = 0;
+            for (h = 0; h < 4; h++)
+            {
+                uswtime(&utime0, &stime0, &wtime0);
+                BusquedaBinariaHilos(A, Arreglo[h], 0, n, &aviso);
+                uswtime(&utime1, &stime1, &wtime1);
+
+                if (aviso > 0)
+                {
+                    printf("BH %d");
+                    printf("\n");
+                    printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
+                    printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
+                    printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
+                    printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+                    printf("\n");
+                }
+
+                aviso = -1;
+            }
             break;
         case 5:
             printf("Metodo de Busqueda Arbol");
