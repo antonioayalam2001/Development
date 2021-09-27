@@ -169,6 +169,10 @@ void BusquedaBinariaHilos(int * A, int valorABuscar, int inicio, int final, int 
 	
 }
 
+double min(double a, double b) {
+    return a<b ? a : b;
+} 
+
 // //Exponencial
 void BusquedaExponencial(int *A,int inicio, int final,int elem,int *aviso){
         // -Variables para algoritmo de busqueda
@@ -178,7 +182,7 @@ void BusquedaExponencial(int *A,int inicio, int final,int elem,int *aviso){
     {
         i=i*2;
     }
-	*aviso = BusquedaBinaria(A,i/2,min(i,n-1),elem,aviso);
+	*aviso = BusquedaBinaria(A,i/2,min(i,final-1),elem,aviso);
 }
 
 

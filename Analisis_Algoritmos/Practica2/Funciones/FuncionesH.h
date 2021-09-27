@@ -19,5 +19,6 @@ void BusquedaLinealHilos(int * A, int valorABuscar, int inicio, int final, int *
 void BusquedaBinaria(int *A,int inicio, int final,int elem,int *aviso);
 void BusquedaBinariaHilos(int * A, int valorABuscar, int inicio, int final, int * aviso);
 void BusquedaExponencial(int *A,int inicio, int final,int elem,int *aviso);
+double min(double a, double b);
 
 #endif
