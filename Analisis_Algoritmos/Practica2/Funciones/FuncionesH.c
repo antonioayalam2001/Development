@@ -169,22 +169,74 @@ void BusquedaBinariaHilos(int * A, int valorABuscar, int inicio, int final, int 
 	
 }
 
-double min(double a, double b) {
-    return a<b ? a : b;
-} 
+// //          Busqueda con Serie de Fibbonacci           // //
+//Función para encontrar el mínimo de dos números
+int min(int x, int y) { return (x <= y) ? x : y; }
+ 
+//Regresa "i" si el elemento se encuentra en el arreglo
+//Si el elemento no se encuentra, regresa un -1
 
-// //Exponencial
-void BusquedaExponencial(int *A,int inicio, int final,int elem,int *aviso){
-        // -Variables para algoritmo de busqueda
-	int i,mitad;
-	i=inicio+1;
-    while (i<final && A[i]!=elem)
-    {
-        i=i*2;
+//Declaramos un arreglo
+//Un entero "n" para especificar el tamaño del arreglo 
+//Un entero llamado n el cual tiene el número que deseamos encontrar,
+//dentro del arreglo
+int fibMonaccianSearch(int *A, int x, int n)
+{
+    //Inicializamos los primeros dos números de la serie
+    //Estos números siempre son continuos
+    int fibMMm2 = 0; 
+    int fibMMm1 = 1; 
+
+    //La suma de los números anteriores dan el número que sigue en la serie
+    int fibM = fibMMm2 + fibMMm1; 
+ 
+    //Mientras fibM es menor al tamaño del arreglo,
+    //Los valores se irán "recorriendo" de variable
+    //Y la suma de los números anteriores,
+    //serán el valor de fibM
+    while (fibM < n) {
+        fibMMm2 = fibMMm1;
+        fibMMm1 = fibM;
+        fibM = fibMMm2 + fibMMm1;
     }
-	*aviso = BusquedaBinaria(A,i/2,min(i,final-1),elem,aviso);
-}
+ 
+    //Nos marca el rango de la izquierda donde no se encuentra el elemento deseado
+    int offset = -1;
+ 
 
+    while (fibM > 1) {
+        int i = min(offset + fibMMm2, n - 1);
+ 
+        //Si el elemento es mayor al valor del índice, 
+        //Lo valores se irán recorriendo y el "offset" 
+        //se cambiará al valor del índice,
+        if (A[i] < x) {
+            fibM = fibMMm1;
+            fibMMm1 = fibMMm2;
+            fibMMm2 = fibM - fibMMm1;
+            offset = i;
+        }
+ 
+        //Si el elemento es mayor a la posición del arreglo en la posiciónde fibMm2
+        //el arreglo se dividirá después de la posición i+1
+        else if (A[i] > x) {
+            fibM = fibMMm2;
+            fibMMm1 = fibMMm1 - fibMMm2;
+            fibMMm2 = fibM - fibMMm1;
+        }
+ 
+        //Si el elemento es encontrado, devolvemos "i"
+        else
+            return i;
+    }
+ 
+    //Comparamos el último valor del arreglo con el elemento
+    if (fibMMm1 && A[offset + 1] == x)
+        return offset + 1;
+ 
+    //Si el elemento no es encontrado, devolvemos un -1
+    return -1;
+}
 
 
 
