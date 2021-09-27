@@ -173,6 +173,7 @@ void BusquedaBinariaHilos(int * A, int valorABuscar, int inicio, int final, int 
 void BusquedaExponencial(int *A,int inicio, int final,int elem,int *aviso){
         // -Variables para algoritmo de busqueda
 	int i,mitad;
+	i=inicio+1;
     while (i<final && A[i]!=elem)
     {
         i=i*2;

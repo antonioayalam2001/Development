@@ -61,7 +61,7 @@ int BusquedaExponencial(int *A, int n, int elem){
         // -Variables para algoritmo de busqueda
     int inicio,final,mitad,i;
 
-    inicio=0;
+    inicio=i;
     final=n-1;    
     while (i<final && A[i]!=elem)
     {
