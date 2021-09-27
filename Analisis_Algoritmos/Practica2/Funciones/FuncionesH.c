@@ -3,8 +3,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-// Estructura auxiliar para la búsqueda
-// lineal
+
+
+// // Estrucutras auxiliares para la ejecucion de los códigos
+//  //Nos ofrecen la alternativa de almacenar los valores dependiento de cada uno de los hilos
+//  // De tal forma que podremos diviri los elementos 
 typedef struct auxiliarBusquedaLineal{
 	int * arrelgo;
 	int valorABuscar;
@@ -20,28 +23,30 @@ typedef struct auxiliarBusquedaBinaria{
 	int * encontrado;
 }AuxiliarBinaria;
 
-void * lanzarBusquedaLineal(void* busqueda);
-void * lanzarBusquedaBinaria(void* busqueda);
-//  * Función que busca en un arreglo mediante el uso
-//  * del algoritmo de búsqueda secuencial
-//  * Parámetros:
-//  *	arreglo - el arreglo en el que se desea buscar
-//  *	elem - el valor a buscar dentro del arreglo
-//  * 	inicio - el punto inicial del segmento dentro del arreglo para buscar
-//  * 	final - el punto final del segmento dentro del arreglo para buscar
-//  *	aviso - nos indicará si el valor fue encontrado
-//  *
-//  * */	
-// // Busqueda Lienal Hilos
+//  //
+//  //
+//  //
+
+
+// // Busqueda Lienal
+//Recibimos un arreglo que contiene los numeros del archivo 10 millones 
+// inicio : Inicio del arreglo
+//Un entero "final" para especificar el tamaño del arreglo 
+//Un entero llamado elemento el cual tiene el número que deseamos encontrar,
+//dentro del arreglo
+// *aviso: Bandera que nos ayudara a determianr si el elemento ya fue encontrado o no
 void BusquedaLineal(int *A, int inicio ,int final, int elem, int *aviso){
     //- Variables para el ciclo
     int n;
     for (n = inicio; n < final; n++)
     {
+		// Cuando aviso haya cambiado de valor terminara este algoritmo de busqueda
     	if (*aviso>=0)
     	{
     		break;
     	}
+		//Nos ayuda a comparar las posiciones que se encuentran en el arreglo 
+        //con la posición del elemento que se desea encontrar
         if(A[n]==elem){
             printf("El elemento fue encontrado en la posicion numero: %d ", n);
 			*aviso=elem;
@@ -165,76 +170,35 @@ void BusquedaBinariaHilos(int * A, int valorABuscar, int inicio, int final, int 
 }
 
 
-
-
-// void BusquedaLineal(int * arreglo, int valorABuscar, int inicio, int final, int * encontrado)
-// {
-// 	int n;
-// 	for(n = inicio; n < final; n++)
-// 	{
-// 		if(*encontrado >= 0)
-// 		{
-// 			break;
-// 		}
-// 		if (arreglo[n] == valorABuscar )
-// 		{
-//             printf("Encontraste el elemento en la posicion %d",n); 
-// 			*encontrado=valorABuscar;
-//       	}
-// 	}
-// }
-
-
-// void BusquedaLinealHilos(int * arreglo, int valorABuscar, int inicio, int final, int * encontrado)
-// {
-// 	int puntoMedio = (final - inicio) / 2;
-// 	if(puntoMedio > 0)
-// 	{
-// 		// Comenzamos la
-// 		// repartición de los subarreglos
-// 		pthread_t *thread;
-// 		thread = malloc(2*sizeof(pthread_t));
-// 		// Creamos los auxiliares 
-// 		AuxiliarLineal * izq = (AuxiliarLineal *)malloc(sizeof(AuxiliarLineal));
-// 		(*izq).arrelgo = arreglo;
-// 		(*izq).valorABuscar = valorABuscar;
-// 		(*izq).encontrado = encontrado;
-// 		(*izq).inicio = inicio;
-// 		(*izq).final = puntoMedio;
-
-
-// 		AuxiliarLineal * der = (AuxiliarLineal *)malloc(sizeof(AuxiliarLineal));
-// 		(*der).arrelgo = arreglo;
-// 		(*der).valorABuscar = valorABuscar;
-// 		(*der).encontrado = encontrado;
-// 		(*der).inicio = puntoMedio + 1;
-// 		(*der).final = final;
-
-// 		// Creamos los hilos
-// 		if(pthread_create(&thread[0], NULL, procesarBusquedaLineal, (void *)izq) != 0)
-// 		{
-// 			perror("El thread no  pudo crearse [Lineal]\n");
-// 			exit(-1);
-// 		}
-// 		if(pthread_create(&thread[1], NULL, procesarBusquedaLineal, (void *)der) != 0)
-// 		{
-// 			perror("El thread no  pudo crearse [Lineal]\n");
-// 			exit(-1);
-// 		}
-// 		// Esperamos a los hilos
-// 		int i;
-// 		for (i=0; i<2; i++) pthread_join (thread[i], NULL);
-// 		free(thread);
-// 	}	
-// }
-
 // . Menu de seleccion
-void MenuSeleccion(int *A, int n, int elem ,int opc)
+void MenuSeleccion(int *A,int inicio, int final,int *Arreglo,int *aviso,int opc)
 {
+	int m;
+    double utime0, stime0, wtime0, utime1, stime1, wtime1; //Variables para medición de tiempos
+
     switch (opc)
     {
     case 1:
         printf("Metodo de Lineal");
+		    for (m = 0; m < 4; m++)
+    {
+        uswtime(&utime0, &stime0, &wtime0);
+        BusquedaLineal(A,0,n, Arreglo[m], &aviso);
+        uswtime(&utime1, &stime1, &wtime1);
+
+        if (aviso > 0)
+        {
+            printf("Lineal %d\n",m);
+            printf("\n");
+            printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
+            printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
+            printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
+            printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+            printf("\n");
+        }
+
+        aviso = -1;
+    }
         break;
     case 2:
         printf("Metodo de Busqueda Binaria");
@@ -249,9 +213,6 @@ void MenuSeleccion(int *A, int n, int elem ,int opc)
         printf("Metodo de Busqueda Arbol");
         // BusquedaEnArbol(A, n, elem,&encontrado);
         break;
-    case 6:
-        printf("Lineal Hilos");
-        // BusquedaLinealHilos(A,3,0,8,&encontrado);
     default:
         break;
     }
@@ -271,6 +232,10 @@ void * lanzarBusquedaBinaria(void* busqueda){
 
 
 // .Lectura del Archivo
+// .Recibe:  Arreglo con memoria suficiente para almacenar n cantidad de enteros
+// .Devuelve: Arreglo con los valores insertados dentro de el
+
+
 int *LeerArchivo(int *A, int n)
 {
     int i;
