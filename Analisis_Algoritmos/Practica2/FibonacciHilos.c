@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
-#include "tiempo.h"
+#include "./Tiempo/tiempo.c"
 
-
+int *LeerArchivo(int *A, int n);
 struct argumentos {
 	int *arr;
 	int fib2;
@@ -23,6 +23,7 @@ int min(int x, int y) { return (x<=y)? x : y; }
     Imprime si ha encontrado el numero 
 */
 void *fibonacci(void *ags){
+    double utime0, stime0, wtime0, utime1, stime1, wtime1; //Variables para medición de tiempos
 	struct argumentos *args = (struct argumentos*) ags;
 	int status = 0, offset = 0;
 	// Inizializa numeros fibonacci  
@@ -31,6 +32,7 @@ void *fibonacci(void *ags){
     int fibM = fibMMm2 + fibMMm1; // m Fibonacci 
     int n = args->n;
     int x = args->target;
+    uswtime(&utime0, &stime0, &wtime0);
 	while (fibM > 1) 
         { 
             // Revisa si fibMm2 esta en una locacion valida 
@@ -56,7 +58,14 @@ void *fibonacci(void *ags){
             // Elemento encontrado retorna S
             else
             {
+        uswtime(&utime1, &stime1, &wtime1);
             	printf("Encontrado\n");
+                printf("\n");
+                printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
+                printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
+                printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
+                printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+                printf("\n");
             	pthread_exit((void*)&status);
 
             } 
@@ -95,12 +104,7 @@ void main(int argc, char *argv[]){
 	margs -> n = n;
 	margs -> target = target;
 	
-	if(numeros==NULL)
-		exit(2);
-	//Se leen los numeros desde la consola o un archivo
-	for(i=0;i<n;i++){
-		scanf("%i",&numeros[i]);
-	}
+	LeerArchivo(numeros,n);
 
     margs-> arr = numeros;
 	/*Generamos los numeros fibonacci, para el tamaño de problema
@@ -133,4 +137,21 @@ void main(int argc, char *argv[]){
     printf("n=%i\n",n);
     printf("x=%i\n",target);
 	return;
+}
+
+
+int *LeerArchivo(int *A, int n)
+{
+    int i;
+    FILE *numeros;
+    numeros = fopen("10millones.txt", "r");
+    if (numeros == NULL)
+    {
+        puts("Error en la apertura del archivo");
+    }
+    for (i = 0; i < n; i++)
+    {
+        fscanf(numeros, "%d", &A[i]);
+    }
+    fclose(numeros);
 }
