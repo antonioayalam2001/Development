@@ -37,7 +37,6 @@ int main(int argc, char const *argv[])
     // Lectura y asignacion de valores al arreglo en cuestion
     LeerArchivo(A, n);
 
-    int opc = 0;
     do
     {
         printf("Metodos de busqueda:\n");
@@ -81,7 +80,7 @@ int main(int argc, char const *argv[])
 
                 if (aviso > 0)
                 {
-                    printf("Lineal Hilos %d\n", j);
+                    printf("Lineal Hilos");
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
                     printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
