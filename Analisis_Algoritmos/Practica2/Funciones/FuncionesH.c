@@ -280,7 +280,7 @@ void BusquedaEnArbolHilos(int * arreglo, int n, int valorABuscar, int * aviso)
 	Iniciar(&t);
 		for (int i = 0; i < n; ++i)
 	// Recorriendo la lista para ir insertando cada numero en el arbol
-	Insertar(&t,arreglo[i]);
+	Insertar(**t,arreglo[i]);
 
 	
 	/* Parte de hilos */
@@ -288,7 +288,7 @@ void BusquedaEnArbolHilos(int * arreglo, int n, int valorABuscar, int * aviso)
 	// no está en la raíz:
 	if(t->dato == valorABuscar) 
 	{
-		*aviso = t.dato;
+		*aviso = t->dato;
 	}
 	else
 	{
