@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include "../Tiempo/tiempo.c"
+#include "./Tiempo/tiempo.c"
 
 
 // // Estrucutras auxiliares para la ejecucion de los códigos
@@ -184,7 +184,7 @@ void MenuSeleccion(int *A,int inicio, int final,int *Arreglo,int *aviso,int opc)
 		    for (m = 0; m < 4; m++)
     {
         uswtime(&utime0, &stime0, &wtime0);
-        BusquedaLineal(A,0,n, Arreglo[m], aviso);
+        BusquedaLineal(A,0,final, Arreglo[m], aviso);
         uswtime(&utime1, &stime1, &wtime1);
 
         if (aviso > 0)

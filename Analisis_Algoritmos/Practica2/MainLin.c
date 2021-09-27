@@ -8,7 +8,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include "./Funciones/FuncionesH.c"
-#include "./Tiempo/tiempo.c"
 // numeros = Arreglo leido
 // n = tamaño del arreglo
 
