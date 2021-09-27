@@ -25,12 +25,11 @@ typedef struct auxiliarBusquedaBinaria
 	int *encontrado;
 } AuxiliarBinaria;
 
-typedef struct auxiliarBusquedaEnArbol
-{
-	arbolBinario t;
+typedef struct auxiliarBusquedaEnArbol{
+	arbol t;
 	int valorABuscar;
-	int *encontrado;
-} AuxiliarArbol;
+	int * encontrado;
+}AuxiliarArbol;
 
 //  //
 //  //
@@ -348,7 +347,7 @@ void *lanzarBusquedaBinaria(void *busqueda)
 void * procesarBusquedaArbol(void* busqueda)
 {
 	AuxiliarArbol * b = (AuxiliarArbol *)busqueda;
-	BusquedaArbol(&((*b).t), (*b).valorABuscar, (*b).encontrado);
+	BuscaValor(&((*b).t), (*b).valorABuscar, (*b).encontrado);
 }
 
 // .Lectura del Archivo
