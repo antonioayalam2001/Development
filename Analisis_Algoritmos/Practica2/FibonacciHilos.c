@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
+
 #include "./Tiempo/tiempo.c"
 
 int *LeerArchivo(int *A, int n);
