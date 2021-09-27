@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include "./Arbol/Arbol.c"
+#include "../Arbol/Arbol.c"
 
 // // Estrucutras auxiliares para la ejecucion de los códigos
 //  //Nos ofrecen la alternativa de almacenar los valores dependiento de cada uno de los hilos
@@ -25,11 +25,12 @@ typedef struct auxiliarBusquedaBinaria
 	int *encontrado;
 } AuxiliarBinaria;
 
-typedef struct auxiliarBusquedaEnArbol{
-	arbol t;
+typedef struct auxiliarBusquedaEnArbol
+{
+	arbolBinario t;
 	int valorABuscar;
-	int * encontrado;
-}AuxiliarArbol;
+	int *encontrado;
+} AuxiliarArbol;
 
 //  //
 //  //
@@ -257,17 +258,15 @@ int fibMonaccianSearch(int *A, int x, int n)
 }
 
 //Busqueda en Arbol
-void BusquedaEnArbol(int * arreglo, int n, int valorABuscar, int * aviso)
+void BusquedaEnArbol(int *arreglo, int n, int valorABuscar, int *aviso)
 {
 	// Variable para "almacenar" el árbol
 	// Creamos nuestro árbols
-	arreglo=InsertarABB(arreglo,n,valorABuscar,aviso);
+	arreglo = InsertarABB(arreglo, n, valorABuscar, aviso);
 	// Rellenamos el arbol
 
 	// Lanzamos la búsqueda sin hilos
-
 }
-
 
 // Nos ayudará a lanzar la búsqueda en árbol por cada hilo
 void *lanzarBusquedaLineal(void *busqueda)
@@ -281,8 +280,6 @@ void *lanzarBusquedaBinaria(void *busqueda)
 	AuxiliarBinaria *a = (AuxiliarBinaria *)busqueda;
 	BusquedaBinaria(a->arrelgo, a->inicio, a->final - 1, a->valorABuscar, a->encontrado);
 }
-
-
 
 // .Lectura del Archivo
 // .Recibe:  Arreglo con memoria suficiente para almacenar n cantidad de enteros

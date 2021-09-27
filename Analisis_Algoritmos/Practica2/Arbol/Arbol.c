@@ -248,15 +248,12 @@ int BusquedaArbol(arbolBinario *Raiz, int valor,int *aviso){
 		if ((aux->dato) == valor)
 		{
 			*aviso=1;
-			printf("Ya fue encontrado el valor numero %d",valor);
 			break;
 		}
 		else if ((aux->dato) < valor){
-			printf("El numero %d es diferente a %d\n",(aux->dato),valor);
 			aux=((aux->der));
 		}
 		else if ((aux->dato) > valor){
-			printf("El numero %d es diferente a %d\n",(aux->dato),valor);
 			aux=((aux->izq));
 		}
 		
