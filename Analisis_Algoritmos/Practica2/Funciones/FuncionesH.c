@@ -257,16 +257,73 @@ int fibMonaccianSearch(int *A, int x, int n)
 	return -1;
 }
 
+
 //Busqueda en Arbol
 void BusquedaEnArbol(int *arreglo, int n, int valorABuscar, int *aviso)
 {
 	// Variable para "almacenar" el árbol
 	// Creamos nuestro árbols
-	arreglo = InsertarABB(arreglo, n, valorABuscar, aviso);
+	// arreglo = InsertarABB(arreglo, n, valorABuscar, aviso);
+	arbolBinario arbol;
+	arbol=InsertarABB;
+	BusquedaArbol(arbol,valorABuscar,aviso);
 	// Rellenamos el arbol
 
 	// Lanzamos la búsqueda sin hilos
 }
+
+void BusquedaEnArbolHilos(int * arreglo, int n, int valorABuscar, int * aviso)
+{
+	// Variable para "almacenar" el árbol
+	arbolBinario t;
+	// Creamos nuestro árbol
+	t= InsertarABB(arreglo,n,valorABuscar,aviso);	// Rellenamos el arbol
+	
+	
+	/* Parte de hilos */
+	// Comprobamos si nuestro valor a buscar
+	// no está en la raíz:
+	if((*t).valor == valorABuscar) 
+	{
+		*aviso = (*t).valor;
+	}
+	else
+	{
+		// Si no está, comenzamos la
+		// repartición de los subarboles
+		pthread_t *thread;
+		thread = malloc(2*sizeof(pthread_t));
+		// Creamos los auxiliares 
+		AuxiliarArbol * izq = (AuxiliarArbol *)malloc(sizeof(AuxiliarArbol));
+		(*izq).t = (*t).izquierdo;
+		(*izq).valorABuscar = valorABuscar;
+		(*izq).encontrado = bandera;
+
+		
+		AuxiliarArbol * der = (AuxiliarArbol *)malloc(sizeof(AuxiliarArbol));
+		(*der).t = (*t).derecho;
+		(*der).valorABuscar = valorABuscar;
+		(*der).encontrado = bandera;
+
+		// Creamos los hilos
+		if(pthread_create(&thread[0], NULL, procesarBusquedaArbol, (void *)izq) != 0)
+		{
+			perror("El thread no  pudo crearse [Arbol]\n");
+			exit(-1);
+		}
+		if(pthread_create(&thread[1], NULL, procesarBusquedaArbol, (void *)der) != 0)
+		{
+			perror("El thread no  pudo crearse [Arbol]\n");
+			exit(-1);
+		}
+		// Esperamos a los hilos
+		int i;
+		for (i=0; i<2; i++) pthread_join (thread[i], NULL);
+		free(thread);
+	}
+}
+
+
 
 // Nos ayudará a lanzar la búsqueda en árbol por cada hilo
 void *lanzarBusquedaLineal(void *busqueda)
@@ -279,6 +336,12 @@ void *lanzarBusquedaBinaria(void *busqueda)
 {
 	AuxiliarBinaria *a = (AuxiliarBinaria *)busqueda;
 	BusquedaBinaria(a->arrelgo, a->inicio, a->final - 1, a->valorABuscar, a->encontrado);
+}
+
+void * procesarBusquedaArbol(void* busqueda)
+{
+	AuxiliarArbol * b = (AuxiliarArbol *)busqueda;
+	BusquedaArbol(&((*b).t), (*b).valorABuscar, (*b).encontrado);
 }
 
 // .Lectura del Archivo

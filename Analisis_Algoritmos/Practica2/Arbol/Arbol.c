@@ -162,7 +162,7 @@ int * InsertarABB (int * A, int n,int valorABuscar,int *aviso)
 		
 	// A = Inorden(Raiz,A);
 	//- BusquedaArbol(Raiz,902);
-	BusquedaArbol(Raiz,valorABuscar,aviso);
+	// BusquedaArbol(Raiz,valorABuscar,aviso);
 }
 
 void Insertar(arbolBinario **Raiz,int DatoRecibido)
