@@ -185,10 +185,15 @@ int main(int argc, char const *argv[])
             }
             break;
             case 7:
-                BusquedaEnArbolHilos(A,n,Arreglo[m],&aviso);
+                for (m = 0; m < 4; m++)
+            {
+                uswtime(&utime0, &stime0, &wtime0);
+                BusquedaEnArbolHilos(A, n, Arreglo[m], &aviso);
+                uswtime(&utime1, &stime1, &wtime1);
+
                 if (aviso > 0)
                 {
-                    printf("Busqueda Arbol\n\n");
+                    printf("Busqueda Arbol Hilos\n\n");
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
                     printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
@@ -196,6 +201,9 @@ int main(int argc, char const *argv[])
                     printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
                     printf("\n");
                 }
+
+                aviso = -1;
+            }
             break;
         default:
             break;
