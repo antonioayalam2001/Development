@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include "./Tiempo/tiempo.c"
+#include "../Tiempo/tiempo.c"
 
 
 // // Estrucutras auxiliares para la ejecucion de los códigos
