@@ -2,7 +2,6 @@
 #define FuncionesH
 
 // void BusquedaLinealHilos(int * arreglo, int valorABuscar, int inicio, int final, int * encontrado);
-void MenuSeleccion(int *A,int inicio, int final,int *Arreglo,int *aviso,int opc);
 int *LeerArchivo(int *A, int n);
 // void BusquedaLineal(int * arreglo, int valorABuscar, int inicio, int final, int * encontrado);
 

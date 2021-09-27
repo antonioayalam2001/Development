@@ -170,32 +170,8 @@ void BusquedaBinariaHilos(int * A, int valorABuscar, int inicio, int final, int 
 }
 
 
-// . Menu de seleccion
-void MenuSeleccion(int *A,int inicio, int final,int *Arreglo,int *aviso,int opc)
-{
-    switch (opc)
-    {
-    case 1:
-        printf("Metodo de Lineal");
-		
-        break;
-    case 2:
-        printf("Metodo de Busqueda Binaria");
-        break;
-    case 3:
-        printf("Metodo de Busqueda Exponencial");
-        break;
-    case 4:
-        printf("Metodo de Busqueda Fibbonacci");
-        break;
-    case 5:
-        printf("Metodo de Busqueda Arbol");
-        // BusquedaEnArbol(A, n, elem,&encontrado);
-        break;
-    default:
-        break;
-    }
-}
+
+
 
 // Nos ayudará a lanzar la búsqueda en árbol por cada hilo
 void * lanzarBusquedaLineal(void* busqueda)
