@@ -82,41 +82,46 @@ int BusquedaExponencial(int *A, int n, int elem){
 
 
 // //          Busqueda con Serie de Fibbonacci           // //
-// //
-// //
-// //
-// //
-// //
-// Utility function to find minimum of two elements
+//Función para encontrar el mínimo de dos números
 int min(int x, int y) { return (x <= y) ? x : y; }
  
-/* Returns index of x if present,  else returns -1 */
+//Regresa "i" si el elemento se encuentra en el arreglo
+//Si el elemento no se encuentra, regresa un -1
+
+//Declaramos un arreglo
+//Un entero "n" para especificar el tamaño del arreglo 
+//Un entero llamado n el cual tiene el número que deseamos encontrar,
+//dentro del arreglo
 int fibMonaccianSearch(int *A, int x, int n)
 {
-    int fibMMm2 = 0; // (m-2)'th Fibonacci No.
-    int fibMMm1 = 1; // (m-1)'th Fibonacci No.
-    int fibM = fibMMm2 + fibMMm1; // m'th Fibonacci
+    //Inicializamos los primeros dos números de la serie
+    //Estos números siempre son continuos
+    int fibMMm2 = 0; 
+    int fibMMm1 = 1; 
+
+    //La suma de los números anteriores dan el número que sigue en la serie
+    int fibM = fibMMm2 + fibMMm1; 
  
-    /* fibM is going to store the smallest Fibonacci
-       Number greater than or equal to n */
+    //Mientras fibM es menor al tamaño del arreglo,
+    //Los valores se irán "recorriendo" de variable
+    //Y la suma de los números anteriores,
+    //serán el valor de fibM
     while (fibM < n) {
         fibMMm2 = fibMMm1;
         fibMMm1 = fibM;
         fibM = fibMMm2 + fibMMm1;
     }
  
-    // Marks the eliminated range from front
+    //Nos marca el rango de la izquierda donde no se encuentra el elemento deseado
     int offset = -1;
  
-    /* while there are elements to be inspected. Note that
-       we compare arr[fibMm2] with x. When fibM becomes 1,
-       fibMm2 becomes 0 */
+
     while (fibM > 1) {
-        // Check if fibMm2 is a valid location
         int i = min(offset + fibMMm2, n - 1);
  
-        /* If x is greater than the value at index fibMm2,
-           cut the subarray array from offset to i */
+        //Si el elemento es mayor al valor del índice, 
+        //Lo valores se irán recorriendo y el "offset" 
+        //se cambiará al valor del índice,
         if (A[i] < x) {
             fibM = fibMMm1;
             fibMMm1 = fibMMm2;
@@ -124,24 +129,24 @@ int fibMonaccianSearch(int *A, int x, int n)
             offset = i;
         }
  
-        /* If x is greater than the value at index fibMm2,
-           cut the subay after i+1  */
+        //Si el elemento es mayor a la posición del arreglo en la posiciónde fibMm2
+        //el arreglo se dividirá después de la posición i+1
         else if (A[i] > x) {
             fibM = fibMMm2;
             fibMMm1 = fibMMm1 - fibMMm2;
             fibMMm2 = fibM - fibMMm1;
         }
  
-        /* element found. return index */
+        //Si el elemento es encontrado, devolvemos "i"
         else
             return i;
     }
  
-    /* comparing the last element with x */
+    //Comparamos el último valor del arreglo con el elemento
     if (fibMMm1 && A[offset + 1] == x)
         return offset + 1;
  
-    /*element not found. return -1 */
+    //Si el elemento no es encontrado, devolvemos un -1
     return -1;
 }
  

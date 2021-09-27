@@ -139,16 +139,16 @@ int main(int argc, char const *argv[])
             }
             break;
         case 5:
-            printf("Metodo de Exponencial");
+            printf("Metodo de Fibo");
             for (m = 0; m < 4; m++)
             {
                 uswtime(&utime0, &stime0, &wtime0);
-                BusquedaExponencial(A, 0, n, Arreglo[m], &aviso);
+                aviso = fibMonaccianSearch(A,Arreglo[m],n);
                 uswtime(&utime1, &stime1, &wtime1);
 
                 if (aviso > 0)
                 {
-                    printf("Busqueda Exponencial\n");
+                    printf("Busqueda Fibo\n");
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
                     printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
