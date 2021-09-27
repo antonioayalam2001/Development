@@ -3,6 +3,7 @@
 // Autores: Mora Ayala Jose, Antonio, Lopez Lopez Oscar Manual
 // Jeon Jeong Paola, Lemus Ruiz Mariana ELizabeth
 // Solo falta binaria
+// Otro comentario
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
