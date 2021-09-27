@@ -277,18 +277,18 @@ void BusquedaEnArbolHilos(int * arreglo, int n, int valorABuscar, int * aviso)
 	// Variable para "almacenar" el árbol
 	arbolBinario t;
 	// Creamos nuestro árbol
-	t=Iniciar(&t);
+	Iniciar(&t);
 		for (int i = 0; i < n; ++i)
 	// Recorriendo la lista para ir insertando cada numero en el arbol
-	Insertar(&t,A[i]);
+	Insertar(&t,arreglo[i]);
 
-
+	
 	/* Parte de hilos */
 	// Comprobamos si nuestro valor a buscar
 	// no está en la raíz:
 	if(t->dato == valorABuscar) 
 	{
-		*aviso = ->dato;
+		*aviso = t.dato;
 	}
 	else
 	{
@@ -298,13 +298,13 @@ void BusquedaEnArbolHilos(int * arreglo, int n, int valorABuscar, int * aviso)
 		thread = malloc(2*sizeof(pthread_t));
 		// Creamos los auxiliares 
 		AuxiliarArbol * izq = (AuxiliarArbol *)malloc(sizeof(AuxiliarArbol));
-		(*izq).t = t->izquierdo;
+		(*izq).t = t->izq;
 		(*izq).valorABuscar = valorABuscar;
 		(*izq).encontrado = aviso;
 
 		
 		AuxiliarArbol * der = (AuxiliarArbol *)malloc(sizeof(AuxiliarArbol));
-		(*der).t = t->derecho;
+		(*der).t = t->der;
 		(*der).valorABuscar = valorABuscar;
 		(*der).encontrado = aviso;
 

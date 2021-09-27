@@ -31,7 +31,7 @@ typedef struct nodo
 	int dato;
 }nodo;
 
-typedef nodo arbolBinario;
+typedef nodo* arbolBinario;
 
 // *A = Arreglo de lista de numeros 
 // n Longitud del arreglo
@@ -46,5 +46,6 @@ arbolBinario * InicializarArbol (int numDato);
 // Colocara en orden los elementos del arreglo (Recibe un arbol binario,arreglo de numeros)
 int * Inorden (arbolBinario *Raiz, int *numeros);
 int BusquedaArbol (arbolBinario *Raiz, int valor, int *aviso);
+void Iniciar(arbolBinario* a);
 
 #endif
