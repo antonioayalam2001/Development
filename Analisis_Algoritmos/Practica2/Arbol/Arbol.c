@@ -203,6 +203,32 @@ void Insertar(arbolBinario **Raiz,int DatoRecibido)
 }
 
 
+void NuevoNodo(arbol* a, int valor){
+	// Si el árbol está vacío, crea un nodo en la raíz
+	if(Vacio(a) == 1)
+	{
+		*a = CreaNodo(valor);
+	}
+	else
+	{
+		// Determinamos hacia donde hay que mover
+		// la posición
+		if((*a)->valor < valor)
+		{
+			// Llamamos nuevamente a esta función
+			// pero ahora con la nueva ubicación
+			NuevoNodo(&((*a)->derecho),valor);
+		}
+		else	
+		{
+			// Llamamos nuevamente a esta función
+			// pero ahora con la nueva ubicación
+			NuevoNodo(&((*a)->izquierdo),valor);
+		}
+	}
+	return;
+}
+
 /*
 
 Funcion: Recibe un arbol binario Raiz y una posicion A, realiza el recorrido izquierdo -> raiz -> derecho a partir de la posicion A.

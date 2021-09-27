@@ -47,5 +47,6 @@ arbolBinario * InicializarArbol (int numDato);
 int * Inorden (arbolBinario *Raiz, int *numeros);
 int BusquedaArbol (arbolBinario *Raiz, int valor, int *aviso);
 void Iniciar(arbolBinario* a);
+void NuevoNodo(arbol* a, int valor);
 
 #endif
