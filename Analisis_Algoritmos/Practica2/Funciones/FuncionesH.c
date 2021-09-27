@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include "./Tiempo/tiempo.c"
 
 
 // // Estrucutras auxiliares para la ejecucion de los códigos
@@ -174,32 +173,11 @@ void BusquedaBinariaHilos(int * A, int valorABuscar, int inicio, int final, int 
 // . Menu de seleccion
 void MenuSeleccion(int *A,int inicio, int final,int *Arreglo,int *aviso,int opc)
 {
-	int m;
-    double utime0, stime0, wtime0, utime1, stime1, wtime1; //Variables para medición de tiempos
-
     switch (opc)
     {
     case 1:
         printf("Metodo de Lineal");
-		    for (m = 0; m < 4; m++)
-    {
-        uswtime(&utime0, &stime0, &wtime0);
-        BusquedaLineal(A,0,final, Arreglo[m], aviso);
-        uswtime(&utime1, &stime1, &wtime1);
-
-        if (aviso > 0)
-        {
-            printf("Lineal %d\n",m);
-            printf("\n");
-            printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
-            printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
-            printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
-            printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
-            printf("\n");
-        }
-
-        aviso = -1;
-    }
+		
         break;
     case 2:
         printf("Metodo de Busqueda Binaria");
