@@ -139,6 +139,7 @@ void BusquedaBinaria(int *A, int inicio, int final, int elem, int *aviso)
 		{
 			inicio = mitad + 1;
 		}
+		
 		else
 		{
 			final = mitad - 1;
