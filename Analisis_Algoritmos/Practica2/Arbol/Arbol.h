@@ -38,15 +38,15 @@ typedef nodo* arbolBinario;
 // DatoRecibido = Numeros de la lista obtenidos mediante el for
 
 // Funcion devuelve un antero (Recibe un Arreglo, Recibe un dato numerico)
-int * InsertarABB(int *A, int n,int valorABuscar,int *aviso);
+// int * InsertarABB(int *A, int n,int valorABuscar,int *aviso);
 // Inserta elementos en el arbol (Recibe un Arbol binario, Recibe un dato numerico)
-void Insertar(arbolBinario **Raiz,int DatoRecibido);
+// void Insertar(arbolBinario **Raiz,int DatoRecibido);
 // Cuando el arbol se encuentra vacio inicializa uno nuevo (Recibe un dato numerico)
 arbolBinario * InicializarArbol (int numDato);
 // Colocara en orden los elementos del arreglo (Recibe un arbol binario,arreglo de numeros)
-int * Inorden (arbolBinario *Raiz, int *numeros);
+// int * Inorden (arbolBinario *Raiz, int *numeros);
 int BusquedaArbol (arbolBinario *Raiz, int valor, int *aviso);
 void Iniciar(arbolBinario* a);
-void NuevoNodo(arbol* a, int valor);
+void NuevoNodo(arbolBinario* a, int valor);
 
 #endif
