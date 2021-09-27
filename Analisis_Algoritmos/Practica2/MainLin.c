@@ -4,6 +4,7 @@
 // Jeon Jeong Paola, Lemus Ruiz Mariana ELizabeth
 // Solo falta binaria
 // Otro comentario
+// Quitando comentarios
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
