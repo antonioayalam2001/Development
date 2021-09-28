@@ -62,7 +62,7 @@ void BusquedaLineal(int *A, int inicio, int final, int elem, int *aviso)
 		//con la posición del elemento que se desea encontrar
 		if (A[n] == elem)
 		{
-			printf("El elemento fue encontrado en la posicion numero: %d ", n);
+			printf("El elemento fue encontrado en la posicion numero: %d \n", n);
 			*aviso = elem;
 		}
 	}
