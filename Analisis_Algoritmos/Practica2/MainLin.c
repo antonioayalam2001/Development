@@ -94,12 +94,12 @@ int main(int argc, char const *argv[])
 
                 if (aviso > 0)
                 {
-                    printf("Lineal Hilos %d\n",Arreglo[m]);
+                    printf("Lineal Hilos %d\n",Arreglo[j]);
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
                     printf("\n");
                 }else{
-                    printf("Numero no encontrado %d\n",Arreglo[m]);
+                    printf("Numero no encontrado %d\n",Arreglo[j]);
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
                     printf("\n");
@@ -144,12 +144,12 @@ int main(int argc, char const *argv[])
 
                 if (aviso > 0)
                 {
-                    printf("BH: %d\n",Arreglo[m]);
+                    printf("BH: %d\n",Arreglo[h]);
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
                     printf("\n");
                 }else{
-                    printf("Numero no encontrado %d\n",Arreglo[m]);
+                    printf("Numero no encontrado %d\n",Arreglo[h]);
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
                     printf("\n");
