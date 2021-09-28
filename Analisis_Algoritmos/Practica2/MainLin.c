@@ -73,9 +73,11 @@ int main(int argc, char const *argv[])
                     printf("Busqueda Lineal numero: %d\n",Arreglo[m]);
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
-                    printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
-                    printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
-                    printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+                    printf("\n");
+                }else{
+                    printf("Numero no encontrado %d\n",Arreglo[m]);
+                    printf("\n");
+                    printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
                     printf("\n");
                 }
 
@@ -95,9 +97,11 @@ int main(int argc, char const *argv[])
                     printf("Lineal Hilos %d\n",Arreglo[m]);
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
-                    printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
-                    printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
-                    printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+                    printf("\n");
+                }else{
+                    printf("Numero no encontrado %d\n",Arreglo[m]);
+                    printf("\n");
+                    printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
                     printf("\n");
                 }
 
@@ -117,9 +121,11 @@ int main(int argc, char const *argv[])
                     printf("Binaria%d\n",Arreglo[m]);
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
-                    printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
-                    printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
-                    printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+                    printf("\n");
+                }else{
+                    printf("Numero no encontrado %d\n",Arreglo[m]);
+                    printf("\n");
+                    printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
                     printf("\n");
                 }
 
@@ -141,9 +147,11 @@ int main(int argc, char const *argv[])
                     printf("BH: %d\n",Arreglo[m]);
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
-                    printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
-                    printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
-                    printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+                    printf("\n");
+                }else{
+                    printf("Numero no encontrado %d\n",Arreglo[m]);
+                    printf("\n");
+                    printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
                     printf("\n");
                 }
 
@@ -163,9 +171,11 @@ int main(int argc, char const *argv[])
                     printf("Busqueda Fibo %d\n",Arreglo[m]);
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
-                    printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
-                    printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
-                    printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+                    printf("\n");
+                }else{
+                    printf("Numero no encontrado %d\n",Arreglo[m]);
+                    printf("\n");
+                    printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
                     printf("\n");
                 }
 
@@ -185,11 +195,13 @@ int main(int argc, char const *argv[])
                 if (aviso > 0)
                 {
                     printf("Busqueda Arbol elemento : %d\n",Arreglo[m]);
+                   printf("\n");
+                    printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
+                    printf("\n");
+                }else{
+                    printf("Numero no encontrado %d\n",Arreglo[m]);
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
-                    printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
-                    printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
-                    printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
                     printf("\n");
                 }
 
@@ -208,9 +220,11 @@ int main(int argc, char const *argv[])
                     printf("Busqueda Arbol Hilos elemento: %d\n",Arreglo[m]);
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
-                    printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
-                    printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
-                    printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+                    printf("\n");
+                }else{
+                    printf("Numero no encontrado %d\n",Arreglo[m]);
+                    printf("\n");
+                    printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
                     printf("\n");
                 }
 
