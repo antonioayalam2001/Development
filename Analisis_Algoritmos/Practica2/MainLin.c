@@ -221,6 +221,7 @@ int main(int argc, char const *argv[])
             break;
         }
         /* code */
+        opc=0;
     } while (opc != 0);
 
     return 0;
