@@ -29,7 +29,7 @@ int main(int argc, char const *argv[])
     // . Arreglo Pruebas;
     // int Arreglo[4] = {197, 236, 3035, 902};
     // .Arreglo Solicitado;
-    int Arreglo[20] = {322486,14700764,3128036,6337399,61396,10393545,2147445644,1295390003,450057883,187645041,1980098116,152503,5000,1493283650,214826,1843349527,1360839354,2109248666,2147470852,0};
+    int Arreglo[20] = {322486,14700764,3128036,6337399,61396,10393545,2147445644,1295390003,450057883,187645041,1980098116,152503,5000,7500,214826,1843349527,1321906174,2109248666,2147470852,0};
     // Aviso que nos servira de apoyo para saber cuando un elemento ya haya sido encontrado
     // En todos los casos cuando aviso>0 el elemento habra sido encontrado
     int aviso = -1;
@@ -52,7 +52,7 @@ int main(int argc, char const *argv[])
 
     do
     {
-        printf("Valor de n%d\n",n);
+        printf("///////////////Valor de n %d////////////////////\n\n",n);
         // scanf("%d", &opc);
         switch (opc)
         {
@@ -66,12 +66,10 @@ int main(int argc, char const *argv[])
                 if (aviso > 0)
                 {
                     printf("Busqueda Lineal numero: %d\n",Arreglo[m]);
-                    printf("\n");
                     printf("real:%.10e s\n", wtime1 - wtime0);
                     printf("\n");
                 }else{
                     printf("NoE: %d\n",Arreglo[m]);
-                    printf("\n");
                     printf("real  %.10e s\n", wtime1 - wtime0);
                     printf("\n");
                 }
@@ -90,12 +88,10 @@ int main(int argc, char const *argv[])
                 if (aviso > 0)
                 {
                     printf("Lineal Hilos %d\n",Arreglo[j]);
-                    printf("\n");
                     printf("real %.10e s\n", wtime1 - wtime0);
                     printf("\n");
                 }else{
                     printf("NoE: %d\n",Arreglo[j]);
-                    printf("\n");
                     printf("real %.10e s\n", wtime1 - wtime0);
                     printf("\n");
                 }
@@ -114,12 +110,10 @@ int main(int argc, char const *argv[])
                 if (aviso > 0)
                 {
                     printf("Binaria%d\n",Arreglo[m]);
-                    printf("\n");
                     printf("real %.10e s\n", wtime1 - wtime0);
                     printf("\n");
                 }else{
                     printf("NoE: %d\n",Arreglo[m]);
-                    printf("\n");
                     printf("real %.10e s\n", wtime1 - wtime0);
                     printf("\n");
                 }
@@ -140,12 +134,10 @@ int main(int argc, char const *argv[])
                 if (aviso > 0)
                 {
                     printf("BH: %d\n",Arreglo[h]);
-                    printf("\n");
                     printf("real %.10e s\n", wtime1 - wtime0);
                     printf("\n");
                 }else{
                     printf("NoE: %d\n",Arreglo[h]);
-                    printf("\n");
                     printf("real %.10e s\n", wtime1 - wtime0);
                     printf("\n");
                 }
@@ -164,12 +156,10 @@ int main(int argc, char const *argv[])
                 if (aviso > 0)
                 {
                     printf("Busqueda Fibo %d\n",Arreglo[m]);
-                    printf("\n");
                     printf("real %.10e s\n", wtime1 - wtime0);
                     printf("\n");
                 }else{
                     printf("NoE: %d\n",Arreglo[m]);
-                    printf("\n");
                     printf("real  %.10e s\n", wtime1 - wtime0);
                     printf("\n");
                 }
@@ -190,12 +180,10 @@ int main(int argc, char const *argv[])
                 if (aviso > 0)
                 {
                     printf("Busqueda Arbol elemento : %d\n",Arreglo[m]);
-                   printf("\n");
                     printf("real %.10e s\n", wtime1 - wtime0);
                     printf("\n");
                 }else{
                     printf("NoE: %d\n",Arreglo[m]);
-                    printf("\n");
                     printf("real %.10e s\n", wtime1 - wtime0);
                     printf("\n");
                 }
@@ -213,12 +201,10 @@ int main(int argc, char const *argv[])
                 if (aviso > 0)
                 {
                     printf("Busqueda Arbol Hilos elemento: %d\n",Arreglo[m]);
-                    printf("\n");
                     printf("real %.10e s\n", wtime1 - wtime0);
                     printf("\n");
                 }else{
                     printf("NoE: %d\n",Arreglo[m]);
-                    printf("\n");
                     printf("real %.10e s\n", wtime1 - wtime0);
                     printf("\n");
                 }
