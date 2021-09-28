@@ -70,7 +70,7 @@ int main(int argc, char const *argv[])
 
                 if (aviso > 0)
                 {
-                    printf("Busqueda Lineal\n");
+                    printf("Busqueda Lineal numero: %d\n",Arreglo[m]);
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
                     printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
@@ -92,7 +92,7 @@ int main(int argc, char const *argv[])
 
                 if (aviso > 0)
                 {
-                    printf("Lineal Hilos");
+                    printf("Lineal Hilos %d\n",Arreglo[m]);
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
                     printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
@@ -114,7 +114,7 @@ int main(int argc, char const *argv[])
 
                 if (aviso > 0)
                 {
-                    printf("Binaria\n");
+                    printf("Binaria%d\n",Arreglo[m]);
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
                     printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
@@ -138,7 +138,7 @@ int main(int argc, char const *argv[])
 
                 if (aviso > 0)
                 {
-                    printf("BH");
+                    printf("BH: %d\n",Arreglo[m]);
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
                     printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
@@ -160,7 +160,7 @@ int main(int argc, char const *argv[])
 
                 if (aviso > 0)
                 {
-                    printf("Busqueda Fibo\n");
+                    printf("Busqueda Fibo %d\n",Arreglo[m]);
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
                     printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
@@ -175,7 +175,7 @@ int main(int argc, char const *argv[])
             break;
 
         case 6:
-            printf("Metodo de Arbol\n");
+            printf("Metodo de Arbol \n");
             for (m = 0; m < 20; m++)
             {
                 uswtime(&utime0, &stime0, &wtime0);
@@ -184,7 +184,7 @@ int main(int argc, char const *argv[])
 
                 if (aviso > 0)
                 {
-                    printf("Busqueda Arbol\n\n");
+                    printf("Busqueda Arbol elemento : %d\n",Arreglo[m]);
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
                     printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
@@ -205,7 +205,7 @@ int main(int argc, char const *argv[])
 
                 if (aviso > 0)
                 {
-                    printf("Busqueda Arbol Hilos\n\n");
+                    printf("Busqueda Arbol Hilos elemento: %d\n",Arreglo[m]);
                     printf("\n");
                     printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
                     printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
