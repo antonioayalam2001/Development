@@ -18,7 +18,7 @@
 // pedira que ingreses una opcion del 1 al 9 y los elementos a ordenar por defecto sera de 100 numeros
 
 // - Activar comentarios y ya funcionara correctamente con el archivo
-
+int *Shell(int *A, int n);
 int main(int argc, char const *argv[])
 {
     double utime0, stime0, wtime0, utime1, stime1, wtime1; //Variables para medición de tiempos
@@ -234,4 +234,32 @@ int main(int argc, char const *argv[])
     } while (opc != 0);
 
     return 0;
+}
+
+
+
+int *Shell(int *A, int n)
+{
+    int i, j, k, b, temp;
+    k = ceil(n / 2);
+    while (k >= 1)
+    {
+        b = 1;
+        while (b != 0)
+        {
+            b = 0;
+            for (i = k; i <= n - 1; i++)
+            {
+                if (A[i - k] > A[i])
+                {
+                    temp = A[i];
+                    A[i] = A[i - k];
+                    A[i - k] = temp;
+                    b = b + 1;
+                }
+            }
+        }
+        k = ceil(k / 2);
+    }
+
 }
