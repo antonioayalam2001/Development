@@ -23,15 +23,22 @@ int main(int argc, char const *argv[])
     double utime0, stime0, wtime0, utime1, stime1, wtime1; //Variables para medición de tiempos
     int i, l, m, j;                                        //Variables para loops
     // int *Arreglo;
-    int n = 60, opc, *A;
+    int n, opc, *A;
     //- int *Arreglo;
     // . Arreglo Pruebas;
-    int Arreglo[4] = {197, 236, 3035, 902};
+    // int Arreglo[4] = {197, 236, 3035, 902};
     // .Arreglo Solicitado;
-    // int Arreglo[20] = {322486,14700764,3128036,6337399,61396,10393545,214744564,1295390003,450057883,187645041,1980098116,152503,4000,1493283650,214826,1843349527,136083,2109248666,2147470852,0};
+    int Arreglo[20] = {322486,14700764,3128036,6337399,61396,10393545,2147445644,1295390003,450057883,187645041,1980098116,152503,5000,1493283650,214826,1843349527,1360839354,2109248666,2147470852,0};
     // Aviso que nos servira de apoyo para saber cuando un elemento ya haya sido encontrado
     // En todos los casos cuando aviso>0 el elemento habra sido encontrado
     int aviso = -1;
+
+    // Tomando los valores de los argumentos de ejecucion
+    n=atoi(argv[1]);
+    // numero=atoi(argv[2]);
+    opc=atoi(argv[2]);
+ 
+
 
     // Asignacion de memoria del arreglo con respecto al tamaño de problema solicitado
     A = (int *)malloc(n * sizeof(int));
@@ -40,6 +47,7 @@ int main(int argc, char const *argv[])
     // Ciclo para poder proporcionar un menu de opcion y seleccionar el algoritmo deseado
     // Durante el ciclo de acuerdo a la opcion seleccionada proporcionara los resultados en caso de que el valor del
     // aviso haya cambiado 
+
     do
     {
         printf("Metodos de busqueda:\n");
@@ -49,11 +57,11 @@ int main(int argc, char const *argv[])
         printf("7.Metodo Fibo\n8.Metodo Fibo\n");
         printf("9.Metodo de Arbol\n10.Metodo de Arbol Hilos");
         printf("Ingresa opcion:\n");
-        scanf("%d", &opc);
+        // scanf("%d", &opc);
         switch (opc)
         {
         case 1:
-            for (m = 0; m < 4; m++)
+            for (m = 0; m < 20; m++)
             {
                 uswtime(&utime0, &stime0, &wtime0);
                 BusquedaLineal(A, 0, n, Arreglo[m], &aviso);
@@ -75,7 +83,7 @@ int main(int argc, char const *argv[])
 
             break;
         case 2:
-            for (j = 0; j < 4; j++)
+            for (j = 0; j < 20; j++)
             {
                 uswtime(&utime0, &stime0, &wtime0);
                 BusquedaLinealHilos(A, Arreglo[j], 0, n, &aviso);
@@ -97,7 +105,7 @@ int main(int argc, char const *argv[])
             break;
         case 3:
             printf("Metodo de Busqueda Binaria");
-            for (m = 0; m < 4; m++)
+            for (m = 0; m < 20; m++)
             {
                 uswtime(&utime0, &stime0, &wtime0);
                 BusquedaBinaria(A, 0, n, Arreglo[m], &aviso);
@@ -121,7 +129,7 @@ int main(int argc, char const *argv[])
             printf("Metodo de Busqueda Binaria Hilos");
             int h;
             h = 0;
-            for (h = 0; h < 4; h++)
+            for (h = 0; h < 20; h++)
             {
                 uswtime(&utime0, &stime0, &wtime0);
                 BusquedaBinariaHilos(A, Arreglo[h], 0, n, &aviso);
@@ -143,7 +151,7 @@ int main(int argc, char const *argv[])
             break;
         case 5:
             printf("Metodo de Fibo");
-            for (m = 0; m < 4; m++)
+            for (m = 0; m < 20; m++)
             {
                 uswtime(&utime0, &stime0, &wtime0);
                 aviso = fibMonaccianSearch(A, Arreglo[m], n);
@@ -167,7 +175,7 @@ int main(int argc, char const *argv[])
 
         case 6:
             printf("Metodo de Arbol\n");
-            for (m = 0; m < 4; m++)
+            for (m = 0; m < 20; m++)
             {
                 uswtime(&utime0, &stime0, &wtime0);
                 BusquedaEnArbol(A, n, Arreglo[m], &aviso);
@@ -188,7 +196,7 @@ int main(int argc, char const *argv[])
             }
             break;
             case 7:
-                for (m = 0; m < 4; m++)
+                for (m = 0; m < 20; m++)
             {
                 uswtime(&utime0, &stime0, &wtime0);
                 BusquedaEnArbolHilos(A, n, Arreglo[m], &aviso);
