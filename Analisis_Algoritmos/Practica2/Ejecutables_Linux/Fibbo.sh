@@ -1,7 +1,7 @@
 #!/bin/bash
 echo Lineal Sin Hilos
 cd ..
-gcc MainLin.c -lm -o MainLin -phtread
+gcc MainLin.c -lm -o MainLin -pthread
 ./MainLin 1000000 7 >Fibonacci.txt
 ./MainLin 2000000 7 >>Fibonacci.txt
 ./MainLin 3000000 7 >>Fibonacci.txt

@@ -1,7 +1,7 @@
 #!/bin/bash
 echo Lineal Sin Hilos
 cd ..
-gcc FibonacciHilos.c -lm -o FibonacciHilos -phtread
+gcc FibonacciHilos.c -lm -o FibonacciHilos -pthread
 ./FibonacciHilos 1000000  >FibonacciHilos.txt
 ./FibonacciHilos 2000000  >>FibonacciHilos.txt
 ./FibonacciHilos 3000000  >>FibonacciHilos.txt
