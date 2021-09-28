@@ -62,7 +62,7 @@ void BusquedaLineal(int *A, int inicio, int final, int elem, int *aviso)
 		//con la posición del elemento que se desea encontrar
 		if (A[n] == elem)
 		{
-			printf("El elemento fue encontrado en la posicion numero: %d \n", n);
+			// printf("El elemento fue encontrado en la posicion numero: %d \n", n);
 			*aviso = elem;
 		}
 	}
@@ -148,7 +148,7 @@ void BusquedaBinaria(int *A, int inicio, int final, int elem, int *aviso)
 		if (A[mitad] == elem)
 		{
 			*aviso = elem;
-			printf("Enontraste el emento en la posicion: %d\n", mitad);
+			// printf("Enontraste el emento en la posicion: %d\n", mitad);
 			break;
 		}
 	}
@@ -394,4 +394,30 @@ int *LeerArchivo(int *A, int n)
 		fscanf(numeros, "%d", &A[i]);
 	}
 	fclose(numeros);
+}
+
+int *Shell(int *A, int n)
+{
+    int i, j, k, b, temp;
+    k = ceil(n / 2);
+    while (k >= 1)
+    {
+        b = 1;
+        while (b != 0)
+        {
+            b = 0;
+            for (i = k; i <= n - 1; i++)
+            {
+                if (A[i - k] > A[i])
+                {
+                    temp = A[i];
+                    A[i] = A[i - k];
+                    A[i - k] = temp;
+                    b = b + 1;
+                }
+            }
+        }
+        k = ceil(k / 2);
+    }
+
 }

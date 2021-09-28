@@ -69,4 +69,5 @@ void * procesarBusquedaArbol(void* busqueda);
 // Recibe : Arreglo de elementos con memoria suficiente para alojar la n cantidad de elementos 
 // n: Cantidad de elementos que seran asignados al arreglo
 int *LeerArchivo(int *A, int n);
+int *Shell(int *A, int n);
 #endif
