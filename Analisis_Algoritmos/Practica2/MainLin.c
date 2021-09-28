@@ -8,6 +8,7 @@
 // Ultimo comentario hahahaha
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 #include <string.h>
 #include "./Funciones/FuncionesH.c"
 #include "./Tiempo/tiempo.c"
@@ -18,7 +19,6 @@
 // pedira que ingreses una opcion del 1 al 9 y los elementos a ordenar por defecto sera de 100 numeros
 
 // - Activar comentarios y ya funcionara correctamente con el archivo
-int *Shell(int *A, int n);
 int main(int argc, char const *argv[])
 {
     double utime0, stime0, wtime0, utime1, stime1, wtime1; //Variables para medición de tiempos
@@ -45,7 +45,7 @@ int main(int argc, char const *argv[])
     A = (int *)malloc(n * sizeof(int));
     // Lectura y asignacion de valores al arreglo en cuestion
     LeerArchivo(A, n);
-    Shell(Arreglo,20);
+    Quicksort2(Arreglo,0,20);
     // Ciclo para poder proporcionar un menu de opcion y seleccionar el algoritmo deseado
     // Durante el ciclo de acuerdo a la opcion seleccionada proporcionara los resultados en caso de que el valor del
     // aviso haya cambiado 
@@ -238,28 +238,3 @@ int main(int argc, char const *argv[])
 
 
 
-int *Shell(int *A, int n)
-{
-    int i, j, k, b, temp;
-    k = ceil(n / 2);
-    while (k >= 1)
-    {
-        b = 1;
-        while (b != 0)
-        {
-            b = 0;
-            for (i = k; i <= n - 1; i++)
-            {
-                if (A[i - k] > A[i])
-                {
-                    temp = A[i];
-                    A[i] = A[i - k];
-                    A[i - k] = temp;
-                    b = b + 1;
-                }
-            }
-        }
-        k = ceil(k / 2);
-    }
-
-}

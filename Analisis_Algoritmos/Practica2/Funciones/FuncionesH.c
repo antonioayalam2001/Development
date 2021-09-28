@@ -396,28 +396,36 @@ int *LeerArchivo(int *A, int n)
 	fclose(numeros);
 }
 
-int *Shell(int *A, int n)
+int *Quicksort2(int *A, int primero, int ultimo)
 {
-    int i, j, k, b, temp;
-    k = ceil(n / 2);
-    while (k >= 1)
+    int piv, i, j, central, aux;
+    central = (primero + ultimo) / 2;
+    piv = A[central], i = primero, j = ultimo;
+    do
     {
-        b = 1;
-        while (b != 0)
+        while (A[i] < piv)
         {
-            b = 0;
-            for (i = k; i <= n - 1; i++)
-            {
-                if (A[i - k] > A[i])
-                {
-                    temp = A[i];
-                    A[i] = A[i - k];
-                    A[i - k] = temp;
-                    b = b + 1;
-                }
-            }
+            i++;
         }
-        k = ceil(k / 2);
+        while (A[j] > piv)
+        {
+            j--;
+        }
+        if (i <= j)
+        {
+            aux = A[i];
+            A[i] = A[j];
+            A[j] = aux;
+            i++;
+            j--;
+        }
+    } while (i <= j);
+    if (primero < j)
+    {
+        Quicksort2(A, primero, j);
     }
-
+    if (primero < ultimo)
+    {
+        Quicksort2(A, i, ultimo);
+    }
 }
