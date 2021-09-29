@@ -1,5 +1,5 @@
 #!/bin/bash
-echo Lineal Sin Hilos
+echo Arbol
 cd ..
 gcc MainLin.c -lm -o MainLin -pthread
 ./MainLin 1000000 6 >Arbol.txt

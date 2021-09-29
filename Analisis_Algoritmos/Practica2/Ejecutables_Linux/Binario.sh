@@ -1,5 +1,5 @@
 #!/bin/bash
-echo Lineal Sin Hilos
+echo Binario
 cd ..
 gcc MainLin.c -lm -o MainLin -pthread
 ./MainLin 1000000 3 >Binario.txt
