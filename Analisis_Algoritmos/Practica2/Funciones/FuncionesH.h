@@ -43,7 +43,6 @@ void BusquedaBinariaHilos(int * A, int valorABuscar, int inicio, int final, int 
 //Un entero llamado elemento el cual tiene el número que deseamos encontrar,
 //dentro del arreglo
 // *aviso: Bandera que nos ayudara a determianr si el elemento ya fue encontrado o no
-void BusquedaExponencial(int *A,int inicio, int final,int elem,int *aviso);
 
 // BusquedaArbol //
 //Recibimos un arreglo que contiene los numeros del archivo 10 millones
