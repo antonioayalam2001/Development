@@ -146,7 +146,7 @@ int main(int argc, char const *argv[])
             }
             break;
         case 5:
-            printf("Metodo de Fibo");
+            printf("Metodo de Fibo\n");
             for (m = 0; m < 20; m++)
             {
                 uswtime(&utime0, &stime0, &wtime0);
