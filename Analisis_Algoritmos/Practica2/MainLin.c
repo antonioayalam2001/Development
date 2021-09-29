@@ -23,28 +23,20 @@ int main(int argc, char const *argv[])
 {
     double utime0, stime0, wtime0, utime1, stime1, wtime1; //Variables para medición de tiempos
     int i, l, m, j;                                        //Variables para loops
-    // int *Arreglo;
-    int n, opc, *A;
-    //- int *Arreglo;
-    // . Arreglo Pruebas;
-    // int Arreglo[4] = {197, 236, 3035, 902};
-    // .Arreglo Solicitado;
+    int n, opc, *A;                                        //Variables de : (tamaño de problema), (opcion), (Arreglo dinamico) respectivamente 
     int Arreglo[20] = {322486,14700764,3128036,6337399,61396,10393545,2147445644,1295390003,450057883,187645041,1980098116,152503,5000,7500,214826,1843349527,1321906174,2109248666,2147470852,0};
     // Aviso que nos servira de apoyo para saber cuando un elemento ya haya sido encontrado
     // En todos los casos cuando aviso>0 el elemento habra sido encontrado
     int aviso = -1;
-
     // Tomando los valores de los argumentos de ejecucion
     n=atoi(argv[1]);
     // numero=atoi(argv[2]);
     opc=atoi(argv[2]);
- 
-
-
     // Asignacion de memoria del arreglo con respecto al tamaño de problema solicitado
     A = (int *)malloc(n * sizeof(int));
     // Lectura y asignacion de valores al arreglo en cuestion
     LeerArchivo(A, n);
+    //Implementacion de un Algoritmo de Ordenamiento para ir evaluando la busqueda del arreglo de forma ordenada y facilitar recoleccion de datos
     Quicksort2(Arreglo,0,20);
     // Ciclo para poder proporcionar un menu de opcion y seleccionar el algoritmo deseado
     // Durante el ciclo de acuerdo a la opcion seleccionada proporcionara los resultados en caso de que el valor del
@@ -212,10 +204,30 @@ int main(int argc, char const *argv[])
                 aviso = -1;
             }
             break;
+            case 8:
+                for (m = 0; m < 20; m++)
+            {
+                uswtime(&utime0, &stime0, &wtime0);
+                aviso = BusquedaExponencial(A, n, Arreglo[m]);
+                uswtime(&utime1, &stime1, &wtime1);
+
+                if (aviso > 0)
+                {
+                    printf("Busqueda Exponencial: %d ",Arreglo[m]);
+                    printf("real %.10e s\n", wtime1 - wtime0);
+                    printf("\n");
+                }else{
+                    printf("NoE: %d ",Arreglo[m]);
+                    printf("real %.10e s\n", wtime1 - wtime0);
+                    printf("\n");
+                }
+
+                aviso = -1;
+            } break;
+
         default:
             break;
         }
-        /* code */
         opc=0;
     } while (opc != 0);
 
