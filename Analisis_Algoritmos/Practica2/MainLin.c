@@ -204,10 +204,11 @@ int main(int argc, char const *argv[])
             }
             break;
             case 8:
+            int aux;
                 for (m = 0; m < 20; m++)
             {
                 uswtime(&utime0, &stime0, &wtime0);
-                aviso = BusquedaExponencial(A, n, Arreglo[m],&aviso);
+                aux = BusquedaExponencial(A, n, Arreglo[m],&aviso);
                 uswtime(&utime1, &stime1, &wtime1);
 
                 if (aviso > 0)

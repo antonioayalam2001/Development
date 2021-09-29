@@ -386,6 +386,8 @@ int BusquedaExponencial(int *A, int n, int elem, int *aviso)
             inicio = mitad + 1;
         }
     }
+	*aviso=-1;
+	return -1;
 }
 
 
