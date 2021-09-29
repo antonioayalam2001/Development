@@ -369,7 +369,6 @@ int BusquedaExponencial(int *A, int n, int elem){
         mitad=((i/2) + final)/2;
         if (A[mitad]==elem)
         {
-            printf("Enontraste el elemento en la posicion: %d",mitad);
             return mitad;
         }
         if (A[mitad]<elem)
