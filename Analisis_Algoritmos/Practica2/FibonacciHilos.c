@@ -68,11 +68,9 @@ void *fibonacci(void *ags){
         uswtime(&utime1, &stime1, &wtime1);
             	printf("Encontrado\n");
                 printf("\n");
+                printf("%d\n",x);
                 printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
-                printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
-                printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
-                printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
-                printf("\n");
+                printf("/////////////////////////////////////////////////");
             	pthread_exit((void*)&status);
 
             } 
