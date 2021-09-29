@@ -1,0 +1,620 @@
+///////////////Valor de n 1000000////////////////////
+
+NoE: 0
+real  4.0531158447e-06 s
+
+NoE: 5000
+real  6.9551467896e-03 s
+
+NoE: 7500
+real  6.7591667175e-03 s
+
+NoE: 61396
+real  6.9110393524e-03 s
+
+NoE: 152503
+real  6.8538188934e-03 s
+
+NoE: 214826
+real  6.8099498749e-03 s
+
+Busqueda Lineal numero: 322486
+real:1.4066696167e-05 s
+
+Busqueda Lineal numero: 3128036
+real:1.0395050049e-04 s
+
+Busqueda Lineal numero: 6337399
+real:2.0503997803e-04 s
+
+Busqueda Lineal numero: 10393545
+real:3.5500526428e-04 s
+
+NoE: 14700764
+real  6.8850517273e-03 s
+
+NoE: 187645041
+real  6.8349838257e-03 s
+
+NoE: 450057883
+real  6.8979263306e-03 s
+
+NoE: 804194720
+real  6.8099498749e-03 s
+
+NoE: 1295390003
+real  6.8871974945e-03 s
+
+NoE: 1321906174
+real  6.8299770355e-03 s
+
+NoE: 1843349527
+real  6.8469047546e-03 s
+
+NoE: 1980098116
+real  6.8640708923e-03 s
+
+NoE: 2109248666
+real  6.7880153656e-03 s
+
+NoE: 2147445644
+real  6.8910121918e-03 s
+
+///////////////Valor de n 2000000////////////////////
+
+NoE: 0
+real  4.0531158447e-06 s
+
+NoE: 5000
+real  1.3571977615e-02 s
+
+NoE: 7500
+real  1.3542175293e-02 s
+
+NoE: 61396
+real  1.3520956039e-02 s
+
+NoE: 152503
+real  1.3525962830e-02 s
+
+NoE: 214826
+real  1.3545989990e-02 s
+
+Busqueda Lineal numero: 322486
+real:1.3113021851e-05 s
+
+Busqueda Lineal numero: 3128036
+real:1.0204315186e-04 s
+
+Busqueda Lineal numero: 6337399
+real:1.9979476929e-04 s
+
+Busqueda Lineal numero: 10393545
+real:3.2496452332e-04 s
+
+NoE: 14700764
+real  1.3515949249e-02 s
+
+NoE: 48145504
+real  1.3538122177e-02 s
+
+NoE: 187645041
+real  1.3526916504e-02 s
+
+NoE: 450057883
+real  1.3530969620e-02 s
+
+NoE: 1295390003
+real  1.3689994812e-02 s
+
+NoE: 1321906174
+real  1.3546943665e-02 s
+
+NoE: 1843349527
+real  1.3589859009e-02 s
+
+NoE: 1980098116
+real  1.3534069061e-02 s
+
+NoE: 2109248666
+real  1.3525009155e-02 s
+
+NoE: 2147445644
+real  1.3532876968e-02 s
+
+///////////////Valor de n 3000000////////////////////
+
+NoE: -186965776
+real  2.0689010620e-02 s
+
+NoE: 0
+real  2.8610229492e-06 s
+
+NoE: 5000
+real  2.0634174347e-02 s
+
+NoE: 7500
+real  2.0581960678e-02 s
+
+NoE: 61396
+real  2.0581007004e-02 s
+
+NoE: 152503
+real  2.0617008209e-02 s
+
+NoE: 214826
+real  2.0529031754e-02 s
+
+Busqueda Lineal numero: 322486
+real:1.3828277588e-05 s
+
+Busqueda Lineal numero: 3128036
+real:1.0204315186e-04 s
+
+Busqueda Lineal numero: 6337399
+real:2.0098686218e-04 s
+
+Busqueda Lineal numero: 10393545
+real:3.2496452332e-04 s
+
+NoE: 14700764
+real  2.0473957062e-02 s
+
+NoE: 187645041
+real  2.0503044128e-02 s
+
+NoE: 450057883
+real  2.0527124405e-02 s
+
+NoE: 1295390003
+real  2.0527839661e-02 s
+
+NoE: 1321906174
+real  2.0509958267e-02 s
+
+NoE: 1843349527
+real  2.0518064499e-02 s
+
+NoE: 1980098116
+real  2.0495891571e-02 s
+
+NoE: 2109248666
+real  2.0557880402e-02 s
+
+NoE: 2147445644
+real  2.0487070084e-02 s
+
+///////////////Valor de n 4000000////////////////////
+
+NoE: 0
+real  3.0994415283e-06 s
+
+NoE: 5000
+real  2.7097225189e-02 s
+
+NoE: 7500
+real  2.7026891708e-02 s
+
+NoE: 61396
+real  2.7047872543e-02 s
+
+NoE: 152503
+real  2.7033090591e-02 s
+
+NoE: 214826
+real  2.7060985565e-02 s
+
+Busqueda Lineal numero: 322486
+real:1.2874603271e-05 s
+
+Busqueda Lineal numero: 3128036
+real:1.0108947754e-04 s
+
+Busqueda Lineal numero: 6337399
+real:2.0003318787e-04 s
+
+Busqueda Lineal numero: 10393545
+real:3.2496452332e-04 s
+
+NoE: 14700764
+real  2.7039051056e-02 s
+
+NoE: 187645041
+real  2.7066946030e-02 s
+
+NoE: 268815424
+real  2.7059078217e-02 s
+
+NoE: 450057883
+real  2.7036190033e-02 s
+
+NoE: 1295390003
+real  2.7091979980e-02 s
+
+NoE: 1321906174
+real  2.7030944824e-02 s
+
+NoE: 1843349527
+real  2.7049064636e-02 s
+
+NoE: 1980098116
+real  2.7415990829e-02 s
+
+NoE: 2109248666
+real  2.7220964432e-02 s
+
+NoE: 2147445644
+real  2.7065992355e-02 s
+
+///////////////Valor de n 5000000////////////////////
+
+NoE: 0
+real  3.8146972656e-06 s
+
+NoE: 5000
+real  3.3828020096e-02 s
+
+NoE: 7500
+real  3.3799886703e-02 s
+
+NoE: 61396
+real  3.3796072006e-02 s
+
+NoE: 152503
+real  3.3789157867e-02 s
+
+NoE: 214826
+real  3.3854961395e-02 s
+
+Busqueda Lineal numero: 322486
+real:1.4066696167e-05 s
+
+Busqueda Lineal numero: 3128036
+real:1.0204315186e-04 s
+
+Busqueda Lineal numero: 6337399
+real:2.0003318787e-04 s
+
+Busqueda Lineal numero: 10393545
+real:3.2401084900e-04 s
+
+NoE: 14700764
+real  3.3778905869e-02 s
+
+NoE: 187645041
+real  3.3801078796e-02 s
+
+NoE: 450057883
+real  3.3924102783e-02 s
+
+NoE: 582462784
+real  3.4002065659e-02 s
+
+NoE: 1295390003
+real  3.3819913864e-02 s
+
+NoE: 1321906174
+real  3.3818006516e-02 s
+
+NoE: 1843349527
+real  3.3829927444e-02 s
+
+NoE: 1980098116
+real  3.3798217773e-02 s
+
+NoE: 2109248666
+real  3.3798933029e-02 s
+
+NoE: 2147445644
+real  3.3825159073e-02 s
+
+///////////////Valor de n 6000000////////////////////
+
+NoE: 0
+real  3.0994415283e-06 s
+
+NoE: 5000
+real  4.0544033051e-02 s
+
+NoE: 7500
+real  4.0539026260e-02 s
+
+NoE: 61396
+real  4.0571928024e-02 s
+
+NoE: 152503
+real  4.0522098541e-02 s
+
+NoE: 214826
+real  4.0524005890e-02 s
+
+Busqueda Lineal numero: 322486
+real:1.3828277588e-05 s
+
+Busqueda Lineal numero: 3128036
+real:1.0204315186e-04 s
+
+Busqueda Lineal numero: 6337399
+real:2.0003318787e-04 s
+
+Busqueda Lineal numero: 10393545
+real:3.2496452332e-04 s
+
+NoE: 14700764
+real  4.0570974350e-02 s
+
+NoE: 187645041
+real  4.0583133698e-02 s
+
+NoE: 450057883
+real  4.0517091751e-02 s
+
+NoE: 1295390003
+real  4.0519952774e-02 s
+
+NoE: 1321906174
+real  4.0742158890e-02 s
+
+NoE: 1843349527
+real  4.0591001511e-02 s
+
+NoE: 1980098116
+real  4.0510177612e-02 s
+
+NoE: 1985682208
+real  4.0539026260e-02 s
+
+NoE: 2109248666
+real  4.0507078171e-02 s
+
+NoE: 2147445644
+real  4.0529012680e-02 s
+
+///////////////Valor de n 7000000////////////////////
+
+NoE: -310513232
+real  4.7292947769e-02 s
+
+NoE: 0
+real  3.0994415283e-06 s
+
+NoE: 5000
+real  4.7257900238e-02 s
+
+NoE: 7500
+real  4.7566175461e-02 s
+
+NoE: 61396
+real  4.7271013260e-02 s
+
+NoE: 152503
+real  4.7254800797e-02 s
+
+NoE: 214826
+real  4.7256946564e-02 s
+
+Busqueda Lineal numero: 322486
+real:1.4066696167e-05 s
+
+Busqueda Lineal numero: 3128036
+real:1.0180473328e-04 s
+
+Busqueda Lineal numero: 6337399
+real:1.9907951355e-04 s
+
+Busqueda Lineal numero: 10393545
+real:3.2401084900e-04 s
+
+NoE: 14700764
+real  4.7271966934e-02 s
+
+NoE: 187645041
+real  4.7271013260e-02 s
+
+NoE: 450057883
+real  4.7265052795e-02 s
+
+Busqueda Lineal numero: 1295390003
+real:4.0714025497e-02 s
+
+Busqueda Lineal numero: 1321906174
+real:4.1560888290e-02 s
+
+NoE: 1843349527
+real  4.7295093536e-02 s
+
+NoE: 1980098116
+real  4.7400951385e-02 s
+
+NoE: 2109248666
+real  4.7321081161e-02 s
+
+NoE: 2147445644
+real  4.7332048416e-02 s
+
+///////////////Valor de n 8000000////////////////////
+
+NoE: -697591248
+real  5.4075956345e-02 s
+
+NoE: 0
+real  2.8610229492e-06 s
+
+NoE: 5000
+real  5.4026126862e-02 s
+
+NoE: 7500
+real  5.4018020630e-02 s
+
+NoE: 61396
+real  5.3988933563e-02 s
+
+NoE: 152503
+real  5.4033994675e-02 s
+
+NoE: 214826
+real  5.4026842117e-02 s
+
+Busqueda Lineal numero: 322486
+real:1.3828277588e-05 s
+
+Busqueda Lineal numero: 3128036
+real:1.3589859009e-04 s
+
+Busqueda Lineal numero: 6337399
+real:1.9907951355e-04 s
+
+Busqueda Lineal numero: 10393545
+real:3.2401084900e-04 s
+
+NoE: 14700764
+real  5.4029941559e-02 s
+
+NoE: 187645041
+real  5.4037094116e-02 s
+
+NoE: 450057883
+real  5.4068088531e-02 s
+
+Busqueda Lineal numero: 1295390003
+real:4.0777921677e-02 s
+
+Busqueda Lineal numero: 1321906174
+real:4.1548013687e-02 s
+
+NoE: 1843349527
+real  5.3985834122e-02 s
+
+NoE: 1980098116
+real  5.4007053375e-02 s
+
+NoE: 2109248666
+real  5.3996086121e-02 s
+
+NoE: 2147445644
+real  5.3992033005e-02 s
+
+///////////////Valor de n 9000000////////////////////
+
+NoE: 0
+real  3.8146972656e-06 s
+
+NoE: 5000
+real  6.0781002045e-02 s
+
+NoE: 7500
+real  6.0783147812e-02 s
+
+NoE: 61396
+real  6.0771942139e-02 s
+
+NoE: 152503
+real  6.0754776001e-02 s
+
+NoE: 214826
+real  6.0771942139e-02 s
+
+Busqueda Lineal numero: 322486
+real:1.4066696167e-05 s
+
+Busqueda Lineal numero: 3128036
+real:1.2707710266e-04 s
+
+Busqueda Lineal numero: 6337399
+real:1.9907951355e-04 s
+
+Busqueda Lineal numero: 10393545
+real:3.2401084900e-04 s
+
+NoE: 14700764
+real  6.0755014420e-02 s
+
+NoE: 187645041
+real  6.0798883438e-02 s
+
+NoE: 450057883
+real  6.0795068741e-02 s
+
+Busqueda Lineal numero: 1295390003
+real:4.0759086609e-02 s
+
+Busqueda Lineal numero: 1321906174
+real:4.1576147079e-02 s
+
+NoE: 1351874976
+real  6.0759067535e-02 s
+
+Busqueda Lineal numero: 1843349527
+real:5.8007001877e-02 s
+
+NoE: 1980098116
+real  6.0750007629e-02 s
+
+NoE: 2109248666
+real  6.0812950134e-02 s
+
+NoE: 2147445644
+real  6.0808897018e-02 s
+
+///////////////Valor de n 10000000////////////////////
+
+NoE: 0
+real  3.0994415283e-06 s
+
+NoE: 5000
+real  6.7764997482e-02 s
+
+NoE: 7500
+real  6.7719936371e-02 s
+
+NoE: 61396
+real  6.7739009857e-02 s
+
+NoE: 152503
+real  6.7711114883e-02 s
+
+NoE: 214826
+real  6.7667007446e-02 s
+
+Busqueda Lineal numero: 322486
+real:1.3113021851e-05 s
+
+Busqueda Lineal numero: 3128036
+real:1.2803077698e-04 s
+
+Busqueda Lineal numero: 6337399
+real:2.0003318787e-04 s
+
+Busqueda Lineal numero: 10393545
+real:3.2496452332e-04 s
+
+NoE: 14700764
+real  6.7682981491e-02 s
+
+NoE: 187645041
+real  6.7656040192e-02 s
+
+NoE: 450057883
+real  6.7688941956e-02 s
+
+Busqueda Lineal numero: 1295390003
+real:4.0869951248e-02 s
+
+Busqueda Lineal numero: 1321906174
+real:4.1674852371e-02 s
+
+Busqueda Lineal numero: 1843349527
+real:5.8090925217e-02 s
+
+NoE: 1858784512
+real  6.7692995071e-02 s
+
+NoE: 1980098116
+real  6.7680120468e-02 s
+
+Busqueda Lineal numero: 2109248666
+real:6.6541910172e-02 s
+
+NoE: 2147445644
+real  6.7732095718e-02 s
+
