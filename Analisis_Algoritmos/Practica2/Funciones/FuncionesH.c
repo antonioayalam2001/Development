@@ -355,26 +355,39 @@ void BusquedaEnArbolHilos(int * arreglo, int n, int valorABuscar, int * aviso)
 	}
 }
 
-int BusquedaExponencial(int *A, int n, int elem){
-        // -Variables para algoritmo de busqueda
-    int inicio,final,mitad,i;
-	
-    inicio=i;
-    final=n-1;    
-    while (i<final && A[i]!=elem)
+int BusquedaExponencial(int *A, int n, int elem, int *aviso)
+{
+    // -Variables para algoritmo de busqueda
+    int inicio, final, mitad, i;
+    i = 1;
+    final = n;
+    while (i < final && A[i] <= elem)
     {
-        i=i*2;
+        i = i * 2;
     }
-    printf("%d",i);
-        mitad=((i/2) + final)/2;
-        if (A[mitad]==elem)
+
+    inicio = (i / 2);
+    final = (n - 1);
+
+    while (inicio <= final)
+    {
+        mitad = (inicio + final) / 2;
+        if (A[mitad] == elem)
         {
+            *aviso = mitad;
             return mitad;
         }
-        if (A[mitad]<elem)
-            {inicio=mitad;}
-        else{final=mitad;}  
+        if (A[mitad] > elem)
+        {
+            final = mitad - 1;
+        }
+        else
+        {
+            inicio = mitad + 1;
+        }
+    }
 }
+
 
 
 
