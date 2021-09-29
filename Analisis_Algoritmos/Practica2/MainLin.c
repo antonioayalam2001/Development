@@ -29,7 +29,7 @@ int main(int argc, char const *argv[])
     // . Arreglo Pruebas;
     // int Arreglo[4] = {197, 236, 3035, 902};
     // .Arreglo Solicitado;
-        int Arreglo[20] = {322486,14700764,3128036,6337399,61396,10393545,214744564,1295390003,450057883,187645041,1980098116,152503,5000,1493283650,214826,1843349527,1360839364,2109248666,2147470852,0};
+    int Arreglo[20] = {322486,14700764,3128036,6337399,61396,10393545,2147445644,1295390003,450057883,187645041,1980098116,152503,5000,7500,214826,1843349527,1321906174,2109248666,2147470852,0};
     // Aviso que nos servira de apoyo para saber cuando un elemento ya haya sido encontrado
     // En todos los casos cuando aviso>0 el elemento habra sido encontrado
     int aviso = -1;
