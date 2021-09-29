@@ -1,0 +1,420 @@
+///////////////Valor de n 1000000////////////////////
+
+NoE: 0 real 5.9604644775e-06 s
+
+NoE: 5000 real 4.0531158447e-06 s
+
+NoE: 7500 real 3.0994415283e-06 s
+
+NoE: 61396 real 3.8146972656e-06 s
+
+NoE: 152503 real 4.0531158447e-06 s
+
+NoE: 214826 real 4.0531158447e-06 s
+
+Busqueda Exponencial: 322486 real 2.8610229492e-06 s
+
+Busqueda Exponencial: 3128036 real 5.0067901611e-06 s
+
+Busqueda Exponencial: 6337399 real 5.0067901611e-06 s
+
+Busqueda Exponencial: 10393545 real 5.0067901611e-06 s
+
+NoE: 14700764 real 5.0067901611e-06 s
+
+NoE: 187645041 real 4.7683715820e-06 s
+
+NoE: 450057883 real 3.0994415283e-06 s
+
+NoE: 1295390003 real 2.8610229492e-06 s
+
+NoE: 1321906174 real 3.0994415283e-06 s
+
+NoE: 1843349527 real 2.8610229492e-06 s
+
+NoE: 1876314640 real 3.0994415283e-06 s
+
+NoE: 1980098116 real 2.8610229492e-06 s
+
+NoE: 2109248666 real 4.0531158447e-06 s
+
+NoE: 2147445644 real 2.8610229492e-06 s
+
+///////////////Valor de n 2000000////////////////////
+
+NoE: 0 real 5.9604644775e-06 s
+
+NoE: 5000 real 4.0531158447e-06 s
+
+NoE: 7500 real 3.0994415283e-06 s
+
+NoE: 61396 real 3.8146972656e-06 s
+
+NoE: 152503 real 4.0531158447e-06 s
+
+NoE: 214826 real 4.0531158447e-06 s
+
+Busqueda Exponencial: 322486 real 3.8146972656e-06 s
+
+Busqueda Exponencial: 3128036 real 5.0067901611e-06 s
+
+Busqueda Exponencial: 6337399 real 5.0067901611e-06 s
+
+Busqueda Exponencial: 10393545 real 5.0067901611e-06 s
+
+NoE: 14700764 real 5.0067901611e-06 s
+
+NoE: 187645041 real 5.9604644775e-06 s
+
+NoE: 404771248 real 5.0067901611e-06 s
+
+NoE: 450057883 real 2.8610229492e-06 s
+
+NoE: 1295390003 real 4.0531158447e-06 s
+
+NoE: 1321906174 real 2.8610229492e-06 s
+
+NoE: 1843349527 real 4.0531158447e-06 s
+
+NoE: 1980098116 real 3.0994415283e-06 s
+
+NoE: 2109248666 real 4.0531158447e-06 s
+
+NoE: 2147445644 real 3.0994415283e-06 s
+
+///////////////Valor de n 3000000////////////////////
+
+NoE: 0 real 5.9604644775e-06 s
+
+NoE: 5000 real 3.8146972656e-06 s
+
+NoE: 7500 real 3.0994415283e-06 s
+
+NoE: 61396 real 5.0067901611e-06 s
+
+NoE: 152503 real 5.0067901611e-06 s
+
+NoE: 214826 real 4.7683715820e-06 s
+
+Busqueda Exponencial: 322486 real 3.0994415283e-06 s
+
+Busqueda Exponencial: 3128036 real 5.0067901611e-06 s
+
+Busqueda Exponencial: 6337399 real 5.0067901611e-06 s
+
+Busqueda Exponencial: 10393545 real 5.0067901611e-06 s
+
+NoE: 14700764 real 5.0067901611e-06 s
+
+NoE: 187645041 real 6.9141387939e-06 s
+
+NoE: 450057883 real 5.9604644775e-06 s
+
+NoE: 921090288 real 3.8146972656e-06 s
+
+NoE: 1295390003 real 3.0994415283e-06 s
+
+NoE: 1321906174 real 2.8610229492e-06 s
+
+NoE: 1843349527 real 3.0994415283e-06 s
+
+NoE: 1980098116 real 2.8610229492e-06 s
+
+NoE: 2109248666 real 3.0994415283e-06 s
+
+NoE: 2147445644 real 2.8610229492e-06 s
+
+///////////////Valor de n 4000000////////////////////
+
+NoE: 0 real 5.9604644775e-06 s
+
+NoE: 5000 real 4.0531158447e-06 s
+
+NoE: 7500 real 3.0994415283e-06 s
+
+NoE: 61396 real 4.7683715820e-06 s
+
+NoE: 152503 real 5.0067901611e-06 s
+
+NoE: 214826 real 5.0067901611e-06 s
+
+Busqueda Exponencial: 322486 real 4.0531158447e-06 s
+
+Busqueda Exponencial: 3128036 real 6.1988830566e-06 s
+
+Busqueda Exponencial: 6337399 real 5.0067901611e-06 s
+
+Busqueda Exponencial: 10393545 real 5.9604644775e-06 s
+
+NoE: 14700764 real 5.0067901611e-06 s
+
+NoE: 187645041 real 5.9604644775e-06 s
+
+NoE: 450057883 real 5.0067901611e-06 s
+
+NoE: 459306112 real 5.9604644775e-06 s
+
+NoE: 1295390003 real 3.0994415283e-05 s
+
+NoE: 1321906174 real 3.0994415283e-06 s
+
+NoE: 1843349527 real 4.0531158447e-06 s
+
+NoE: 1980098116 real 3.0994415283e-06 s
+
+NoE: 2109248666 real 2.8610229492e-06 s
+
+NoE: 2147445644 real 3.0994415283e-06 s
+
+///////////////Valor de n 5000000////////////////////
+
+NoE: -829112128 real 7.1525573730e-06 s
+
+NoE: 0 real 3.8146972656e-06 s
+
+NoE: 5000 real 5.0067901611e-06 s
+
+NoE: 7500 real 4.0531158447e-06 s
+
+NoE: 61396 real 5.0067901611e-06 s
+
+NoE: 152503 real 5.0067901611e-06 s
+
+NoE: 214826 real 5.0067901611e-06 s
+
+Busqueda Exponencial: 322486 real 3.0994415283e-06 s
+
+Busqueda Exponencial: 3128036 real 5.0067901611e-06 s
+
+Busqueda Exponencial: 6337399 real 5.0067901611e-06 s
+
+Busqueda Exponencial: 10393545 real 5.0067901611e-06 s
+
+NoE: 14700764 real 6.1988830566e-06 s
+
+NoE: 187645041 real 5.9604644775e-06 s
+
+NoE: 450057883 real 5.9604644775e-06 s
+
+NoE: 1295390003 real 4.0531158447e-06 s
+
+NoE: 1321906174 real 3.0994415283e-06 s
+
+NoE: 1843349527 real 3.0994415283e-06 s
+
+NoE: 1980098116 real 2.8610229492e-06 s
+
+NoE: 2109248666 real 3.0994415283e-06 s
+
+NoE: 2147445644 real 2.8610229492e-06 s
+
+///////////////Valor de n 6000000////////////////////
+
+NoE: -37082592 real 6.9141387939e-06 s
+
+NoE: 0 real 2.8610229492e-06 s
+
+NoE: 5000 real 4.0531158447e-06 s
+
+NoE: 7500 real 3.0994415283e-06 s
+
+NoE: 61396 real 3.8146972656e-06 s
+
+NoE: 152503 real 5.0067901611e-06 s
+
+NoE: 214826 real 5.0067901611e-06 s
+
+Busqueda Exponencial: 322486 real 4.0531158447e-06 s
+
+Busqueda Exponencial: 3128036 real 6.1988830566e-06 s
+
+Busqueda Exponencial: 6337399 real 5.0067901611e-06 s
+
+Busqueda Exponencial: 10393545 real 5.9604644775e-06 s
+
+NoE: 14700764 real 2.5033950806e-05 s
+
+NoE: 187645041 real 7.1525573730e-06 s
+
+NoE: 450057883 real 7.1525573730e-06 s
+
+NoE: 1295390003 real 5.0067901611e-06 s
+
+NoE: 1321906174 real 4.0531158447e-06 s
+
+NoE: 1843349527 real 2.8610229492e-06 s
+
+NoE: 1980098116 real 3.0994415283e-06 s
+
+NoE: 2109248666 real 4.0531158447e-06 s
+
+NoE: 2147445644 real 3.0994415283e-06 s
+
+///////////////Valor de n 7000000////////////////////
+
+NoE: 0 real 5.9604644775e-06 s
+
+NoE: 5000 real 5.0067901611e-06 s
+
+NoE: 7500 real 2.8610229492e-06 s
+
+NoE: 61396 real 5.0067901611e-06 s
+
+NoE: 152503 real 5.0067901611e-06 s
+
+NoE: 214826 real 5.0067901611e-06 s
+
+Busqueda Exponencial: 322486 real 4.0531158447e-06 s
+
+Busqueda Exponencial: 3128036 real 5.9604644775e-06 s
+
+Busqueda Exponencial: 6337399 real 5.9604644775e-06 s
+
+Busqueda Exponencial: 10393545 real 5.0067901611e-06 s
+
+NoE: 14700764 real 5.0067901611e-06 s
+
+NoE: 94216768 real 5.9604644775e-06 s
+
+NoE: 187645041 real 5.9604644775e-06 s
+
+NoE: 450057883 real 5.9604644775e-06 s
+
+Busqueda Exponencial: 1295390003 real 5.9604644775e-06 s
+
+Busqueda Exponencial: 1321906174 real 5.0067901611e-06 s
+
+NoE: 1843349527 real 4.0531158447e-06 s
+
+NoE: 1980098116 real 3.0994415283e-06 s
+
+NoE: 2109248666 real 2.8610229492e-06 s
+
+NoE: 2147445644 real 4.0531158447e-06 s
+
+///////////////Valor de n 8000000////////////////////
+
+NoE: -8874864 real 5.9604644775e-06 s
+
+NoE: 0 real 3.0994415283e-06 s
+
+NoE: 5000 real 5.0067901611e-06 s
+
+NoE: 7500 real 4.0531158447e-06 s
+
+NoE: 61396 real 4.0531158447e-06 s
+
+NoE: 152503 real 5.0067901611e-06 s
+
+NoE: 214826 real 5.0067901611e-06 s
+
+Busqueda Exponencial: 322486 real 4.0531158447e-06 s
+
+Busqueda Exponencial: 3128036 real 5.0067901611e-06 s
+
+Busqueda Exponencial: 6337399 real 5.0067901611e-06 s
+
+Busqueda Exponencial: 10393545 real 5.9604644775e-06 s
+
+NoE: 14700764 real 5.9604644775e-06 s
+
+NoE: 187645041 real 5.9604644775e-06 s
+
+NoE: 450057883 real 5.9604644775e-06 s
+
+Busqueda Exponencial: 1295390003 real 5.9604644775e-06 s
+
+Busqueda Exponencial: 1321906174 real 5.9604644775e-06 s
+
+NoE: 1843349527 real 4.0531158447e-06 s
+
+NoE: 1980098116 real 4.0531158447e-06 s
+
+NoE: 2109248666 real 4.0531158447e-06 s
+
+NoE: 2147445644 real 3.0994415283e-06 s
+
+///////////////Valor de n 9000000////////////////////
+
+NoE: 0 real 5.9604644775e-06 s
+
+NoE: 5000 real 3.8146972656e-06 s
+
+NoE: 7500 real 3.0994415283e-06 s
+
+NoE: 61396 real 5.0067901611e-06 s
+
+NoE: 152503 real 5.0067901611e-06 s
+
+NoE: 214826 real 4.7683715820e-06 s
+
+Busqueda Exponencial: 322486 real 4.0531158447e-06 s
+
+Busqueda Exponencial: 3128036 real 5.9604644775e-06 s
+
+Busqueda Exponencial: 6337399 real 5.0067901611e-06 s
+
+Busqueda Exponencial: 10393545 real 5.0067901611e-06 s
+
+NoE: 14700764 real 5.0067901611e-06 s
+
+NoE: 187645041 real 5.9604644775e-06 s
+
+NoE: 450057883 real 5.9604644775e-06 s
+
+NoE: 492170400 real 5.9604644775e-06 s
+
+Busqueda Exponencial: 1295390003 real 5.0067901611e-06 s
+
+Busqueda Exponencial: 1321906174 real 5.0067901611e-06 s
+
+Busqueda Exponencial: 1843349527 real 5.9604644775e-06 s
+
+NoE: 1980098116 real 3.8146972656e-06 s
+
+NoE: 2109248666 real 3.0994415283e-06 s
+
+NoE: 2147445644 real 2.8610229492e-06 s
+
+///////////////Valor de n 10000000////////////////////
+
+NoE: 0 real 6.9141387939e-06 s
+
+NoE: 5000 real 4.0531158447e-06 s
+
+NoE: 7500 real 3.0994415283e-06 s
+
+NoE: 61396 real 5.0067901611e-06 s
+
+NoE: 152503 real 5.0067901611e-06 s
+
+NoE: 214826 real 4.0531158447e-06 s
+
+Busqueda Exponencial: 322486 real 3.0994415283e-06 s
+
+Busqueda Exponencial: 3128036 real 5.9604644775e-06 s
+
+Busqueda Exponencial: 6337399 real 5.0067901611e-06 s
+
+Busqueda Exponencial: 10393545 real 5.0067901611e-06 s
+
+NoE: 14700764 real 6.1988830566e-06 s
+
+NoE: 187645041 real 5.9604644775e-06 s
+
+NoE: 190448608 real 4.0531158447e-06 s
+
+NoE: 450057883 real 5.9604644775e-06 s
+
+Busqueda Exponencial: 1295390003 real 5.9604644775e-06 s
+
+Busqueda Exponencial: 1321906174 real 4.0531158447e-06 s
+
+Busqueda Exponencial: 1843349527 real 5.9604644775e-06 s
+
+NoE: 1980098116 real 5.0067901611e-06 s
+
+Busqueda Exponencial: 2109248666 real 5.0067901611e-06 s
+
+NoE: 2147445644 real 4.0531158447e-06 s
+

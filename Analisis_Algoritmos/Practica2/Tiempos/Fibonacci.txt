@@ -1,0 +1,630 @@
+///////////////Valor de n 1000000////////////////////
+
+Metodo de Fibo
+NoE: 0
+real  5.9604644775e-06 s
+
+NoE: 5000
+real  3.0994415283e-06 s
+
+NoE: 7500
+real  4.0531158447e-06 s
+
+NoE: 61396
+real  3.0994415283e-06 s
+
+NoE: 152503
+real  2.8610229492e-06 s
+
+NoE: 214826
+real  3.0994415283e-06 s
+
+Busqueda Fibo 322486
+real 3.0994415283e-06 s
+
+Busqueda Fibo 3128036
+real 4.0531158447e-06 s
+
+Busqueda Fibo 6337399
+real 4.0531158447e-06 s
+
+Busqueda Fibo 10393545
+real 3.8146972656e-06 s
+
+NoE: 14700764
+real  4.0531158447e-06 s
+
+NoE: 187645041
+real  5.0067901611e-06 s
+
+NoE: 450057883
+real  2.8610229492e-06 s
+
+NoE: 1249244112
+real  4.0531158447e-06 s
+
+NoE: 1295390003
+real  2.8610229492e-06 s
+
+NoE: 1321906174
+real  4.0531158447e-06 s
+
+NoE: 1843349527
+real  2.8610229492e-06 s
+
+NoE: 1980098116
+real  3.0994415283e-06 s
+
+NoE: 2109248666
+real  2.8610229492e-06 s
+
+NoE: 2147445644
+real  3.0994415283e-06 s
+
+///////////////Valor de n 2000000////////////////////
+
+Metodo de Fibo
+NoE: -354087984
+real  6.1988830566e-06 s
+
+NoE: 0
+real  3.0994415283e-06 s
+
+NoE: 5000
+real  3.0994415283e-06 s
+
+NoE: 7500
+real  2.8610229492e-06 s
+
+NoE: 61396
+real  4.0531158447e-06 s
+
+NoE: 152503
+real  3.8146972656e-06 s
+
+NoE: 214826
+real  4.0531158447e-06 s
+
+Busqueda Fibo 322486
+real 2.8610229492e-06 s
+
+Busqueda Fibo 3128036
+real 4.0531158447e-06 s
+
+Busqueda Fibo 6337399
+real 4.0531158447e-06 s
+
+Busqueda Fibo 10393545
+real 5.0067901611e-06 s
+
+NoE: 14700764
+real  4.0531158447e-06 s
+
+NoE: 187645041
+real  5.9604644775e-06 s
+
+NoE: 450057883
+real  3.8146972656e-06 s
+
+NoE: 1295390003
+real  3.0994415283e-06 s
+
+NoE: 1321906174
+real  2.8610229492e-06 s
+
+NoE: 1843349527
+real  3.0994415283e-06 s
+
+NoE: 1980098116
+real  4.0531158447e-06 s
+
+NoE: 2109248666
+real  3.0994415283e-06 s
+
+NoE: 2147445644
+real  4.0531158447e-06 s
+
+///////////////Valor de n 3000000////////////////////
+
+Metodo de Fibo
+NoE: 0
+real  5.9604644775e-06 s
+
+NoE: 5000
+real  4.0531158447e-06 s
+
+NoE: 7500
+real  4.0531158447e-06 s
+
+NoE: 61396
+real  5.0067901611e-06 s
+
+NoE: 152503
+real  5.0067901611e-06 s
+
+NoE: 214826
+real  4.0531158447e-06 s
+
+Busqueda Fibo 322486
+real 4.0531158447e-06 s
+
+Busqueda Fibo 3128036
+real 5.9604644775e-06 s
+
+Busqueda Fibo 6337399
+real 4.0531158447e-06 s
+
+Busqueda Fibo 10393545
+real 4.0531158447e-06 s
+
+NoE: 14700764
+real  4.0531158447e-06 s
+
+NoE: 187645041
+real  5.0067901611e-06 s
+
+NoE: 450057883
+real  5.9604644775e-06 s
+
+NoE: 1295390003
+real  5.0067901611e-06 s
+
+NoE: 1321906174
+real  3.0994415283e-06 s
+
+NoE: 1496867648
+real  2.8610229492e-06 s
+
+NoE: 1843349527
+real  4.0531158447e-06 s
+
+NoE: 1980098116
+real  2.8610229492e-06 s
+
+NoE: 2109248666
+real  3.0994415283e-06 s
+
+NoE: 2147445644
+real  2.8610229492e-06 s
+
+///////////////Valor de n 4000000////////////////////
+
+Metodo de Fibo
+NoE: 0
+real  5.9604644775e-06 s
+
+NoE: 5000
+real  3.0994415283e-06 s
+
+NoE: 7500
+real  2.8610229492e-06 s
+
+NoE: 61396
+real  3.0994415283e-06 s
+
+NoE: 152503
+real  3.0994415283e-06 s
+
+NoE: 214826
+real  3.8146972656e-06 s
+
+Busqueda Fibo 322486
+real 3.0994415283e-06 s
+
+Busqueda Fibo 3128036
+real 3.8146972656e-06 s
+
+Busqueda Fibo 6337399
+real 5.0067901611e-06 s
+
+Busqueda Fibo 10393545
+real 4.0531158447e-06 s
+
+NoE: 14700764
+real  3.8146972656e-06 s
+
+NoE: 187645041
+real  6.1988830566e-06 s
+
+NoE: 450057883
+real  6.1988830566e-06 s
+
+NoE: 1295390003
+real  4.0531158447e-06 s
+
+NoE: 1315271792
+real  2.8610229492e-06 s
+
+NoE: 1321906174
+real  4.0531158447e-06 s
+
+NoE: 1843349527
+real  2.8610229492e-06 s
+
+NoE: 1980098116
+real  3.0994415283e-06 s
+
+NoE: 2109248666
+real  2.8610229492e-06 s
+
+NoE: 2147445644
+real  3.0994415283e-06 s
+
+///////////////Valor de n 5000000////////////////////
+
+Metodo de Fibo
+NoE: 0
+real  5.9604644775e-06 s
+
+NoE: 5000
+real  2.8610229492e-06 s
+
+NoE: 7500
+real  2.8610229492e-06 s
+
+NoE: 61396
+real  4.0531158447e-06 s
+
+NoE: 152503
+real  3.8146972656e-06 s
+
+NoE: 214826
+real  4.0531158447e-06 s
+
+Busqueda Fibo 322486
+real 3.8146972656e-06 s
+
+Busqueda Fibo 3128036
+real 4.0531158447e-06 s
+
+Busqueda Fibo 6337399
+real 4.0531158447e-06 s
+
+Busqueda Fibo 10393545
+real 4.7683715820e-06 s
+
+NoE: 14700764
+real  4.0531158447e-06 s
+
+NoE: 187645041
+real  5.0067901611e-06 s
+
+NoE: 450057883
+real  5.0067901611e-06 s
+
+NoE: 1295390003
+real  3.8146972656e-06 s
+
+NoE: 1321906174
+real  3.0994415283e-06 s
+
+NoE: 1363887472
+real  2.8610229492e-06 s
+
+NoE: 1843349527
+real  4.0531158447e-06 s
+
+NoE: 1980098116
+real  2.8610229492e-06 s
+
+NoE: 2109248666
+real  3.0994415283e-06 s
+
+NoE: 2147445644
+real  2.8610229492e-06 s
+
+///////////////Valor de n 6000000////////////////////
+
+Metodo de Fibo
+NoE: -2028815088
+real  6.9141387939e-06 s
+
+NoE: 0
+real  2.8610229492e-06 s
+
+NoE: 5000
+real  3.0994415283e-06 s
+
+NoE: 7500
+real  2.8610229492e-06 s
+
+NoE: 61396
+real  3.0994415283e-06 s
+
+NoE: 152503
+real  2.8610229492e-06 s
+
+NoE: 214826
+real  3.0994415283e-06 s
+
+Busqueda Fibo 322486
+real 3.0994415283e-06 s
+
+Busqueda Fibo 3128036
+real 3.8146972656e-06 s
+
+Busqueda Fibo 6337399
+real 4.0531158447e-06 s
+
+Busqueda Fibo 10393545
+real 4.0531158447e-06 s
+
+NoE: 14700764
+real  5.1975250244e-05 s
+
+NoE: 187645041
+real  5.9604644775e-06 s
+
+NoE: 450057883
+real  6.1988830566e-06 s
+
+NoE: 1295390003
+real  2.8610229492e-06 s
+
+NoE: 1321906174
+real  3.0994415283e-06 s
+
+NoE: 1843349527
+real  3.0994415283e-06 s
+
+NoE: 1980098116
+real  3.0994415283e-06 s
+
+NoE: 2109248666
+real  4.0531158447e-06 s
+
+NoE: 2147445644
+real  3.0994415283e-06 s
+
+///////////////Valor de n 7000000////////////////////
+
+Metodo de Fibo
+NoE: -330227664
+real  6.9141387939e-06 s
+
+NoE: 0
+real  3.0994415283e-06 s
+
+NoE: 5000
+real  3.0994415283e-06 s
+
+NoE: 7500
+real  2.8610229492e-06 s
+
+NoE: 61396
+real  4.0531158447e-06 s
+
+NoE: 152503
+real  4.0531158447e-06 s
+
+NoE: 214826
+real  4.0531158447e-06 s
+
+Busqueda Fibo 322486
+real 3.8146972656e-06 s
+
+Busqueda Fibo 3128036
+real 4.0531158447e-06 s
+
+Busqueda Fibo 6337399
+real 4.0531158447e-06 s
+
+Busqueda Fibo 10393545
+real 5.0067901611e-06 s
+
+NoE: 14700764
+real  4.0531158447e-06 s
+
+NoE: 187645041
+real  5.0067901611e-06 s
+
+NoE: 450057883
+real  5.9604644775e-06 s
+
+Busqueda Fibo 1295390003
+real 5.9604644775e-06 s
+
+Busqueda Fibo 1321906174
+real 5.0067901611e-06 s
+
+NoE: 1843349527
+real  3.8146972656e-06 s
+
+NoE: 1980098116
+real  3.0994415283e-06 s
+
+NoE: 2109248666
+real  4.0531158447e-06 s
+
+NoE: 2147445644
+real  3.0994415283e-06 s
+
+///////////////Valor de n 8000000////////////////////
+
+Metodo de Fibo
+NoE: 0
+real  6.9141387939e-06 s
+
+NoE: 5000
+real  2.8610229492e-06 s
+
+NoE: 7500
+real  3.0994415283e-06 s
+
+NoE: 61396
+real  3.8146972656e-06 s
+
+NoE: 152503
+real  3.0994415283e-06 s
+
+NoE: 214826
+real  4.0531158447e-06 s
+
+Busqueda Fibo 322486
+real 4.0531158447e-06 s
+
+Busqueda Fibo 3128036
+real 4.0531158447e-06 s
+
+Busqueda Fibo 6337399
+real 3.8146972656e-06 s
+
+Busqueda Fibo 10393545
+real 4.0531158447e-06 s
+
+NoE: 14700764
+real  4.0531158447e-06 s
+
+NoE: 187645041
+real  5.9604644775e-06 s
+
+NoE: 450057883
+real  6.1988830566e-06 s
+
+Busqueda Fibo 1295390003
+real 7.1525573730e-06 s
+
+Busqueda Fibo 1321906174
+real 5.0067901611e-06 s
+
+NoE: 1352037520
+real  5.0067901611e-06 s
+
+NoE: 1843349527
+real  4.0531158447e-06 s
+
+NoE: 1980098116
+real  2.8610229492e-06 s
+
+NoE: 2109248666
+real  3.0994415283e-06 s
+
+NoE: 2147445644
+real  2.8610229492e-06 s
+
+///////////////Valor de n 9000000////////////////////
+
+Metodo de Fibo
+NoE: -1450790672
+real  7.1525573730e-06 s
+
+NoE: 0
+real  2.8610229492e-06 s
+
+NoE: 5000
+real  2.8610229492e-06 s
+
+NoE: 7500
+real  3.0994415283e-06 s
+
+NoE: 61396
+real  2.8610229492e-06 s
+
+NoE: 152503
+real  3.0994415283e-06 s
+
+NoE: 214826
+real  4.0531158447e-06 s
+
+Busqueda Fibo 322486
+real 4.0531158447e-06 s
+
+Busqueda Fibo 3128036
+real 4.0531158447e-06 s
+
+Busqueda Fibo 6337399
+real 5.0067901611e-06 s
+
+Busqueda Fibo 10393545
+real 4.0531158447e-06 s
+
+NoE: 14700764
+real  4.0531158447e-06 s
+
+NoE: 187645041
+real  5.0067901611e-06 s
+
+NoE: 450057883
+real  5.9604644775e-06 s
+
+Busqueda Fibo 1295390003
+real 5.9604644775e-06 s
+
+Busqueda Fibo 1321906174
+real 4.0531158447e-06 s
+
+Busqueda Fibo 1843349527
+real 5.9604644775e-06 s
+
+NoE: 1980098116
+real  4.0531158447e-06 s
+
+NoE: 2109248666
+real  2.8610229492e-06 s
+
+NoE: 2147445644
+real  3.0994415283e-06 s
+
+///////////////Valor de n 10000000////////////////////
+
+Metodo de Fibo
+NoE: 0
+real  6.9141387939e-06 s
+
+NoE: 5000
+real  2.8610229492e-06 s
+
+NoE: 7500
+real  3.0994415283e-06 s
+
+NoE: 61396
+real  3.0994415283e-06 s
+
+NoE: 152503
+real  3.0994415283e-06 s
+
+NoE: 214826
+real  4.0531158447e-06 s
+
+Busqueda Fibo 322486
+real 3.8146972656e-06 s
+
+Busqueda Fibo 3128036
+real 4.0531158447e-06 s
+
+Busqueda Fibo 6337399
+real 4.0531158447e-06 s
+
+Busqueda Fibo 10393545
+real 3.8146972656e-06 s
+
+NoE: 14700764
+real  4.0531158447e-06 s
+
+NoE: 187645041
+real  5.9604644775e-06 s
+
+NoE: 341343280
+real  5.9604644775e-06 s
+
+NoE: 450057883
+real  5.9604644775e-06 s
+
+Busqueda Fibo 1295390003
+real 6.9141387939e-06 s
+
+Busqueda Fibo 1321906174
+real 5.0067901611e-06 s
+
+Busqueda Fibo 1843349527
+real 6.9141387939e-06 s
+
+NoE: 1980098116
+real  5.9604644775e-06 s
+
+Busqueda Fibo 2109248666
+real 5.9604644775e-06 s
+
+NoE: 2147445644
+real  2.8610229492e-06 s
+

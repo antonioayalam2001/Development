@@ -1,0 +1,294 @@
+n= 10000
+Metodo de Arbol 
+Busqueda Arbol elemento : 322486
+
+real (Tiempo total)  1.0301179886e+00 s
+
+Numero no encontrado 14700764
+
+real (Tiempo total)  9.7743797302e-01 s
+
+Numero no encontrado 3128036
+
+real (Tiempo total)  9.7580695152e-01 s
+
+Numero no encontrado 6337399
+
+real (Tiempo total)  9.7328090668e-01 s
+
+Numero no encontrado 61396
+
+real (Tiempo total)  9.7362995148e-01 s
+
+Numero no encontrado 10393545
+
+real (Tiempo total)  9.7131514549e-01 s
+
+Numero no encontrado 2147445644
+
+real (Tiempo total)  9.7272491455e-01 s
+
+Numero no encontrado 1295390003
+
+real (Tiempo total)  9.7229290009e-01 s
+
+Numero no encontrado 450057883
+
+real (Tiempo total)  9.7125291824e-01 s
+
+Numero no encontrado 187645041
+
+real (Tiempo total)  9.7290182114e-01 s
+
+Numero no encontrado 1980098116
+
+real (Tiempo total)  9.7893095016e-01 s
+
+Numero no encontrado 152503
+
+real (Tiempo total)  9.7734999657e-01 s
+
+Numero no encontrado 5000
+
+real (Tiempo total)  9.7222304344e-01 s
+
+Numero no encontrado 1493283650
+
+real (Tiempo total)  9.7213387489e-01 s
+
+Numero no encontrado 214826
+
+real (Tiempo total)  9.7130513191e-01 s
+
+Numero no encontrado 1843349527
+
+real (Tiempo total)  9.7294187546e-01 s
+
+Numero no encontrado 1360839354
+
+real (Tiempo total)  9.8568391800e-01 s
+
+Numero no encontrado 2109248666
+
+real (Tiempo total)  9.7098207474e-01 s
+
+Numero no encontrado 2147470852
+
+real (Tiempo total)  9.7363781929e-01 s
+
+Numero no encontrado 0
+
+real (Tiempo total)  9.7153806686e-01 s
+
+
+
+n = 1000
+
+Numero no encontrado 322486
+
+real (Tiempo total)  9.7980499268e-03 s
+
+Numero no encontrado 14700764
+
+real (Tiempo total)  9.8710060120e-03 s
+
+Numero no encontrado 3128036
+
+real (Tiempo total)  1.0162115097e-02 s
+
+Numero no encontrado 6337399
+
+real (Tiempo total)  9.9380016327e-03 s
+
+Numero no encontrado 61396
+
+real (Tiempo total)  9.8819732666e-03 s
+
+Numero no encontrado 10393545
+
+real (Tiempo total)  9.7858905792e-03 s
+
+Numero no encontrado 2147445644
+
+real (Tiempo total)  9.9270343781e-03 s
+
+Numero no encontrado 1295390003
+
+real (Tiempo total)  1.0687828064e-02 s
+
+Numero no encontrado 450057883
+
+real (Tiempo total)  1.3916015625e-02 s
+
+Numero no encontrado 187645041
+
+real (Tiempo total)  9.9718570709e-03 s
+
+Numero no encontrado 1980098116
+
+real (Tiempo total)  9.7551345825e-03 s
+
+Numero no encontrado 152503
+
+real (Tiempo total)  9.8199844360e-03 s
+
+Numero no encontrado 5000
+
+real (Tiempo total)  9.8469257355e-03 s
+
+Numero no encontrado 1493283650
+
+real (Tiempo total)  9.7999572754e-03 s
+
+Numero no encontrado 214826
+
+real (Tiempo total)  9.8190307617e-03 s
+
+Numero no encontrado 1843349527
+
+real (Tiempo total)  9.7410678864e-03 s
+
+Numero no encontrado 1360839354
+
+real (Tiempo total)  9.8981857300e-03 s
+
+Numero no encontrado 2109248666
+
+real (Tiempo total)  9.8509788513e-03 s
+
+Numero no encontrado 2147470852
+
+real (Tiempo total)  9.7041130066e-03 s
+
+Numero no encontrado 0
+
+real (Tiempo total)  9.9649429321e-03 s
+
+
+///////////////Valor de n 200000////////////////////
+
+Metodo de Arbol 
+NoE: -871592256
+real 4.9001549196e+02 s
+
+NoE: 0
+real 4.8730401921e+02 s
+
+NoE: 5000
+real 4.8752013922e+02 s
+
+NoE: 7500
+real 4.8724070978e+02 s
+
+NoE: 61396
+real 4.8483756018e+02 s
+
+NoE: 152503
+real 4.8613178802e+02 s
+
+NoE: 214826
+real 4.8296229887e+02 s
+
+Busqueda Arbol elemento : 322486
+real 4.8502798510e+02 s
+
+Busqueda Arbol elemento : 3128036
+real 4.8252861786e+02 s
+
+Busqueda Arbol elemento : 6337399
+real 4.8465135098e+02 s
+
+Busqueda Arbol elemento : 10393545
+real 4.8376468706e+02 s
+
+NoE: 14700764
+real 4.8577449608e+02 s
+
+NoE: 187645041
+real 4.8399837804e+02 s
+
+NoE: 450057883
+real 4.8636512709e+02 s
+
+NoE: 1295390003
+real 4.8352285409e+02 s
+
+NoE: 1321906174
+real 2.4267236703e+04 s
+
+NoE: 1843349527
+real 4.8441254902e+02 s
+
+NoE: 1980098116
+real 4.8725990891e+02 s
+
+NoE: 2109248666
+real 4.8388439512e+02 s
+
+NoE: 2147445644
+real 4.8611145902e+02 s
+
+
+///////////////Valor de n 100000////////////////////
+
+Metodo de Arbol 
+NoE: -1389244896
+real 1.9939426994e+02 s
+
+NoE: 0
+real 1.9949111199e+02 s
+
+NoE: 5000
+real 2.0473900890e+02 s
+
+NoE: 7500
+real 1.5017798710e+02 s
+
+NoE: 61396
+real 1.1946378016e+02 s
+
+NoE: 152503
+real 1.1914041996e+02 s
+
+NoE: 214826
+real 1.1962652111e+02 s
+
+Busqueda Arbol elemento : 322486
+real 1.1998066115e+02 s
+
+Busqueda Arbol elemento : 3128036
+real 1.1909832597e+02 s
+
+Busqueda Arbol elemento : 6337399
+real 1.1975060701e+02 s
+
+Busqueda Arbol elemento : 10393545
+real 1.1962195802e+02 s
+
+NoE: 14700764
+real 1.1960347700e+02 s
+
+NoE: 187645041
+real 1.1927640891e+02 s
+
+NoE: 450057883
+real 1.1902689290e+02 s
+
+NoE: 1295390003
+real 1.1970303607e+02 s
+
+NoE: 1321906174
+real 1.2007579803e+02 s
+
+NoE: 1843349527
+real 1.1883945799e+02 s
+
+NoE: 1980098116
+real 1.1934341311e+02 s
+
+NoE: 2109248666
+real 1.1912617111e+02 s
+
+NoE: 2147445644
+real 1.1966723585e+02 s
+
