@@ -355,6 +355,29 @@ void BusquedaEnArbolHilos(int * arreglo, int n, int valorABuscar, int * aviso)
 	}
 }
 
+int BusquedaExponencial(int *A, int n, int elem){
+        // -Variables para algoritmo de busqueda
+    int inicio,final,mitad,i;
+	
+    inicio=i;
+    final=n-1;    
+    while (i<final && A[i]!=elem)
+    {
+        i=i*2;
+    }
+    printf("%d",i);
+        mitad=((i/2) + final)/2;
+        if (A[mitad]==elem)
+        {
+            printf("Enontraste el elemento en la posicion: %d",mitad);
+            return mitad;
+        }
+        if (A[mitad]<elem)
+            {inicio=mitad;}
+        else{final=mitad;}  
+}
+
+
 
 
 // Nos ayudará a lanzar la búsqueda en árbol por cada hilo

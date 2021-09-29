@@ -8,7 +8,6 @@
 // Ultimo comentario hahahaha
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 #include <string.h>
 #include "./Funciones/FuncionesH.c"
 #include "./Tiempo/tiempo.c"

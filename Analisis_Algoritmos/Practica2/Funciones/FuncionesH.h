@@ -59,6 +59,7 @@ int min(int x, int y);
 
 // Recibe arreglo, valor a buscar y tamaño del arreglo
 int fibMonaccianSearch(int *A, int x, int n);
+int BusquedaExponencial(A, n, Arreglo[m]);
 
 // Prototipos para afcilitar ejecucion de Hilos
 void * lanzarBusquedaLineal(void* busqueda);
