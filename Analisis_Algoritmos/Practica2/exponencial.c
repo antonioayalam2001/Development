@@ -13,7 +13,7 @@
 int *LeerArchivo(int *A, int n);
 int exponencialBusqueda(int * arreglo, int n, int valorABuscar, int parts);
 void *exponencialH(void *args);
-
+int *Quicksort2(int *A, int primero, int ultimo);
 // Estructura auxiliar exponencial
 typedef struct argumentos {
 	int *arr;
@@ -23,7 +23,76 @@ typedef struct argumentos {
 	int *aviso;
 }expo;
 
-int min(int x, int y) { return (x<=y)? x : y; }
+
+
+    
+    
+int main(int argc, char const *argv[])
+{
+
+	// Variables para medición de tiempos
+	double utime0, stime0, wtime0, utime1, stime1, wtime1;
+	int n; // n determina el tamaño del algorito dado por argumento al ejecutar
+	int m; // Variables para loops
+    n=atoi(argv[1]);
+	// Variables
+	int x;				 // India el valor a buscar.
+	int found;		 // Indica si encontró el valor.
+    // Asignacion de memoria del arreglo con respecto al tamaño de problema solicitado
+    int *A;
+    int Arreglo[20] = {322486,14700764,3128036,6337399,61396,10393545,2147445644,1295390003,450057883,187645041,1980098116,152503,5000,7500,214826,1843349527,1321906174,2109248666,2147470852,0};
+    A = (int *)malloc(n* sizeof(int));
+    Quicksort2(Arreglo,0,20);
+    // Lectura y asignacion de valores al arreglo en cuestion
+    LeerArchivo(A, n);
+
+
+   	for (m = 0; m < 20; m++)
+            {
+                uswtime(&utime0, &stime0, &wtime0);
+    			found=exponencialBusqueda(A,n,Arreglo[m],2);
+                uswtime(&utime1, &stime1, &wtime1);
+
+                if (found >= 0)
+                {
+                    printf("Busqueda Exponencial ENCONTRO: %d\n",Arreglo[m]);
+                    printf("real:%.10e s\n", wtime1 - wtime0);
+                    printf("\n");
+                }else{
+                    printf("NoE: %d\n",Arreglo[m]);
+                    printf("real  %.10e s\n", wtime1 - wtime0);
+                    printf("\n");
+                }
+
+                found = -1;
+            }
+
+
+    exit (0);
+}
+
+
+
+/* Funcion para leer y almacenar n cantidad de numeros del archivo 10millones dentro de un arreglo (con memoria previamente asignada)
+    Recibe:
+        *A: Arreglo de elementos vacio con la memoria suficiente para almacenar n cantidad de elementos 
+         n: cantidad de elementos que seran leidos del archivo y almacenados en el arreglo
+ */
+int *LeerArchivo(int *A, int n)
+{
+    int i;
+    FILE *numeros;
+    numeros = fopen("10millones.txt", "r");
+    if (numeros == NULL)
+    {
+        puts("Error en la apertura del archivo");
+    }
+    for (i = 0; i < n; i++)
+    {
+        fscanf(numeros, "%d", &A[i]);
+    }
+    fclose(numeros);
+}
 
 /*
     Funcion: fibonacci
@@ -33,7 +102,6 @@ int min(int x, int y) { return (x<=y)? x : y; }
     Imprime si ha encontrado el numero 
 */
 void *exponencialH(void *args){
-    double utime0, stime0, wtime0, utime1, stime1, wtime1; //Variables para medici�n de tiempos
 	expo *exponencial=(expo*)args;
     int izq=exponencial->izq;
     int der=exponencial->der;
@@ -63,7 +131,7 @@ void *exponencialH(void *args){
         //Revisamos si el elemento de encuentra en la posicion del centro actual
         if (exponencial->arr[mitad] == exponencial->elemento)
         {
-            *exponencial->aviso=exponencial->elemento;
+            *exponencial->aviso=0;
             pthread_exit(NULL);
         }
 
@@ -73,9 +141,9 @@ void *exponencialH(void *args){
         }else{
             der=mitad-1;
         }
-        pthread_exit(NULL);
         
     }
+        pthread_exit(NULL);
 }
     
 int exponencialBusqueda(int * arreglo, int n, int valorABuscar, int parts){
@@ -121,68 +189,37 @@ int exponencialBusqueda(int * arreglo, int n, int valorABuscar, int parts){
 
 
 }
-    
-    
-    
-int main(int argc, char const *argv[])
+
+int *Quicksort2(int *A, int primero, int ultimo)
 {
-    printf("Hola\n");
-    	/*  Variables para time */
-
-	// Variables para medición de tiempos
-	double utime0, stime0, wtime0, utime1, stime1, wtime1;
-	int n; // n determina el tamaño del algorito dado por argumento al ejecutar
-	int i; // Variables para loops
-
-	// Variables
-	int x;				 // India el valor a buscar.
-	int found;		 // Indica si encontró el valor.
-    // Asignacion de memoria del arreglo con respecto al tamaño de problema solicitado
-    int *A;
-    A = (int *)malloc(n * sizeof(int));
-    n=10000;
-    // Lectura y asignacion de valores al arreglo en cuestion
-    LeerArchivo(A, n);
-
-	uswtime(&utime0, &stime0, &wtime0);
-    found=exponencialBusqueda(A,n,5000,2);
-   	uswtime(&utime1, &stime1, &wtime1);
-
-    if (found>0)
+    int piv, i, j, central, aux;
+    central = (primero + ultimo) / 2;
+    piv = A[central], i = primero, j = ultimo;
+    do
     {
-        	// Tiempo real
-	    printf("%.10f ", wtime1 - wtime0);
-	// Tiempo de CPU
-	    printf("%.10f ", utime1 - utime0);
-	//Tiempo E/S
-	    printf(" %.10f", stime1 - stime0);
-	// CPU/Wall %
-	    printf(" %.10f \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
-    }
-    
-
-    return 0;
-}
-
-
-
-/* Funcion para leer y almacenar n cantidad de numeros del archivo 10millones dentro de un arreglo (con memoria previamente asignada)
-    Recibe:
-        *A: Arreglo de elementos vacio con la memoria suficiente para almacenar n cantidad de elementos 
-         n: cantidad de elementos que seran leidos del archivo y almacenados en el arreglo
- */
-int *LeerArchivo(int *A, int n)
-{
-    int i;
-    FILE *numeros;
-    numeros = fopen("10millones.txt", "r");
-    if (numeros == NULL)
+        while (A[i] < piv)
+        {
+            i++;
+        }
+        while (A[j] > piv)
+        {
+            j--;
+        }
+        if (i <= j)
+        {
+            aux = A[i];
+            A[i] = A[j];
+            A[j] = aux;
+            i++;
+            j--;
+        }
+    } while (i <= j);
+    if (primero < j)
     {
-        puts("Error en la apertura del archivo");
+        Quicksort2(A, primero, j);
     }
-    for (i = 0; i < n; i++)
+    if (primero < ultimo)
     {
-        fscanf(numeros, "%d", &A[i]);
+        Quicksort2(A, i, ultimo);
     }
-    fclose(numeros);
 }
