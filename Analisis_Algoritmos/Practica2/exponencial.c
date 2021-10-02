@@ -49,6 +49,7 @@ int main(int argc, char const *argv[])
 
    	for (m = 0; m < 20; m++)
             {
+                printf("VALOR DE N: %d: \n", n);
                 uswtime(&utime0, &stime0, &wtime0);
     			found=exponencialBusqueda(A,n,Arreglo[m],2);
                 uswtime(&utime1, &stime1, &wtime1);
