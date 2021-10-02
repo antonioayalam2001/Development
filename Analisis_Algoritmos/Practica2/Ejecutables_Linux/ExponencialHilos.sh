@@ -1,14 +1,14 @@
 #!/bin/bash
 echo ExponencialHilos
 cd ..
-gcc MainLin.c -lm -o MainLin -pthread
-./MainLin 1000000 9 >ExpoH.txt
-./MainLin 2000000 9 >>ExpoH.txt
-./MainLin 3000000 9 >>ExpoH.txt
-./MainLin 4000000 9 >>ExpoH.txt
-./MainLin 5000000 9 >>ExpoH.txt
-./MainLin 6000000 9 >>ExpoH.txt
-./MainLin 7000000 9 >>ExpoH.txt
-./MainLin 8000000 9 >>ExpoH.txt
-./MainLin 9000000 9 >>ExpoH.txt
-./MainLin 10000000 9 >>ExpoH.txt
+gcc exponencial.c -lm -o exponencial -pthread
+./exponencial 1000000  >ExpoH.txt
+./exponencial 2000000  >>ExpoH.txt
+./exponencial 3000000  >>ExpoH.txt
+./exponencial 4000000  >>ExpoH.txt
+./exponencial 5000000  >>ExpoH.txt
+./exponencial 6000000  >>ExpoH.txt
+./exponencial 7000000  >>ExpoH.txt
+./exponencial 8000000  >>ExpoH.txt
+./exponencial 9000000  >>ExpoH.txt
+./exponencial 10000000  >>ExpoH.txt
