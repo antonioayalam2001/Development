@@ -34,7 +34,9 @@ int main(int argc, char const *argv[])
 	double utime0, stime0, wtime0, utime1, stime1, wtime1;
 	int n; // n determina el tamaño del algorito dado por argumento al ejecutar
 	int m; // Variables para loops
+    int hilos;
     n=atoi(argv[1]);
+    hilos= atoi(argv[2]);
 	// Variables
 	int x;				 // India el valor a buscar.
 	int found;		 // Indica si encontró el valor.
@@ -51,7 +53,7 @@ int main(int argc, char const *argv[])
             {
                 printf("VALOR DE N: %d: \n", n);
                 uswtime(&utime0, &stime0, &wtime0);
-    			found=exponencialBusqueda(A,n,Arreglo[m],2);
+    			found=exponencialBusqueda(A,n,Arreglo[m],hilos);
                 uswtime(&utime1, &stime1, &wtime1);
 
                 if (found >= 0)
