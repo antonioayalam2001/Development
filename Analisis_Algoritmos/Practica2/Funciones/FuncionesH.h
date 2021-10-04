@@ -6,8 +6,6 @@
 #ifndef FuncionesH
 #define FuncionesH
 
- void BusquedaLinealHilos(int * arreglo, int valorABuscar, int inicio, int final, int * encontrado);
- void BusquedaLineal(int * arreglo, int valorABuscar, int inicio, int final, int * encontrado);
 
 /*  Mis hilos
 *************Busqueda Lineal Hilos************** 
@@ -17,7 +15,7 @@ Funcion: Realizar la busqueda de un elemento dado mediante la opcion de Hilos
 Uso: BusquedaLineal(A,0,n,valor,*aviso) */
 
 void BusquedaLineal(int *A, int inicio ,int final, int elemn, int *aviso);
-void BusquedaLinealHilos(int * A, int valorABuscar, int inicio, int final, int * aviso);
+void BusquedaLinealHilos(int * A, int valorABuscar, int inicio, int final, int * aviso,int hilos);
 /*   Busqueda Binaria
 Recibimos un arreglo que contiene los numeros del archivo 10 millones
  inicio : Inicio del arreglo
@@ -37,7 +35,7 @@ dentro del arreglo
 // ///////////////////////////////ya sirve////////////////////////////////////////////////////////////
 // void BusquedaBinariaHilos(int * A, int valorABuscar, int inicio, int final, int * aviso);
 // ///////////////////////////////////////////////////////////////////////////////////////////
-void BusquedaBinariaHilos(int * A, int valorABuscar, int inicio, int final, int * aviso);
+void BusquedaBinariaHilos(int * A, int valorABuscar, int inicio, int final, int * aviso,int hilos);
 
 /* *************BUSQUEDA ARBOL*************
 Recibimos un arreglo que contiene los numeros del archivo 10 millones

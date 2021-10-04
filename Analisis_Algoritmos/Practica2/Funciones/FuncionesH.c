@@ -71,52 +71,30 @@ void BusquedaLineal(int *A, int inicio, int final, int elem, int *aviso)
 //Un entero llamado elemento el cual tiene el número que deseamos encontrar,
 //dentro del arreglo
 // *aviso: Bandera que nos ayudara a determianr si el elemento ya fue encontrado o no
-void BusquedaLinealHilos(int *A, int valorABuscar, int inicio, int final, int *aviso)
-{
+// void BusquedaLinealHilos(int *A, int valorABuscar, int inicio, int final, int *aviso)
+// {
 
-	// - Variables para el manejo del algoritmo
-	int puntomedio = (final - inicio) / 2;
-	if (puntomedio > 0)
+void BusquedaLinealHilos(int *A, int valorABuscar, int inicio, int final, int *aviso,int hilos){
+	int parts = hilos;
+	pthread_t hilo[parts];
+	int medio = final/parts;
+	for (int i = 0; i < parts; i++)
 	{
-		//- Creacion de los hilos que contendran partes del arreglo en cuestion:
-		pthread_t *hilo;
-		hilo = malloc(2 * sizeof(pthread_t));
-		//- Repartiendo el arreglo mediante el uso de las estructuras que creamos
-		AuxiliarLineal *der = (AuxiliarLineal *)malloc(sizeof(AuxiliarLineal));
-		der->arrelgo = A;
-		der->valorABuscar = valorABuscar;
-		der->inicio = puntomedio + 1;
-		der->final = final;
-		der->encontrado = aviso;
-		AuxiliarLineal *izq = (AuxiliarLineal *)malloc(sizeof(AuxiliarLineal));
-		izq->arrelgo = A;
-		izq->valorABuscar = valorABuscar;
-		izq->inicio = inicio;
-		izq->final = puntomedio;
-		izq->encontrado = aviso;
-
-		// -Creando los Hilos
-		//- La funcion naturalmente devuelve 0 en caso de que el hilo se haya creado de forma exitosa, de lo contrario devolvera otro valor
-		if (pthread_create(&hilo[0], NULL, lanzarBusquedaLineal, (void *)izq) != 0)
-		{
-			perror("El hilo nos e pudo crear");
-			exit(-1);
-		}
-		if (pthread_create(&hilo[1], NULL, lanzarBusquedaLineal, (void *)der) != 0)
-		{
-			perror("El hilo nos e pudo crear");
-			exit(-1);
-		}
-		// - Variables manejo de ciclo for
-		int i;
-		// - Hace que los hilos terminen y posteriormente se vuelvan a unir al programa principal (Hasta que los hilos acaben acaba todo)
-		// -Si el main termina primero tendra que mantenerse en espera
-		for (i = 0; i < 2; i++)
-			pthread_join(hilo[i], NULL);
-		free(hilo);
+		AuxiliarBinaria *f = (AuxiliarBinaria *)malloc(sizeof(AuxiliarBinaria));
+		f->arrelgo=A;
+		f->valorABuscar=valorABuscar;
+		f->inicio=i*medio;
+		f->final=((f->inicio)+medio)-1;
+		f->encontrado=aviso;
+		pthread_create(&hilo[i],NULL,lanzarBusquedaLineal,(void*)f);
 	}
-}
 
+	for (int i = 0; i < parts; ++i)
+	{
+		pthread_join(hilo[i],NULL);
+	}
+
+}
 // // Busqueda Binaria
 //Recibimos un arreglo que contiene los numeros del archivo 10 millones
 // inicio : Inicio del arreglo
@@ -144,17 +122,14 @@ void BusquedaBinaria(int *A, int inicio, int final, int elem, int *aviso)
 
 		if (A[mitad] == elem)
 		{
-			*aviso = elem;
+			*aviso = 1;
 			// printf("Enontraste el emento en la posicion: %d\n", mitad);
 			break;
 		}
 	}
 }
 
-void BusquedaBinariaHilos(int *A, int valorABuscar, int inicio, int final, int *aviso){
-	int parts = 5;
 
-}
 
 
 
@@ -168,56 +143,27 @@ void BusquedaBinariaHilos(int *A, int valorABuscar, int inicio, int final, int *
 //dentro del arreglo
 // *aviso: Bandera que nos ayudara a determianr si el elemento ya fue encontrado o no
 
-// void BusquedaBinariaHilos(int *A, int valorABuscar, int inicio, int final, int *aviso)
-// {
+void BusquedaBinariaHilos(int *A, int valorABuscar, int inicio, int final, int *aviso,int hilos){
+	int parts = hilos;
+	pthread_t hilo[parts];
+	int medio = final/parts;
+	for (int i = 0; i < parts; i++)
+	{
+		AuxiliarBinaria *f = (AuxiliarBinaria *)malloc(sizeof(AuxiliarBinaria));
+		f->arrelgo=A;
+		f->valorABuscar=valorABuscar;
+		f->inicio=i*medio;
+		f->final=((f->inicio)+medio)-1;
+		f->encontrado=aviso;
+		pthread_create(&hilo[i],NULL,lanzarBusquedaBinaria,(void*)f);
+	}
 
-// 	// - Variables para el manejo del algoritmo
-// 	int puntomedio = (final - inicio) / 2;
-// 	if (puntomedio > 0)
-// 	{
-// 		//- Creacion de los hilos que contendran partes del arreglo en cuestion:
-// 		pthread_t *hilo;
-// 		hilo = malloc(2 * sizeof(pthread_t));
-// 		//- Repartiendo el arreglo mediante el uso de las estructuras que creamos
-// 		AuxiliarBinaria *der = (AuxiliarBinaria *)malloc(sizeof(AuxiliarBinaria));
-// 		der->arrelgo = A;
-// 		der->valorABuscar = valorABuscar;
-// 		der->inicio = puntomedio + 1;
-// 		der->final = final;
-// 		der->encontrado = aviso;
-// 		AuxiliarBinaria *izq = (AuxiliarBinaria *)malloc(sizeof(AuxiliarBinaria));
-// 		izq->arrelgo = A;
-// 		izq->valorABuscar = valorABuscar;
-// 		izq->inicio = inicio;
-// 		izq->final = puntomedio;
-// 		izq->encontrado = aviso;
+	for (int i = 0; i < parts; ++i)
+	{
+		pthread_join(hilo[i],NULL);
+	}
 
-// 		// -Creando los Hilos
-// 		//- La funcion naturalmente devuelve 0 en caso de que el hilo se haya creado de forma exitosa, de lo contrario devolvera otro valor
-// 		if (pthread_create(&hilo[0], NULL, lanzarBusquedaBinaria, (void *)izq) != 0)
-// 		{
-// 			perror("El hilo nos e pudo crear");
-// 			exit(-1);
-// 		}
-// 		if (pthread_create(&hilo[1], NULL, lanzarBusquedaBinaria, (void *)der) != 0)
-// 		{
-// 			perror("El hilo nos e pudo crear");
-// 			exit(-1);
-// 		}
-// 		// - Variables manejo de ciclo for
-// 		int i;
-// 		// - Hace que los hilos terminen y posteriormente se vuelvan a unir al programa principal (Hasta que los hilos acaben acaba todo)
-// 		// -Si el main termina primero tendra que mantenerse en espera
-// 		for (i = 0; i < 2; i++)
-// 			pthread_join(hilo[i], NULL);
-// 		free(hilo);
-// 	}
-// }
-// ///////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
+}
 
 // //          Busqueda con Serie de Fibbonacci           // //
 //Función para encontrar el mínimo de dos números
@@ -401,6 +347,10 @@ int BusquedaExponencial(int *A, int n, int elem, int *aviso)
 }
 
 
+
+
+
+
 // Nos ayudará a lanzar la búsqueda en árbol por cada hilo
 void *lanzarBusquedaLineal(void *busqueda)
 {
@@ -408,11 +358,17 @@ void *lanzarBusquedaLineal(void *busqueda)
 	BusquedaLineal(l->arrelgo, l->inicio, l->final, l->valorABuscar, l->encontrado);
 }
 
+// void *lanzarBusquedaBinaria(void *busqueda)
+// {
+// 	AuxiliarBinaria *a = (AuxiliarBinaria *)busqueda;
+// 	BusquedaBinaria(a->arrelgo, a->inicio, a->final - 1, a->valorABuscar, a->encontrado);
+// }
 void *lanzarBusquedaBinaria(void *busqueda)
 {
 	AuxiliarBinaria *a = (AuxiliarBinaria *)busqueda;
-	BusquedaBinaria(a->arrelgo, a->inicio, a->final - 1, a->valorABuscar, a->encontrado);
+	BusquedaBinaria(a->arrelgo, a->inicio, a->final, a->valorABuscar, a->encontrado);
 }
+
 
 void * procesarBusquedaArbol(void* busqueda)
 {
@@ -473,3 +429,6 @@ int *Quicksort2(int *A, int primero, int ultimo)
         Quicksort2(A, i, ultimo);
     }
 }
+
+
+
