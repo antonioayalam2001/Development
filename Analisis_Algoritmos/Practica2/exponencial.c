@@ -3,7 +3,9 @@
 // Analisis de Algoritmos
 // Autores: Mora Ayala Jose, Antonio, Lopez Lopez Oscar Manual
 // Jeon Jeong Paola, Lemus Ruiz Mariana ELizabeth
-// Algoritmo de Busqueda por Fibonacci con la implementacion de hilos 
+//Fecha de Creacion 01/10/21
+// Version 1.1
+// Algoritmo de Busqueda por algoritmo exponencial con la implementacion de hilos 
 #include <stdio.h>
 #include <stdlib.h>
 #include <pthread.h>
@@ -98,7 +100,7 @@ int *LeerArchivo(int *A, int n)
 }
 
 /*
-    Funcion: fibonacci
+    Funcion: exponencialH
     Esta realiza una busqueda Fibonacci en el intervalo dado
     Lo que se recibe: (Struct) args que contienen los numeros Fibonacci donde inicia la busqueda, 
     el numero a buscar y el arreglo donde buscar.

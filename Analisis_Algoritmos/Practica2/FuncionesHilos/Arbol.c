@@ -1,3 +1,10 @@
+// 3CM12
+// Analisis de Algoritmos
+// Autores: Mora Ayala Jose, Antonio, Lopez Lopez Oscar Manual
+// Jeon Jeong Paola, Lemus Ruiz Mariana ELizabeth
+//Fecha de Creacion 01/10/21 (Actualizacion de arbol agregando BuscaValor)
+// Version 1.3
+// Algoritmo de Busqueda por algoritmo exponencial con la implementacion de hilos 
 #include "Arbol.h"
 #include <stdlib.h>
 #include <stdio.h>
