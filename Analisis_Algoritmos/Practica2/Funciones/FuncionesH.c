@@ -129,10 +129,6 @@ void BusquedaBinaria(int *A, int inicio, int final, int elem, int *aviso)
 	}
 }
 
-
-
-
-
 // ///////////////////////////////ya sirve//////////////////////////////////////////////////////////////
 // // Busqueda Binaria Hilos // //
 // // Busqueda Binaria
