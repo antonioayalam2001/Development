@@ -1,0 +1,194 @@
+/* table, th, td{
+    border: 2px solid blue;
+} */
+*{
+    /* text-decoration: none; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background: radial-gradient(#e66465, #9198e5);
+}
+.imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen > img{
+    border-radius: 50%;
+    width: 300px;
+}
+
+tr:nth-child(odd){
+    background: linear-gradient(30deg,rgba(255, 255, 255, 0.548), rgba(128, 187, 255, 0.753));
+}
+
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+.container{
+    border: 3px dashed lightskyblue;
+}
+.titulo{
+    font-size: 50px;
+    text-align: center;
+    color: darkblue;
+    
+}
+.titulo_noticia{
+    font-size: 40px;
+    text-align: right;
+    color: rgb(3, 93, 134);
+    
+}
+
+.person{
+    border: 3px dashed red;
+}
+
+.person td {
+    border: 1px dotted black;
+}
+
+.person p{
+    color: black;
+}
+
+.imagen1{
+    width: 400px;
+    margin: auto 100px;
+}
+
+.imagencenter{
+ position: relative;
+ margin: auto 25%;   
+}
+
+h2{
+    color: rgba(15, 29, 161, 0.609);
+    font-style: italic;
+    font-weight: 800;
+}
+
+h2:hover{
+    color: violet;
+}
+
+ul{
+    
+    list-style-type: circle;
+    list-style-image: url("./icon.png") ;
+    list-style-position: inside;
+}
+
+fieldset{
+    background-color: blanchedalmond;
+}
+
+
+legend{
+    font-size: 25px;
+    font-weight: 900;
+    color: tomato;
+}
+.tabla{
+    width: 800px;
+    /* background-color: var(--AmarilloP2); */
+    padding: 18px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.tabla{
+    overflow: hidden;
+}
+
+
+span{
+    position: absolute;
+    display: block;
+}
+
+#linea1{
+    top:0;
+    width: 100%;
+    left: -100%;
+    height: 6px;
+    background: linear-gradient(90deg,lightskyblue,pink);
+}
+
+.tabla:hover #linea1{
+    left: 100%;
+    transition: 1s;
+
+}
+#linea2{
+    bottom:0;
+    width: 100%;
+    right: -100%;
+    height: 6px;
+    background: linear-gradient(90deg,transparent,pink);
+}
+
+.tabla:hover #linea2{
+    right: 100%;
+    transition: 1s;
+}
+
+#linea3{
+    /* right: 310px; */
+    left: 0;
+    height: 100%;
+    bottom: -100%;
+    width: 8px;
+    background: linear-gradient(180deg,transparent,pink);
+}
+
+.tabla:hover #linea3{
+    bottom: 100%;
+    transition: 1s;
+}
+#linea4{
+    right: 310px;
+    right: 0;
+    height: 100%;
+    top: -100%;
+    width: 8px;
+    background: linear-gradient(180deg,transparent,pink);
+}
+
+.tabla:hover #linea4{
+    top: 100%;
+    transition: 1s;
+}
+
+th,tr{
+    padding: 10px;
+    color: darkmagenta;
+}
+
+td{
+    color: #000;
+    font-weight: 600;
+}
+
+.opciones{
+    background-color: aquamarine;
+    padding: 40px;
+    width: 60%;
+    margin: 10px 0px;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#fecha, #mes, #curp{
+    border-radius: 40px;
+    padding: 16px;
+    background: lightslategrey;
+    color: aliceblue;
+    font-weight: 900;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EjemplosColoresyJerarquia</title>
+    <style>
+        #especial{color: red;}
+        p>span {color: blue; font-size: 15px;}
+        h1+h2{color: magenta;}
+        p~span{color: green;}
+    </style>
+</head>
+<body>
+    <p id="p1">Primer Parrafo</p>
+    <p id="especial">Segudo Parrafo</p>
+    <p id="pal">Tercer Parrafo</p>
+    <p><span>Texto1</span></p>
+    <p><a href="#"><span>Texto2</span></a></p>
+    
+    <h4>Hojas de Estilo</h4>
+    <h1>Titulo1</h1>
+    <h2>Subtitulo1</h2>
+    <h2>Subtitulo2</h2>
+    <p>otro texto</p>
+    <p>otro texto</p>
+    <p>otro texto</p>
+    <h2>Otro Subtitulo</h2>
+    <span>Este no av verde</span>
+    <p>Aqui hay un parrafo</p>
+    <code>Aqui hay algo en codigo</code>
+    <span>Aqui hay un span en verde, por que va precedido de un parrafo y ambos comparten el mismo padre</span>
+</body>
+</html>
