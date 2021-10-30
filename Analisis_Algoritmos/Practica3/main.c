@@ -14,13 +14,17 @@ typedef struct Lista
 } Nodolista;
 
 typedef Nodolista *Listaenlazada;
+Nodolista **arbol;
+int tam;
 
 void llenarlista(Listaenlazada *lista, char c);
 void imprimirLista(Listaenlazada lista);
 void ordenarlista(Listaenlazada *lista);
-void crearArbolHuf(Listaenlazada *lista);
+void crearArbolHuf();
+void copiarLista(Listaenlazada Lista);
+void preorden(Listaenlazada arbolImpresion);
 
-int main(int argc, char const *argv[])
+    int main(int argc, char const *argv[])
 {
     FILE *archivo;
 
@@ -33,172 +37,206 @@ int main(int argc, char const *argv[])
     {
     }
     archivo = fopen(argv[1], "rb");
-
+    char c;
     Listaenlazada lista = NULL;
-
     while (!feof(archivo))
     {
-        llenarlista(&lista, fgetc(archivo));
+        c = fgetc(archivo);
+        if (c != -1)
+        {
+        llenarlista(&lista, c);
+        }
+        
     }
     // imprimirLista(lista);
     ordenarlista(&lista);
     // printf("Ahora ya esta en orden esta madre\n");
     imprimirLista(lista);
-    crearArbolHuf(&lista);
-    printf("Huffman\n");
+
+    printf("Copiar Lista\n");
+    copiarLista(lista);
+    printf("Copiar Lista\n");
     imprimirLista(lista);
+    crearArbolHuf();
+
+    Listaenlazada arbolimp = arbol[0];
+    preorden(arbolimp);
+
+    // printf("Letra %.2x\n",arbol[0]->inf.c);
+    // printf("frec %d\n",arbol[0]->inf.frec);
+    printf("Acabo\n");
     return 0;
 }
 
-/* 
+    /* 
     Funcion LlenarLista
 
  */
-void llenarlista(Listaenlazada *lista, char c)
-{
-    Listaenlazada laux;
-    laux = *lista;
-    if (*lista == NULL)
+    void llenarlista(Listaenlazada * lista, char c)
     {
-        *lista = (Nodolista *)malloc(sizeof(Nodolista));
-        (*lista)->inf.frec = 1;
-        (*lista)->inf.c = c;
-        (*lista)->sig = NULL;
-        (*lista)->izq = NULL;
-        (*lista)->der = NULL;
-    }
-    else
-    {
-        do
+        Listaenlazada laux;
+        laux = *lista;
+        if (*lista == NULL)
         {
-            if ((laux->inf.c) == c)
-            {
-                laux->inf.frec = laux->inf.frec += 1;
-                return;
-            }
-            laux = laux->sig;
-        } while (laux != NULL);
-        Listaenlazada nuevo;
-        nuevo = (Nodolista *)malloc(sizeof(Nodolista));
-        nuevo->inf.frec = 1;
-        nuevo->inf.c = c;
-        nuevo->sig = *lista;
-        nuevo->izq = NULL;
-        nuevo->der = NULL;
-        *lista = nuevo;
-    }
-}
-
-void imprimirLista(Listaenlazada lista)
-{
-    do
-    {
-        printf(" %.2x con %d\n", lista->inf.c, lista->inf.frec);
-        lista = lista->sig;
-    } while (lista != NULL);
-}
-
-void ordenarlista(Listaenlazada *lista)
-{
-    Listaenlazada actual, siguiente;
-    int t;
-    char c;
-    actual = *lista;
-    while (actual->sig != NULL)
-    {
-        siguiente = actual->sig;
-
-        while (siguiente != NULL)
-        {
-            if (actual->inf.frec >= siguiente->inf.frec)
-            {
-                t = siguiente->inf.frec;
-                c = siguiente->inf.c;
-                siguiente->inf.frec = actual->inf.frec;
-                siguiente->inf.c = actual->inf.c;
-                actual->inf.frec = t;
-                actual->inf.c = c;
-            }
-            siguiente = siguiente->sig;
+            *lista = (Nodolista *)malloc(sizeof(Nodolista));
+            (*lista)->inf.frec = 1;
+            (*lista)->inf.c = c;
+            (*lista)->sig = NULL;
+            (*lista)->izq = NULL;
+            (*lista)->der = NULL;
         }
-        actual = actual->sig;
-        siguiente = actual->sig;
+        else
+        {
+            do
+            {
+                if ((laux->inf.c) == c)
+                {
+                    laux->inf.frec = laux->inf.frec += 1;
+                    return;
+                }
+                laux = laux->sig;
+            } while (laux != NULL);
+            Listaenlazada nuevo;
+            nuevo = (Nodolista *)malloc(sizeof(Nodolista));
+            nuevo->inf.frec = 1;
+            nuevo->inf.c = c;
+            nuevo->sig = *lista;
+            nuevo->izq = NULL;
+            nuevo->der = NULL;
+            *lista = nuevo;
+        }
     }
-}
 
-void crearArbolHuf(Listaenlazada *lista)
-{
-//     Listaenlazada aux, aux2;
-//     aux = (*lista)->sig;
-//     aux->der = (*lista)->sig;
-//     aux->izq = *lista;
-
-
-
-//     *lista = (*lista)->sig;
-
-//     aux = *lista;
-    Listaenlazada aux1 = *lista;
-    Listaenlazada aux2 = (*lista)->sig;
-    imprimirLista((*lista));
-    aux2 = (*lista)->sig;
-    do
+    void copiarLista(Listaenlazada lista)
     {
-        aux2->der = aux2;
-        aux2->izq = aux1;
-        aux2->inf.frec = (*lista)->inf.frec + (*lista)->sig->inf.frec;
-        aux2->inf.c = '\0';
+        int pos;
+        arbol = (Nodolista **)malloc(tam * sizeof(Nodolista *));
+        for (pos = 0; pos < tam; pos++)
+        {
+            Nodolista *hoja;
+            hoja = (Nodolista *)malloc(sizeof(Nodolista));
+            hoja->inf.frec = 0;
+            hoja->inf.c = '\n';
+            hoja->izq = NULL;
+            hoja->der = NULL;
+            hoja->sig = NULL;
+            arbol[pos] = hoja;
+        }
+
+        for (lista, pos = 0; lista != NULL; pos++, lista = lista->sig)
+        {
+            arbol[pos]->inf.frec = lista->inf.frec;
+            arbol[pos]->inf.c = lista->inf.c;
+        }
+    }
+
+    void imprimirLista(Listaenlazada lista)
+    {
+        tam = 0;
         do
         {
-            aux2 = aux2->sig;
-        } while (aux2->inf.frec >= aux2->sig->inf.frec);
+            tam++;
+            printf(" %.c con %d\n", lista->inf.c, lista->inf.frec);
+            lista = lista->sig;
+        } while (lista != NULL);
+    }
 
-        *lista = (*lista)->sig;
-        aux1 = *lista;
-        aux2 = aux1->sig;
-    } while (*lista !=NULL);
-}
-
-/* void crearArbolHuf(Listaenlazada *lista)
-{
-    Listaenlazada aux;
-    int s;
-    char c;
-    
-        Listaenlazada nuevo;
-        nuevo = (Nodolista *)malloc(sizeof(Nodolista));
-        nuevo->inf.frec = (aux->inf.frec) + (aux->sig->inf.frec);
-        nuevo->inf.c = '\0';
-        printf("Entro antes del do\n");
-        nuevo->izq = aux;
-        nuevo->der = aux->sig;
-
-        *lista = (*lista)->sig->sig;
-        nuevo->sig = *lista;
-        *lista = nuevo;
-
-        aux = *lista;
-        do
+    void ordenarlista(Listaenlazada * lista)
+    {
+        Listaenlazada actual, siguiente;
+        int t;
+        char c;
+        actual = *lista;
+        while (actual->sig != NULL)
         {
-            Listaenlazada aux2;
-            aux2 = (Nodolista *)malloc(sizeof(Nodolista));
-            s=aux->sig->inf.frec;
-            c=aux->sig->inf.c;
-            aux2->izq = aux->sig->izq;
-            aux2->der = aux->sig->der;
-            aux->sig->inf.frec = aux->inf.frec;
-            aux->sig->inf.c = aux->inf.c;
-            aux->inf.frec = s;
-            aux->inf.c = c;
-            aux->izq = aux2->izq;
-            aux->der = aux2->der;
-            aux = aux->sig;
-        } while (aux->inf.frec >= aux->sig->inf.frec);
+            siguiente = actual->sig;
 
-    
-} */
+            while (siguiente != NULL)
+            {
+                if (actual->inf.frec >= siguiente->inf.frec)
+                {
+                    t = siguiente->inf.frec;
+                    c = siguiente->inf.c;
+                    siguiente->inf.frec = actual->inf.frec;
+                    siguiente->inf.c = actual->inf.c;
+                    actual->inf.frec = t;
+                    actual->inf.c = c;
+                }
+                siguiente = siguiente->sig;
+            }
+            actual = actual->sig;
+            siguiente = actual->sig;
+        }
+    }
 
-/* 
+    void crearArbolHuf()
+    {
+        Nodolista *temp;
+        while (arbol[1] != NULL)
+        {
+            Nodolista *aux;
+            aux= (Nodolista *)malloc(sizeof(Nodolista));
+            aux->inf.frec = arbol[0]->inf.frec + arbol[1]->inf.frec;
+            aux->inf.c = '\0';
+            aux->izq = arbol[0];
+            aux->der = arbol[1];
+            for (int i = 0; i < tam - 1; i++)
+            {
+                arbol[i] = arbol[i+1];
+            }
+            arbol[tam - 1] = NULL;
+            arbol[0] = aux;
+            for (int i = 0; i < tam - 2; i++)
+            {
+                if (arbol[i]->inf.frec >= arbol[i+1]->inf.frec)
+                {
+                    temp = arbol[i + 1];
+                    arbol[i + 1] = arbol[i];
+                    arbol[i] = temp;
+                }
+            }
+            tam--;
+        }
+    }
+
+    /**
+    ******************************************************************************
+    * @file	Main.c
+    * @author 	Mora Ayala Jose Antonio
+    * @version  2.0
+    * @date  October 29 2020
+    * @brief Archivo que contiene la seccion principal del programa de Algoritmo de Huffman
+    ******************************************************************************
+    */
+
+   /* 
+   ---------------------------------------------------------------------------------------
+   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function Name>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+   PARAMETROS
+   ->
+   ->
+   ->
+   ->
+   ->
+   ~DESCRIPCION
+   USO:
+   RETURN:
+   ---------------------------------------------------------------------------------------
+
+    */
+   
+    void preorden(Listaenlazada arbolImpresion)
+    {
+
+        if (arbolImpresion != NULL)
+        {
+            printf("%c - %d\n", arbolImpresion->inf.c, arbolImpresion->inf.frec);
+            preorden(arbolImpresion->izq);
+            preorden(arbolImpresion->der);
+        }
+    }
+
+    /* 
     Pasitos
     //- 1. Declaración de estructuras 
     //- 2. Abrir Archivo
