@@ -1,3 +1,12 @@
+/**
+******************************************************************************
+* @file	Main.c
+* @author 	Mora Ayala Jose Antonio
+* @version  2.0
+* @date  October 29 2020
+* @brief Archivo que contiene la seccion principal del programa de Algoritmo de Huffman
+******************************************************************************
+*/
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -140,7 +149,19 @@ void preorden(Listaenlazada arbolImpresion);
             lista = lista->sig;
         } while (lista != NULL);
     }
-
+   /* 
+   ---------------------------------------------------------------------------------------
+   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function ordernarlista>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+   PARAMETROS
+   -> Listaenlazada Recibe una listaEnlazada al momento de ser invocada 
+   ->
+   ~DESCRIPCION: Funcion que realiza el recorrido de un arbol en preorden (Comienza el recorrido desde la raiz) y 
+                va bajando continuamente por el lado izquierdo, posteriormente cuando ya no hay mas izquierda va a la derecha
+                Vamos obteinendo los valores que hay existentes en cada hoja, asi como la frecuencia que poseen
+   USO:         preorder (Listaenlazada arbolImpresion);
+   RETURN:      Vacio ya que estamos utilizando memoria dinamica dentro del programa
+   ---------------------------------------------------------------------------------------
+    */
     void ordenarlista(Listaenlazada * lista)
     {
         Listaenlazada actual, siguiente;
@@ -168,7 +189,18 @@ void preorden(Listaenlazada arbolImpresion);
             siguiente = actual->sig;
         }
     }
-
+   /* 
+   ---------------------------------------------------------------------------------------
+   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function HuffmanTree>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+   PARAMETROS
+   ->  
+   ~DESCRIPCION: Funcion que realiza la creacion de un arbol huffman asignano frecuencias y las hojas
+                conforme la lista de frecuencias que previmante ya tuvo que haber sido sometida a un ordenamiento
+                previo.
+   USO:         crearArbolHuf();
+   RETURN:      Vacio ya que estamos utilizando memoria dinamica dentro del programa
+   ---------------------------------------------------------------------------------------
+    */
     void crearArbolHuf()
     {
         Nodolista *temp;
@@ -199,30 +231,18 @@ void preorden(Listaenlazada arbolImpresion);
         }
     }
 
-    /**
-    ******************************************************************************
-    * @file	Main.c
-    * @author 	Mora Ayala Jose Antonio
-    * @version  2.0
-    * @date  October 29 2020
-    * @brief Archivo que contiene la seccion principal del programa de Algoritmo de Huffman
-    ******************************************************************************
-    */
-
    /* 
    ---------------------------------------------------------------------------------------
-   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function Name>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function Preorden>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
    PARAMETROS
+   -> Listaenlazada Recibe una listaEnlazada al momento de ser invocada 
    ->
-   ->
-   ->
-   ->
-   ->
-   ~DESCRIPCION
-   USO:
-   RETURN:
+   ~DESCRIPCION: Funcion que realiza el recorrido de un arbol en preorden (Comienza el recorrido desde la raiz) y 
+                va bajando continuamente por el lado izquierdo, posteriormente cuando ya no hay mas izquierda va a la derecha
+                Vamos obteinendo los valores que hay existentes en cada hoja, asi como la frecuencia que poseen
+   USO:         preorder (Listaenlazada arbolImpresion);
+   RETURN:      Vacio ya que estamos utilizando memoria dinamica dentro del programa
    ---------------------------------------------------------------------------------------
-
     */
    
     void preorden(Listaenlazada arbolImpresion)
