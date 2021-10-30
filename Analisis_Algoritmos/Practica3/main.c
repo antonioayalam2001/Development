@@ -10,18 +10,54 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+   /* 
+   -------------------------------------------------------------------------------------------
+   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Struct Nodoinfo>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+   DATATYPE
+   ->int            frec va alamacenando la frecuencia de repeticion del caracter            
+   ->unsigned char  va almacenando el carcter en cuestion para cada uno de los nodos            
+   ~DESCRIPCION: Estructura que nos proporciona la capacidad de ir alamcenando la frecuencia
+                del carcater conforme esta va incrementando, así como poder almacenar el  
+                caracter cuando sea necesario para cada uno de los nodos (en caso de que
+                tratemos con un nodo hoja tendra un caracter, pues es el proposito del arbol
+                huffman, en caso contrario se le asignara el caracter vacio) 
+
+   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Struct Nodoinfo>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>|
+   -------------------------------------------------------------------------------------------|
+    */
 typedef struct informacion
 {
     unsigned char c;
     int frec;
 } Nodoinfo;
 
+   /* 
+   -------------------------------------------------------------------------------------------
+   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Struct NodoLista>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+   DATATYPE
+   ->Nodoinfo       Posee dentro una estructura como la descrita anteriormente para que cada
+                    uno de los nodos pueda tener esos elementos dentro de su estructura                        
+   ->struct Lista   Definicion de una lista de su mismo tipo para poder ir haciendo el 
+                    ligamiento, aqui mismo declaramos las partes de izquierda y derecha pora
+                    cada nodo de la lista y asi poder formar el arbol         
+   ~DESCRIPCION: Estructura que nos proporciona la capacidad de ir alamcenando la frecuencia
+                del carcater conforme esta va incrementando, así como poder almacenar el  
+                caracter cuando sea necesario para cada uno de los nodos (en caso de que
+                tratemos con un nodo hoja tendra un caracter, pues es el proposito del arbol
+                huffman, en caso contrario se le asignara el caracter vacio) 
+
+   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Struct Nodoinfo>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>|
+   -------------------------------------------------------------------------------------------|
+    */
 typedef struct Lista
 {
     Nodoinfo inf;
     struct Lista *sig, *izq, *der;
 } Nodolista;
-
+/* 
+    Establecemos una forma sencilla de poder declarar nuestra estructura 
+ */
 typedef Nodolista *Listaenlazada;
 Nodolista **arbol;
 int tam;
