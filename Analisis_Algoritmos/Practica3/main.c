@@ -1,4 +1,4 @@
-/**
+/*
 ******************************************************************************
 * @file	Main.c
 * @author 	Mora Ayala Jose Antonio
@@ -15,9 +15,9 @@
    -------------------------------------------------------------------------------------------
    <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Struct Nodoinfo>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
    DATATYPE
-   ->int            frec va alamacenando la frecuencia de repeticion del caracter            
-   ->unsigned char  va almacenando el carcter en cuestion para cada uno de los nodos            
-   ~DESCRIPCION: Estructura que nos proporciona la capacidad de ir alamcenando la frecuencia
+   ->int                    frec va alamacenando la frecuencia de repeticion del caracter            
+   ->unsigned char          va almacenando el carcter en cuestion para cada uno de los nodos            
+   ~Description   Estructura que nos proporciona la capacidad de ir alamcenando la frecuencia
                 del carcater conforme esta va incrementando, así como poder almacenar el  
                 caracter cuando sea necesario para cada uno de los nodos (en caso de que
                 tratemos con un nodo hoja tendra un caracter, pues es el proposito del arbol
@@ -41,7 +41,7 @@ typedef struct informacion
    ->struct Lista   Definicion de una lista de su mismo tipo para poder ir haciendo el 
                     ligamiento, aqui mismo declaramos las partes de izquierda y derecha pora
                     cada nodo de la lista y asi poder formar el arbol         
-   ~DESCRIPCION: Estructura que nos proporciona la capacidad de ir alamcenando la frecuencia
+   ->DESCRIPCION: Estructura que nos proporciona la capacidad de ir alamcenando la frecuencia
                 del carcater conforme esta va incrementando, así como poder almacenar el  
                 caracter cuando sea necesario para cada uno de los nodos (en caso de que
                 tratemos con un nodo hoja tendra un caracter, pues es el proposito del arbol
@@ -292,6 +292,8 @@ void preorden(Listaenlazada arbolImpresion);
         }
     }
 
+
+    
     /* 
     Pasitos
     //- 1. Declaración de estructuras 
