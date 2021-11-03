@@ -88,6 +88,6 @@ void createBinaryList(Listaenlazada arbolImpresion, Listaenlazada *listaBinaria)
 int crearCodificacionDAT(Listaenlazada listaBinaria, FILE *archivo);
 int cmpchar(char cadena1, char cadena2);
 int crearCodificacionDAT(Listaenlazada listaBinaria, FILE *archivo);
-
+void imprimirTiempos(double utime0, double stime0, double wtime0, double utime1, double stime1, double wtime1);
 
 #endif //Funciones.h

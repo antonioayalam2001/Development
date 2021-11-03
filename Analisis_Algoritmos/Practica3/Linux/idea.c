@@ -74,15 +74,9 @@ int main(int argc, char const *argv[])
 
     orderList(&lista); //Ya que hemos llenando la lista procedemos a ordenarla
 
-
    	uswtime(&utime1, &stime1, &wtime1); //Fin del ordenamientod e la lista
-	printf("\n");
-	printf("real (Tiempo total)  %.10e s\n",  wtime1 - wtime0);
-	printf("user (Tiempo de procesamiento en CPU) %.10e s\n",  utime1 - utime0);
-	printf("sys (Tiempo en acciónes de E/S)  %.10e s\n",  stime1 - stime0);
-	printf("CPU/Wall   %.10f %% \n",100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
-	printf("\n");
-    
+    imprimirTiempos(utime0, stime0, wtime0,utime1, stime1, wtime1);
+
     printList(lista);  //Realizmamos la impresion de la lista para asegurarnos que todo esta saliendo como deberia
 
     if (crearFrecuenciastxt(lista) == -1)
