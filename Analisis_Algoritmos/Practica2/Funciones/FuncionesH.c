@@ -139,26 +139,26 @@ void BusquedaBinaria(int *A, int inicio, int final, int elem, int *aviso)
 //dentro del arreglo
 // *aviso: Bandera que nos ayudara a determianr si el elemento ya fue encontrado o no
 
-void BusquedaBinariaHilos(int *A, int valorABuscar, int inicio, int final, int *aviso,int hilos){
+void BusquedaBinariaHilos(int *A, int valorABuscar, int inicio, int final, int *aviso, int hilos)
+{
 	int parts = hilos;
 	pthread_t hilo[parts];
-	int medio = final/parts;
+	int medio = final / parts;
 	for (int i = 0; i < parts; i++)
 	{
 		AuxiliarBinaria *f = (AuxiliarBinaria *)malloc(sizeof(AuxiliarBinaria));
-		f->arrelgo=A;
-		f->valorABuscar=valorABuscar;
-		f->inicio=i*medio;
-		f->final=((f->inicio)+medio)-1;
-		f->encontrado=aviso;
-		pthread_create(&hilo[i],NULL,lanzarBusquedaBinaria,(void*)f);
+		f->arrelgo = A;
+		f->valorABuscar = valorABuscar;
+		f->inicio = i * medio;
+		f->final = ((f->inicio) + medio) - 1;
+		f->encontrado = aviso;
+		pthread_create(&hilo[i], NULL, lanzarBusquedaBinaria, (void *)f);
 	}
 
 	for (int i = 0; i < parts; ++i)
 	{
-		pthread_join(hilo[i],NULL);
+		pthread_join(hilo[i], NULL);
 	}
-
 }
 
 // //          Busqueda con Serie de Fibbonacci           // //

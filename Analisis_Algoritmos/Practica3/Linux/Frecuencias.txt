@@ -1,0 +1,9 @@
+FRECUENCIAS DE CADA CARACTER EN ORDEN DE APARICION
+ MORA AYALA JOSE ANTONIO 
+|h ->>>>>> 1|
+|l ->>>>>> 1|
+|  ->>>>>> 1|
+|m ->>>>>> 1|
+|n ->>>>>> 1|
+|d ->>>>>> 1|
+|a ->>>>>> 4|
