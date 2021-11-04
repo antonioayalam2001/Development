@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
+#include <stdbool.h>
 
 //Funciones que usaremos para obtener/cambiar y deplazarnos en los bits
 //de las variables
@@ -55,7 +56,7 @@ char *nombreArchivoFrecuencia;
 char *nombreArchivoCodificacion;
 
 //Declaramos variables que almacenaran el tipo de archivo y el nombre
-//que tendra el archivo decodificado
+//que tendra el archivo decode
 char *cadenaPrueba;
 
 //Declaramos la variable que tendra el valor escaneado en modo texto
@@ -545,8 +546,8 @@ int crearDecodificacion(arbolHUFFMAN arbolDeHuffman){
 	//Creamos una variable para leer el archivo con la codificacion
 	FILE *codificado = NULL;
 
-	//Creamos una varaible para escribir el archivo decodificado
-	FILE *decodificado = NULL;
+	//Creamos una varaible para escribir el archivo decode
+	FILE *decode = NULL;
 
 	//Declaramos una variable auxiliar de tipo arbol que nos ayudara
 	//para recorrer el arbol en el orden en que se presentan los bits
@@ -564,28 +565,29 @@ int crearDecodificacion(arbolHUFFMAN arbolDeHuffman){
 	//variable que tendra el valor escaneado del byte que se haya escaneado 
 	//mediante fgetc
 	int valorBinario;
+    bool cambiarByte;
 
-	//Abrimos el archivo codificado en modo lectura binaria
+    //Abrimos el archivo codificado en modo lectura binaria
 	codificado = fopen(nombreArchivoCodificacion, "rb");
 
-	//Abrimos el archivo decodificado en modo escritura normal	
-	decodificado = fopen(cadenaPrueba, "w");
+	//Abrimos el archivo decode en modo escritura normal	
+	decode = fopen(cadenaPrueba, "w");
 
-	//Comprobamos que el archivo codificado se haya abierto correctamente
+    //Comprobamos que el archivo codificado se haya abierto correctamente
 	if(codificado == NULL){
 
 		printf("Error en Codificacion\n"); 
 		return -1;
 	}
 
-	//comprobamos que el archivo decodificado se haya abierto correctamente
-	if(decodificado == NULL){
+	//comprobamos que el archivo decode se haya abierto correctamente
+	if(decode == NULL){
 
 		printf("Error en Decodificacion\n"); 
 		return -1;
 	}
 
-	//do{
+	do{
 
 		//Escaneamos el primer caracter dentro de codificado
 		caracterEscaneado = fgetc(codificado);
@@ -595,30 +597,37 @@ int crearDecodificacion(arbolHUFFMAN arbolDeHuffman){
 		//if (feof(codificado) == 1) break;
 
 		//Iniciamos en el nodo raiz del arbol
-		arbolAuxiliar = arbolDeHuffman;
+        cambiarByte = false;
 
-		//Escaneamos el primer bit del caracter escaneado
-		//do{
+        //Escaneamos el primer bit del caracter escaneado
+		do{
 
 			if ((arbolAuxiliar->izquierda == NULL) && (arbolAuxiliar->derecha == NULL)){
 
-				
-			}
+                fputc(arbolAuxiliar->data.letra, decode);
+                arbolAuxiliar = arbolDeHuffman;
+            }
 			else{
+                valorBinario = CONSULTARBIT(caracterEscaneado, posicionBit);
+                if (valorBinario == 0){
+                    arbolAuxiliar = arbolAuxiliar->izquierda;
+                    
+                }else{
+                    arbolAuxiliar = arbolAuxiliar->derecha;
+                }
+                    posicionBit--;
+                    if (posicionBit == -1){
+                        posicionBit = 7;
+                        cambiarByte = true;
+                        fputc(arbolAuxiliar->data.letra, decode);
+                        arbolAuxiliar = arbolDeHuffman;
+                    }
+                    
+            }
 
-				for (int i = 7; i >= 0; i--)
-				{
-					valorBinario = CONSULTARBIT(caracterEscaneado, i);
-					printf("%d ", valorBinario);
-				}
+		}while(cambiarByte != true);
 
-			}
-
-		//}while();
-
-
-
-	//}while(!feof(codificado));
+	}while(!feof(codificado));
 
 
 

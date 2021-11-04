@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
-#include "./Tiempo/tiempo.c"
+// #include "./Tiempo/tiempo.c"
 /* 
 -------------------------------------------------------------------------------------------------
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function fillList>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -241,6 +241,7 @@ void binaryRoute(Listaenlazada *arbolImpresion, int pos, int bit, int izq, int d
     if (*arbolImpresion != NULL)
     {
 
+
         //Iremos insertando el valor del bit dependiendo si nos vamos por izquierda con valor 0
         //o si vamos por la derecha con 1, en la primera llamada en el main como no hemos
         //recorrido ninguna pos dentro del arbol por eso tendremos el valor de -1 donde no
@@ -251,7 +252,7 @@ void binaryRoute(Listaenlazada *arbolImpresion, int pos, int bit, int izq, int d
         }
 
         //Si nos encontramos en un nodo hoja donde tenemos la frecuencia y la letra haremos
-        //las siguientes operaciones, en caso de que no seguiremos recorriendo el arbol
+        //las siguientes operaciones, en caso de que no seguiremos recorriendo el arbol 
         if ((*arbolImpresion)->izq == NULL && (*arbolImpresion)->der == NULL)
         {
 
@@ -277,8 +278,8 @@ void binaryRoute(Listaenlazada *arbolImpresion, int pos, int bit, int izq, int d
             //Dependiendo hacia donde nos dezplasemos sumaremos en 1 la pos para insertar en
             //el arreglo, ademas de que llevaremos el conteno de los  dezplacamiento hacia la
             //izquierda o hacia la derecha
-            binaryRoute(&(*arbolImpresion)->izq, pos + 1, 0, izq + 1, der, auxBin);
-            binaryRoute(&(*arbolImpresion)->der, pos + 1, 1, izq, der + 1, auxBin);
+            binaryRoute(&(*arbolImpresion)->izq, pos + 1, 0, izq + 1, der,auxBin);
+            binaryRoute(&(*arbolImpresion)->der, pos + 1, 1, izq, der + 1,auxBin);
         }
     }
 }
@@ -373,10 +374,10 @@ USO:
 
 int crearFrecuenciastxt(Listaenlazada lista)
 {
-    char cadena[] = "FRECUENCIAS DE CADA CARACTER EN ORDEN DE APARICION\n "; //Encabezado para el archivo
+    char cadena[] = "FRECUENCIAS DE CADA CARACTER EN ORDEN DE APARICION\n "; //Encabezado para el archivo 
     FILE *frecuencydoc = NULL;
 
-    frecuencydoc = fopen("Frecuencias.txt", "w"); //En caso de que el archivo no exista se crea automaticamente
+    frecuencydoc = fopen("Frecuencias.txt", "w"); //En caso de que el archivo no exista se crea automaticamente 
     if (frecuencydoc == NULL)
     {
         printf("Error\n");
@@ -384,10 +385,9 @@ int crearFrecuenciastxt(Listaenlazada lista)
     }
 
     fputs(cadena, frecuencydoc); //Insercion de Encabezado
-    fprintf(frecuencydoc, "Frecuencias:\n");
+    fprintf(frecuencydoc, "Frecuencias:\n" );
     fprintf(frecuencydoc, "%d\n", totalDeBits);
-    while (lista != NULL)
-    { //iremos iterando en toda nuestra lista, mientras el siguiente nodo no este vacio quiere decri que aun tenemos informacion que debemos imprimir en el archivo
+    while (lista != NULL){  //iremos iterando en toda nuestra lista, mientras el siguiente nodo no este vacio quiere decri que aun tenemos informacion que debemos imprimir en el archivo
         //Imprimimos la letra y la frecuencia de la lista usando fprintf
         fprintf(frecuencydoc, "%c - %d\n", lista->inf.c, lista->inf.frec);
         lista = lista->sig;
@@ -429,7 +429,7 @@ int crearCodificacionDAT(Listaenlazada listaBinaria, FILE *archivo)
     int posicionBit = 7;
 
     int posicionByte = 0;
-    int queryValue;
+    int queryValue;         
 
     int random;
 
@@ -444,8 +444,7 @@ int crearCodificacionDAT(Listaenlazada listaBinaria, FILE *archivo)
     codificacion = fopen("codificacion.dat", "wb");
 
     //Verificamos que el archivo se haya abierto de manera correcta
-    if (codificacion == NULL)
-    {
+    if (codificacion == NULL){
         printf("Error al crear/abrir codificacion.dat \n");
         return -1;
     }
@@ -462,7 +461,7 @@ int crearCodificacionDAT(Listaenlazada listaBinaria, FILE *archivo)
         //Escanea el End Of File, si se llega a este valor
         //se rompera el ciclo
 
-        if (feof(archivo) == 1) //Igualar a 1 en ejecucion de Linux
+        if (feof(archivo) == 16) //Igualar a 1 en ejecucion de Linux
             break;
 
         //Volvemos a la cabeza de la lista enlazada
@@ -523,12 +522,13 @@ int crearCodificacionDAT(Listaenlazada listaBinaria, FILE *archivo)
         }
     }
 
-    printf("La cantidad de bits neecsarios es de: %d\n", totalDeBits);
-    printf("La cantidad de Bytes iniciales del archivo es de %d \n", totalDeBytes); //Imprimimos la cantidad de bits necesarios en el caso de compilacion
-    printf("La cantidad de Bytes finales del archivo es de %d \n", posicionByte + 1);
-    //Imprimimos la cantidad de bits necesarios en el caso de compilacion
+    printf("La cantidad de bits neecsarios es de: %d\n",totalDeBits);
+printf("La cantidad de Bytes iniciales del archivo es de %d \n", totalDeBytes); //Imprimimos la cantidad de bits necesarios en el caso de compilacion
+    printf("La cantidad de Bytes finales del archivo es de %d \n", posicionByte+1);
+     //Imprimimos la cantidad de bits necesarios en el caso de compilacion
     printf("El nivel de compresion del archivo es de: %d.2 % ", (totalDeBytes / (posicionByte + 1)) * 100);
-    fclose(codificacion); //Cerramos el archivo de la codificacion
+
+    fclose(codificacion);                                                        //Cerramos el archivo de la codificacion
 }
 
 /* 
@@ -559,8 +559,7 @@ int cmpchar(char cadena1, char cadena2)
         k = CONSULTARBIT(cadena2, i);
         //Si algun bit es diferente en cualquier posicion los
         //caracteres no seran iguales y retornamos 0 o false
-        if (j != k)
-        {
+        if (j != k){
             return 0;
         }
     }
@@ -588,14 +587,13 @@ USO: imprimirTiempos(variables de tiempo)
 -------------------------------------------------------------------------------------------------|
 */
 
-void imprimirTiempos(double utime0, double stime0, double wtime0, double utime1, double stime1, double wtime1)
-{
+void imprimirTiempos(double utime0, double stime0,double  wtime0,double  utime1, double stime1, double wtime1) {
     printf("\n");
-    printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
-    printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
-    printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
-    printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
-    printf("\n");
+	printf("real (Tiempo total)  %.10e s\n",  wtime1 - wtime0);
+	printf("user (Tiempo de procesamiento en CPU) %.10e s\n",  utime1 - utime0);
+	printf("sys (Tiempo en acciónes de E/S)  %.10e s\n",  stime1 - stime0);
+	printf("CPU/Wall   %.10f %% \n",100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+	printf("\n");
 }
 
-// Generacioncodigodat
+    // Generacioncodigodat

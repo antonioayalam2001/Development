@@ -1,9 +1,204 @@
-#include "Funciones.h"
+/**
+******************************************************************************
+* @file	Main.c
+* @author 	Mora Ayala Jose Antonio
+* @version  2.0
+* @date  October 29 2020
+* @brief Archivo que contiene la seccion principal del programa de Algoritmo de Huffman
+******************************************************************************
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
-#include "./Tiempo/tiempo.c"
+
+/* Definiciones que nos sirven para pdoer realizar el manejo de bits conforme sea requerido
+    Mediante los "bitwise Operators" o bien Operadores binarios.
+    Recurso proporcionado por:
+    @Autor : Edgardo Adrian Franco Martinez
+ */
+
+#define PESOBIT(bpos) 1 << bpos
+#define CONSULTARBIT(var, bpos) (*(unsigned *)&var & PESOBIT(bpos)) ? 1 : 0
+#define PONE_1(var, bpos) *(unsigned *)&var |= PESOBIT(bpos)
+#define PONE_0(var, bpos) *(unsigned *)&var &= ~(PESOBIT(bpos))
+#define CAMBIA(var, bpos) *(unsigned *)&var ^= PESOBIT(bpos)
+
+/* 
+-------------------------------------------------------------------------------------------
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Struct Nodoinfo>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+DATATYPE
+->int                    frec va alamacenando la frecuencia de repeticion del caracter            
+->unsigned char          va almacenando el carcter en cuestion para cada uno de los nodos            
+~Description   Estructura que nos proporciona la capacidad de ir alamcenando la frecuencia
+                del carcater conforme esta va incrementando, así como poder almacenar el  
+                caracter cuando sea necesario para cada uno de los nodos (en caso de que
+                tratemos con un nodo hoja tendra un caracter, pues es el proposito del arbol
+                huffman, en caso contrario se le asignara el caracter vacio) 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Struct Nodoinfo>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>|
+-------------------------------------------------------------------------------------------|
+   */
+typedef struct informacion
+{
+    unsigned char c;
+    int frec;
+    int binario[16];
+} Nodoinfo;
+
+/* 
+   -------------------------------------------------------------------------------------------
+   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Struct NodoLista>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+   DATATYPE
+   ->Nodoinfo       Posee dentro una estructura como la descrita anteriormente para que cada
+                    uno de los nodos pueda tener esos elementos dentro de su estructura                        
+   ->struct Lista   Definicion de una lista de su mismo tipo para poder ir haciendo el 
+                    ligamiento, aqui mismo declaramos las partes de izquierda y derecha pora
+                    cada nodo de la lista y asi poder formar el arbol         
+   ->DESCRIPCION: Estructura que nos proporciona la capacidad de ir alamcenando la frecuencia
+                del carcater conforme esta va incrementando, así como poder almacenar el  
+                caracter cuando sea necesario para cada uno de los nodos (en caso de que
+                tratemos con un nodo hoja tendra un caracter, pues es el proposito del arbol
+                huffman, en caso contrario se le asignara el caracter vacio) 
+
+   <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Struct Nodoinfo>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>|
+   -------------------------------------------------------------------------------------------|
+    */
+
+typedef struct Lista
+{
+    Nodoinfo inf;
+    struct Lista *sig, *izq, *der;
+} Nodolista;
+
+typedef Nodolista *Listaenlazada;
+//Sin el typedef
+// Nodolista *lista
+Nodolista **arbol;
+int tam;
+
+// *arbol -> Estructura lista SegundoApuntador **-> (Parte dinamica para la memoria)
+//ListaEnlazada **arbol = ***arbol
+
+
+//Arreglo para ir almacenando cada uno de los binarios
+// int auxBin[8];
+//Variable con el tamanno total de la lista enlazada
+int tamanoLista;
+
+//Variable con el tamano total de bytes del archivo de entrada
+int totalDeBytes;
+
+void fillList(Listaenlazada *lista, char c);
+void printList(Listaenlazada lista);
+void orderList(Listaenlazada *lista);
+void huffmanTree();
+void copyList(Listaenlazada Lista);
+int crearFrecuenciastxt(Listaenlazada lista);
+void binaryRoute(Listaenlazada *arbolImpresion, int pos, int bit, int izq, int der, int *auxBin);
+void createBinaryList(Listaenlazada arbolImpresion, Listaenlazada *listaBinaria);
+int crearCodificacionDAT(Listaenlazada listaBinaria, FILE *archivo);
+int cmpchar(char cadena1, char cadena2);
+int crearCodificacionDAT(Listaenlazada listaBinaria, FILE *archivo);
+
+int main(int argc, char const *argv[])
+{
+    FILE *archivo;                      //Archivo con el cual trabajaremos el algoritmo
+    Listaenlazada lista = NULL;         //Lista enlazada para ir alamcenando cada caracter (tambien nos sirve como la estructura del arbol)
+    Listaenlazada BinaryList = NULL;    //lista para ir alamcenando los binarios 
+    int auxBin[8];                      //Arreglo para ir almacenando los binarios de cada caracter
+    char listaCaracteres[1024];         //Arreglo para ir almacenando la cantidad de caracteres que nos enocntramos en el archivo
+    int readBytes;                      //Cantidad de bytes leidos
+    char c;                             //Caracter para pdoer ir realizando la obtencion y comparacion de cada uno de los caracteres en el archivo
+
+    if (argc != 2){
+        printf("Ingresa el nombre del archivo\n", argv[0]);
+        exit(0);
+    }
+    else{
+        archivo = fopen(argv[1], "rb");
+    }
+
+    do
+    {
+        //Guardamos en bytes leidos el tamano de bytes escaneados
+        readBytes = fread(listaCaracteres, sizeof(char), 1024, archivo);
+
+        //Guardamos el total de bytes leido cada vez para obtener el total
+        totalDeBytes = totalDeBytes + readBytes;
+        //Haremos esto hasta que lleguemos al final del archivo
+    } while (!feof(archivo));
+
+    printf("El total de bytes que se encontraron en el archivo son %d\n", totalDeBytes);
+
+    // es necesario hacer uso de la funcion rewind incluida en el manejo de archivos, dado que recorrimos todo el archivo y devemos volver
+    // al principio para poder comenzar nuevamente con nuestro procedimiento
+    rewind(archivo);
+
+    //  * lista -> Nodolista;
+
+    /* 
+    Realizando la obtencion de cada uno de los caracetres que nos encontramos dentro del archivo,
+    situacion que sucede hasta que hayamos llegado al final del archivo
+    IMPORTANTE. se debe consiedrar que la funcion fgetc al final agrega un salto de linea por lo cual
+    es sumamente necesaria la consideracion de poner que el caracter debe ser distinto de menos 1, ya 
+    que de no ser asi modificara el resultado de nuestro arbol de huffman y por lo tanto las ocurrencias
+     */
+    while (!feof(archivo))
+    {
+        c = fgetc(archivo);
+        if (c != -1)
+        {
+            fillList(&lista, c);
+        }
+    }
+
+    printf("Nombre del archivo: %s - Tamanno en bytes: %d\n", argv[1], totalDeBytes);
+
+    orderList(&lista); //Ya que hemos llenando la lista procedemos a ordenarla
+    
+    printList(lista);  //Realizmamos la impresion de la lista para asegurarnos que todo esta saliendo como deberia
+
+    if (crearFrecuenciastxt(lista) == -1)
+    {
+        return -1;
+    } //Creamos el archivo frecuencias.txt
+    
+    printf("Copiando Lista\n");
+    
+    copyList(lista); //Copiamos la lista dentro del arbol de Huffman el cual fue declarado de forma global
+    
+    printf("Lista Copiada\n");
+    
+    printList(lista);
+
+    huffmanTree(); //Procedemos a la cracion del arbol de Huffman
+    
+    Listaenlazada arbolimp = arbol[0];
+    
+    binaryRoute(&arbolimp, -1, 0, 0, 0,auxBin); //Realizacion de un recorrido en postorden con respecto al arbol para poder realizar la obtencion de cada codigo
+
+    createBinaryList(arbolimp, &BinaryList); //Guardamos en nuestra lista de valores binarios
+
+    crearCodificacionDAT(BinaryList, archivo); //Realizamos la creacion de la codificacion
+
+    fclose(archivo);
+
+    //Liberamos la memoria de la cabeza de la lista enlazada
+    free(lista);
+
+    //liberamos la memoria de nuestro arbol de huffman de impresion
+    free(arbolimp);
+
+    //Liberamos la memoria para nuestra lista enlzada con nuestros
+    //datos en binario
+    free(BinaryList);
+
+    //Imprimios este mensaje para saber que el programa se haya
+    //ejecutado u terminado sin ningun problema
+    printf("Fin\n");
+    return 0;
+}
+
 /* 
 -------------------------------------------------------------------------------------------------
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function fillList>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -117,7 +312,7 @@ void printList(Listaenlazada lista)
     do
     {
         tam++;
-        printf(" %c con %d\n", lista->inf.c, lista->inf.frec);
+        printf(" %.c con %d\n", lista->inf.c, lista->inf.frec);
         lista = lista->sig;
     } while (lista != NULL);
 }
@@ -241,6 +436,7 @@ void binaryRoute(Listaenlazada *arbolImpresion, int pos, int bit, int izq, int d
     if (*arbolImpresion != NULL)
     {
 
+
         //Iremos insertando el valor del bit dependiendo si nos vamos por izquierda con valor 0
         //o si vamos por la derecha con 1, en la primera llamada en el main como no hemos
         //recorrido ninguna pos dentro del arbol por eso tendremos el valor de -1 donde no
@@ -251,7 +447,7 @@ void binaryRoute(Listaenlazada *arbolImpresion, int pos, int bit, int izq, int d
         }
 
         //Si nos encontramos en un nodo hoja donde tenemos la frecuencia y la letra haremos
-        //las siguientes operaciones, en caso de que no seguiremos recorriendo el arbol
+        //las siguientes operaciones, en caso de que no seguiremos recorriendo el arbol 
         if ((*arbolImpresion)->izq == NULL && (*arbolImpresion)->der == NULL)
         {
 
@@ -277,8 +473,8 @@ void binaryRoute(Listaenlazada *arbolImpresion, int pos, int bit, int izq, int d
             //Dependiendo hacia donde nos dezplasemos sumaremos en 1 la pos para insertar en
             //el arreglo, ademas de que llevaremos el conteno de los  dezplacamiento hacia la
             //izquierda o hacia la derecha
-            binaryRoute(&(*arbolImpresion)->izq, pos + 1, 0, izq + 1, der, auxBin);
-            binaryRoute(&(*arbolImpresion)->der, pos + 1, 1, izq, der + 1, auxBin);
+            binaryRoute(&(*arbolImpresion)->izq, pos + 1, 0, izq + 1, der,auxBin);
+            binaryRoute(&(*arbolImpresion)->der, pos + 1, 1, izq, der + 1,auxBin);
         }
     }
 }
@@ -373,21 +569,17 @@ USO:
 
 int crearFrecuenciastxt(Listaenlazada lista)
 {
-    char cadena[] = "FRECUENCIAS DE CADA CARACTER EN ORDEN DE APARICION\n "; //Encabezado para el archivo
+    char cadena[] = "FRECUENCIAS DE CADA CARACTER EN ORDEN DE APARICION\n "; //Encabezado para el archivo 
     FILE *frecuencydoc = NULL;
 
-    frecuencydoc = fopen("Frecuencias.txt", "w"); //En caso de que el archivo no exista se crea automaticamente
+    frecuencydoc = fopen("Frecuencias.txt", "w"); //En caso de que el archivo no exista se crea automaticamente 
     if (frecuencydoc == NULL)
     {
         printf("Error\n");
         return -1;
     }
-
     fputs(cadena, frecuencydoc); //Insercion de Encabezado
-    fprintf(frecuencydoc, "Frecuencias:\n");
-    fprintf(frecuencydoc, "%d\n", totalDeBits);
-    while (lista != NULL)
-    { //iremos iterando en toda nuestra lista, mientras el siguiente nodo no este vacio quiere decri que aun tenemos informacion que debemos imprimir en el archivo
+    while (lista != NULL){  //iremos iterando en toda nuestra lista, mientras el siguiente nodo no este vacio quiere decri que aun tenemos informacion que debemos imprimir en el archivo
         //Imprimimos la letra y la frecuencia de la lista usando fprintf
         fprintf(frecuencydoc, "%c - %d\n", lista->inf.c, lista->inf.frec);
         lista = lista->sig;
@@ -400,10 +592,10 @@ int crearFrecuenciastxt(Listaenlazada lista)
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function crearCodificacionDAT>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 PARAMETROS
 -> Listaenlazada: Recibe una listaEnlazada al momento de ser invocada 
--> FILE Archivo de texto  sobre el cual queremos escribir prevuamente ya fue creado      
-~DESCRIPCION: Funcion que nos ayuda a obtener la codificacion de los caracteres 
+->       
+~DESCRIPCION: 
 USO:         
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function creaeCodificacionDAT>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>|
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function ordenarLista>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>|
 -------------------------------------------------------------------------------------------------|
 */
 int crearCodificacionDAT(Listaenlazada listaBinaria, FILE *archivo)
@@ -429,7 +621,8 @@ int crearCodificacionDAT(Listaenlazada listaBinaria, FILE *archivo)
     int posicionBit = 7;
 
     int posicionByte = 0;
-    int queryValue;
+    int bt = 0;             //cantidad de bits que vamos a necesitar
+    int queryValue;         
 
     int random;
 
@@ -444,8 +637,7 @@ int crearCodificacionDAT(Listaenlazada listaBinaria, FILE *archivo)
     codificacion = fopen("codificacion.dat", "wb");
 
     //Verificamos que el archivo se haya abierto de manera correcta
-    if (codificacion == NULL)
-    {
+    if (codificacion == NULL){
         printf("Error al crear/abrir codificacion.dat \n");
         return -1;
     }
@@ -462,7 +654,7 @@ int crearCodificacionDAT(Listaenlazada listaBinaria, FILE *archivo)
         //Escanea el End Of File, si se llega a este valor
         //se rompera el ciclo
 
-        if (feof(archivo) == 1) //Igualar a 1 en ejecucion de Linux
+        if (feof(archivo) == 16) //Igualar a 1 en ejecucion de Linux
             break;
 
         //Volvemos a la cabeza de la lista enlazada
@@ -494,7 +686,7 @@ int crearCodificacionDAT(Listaenlazada listaBinaria, FILE *archivo)
             }
 
             posicionBit--;
-            totalDeBits++;
+            bt++;
 
             if (posicionBit == -1)
             {
@@ -523,25 +715,19 @@ int crearCodificacionDAT(Listaenlazada listaBinaria, FILE *archivo)
         }
     }
 
-    printf("La cantidad de bits neecsarios es de: %d\n", totalDeBits);
-    printf("La cantidad de Bytes iniciales del archivo es de %d \n", totalDeBytes); //Imprimimos la cantidad de bits necesarios en el caso de compilacion
-    printf("La cantidad de Bytes finales del archivo es de %d \n", posicionByte + 1);
-    //Imprimimos la cantidad de bits necesarios en el caso de compilacion
-    printf("El nivel de compresion del archivo es de: %d.2 % ", (totalDeBytes / (posicionByte + 1)) * 100);
-    fclose(codificacion); //Cerramos el archivo de la codificacion
+    printf("La cantidad de bits neecsarios es de: %d\n",bt);            //Imprimimos la cantidad de bits necesarios en el caso de compilacion
+    fclose(codificacion);                                               //Cerramos el archivo de la codificacion
 }
 
 /* 
 -------------------------------------------------------------------------------------------------
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function cmpChar>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function ordenarLista>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 PARAMETROS
--> char string Cadena e texto que desea se rcomparada
--> char string  Cadena de texto que desea ser comparada
-~DESCRIPCION: La funcion es muy facil de implementar simplemente recibira dos cadenas de texto y las va a comparar
-mediante el uso de un ciclo for, haciendo uso de las funcioens proprocionadas por el profesor con respecto al manejo de bits
-para de esta forma poder ir realizando una comparacion de los mismos 
-USO: cmpchar (caracterLista , caracterEscaneado) //Para nuestro caso asì es como fue invocado 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function cmpChar>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>|
+-> Listaenlazada: Recibe una listaEnlazada al momento de ser invocada 
+->       
+~DESCRIPCION: 
+USO:         
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function ordenarLista>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>|
 -------------------------------------------------------------------------------------------------|
 */
 
@@ -559,43 +745,13 @@ int cmpchar(char cadena1, char cadena2)
         k = CONSULTARBIT(cadena2, i);
         //Si algun bit es diferente en cualquier posicion los
         //caracteres no seran iguales y retornamos 0 o false
-        if (j != k)
-        {
+        if (j != k){
             return 0;
         }
     }
     //En caso de que se complete el ciclo sin encontrar bits
     //diferentes devolveremos 1 o true
     return 1;
-}
-
-/* 
--------------------------------------------------------------------------------------------------
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function imprimirTiempos>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-PARAMETROS
--> double utime0
--> double stime0
--> double wtime0   ---------->   Todas las variables almacenan la cantidad de tiempo que ya fue calculada gracias a las funciones 
-                                                    proporcionadas por el profesor
--> double utime1
--> double stime1
--> double wtime1
-~DESCRIPCION: La funcion sirve simplemente para poder obtener la impresion de los tiempos del algoritmo de una forma mas 
-sencilla y no tener que imprimir los resultados dentro del archivo principal, los parametros no deben ser mandados por referencia
-dado que simplemente estamos consultando para poder realizar la impresion de los mismos
-USO: imprimirTiempos(variables de tiempo) 
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function imprimirTiempos>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>|
--------------------------------------------------------------------------------------------------|
-*/
-
-void imprimirTiempos(double utime0, double stime0, double wtime0, double utime1, double stime1, double wtime1)
-{
-    printf("\n");
-    printf("real (Tiempo total)  %.10e s\n", wtime1 - wtime0);
-    printf("user (Tiempo de procesamiento en CPU) %.10e s\n", utime1 - utime0);
-    printf("sys (Tiempo en acciónes de E/S)  %.10e s\n", stime1 - stime0);
-    printf("CPU/Wall   %.10f %% \n", 100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
-    printf("\n");
 }
 
 // Generacioncodigodat

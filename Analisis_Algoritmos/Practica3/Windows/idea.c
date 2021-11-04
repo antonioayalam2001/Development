@@ -11,7 +11,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
-#include "Funciones.c"
+#include "./Funciones.c"
 #include "./Tiempo/tiempo.h"
 
 
@@ -70,12 +70,12 @@ int main(int argc, char const *argv[])
 
     printf("Nombre del archivo: %s - Tamanno en bytes: %d\n", argv[1], totalDeBytes);
 
-	uswtime(&utime0, &stime0, &wtime0); //Inicio de contador de ordenamiento de la lista
+	// uswtime(&utime0, &stime0, &wtime0); //Inicio de contador de ordenamiento de la lista
 
     orderList(&lista); //Ya que hemos llenando la lista procedemos a ordenarla
 
-   	uswtime(&utime1, &stime1, &wtime1); //Fin del ordenamientod e la lista
-    imprimirTiempos(utime0, stime0, wtime0,utime1, stime1, wtime1);
+   	// uswtime(&utime1, &stime1, &wtime1); //Fin del ordenamientod e la lista
+    // imprimirTiempos(utime0, stime0, wtime0,utime1, stime1, wtime1);
 
     printList(lista);  //Realizmamos la impresion de la lista para asegurarnos que todo esta saliendo como deberia
     
