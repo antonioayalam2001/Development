@@ -45,17 +45,13 @@ int valorBits;
 //Declaramos variable para el tamano de la lista enlazada
 int tamanoLista;
 
+
 int fillList(Listaenlazada *lista);
 void printList(Listaenlazada lista);
 void invertList(Listaenlazada *lista,Listaenlazada *listainvertida);
 void huffmanTree();
 void copyList(Listaenlazada Lista);
-int crearFrecuenciastxt(Listaenlazada lista);
-void binaryRoute(Listaenlazada *arbolImpresion, int pos, int bit, int izq, int der, int *auxBin);
-void createBinaryList(Listaenlazada arbolImpresion, Listaenlazada *listaBinaria);
-int crearCodificacionDAT(Listaenlazada listaBinaria, FILE *archivo);
 int cmpchar(char cadena1, char cadena2);
-int crearCodificacionDAT(Listaenlazada listaBinaria, FILE *archivo);
 int crearDecodificacion(Listaenlazada arbolDeHuffman);
 #endif 
 

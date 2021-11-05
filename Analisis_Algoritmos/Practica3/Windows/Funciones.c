@@ -3,7 +3,25 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdbool.h>
+/*  ¡WARNING!
+&&&&&&&&&&&&&&&&&&&&&&&&&
+En caso de estar en Linux se debe quitar este comentario para realizar la medicion de tiempos 
 // #include "./Tiempo/tiempo.c"
+
+&&&&&&&&&&&&&&&&&&&&&&&&&
+*/
+
+/**
+******************************************************************************
+* @file	Funciones.h
+* @author 	Mora Ayala Jose Antonio
+* @version 2.0
+* @date October 30 2021
+* @brief Archivo de cabeceras de las funciones que competen al programa principal 
+******************************************************************************
+*/
+
+
 /* 
 -------------------------------------------------------------------------------------------------
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function fillList>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -101,13 +119,13 @@ void copyList(Listaenlazada lista)
 }
 /* 
 -------------------------------------------------------------------------------------------------
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function ordenarLista>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function printList>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 PARAMETROS
 -> Listaenlazada: Recibe una listaEnlazada al momento de ser invocada 
 ->       
-~DESCRIPCION: 
-USO:         
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function ordenarLista>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>|
+~DESCRIPCION: Funcion que nos ayuda a realizar la impresion de la lista 
+USO: printList(lista)         
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function printList>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>|
 -------------------------------------------------------------------------------------------------|
 */
 
@@ -423,11 +441,8 @@ int crearCodificacionDAT(Listaenlazada listaBinaria, FILE *archivo)
     //Variable auxiliar que tendra el caracter de la lista que coincida
     //con el escaneado (Necesitado para usar el strcmp())
     char caracterLista;
-
     // Dar mas espacio al arreglo
-
     int posicionBit = 7;
-
     int posicionByte = 0;
     int queryValue;         
 
@@ -483,15 +498,12 @@ int crearCodificacionDAT(Listaenlazada listaBinaria, FILE *archivo)
 
         for (int j = 0; j < listaAuxiliar->inf.frec; j++)
         {
-
             queryValue = CONSULTARBIT(arreglo[posicionByte], posicionBit);
             random = listaAuxiliar->inf.binario[j];
-
             if (queryValue != random)
             {
                 CAMBIA(arreglo[posicionByte], posicionBit);
             }
-
             posicionBit--;
             totalDeBits++;
 

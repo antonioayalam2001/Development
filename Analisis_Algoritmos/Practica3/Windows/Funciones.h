@@ -1,6 +1,17 @@
 #ifndef Funciones
 #define Funciones
 #include <stdio.h>
+
+/**
+******************************************************************************
+* @file	Funciones.h
+* @author 	Mora Ayala Jose Antonio
+* @version 2.0
+* @date October 30 2021
+* @brief Archivo de cabeceras de las funciones que competen al programa principal 
+******************************************************************************
+*/
+
 /* Definiciones que nos sirven para pdoer realizar el manejo de bits conforme sea requerido
     Mediante los "bitwise Operators" o bien Operadores binarios.
     Recurso proporcionado por:

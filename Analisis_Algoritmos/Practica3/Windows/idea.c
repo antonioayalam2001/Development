@@ -3,7 +3,7 @@
 * @file	Main.c
 * @author 	Mora Ayala Jose Antonio
 * @version  2.0
-* @date  October 29 2020
+* @date  October 29 2021
 * @brief Archivo que contiene la seccion principal del programa de Algoritmo de Huffman
 ******************************************************************************
 */
