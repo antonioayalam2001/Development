@@ -12,7 +12,7 @@
 #include <string.h>
 #include <stdbool.h>
 #include "./Funciones.c"
-#include "./Tiempo/tiempo.h"
+#include "../Tiempo/tiempo.h"
 
 
 int main(int argc, char const *argv[])
@@ -70,11 +70,10 @@ int main(int argc, char const *argv[])
 
     printf("Nombre del archivo: %s - Tamanno en bytes: %d\n", argv[1], totalDeBytes);
 
-	// uswtime(&utime0, &stime0, &wtime0); //Inicio de contador de ordenamiento de la lista
 
     orderList(&lista); //Ya que hemos llenando la lista procedemos a ordenarla
 
-   	// uswtime(&utime1, &stime1, &wtime1); //Fin del ordenamientod e la lista
+   	
     // imprimirTiempos(utime0, stime0, wtime0,utime1, stime1, wtime1);
 
     printList(lista);  //Realizmamos la impresion de la lista para asegurarnos que todo esta saliendo como deberia
@@ -86,6 +85,8 @@ int main(int argc, char const *argv[])
     printf("Lista Copiada\n");
     
     printList(lista);
+
+    uswtime(&utime0, &stime0, &wtime0); //Inicio de contador de ordenamiento de la lista
 
     huffmanTree(); //Procedemos a la cracion del arbol de Huffman
     
@@ -100,7 +101,8 @@ int main(int argc, char const *argv[])
     {
         return -1;
     } //Creamos el archivo frecuencias.txt
-
+    uswtime(&utime1, &stime1, &wtime1); //Fin del ordenamientod e la lista
+    imprimirTiempos(utime0, stime0, wtime0, utime1, stime1,  wtime1);
     fclose(archivo);
 
     //Liberamos la memoria de la cabeza de la lista enlazada

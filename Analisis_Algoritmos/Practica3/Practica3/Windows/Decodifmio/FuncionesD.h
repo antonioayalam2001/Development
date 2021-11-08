@@ -137,5 +137,14 @@ USO:
 -------------------------------------------------------------------------------------------------|
 */
 int crearDecodificacion(Listaenlazada arbolDeHuffman);
+
+/* 
+////////////////////////////////////////////////Prototipo de funcion imprimirTiempos////////////////////////////////////////////////
+Prototitpo de la función 
+->Return Value : Void
+->Opera con: Lista enlazada
+////////////////////////////////////////////////Prototipo de funcion imprimirTiempos////////////////////////////////////////////////
+ */
+void imprimirTiempos(double utime0, double stime0, double wtime0, double utime1, double stime1, double wtime1);
 #endif 
 

@@ -6,10 +6,10 @@
 /*  ¡WARNING!
 &&&&&&&&&&&&&&&&&&&&&&&&&
 En caso de estar en Linux se debe quitar este comentario para realizar la medicion de tiempos 
-// #include "./Tiempo/tiempo.c"
 
 &&&&&&&&&&&&&&&&&&&&&&&&&
 */
+#include "../Tiempo/tiempo.c"
 
 /**
 ******************************************************************************
@@ -476,7 +476,7 @@ int crearCodificacionDAT(Listaenlazada listaBinaria, FILE *archivo)
         //Escanea el End Of File, si se llega a este valor
         //se rompera el ciclo
 
-        if (feof(archivo) == 16) //Igualar a 1 en ejecucion de Linux
+        if (feof(archivo) == 1) //Igualar a 1 en ejecucion de Linux
             break;
 
         //Volvemos a la cabeza de la lista enlazada

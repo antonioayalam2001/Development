@@ -3,6 +3,8 @@
 #include <string.h>
 #include <stdbool.h>
 #include "FuncionesD.h"
+#include "../Tiempo/tiempo.c"
+
 /* 
 -------------------------------------------------------------------------------------------------
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function fillList>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -421,4 +423,32 @@ int crearDecodificacion(Listaenlazada arbolDeHuffman){
             }
 		}while(cambiarByte != true);
 	}while(!feof(codificado));
+}
+
+/* 
+-------------------------------------------------------------------------------------------------
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function imprimirTiempos>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+PARAMETROS
+-> double utime0
+-> double stime0
+-> double wtime0   ---------->   Todas las variables almacenan la cantidad de tiempo que ya fue calculada gracias a las funciones 
+                                                    proporcionadas por el profesor
+-> double utime1
+-> double stime1
+-> double wtime1
+~DESCRIPCION: La funcion sirve simplemente para poder obtener la impresion de los tiempos del algoritmo de una forma mas 
+sencilla y no tener que imprimir los resultados dentro del archivo principal, los parametros no deben ser mandados por referencia
+dado que simplemente estamos consultando para poder realizar la impresion de los mismos
+USO: imprimirTiempos(variables de tiempo) 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function imprimirTiempos>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>|
+-------------------------------------------------------------------------------------------------|
+*/
+
+void imprimirTiempos(double utime0, double stime0,double  wtime0,double  utime1, double stime1, double wtime1) {
+    printf("\n");
+	printf("real (Tiempo total)  %.10e s\n",  wtime1 - wtime0);
+	printf("user (Tiempo de procesamiento en CPU) %.10e s\n",  utime1 - utime0);
+	printf("sys (Tiempo en acciónes de E/S)  %.10e s\n",  stime1 - stime0);
+	printf("CPU/Wall   %.10f %% \n",100.0 * (utime1 - utime0 + stime1 - stime0) / (wtime1 - wtime0));
+	printf("\n");
 }

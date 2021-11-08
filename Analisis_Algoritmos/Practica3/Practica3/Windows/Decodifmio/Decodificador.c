@@ -12,10 +12,12 @@
 #include <string.h>
 #include <stdbool.h>
 #include "./FuncionesD.c"
+#include "../Tiempo/tiempo.h"
 
 
 int main(int argc, char const *argv[])
 {
+    double utime0, stime0, wtime0,utime1, stime1, wtime1; //Variables para medición de tiempos
     //Variable de la lista enlazada que tendra las letras y frecuencias
     // Vairable de una lista con estructura listaenlazada como la que hemos manejado para la parte
     // de deodificacion la cual tendra en si las letras y las frecuencias en el orden 
@@ -51,11 +53,14 @@ int main(int argc, char const *argv[])
 
     copyList(listaInvertida); //Realizamos la copia de los valores de la lista que tenemos en orden logico para nosotros conforme deseamos obtener 
     // los caracteres asi como su codificacion en el arbol de Huffman
+    uswtime(&utime0, &stime0, &wtime0); //Inicio de contador de ordenamiento de la lista
     huffmanTree(); //Creamos el arbol de Huffman
     Listaenlazada arbolImp = arbol[0]; //Asignamos el arbol en la posicion 0 a una variable de tipo listaenlzada, ya que esta posee en su estructura tambien la 
     // de la estructura de un arbol Binario
     if (crearDecodificacion(arbolImp) == -1) exit(0);    /* Ya que hemos realizado todo el procedimiento podemos proceder a realizar la creacion del archivo de 
     texto en cuestion */
+    uswtime(&utime1, &stime1, &wtime1); //Fin del ordenamientod e la lista
+    imprimirTiempos(utime0, stime0, wtime0, utime1, stime1,  wtime1);
     return 0;
 }
 
