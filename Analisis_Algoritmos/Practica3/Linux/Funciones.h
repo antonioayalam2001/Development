@@ -76,6 +76,7 @@ int tamanoLista;
 
 //Variable con el tamano total de bytes del archivo de entrada
 int totalDeBytes;
+int totalDeBits;
 
 void fillList(Listaenlazada *lista, char c);
 void printList(Listaenlazada lista);
