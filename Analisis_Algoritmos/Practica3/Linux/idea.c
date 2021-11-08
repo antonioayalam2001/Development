@@ -33,7 +33,6 @@ int main(int argc, char const *argv[])
     else{
         archivo = fopen(argv[1], "rb");
     }
-
     do
     {
         //Guardamos en bytes leidos el tamano de bytes escaneados

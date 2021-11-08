@@ -101,18 +101,26 @@ void copyList(Listaenlazada lista)
 }
 /* 
 -------------------------------------------------------------------------------------------------
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function ordenarLista>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function printList>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 PARAMETROS
 -> Listaenlazada: Recibe una listaEnlazada al momento de ser invocada 
-->       
-~DESCRIPCION: 
-USO:         
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function ordenarLista>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>|
+
+~DESCRIPCION: Funcion que nos permite visualizar la lista enlazada en cuestion (puede recibir cualquier clase de lista)
+en caso de que la lista se encuentra vacia terminara el programa de forma inmediata.
+
+USO: printList(lista)
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function printList>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>|
 -------------------------------------------------------------------------------------------------|
 */
 
 void printList(Listaenlazada lista)
 {
+    if (lista == NULL)
+    {
+        printf("Tu lista se encuentra vacia\n");
+        exit;
+    }
+
     tam = 0;
     do
     {
@@ -124,7 +132,7 @@ void printList(Listaenlazada lista)
 
 /* 
 -------------------------------------------------------------------------------------------
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function ordenarLista>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function orderList>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 PARAMETROS
 -> Listaenlazada Recibe una listaEnlazada al momento de ser invocada 
 ->       
@@ -134,7 +142,7 @@ PARAMETROS
               obteinendo los valores que hay existentes en cada hoja, asi como la frecuencia 
               que poseen
 USO:         preorder (Listaenlazada arbolImpresion);
-<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Struct Nodoinfo>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>|
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Struct orderList>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>|
 -------------------------------------------------------------------------------------------|
 */
 
