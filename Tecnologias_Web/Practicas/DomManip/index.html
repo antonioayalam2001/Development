@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+    var tabla,fila,celda,texto;
+    function AgregarFinal() {
+        var valor = prompt("Inserta el valor del elemento");
+        tabla=document.getElementById("tabla");
+        
+        console.log(tabla.childNodes);
+        
+        fila=document.createElement("tr");
+        tabla.appendChild(fila);
+        fila.appendChild(valor)
+        for (let i = 0; i <5 ; i++) {
+            
+            celda=document.createElement("td");
+            texto=document.createTextNode(valor);
+            celda.appendChild(texto);
+            fila.appendChild(celda);            
+            
+        }
+    
+    }
+    function EliminarFinal() {
+        if (tabla.hasChildNodes()) {
+            tabla.removeChild(tabla.lastChild);
+        }
+    }
+
+    function posicion(){
+        let a = prompt("Ingresa la posicion en la que quieres eliminar")
+        a= parseInt(a)
+        console.log(typeof(a));
+        let tabla = document.getElementById("tabla");
+        console.log(tabla);
+        tabla.removeChild(tabla.childNodes[a]);  
+        }
+    function todo() {
+        alert("Estas a punto de eliminar Toda la tabla");
+        let tabla = document.getElementById("tabla");
+        while (tabla.firstChild) {
+            tabla.removeChild(tabla.lastChild);
+        }
+    }
+
+    function valor() {
+        let a = prompt("Ingresa la posicion en la que quieres eliminar")
+        a= parseInt(a)
+        console.log(typeof(a));
+        let tabla = document.getElementById("tabla");
+        console.log(tabla);
+        let valor = tabla.childNodes[a].childNodes[a];
+        console.log(parseInt(valor));
+    }
+
+</script>
+</head>
+<body>
+    <table align="center" width="450px" border="2">
+    <tbody id="tabla"></tbody> 
+    </table> <br><br>
+    <input type="button" value="AgregarFinal" onclick="AgregarFinal()"><br>
+    <input type="button" value="EliminarFinal" onclick="EliminarFinal()"><br>
+    <input type="button" value="Eliminar en Posicion" onclick="posicion()"><br>
+    <input type="button" value="Eliminar todo" onclick="todo()"><br>
+    <input type="button" value="valor" onclick="valor()"><br>
+    <input type="button" value="Eliminar" onclick="EliminarFinal()"><br>
+</body>
+</html>

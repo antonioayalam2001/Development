@@ -2,56 +2,59 @@
 
 #define sz 500000
 #define inf 1000000000
-long a[sz + 2], L[sz + 2], R[sz + 2];
+long a[sz + 2], left[sz + 2], right[sz + 2];
 long long cnt;
 
-void merge(long p, long q, long r)
+void merge(long inicio, long mid, long fin)
 {
     long i, j, k, ind1, ind2;
 
-    for (i = p, ind1 = 1; i <= q; i++)
+    for (i = inicio, ind1 = 1; i <= mid; i++)
     {
-        L[ind1++] = a[i];
+        left[ind1++] = a[i];
     }
-    L[ind1] = inf;
+    left[ind1] = inf;
 
-    for (i = q + 1, ind2 = 1; i <= r; i++)
+    for (i = mid + 1, ind2 = 1; i <= fin; i++)
     {
-        R[ind2++] = a[i];
+        right[ind2++] = a[i];
     }
-    R[ind2] = inf;
+    right[ind2] = inf;
 
     i = j = 1;
 
-    for (k = p; k <= r; k++)
+    for (k = inicio; k <= fin; k++)
     {
-        if (L[i] > R[j])
+        if (left[i] > right[j])
         {
             cnt += ind1 - i;
-            a[k] = R[j];
+            a[k] = right[j];
             j++;
         }
         else
         {
-            a[k] = L[i];
+            a[k] = left[i];
             i++;
         }
     }
 }
 
-void mergeSort(long p, long r)
+void mergeSort(long inicio, long fin)
 {
-    if (p < r)
+    if (inicio < fin)
     {
-        long q = (p + r) / 2;
-        mergeSort(p, q);
-        mergeSort(q + 1, r);
-        merge(p, q, r);
+        long mid = (inicio + fin) / 2;
+        mergeSort(inicio, mid);
+        mergeSort(mid + 1, fin);
+        merge(inicio, mid, fin);
     }
 }
 
 int main()
 {
+    // t : Numero de pruebas que se van a realizar
+    // n : Variable para la insercion de numeros
+    // i : Variable que maneja el ciclo dentro del while
     long i, n, t;
 
     scanf("%ld", &t);

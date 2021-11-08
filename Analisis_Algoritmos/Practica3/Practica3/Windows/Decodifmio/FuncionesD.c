@@ -331,6 +331,17 @@ int cmpchar(char cadena1, char cadena2)
 }
 
 // Generacioncodigodat
+/* 
+-------------------------------------------------------------------------------------------------
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function ordenarLista>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+PARAMETROS
+-> Listaenlazada: Recibe una listaEnlazada al momento de ser invocada 
+->       
+~DESCRIPCION: 
+USO:         
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Function ordenarLista>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>|
+-------------------------------------------------------------------------------------------------|
+*/
 int crearDecodificacion(Listaenlazada arbolDeHuffman){
 	//Creamos una variable para leer el archivo con la codificacion
 	FILE *codificado = NULL;
