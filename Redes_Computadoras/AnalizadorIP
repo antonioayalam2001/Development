@@ -1,0 +1,279 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+//Declaracion de las tramas para los 4 ejecicios
+
+//Trama IP con opciones de tipo ICMP - Imprimir las opciones en hexadecimal
+
+						//MAC Destino T[0] - T[5]
+	unsigned char T1[] = {0x00,0x1f,0x45,0x9d,0x1e,0xa2,
+						//MAC Origen T[6] - T[11]
+						 0x00,0x23,0x8b,0x46,0xe9,0xad,
+						//Tipo T[12] - T[13]
+						 0x08,0x00,
+						//Version/IHL T[14]
+						 0x4F,
+						//Tipo de servicion T[15]
+						 0x00,
+						//Tamano total T[16] - T[17]
+						 0x80,0x42,
+						//Identificador T[18] - T[19]
+						 0x04,0x55,
+						//Bandera/ Desplazamiento Fragmento T[20] / T[20] - T[21]
+						 0x34,0x11,
+						//Tiempo de vida T[22]
+						 0x80,
+						//Protocolo T[23]
+						 0x01,
+						//Checksum T[24] - T[25]
+						 0x6b,0xf0,
+						//IP Origen T[26] - T[29]
+						 0x94,0xcc,0x39,0xcb,
+						//Ip Destino T[30] - T[33]
+						 0x94,0xcc,0x67,0x02,
+						//Opciones y relleno T[34] - T[73]
+						 0xaa,0xbb,0xcc,0xdd,0x04,0x0c,0x00,0x35,0x00,
+						 0x2e,0x85,0x7c,0xe2,0x1a,0x01,0x00,0x00,0x01,
+						 0x00,0x00,0x00,0x00,0x00,0x00,0x03,0x77,0x77,
+						 0x77,0x03,0x69,0x73,0x63,0x05,0x65,0x73,0x63,
+						 0x6f,0x6d,0x03,0x29};
+
+						//MAC Destino T[0] - T[5]
+	unsigned char T2[] = {0x00,0x1f,0x45,0x9d,0x1e,0xa2,
+						//MAC Origen T[6] - T[11]
+						 0x00,0x23,0x8b,0x46,0xe9,0xad,
+						//Tipo T[12] - T[13]
+						 0x08,0x00,
+						//Version/IHL T[14]
+						 0x40,
+						//Tipo de servicion T[15]
+						 0x02,
+						//Tamano total T[16] - T[17]
+						 0x80,0x42,
+						//Identificador T[18] - T[19]
+						 0x04,0x55,
+						//Bandera/ Desplazamiento Fragmento T[20] / T[20] - T[21]
+						 0x34,0x11,
+						//Tiempo de vida T[22]
+						 0x80,
+						//Protocolo T[23]
+						 0x01,
+						//Checksum T[24] - T[25]
+						 0xbc,0xec,
+						//IP Origen T[26] - T[29]
+						 0x94,0xcc,0x39,0xcb,
+						//Ip Destino T[30] - T[33]
+						 0x94,0xcc,0x67,0x02,
+						//Opciones y relleno T[34] - T[73]
+						 };
+
+	unsigned char T4[] = {0x00,0x1f,0x45,0x9d,0x1e,0xa2,
+						//MAC Origen T[6] - T[11]
+						 0x00,0x23,0x8b,0x46,0xe9,0xad,
+						//Tipo T[12] - T[13]
+						 0x08,0x00,
+						//Version/IHL T[14]
+						 0x40,
+						//Tipo de servicion T[15]
+						 0x02,
+						//Tamano total T[16] - T[17]
+						 0x80,0x42,
+						//Identificador T[18] - T[19]
+						 0x04,0x55,
+						//Bandera/ Desplazamiento Fragmento T[20] / T[20] - T[21]
+						 0x34,0x11,
+						//Tiempo de vida T[22]
+						 0x80,
+						//Protocolo T[23]
+						 0x11,
+						//Checksum T[24] - T[25]
+						 0xbc,0xec,
+						//IP Origen T[26] - T[29]
+						 0x94,0xcc,0x39,0xcb,
+						//Ip Destino T[30] - T[33]
+						 0x94,0xcc,0x67,0x02,
+						//Opciones y relleno T[34] - T[73]
+						 };
+
+//Funciones para los 4 programas
+void programa1 ();
+void programa2 ();
+void programa3 ();
+void programa4 ();
+
+int main(){
+
+	//programa1();
+	//programa2();
+	//programa3();
+	programa4();
+
+	return 0;
+}
+
+void programa1(){
+
+	//DEBUG - Saber el tamano total de elementos de un array
+	//size_t n = sizeof(T)/sizeof(T[0]);
+    //printf("Total de Elementos: %d\n",n);
+
+	//Primero comprobamos si es una trama IP
+	//Declaramos tot para saber que tipo de trama es
+	unsigned short int tot = T1[12]<<8 | T1[13];
+
+	//Comprobamos si es IP
+	if (tot == 2048){
+
+		printf("Trama IP \n");
+
+		//Comprobamos si es ICMP
+		if (T1[23] == 1) printf("TIPO ICMP \n");
+		else printf("TIPO OTRO\n");
+		
+		//Comprobamos si tiene Opciones
+		//Primero declaramos la variable IHL
+		unsigned char IHL = (T1[14]&15)*4;
+
+		if (IHL > 20){
+
+			//Imprimimos el tamano de Opciones
+			printf("Tamano de Opciones %d\n", IHL);
+			
+			//Imprimimos las opciones
+			for (unsigned char i = 34; i <= (14 + IHL -1); i++)
+				printf("0x%.2x ", T1[i]);
+		}
+		else printf("No tiene Opciones\n");
+	}
+	else{
+
+		printf("No es una trama IP\n");
+	}
+}
+
+void programa2(){
+
+	//DEBUG - Saber el tamano total de elementos de un array
+	//size_t n = sizeof(T)/sizeof(T[0]);
+    //printf("Total de Elementos: %d\n",n);
+
+	//Primero comprobamos si es una trama IP
+	//Declaramos tot para saber que tipo de trama es
+	unsigned short int tot = T2[12]<<8 | T2[13];
+
+	//Comprobamos si es IP
+	if (tot == 2048){
+
+		printf("Trama IP \n");
+		
+		if (T2[15]&2){
+		
+			printf("Es de costo Minimo\n");
+			printf("%d Saltos\n", T2[22]);
+		}
+		else printf("Otro\n");
+	}
+	else{
+
+		printf("No es una trama IP\n");
+	}
+}
+
+void programa3(){
+
+	size_t n = sizeof(T1)/sizeof(T1[0]);
+	
+	unsigned char T3Aux[n-14];
+
+	for (unsigned char i = 0; i < n-14; i++)
+		T3Aux[i] = T1[i+14];
+
+	unsigned int suma = 0x00, acarreo = 0x00;
+    unsigned char i, tam;
+
+    i = 0x00;
+    tam = 0x14;
+    // Agarrando valores pares
+    while (tam > 1)
+    {
+        acarreo = (((T3Aux[i] << 8) & 0xFF00) | ((T3Aux[i + 1]) & 0xFF));
+        suma += acarreo;
+        if ((suma & 0xFFFF0000) > 0)
+        {
+            suma = suma & 0xFFFF;
+            suma += 1;
+        }
+        i += 2;
+        tam -= 2;
+    }
+    suma = ~suma;
+    suma = suma & 0xFFFF;
+    if (suma == 0)
+    {
+        printf("El checksum es correcto :)\n");
+    }
+    else
+    {
+    	printf("El checksum no es correcto :(\n");
+        suma = 0x00, acarreo = 0x00;
+        i = 0x00;
+        tam = 0x14;
+        T3Aux[10] = 0;
+        T3Aux[11] = 0;
+        while (tam > 1)
+        {
+            acarreo = (((T3Aux[i] << 8) & 0xFF00) | ((T3Aux[i + 1]) & 0xFF));
+            suma += acarreo;
+            if ((suma & 0xFFFF0000) > 0)
+            {
+                suma = suma & 0xFFFF;
+                suma += 1;
+            }
+            i += 2;
+            tam -= 2;
+        }
+
+        suma = ~suma;
+        suma = suma & 0xFFFF;
+        printf("El checksum correcto es: 0x%.4x\n", suma);
+    }
+}
+
+void programa4(){
+	
+	//DEBUG - Saber el tamano total de elementos de un array
+	//size_t n = sizeof(T)/sizeof(T[0]);
+    //printf("Total de Elementos: %d\n",n);
+
+	//Primero comprobamos si es una trama IP
+	//Declaramos tot para saber que tipo de trama es
+	unsigned short int tot = T1[12]<<8 | T1[13];
+
+	//Comprobamos si es IP
+	if (tot == 2048){
+
+		printf("Trama IP \n");
+
+		//Comprobamos si es ICMP
+		if (T4[23] == 17) printf("TIPO UDP \n");
+		else printf("TIPO OTRO\n");
+		
+		//Comprobamos si tiene Opciones
+		//Primero declaramos la variable IHL
+		unsigned char IHL = (T4[14]&15)*4;
+
+		if (IHL > 20){
+
+			//Imprimimos el tamano de Opciones
+			printf("Tiene Opciones %d\n", IHL);
+		}
+		else printf("No tiene Opciones\n");
+
+		printf("Offset: %d\n", (((T4[20]&31)<<8) | T4[21])*8);
+	}
+	else{
+
+		printf("No es una trama IP\n");
+	}
+}

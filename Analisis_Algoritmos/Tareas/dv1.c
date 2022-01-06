@@ -5,19 +5,17 @@ int sumaMaximaSubDyV(int a[], int inicio, int final);
 int max(int n1, int n2, int n3);
 int main(int argc, char const *argv[])
 {
-    int n;
-    printf("Ingresa la cantidad de numeros:\n");
+    int n, x, a;
     scanf("%d", &n);
-    int numeros[8] = {-2,-3,4,-1,-2,1,5,-3};
-    int a;
-    a = sumaMaximaSubDyV(numeros, 0, 7);
-    printf("%d",a);
-
-    // for (int j = 0; j < n;j++)
-    // {
-    //     printf("numero %d\n",numeros[j]);
-    // }
+    int numeros[n];
+    for (int j = 0; j < n; j++)
+    {
+        scanf("%d", &x);
+        numeros[j] = x;
+    }
     
+    a = sumaMaximaSubDyV(numeros, 0, n-1);
+    printf("%d",a);
     return 0;
 }
 

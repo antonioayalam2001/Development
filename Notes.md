@@ -20,3 +20,27 @@ npm run devStart
 
 app.use(express.static("Public"))
 --Nos esta permitiendo acceder a las hojas de estilo
+
+
+notes
+INSTRUCCIONES PARA INICIALIZAR NODE JS Y MOONGOSE:
+--Inicializar JSON
+npm init 
+--Instalar dependencias
+npm i express ejs
+--express : application server
+--ejs : languaje
+npm i --sabe-dev nodemon dotenv
+--nodemon: Refresca en automatico
+--dotenv : environment variables
+npm run devStart
+--Comienza a correr nuestro servidor 
+
+--Esto va en el JSON que se genera:
+"scripts": {
+    "devStart": "nodemon server.js"
+  }
+
+--Instalando los paquetes necesarios para la base de datos 
+npm install mongoose 
+<%=  %>  : Pasamos una variable que viene desde el servidor
