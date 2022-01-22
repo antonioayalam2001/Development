@@ -1,0 +1,26 @@
+body{
+    background: violet;
+    color: white;
+    font-family: "Glory";
+}
+
+.titulo{
+    font-size: 4rem;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 0.3rem;
+
+}
+
+.grande{
+    font-size: 8rem;
+    background-color: aquamarine;
+}
+
+.pequeño{
+    background-color: aquamarine;
+    font-size: 1rem;
+}
+body > div > li:nth-child(14){
+    color: blue;
+}
