@@ -598,12 +598,47 @@ boton1.addEventListener('click', alerta)
 
 
 
-input.addEventListener('select', (e) => {
+input.addEventListener('keydown', (e) => {
     let start = e.target.selectionStart
     let end = e.target.selectionEnd
     let cadenaCompleta = e.target.value
     let seleccion = cadenaCompleta.substring(start, end)
     h2.textContent=seleccion
-    parrafo.textContent=seleccion
-    alert(seleccion)
+    parrafo.textContent = seleccion
+    console.log(e.keycode);
 })
+
+// const text = document.querySelector('#text');
+// let cambio = prompt("Ingresa el texto")
+// if (cambio) {
+//     // text.textContent = cambio;
+//     text.innerHTML = cambio
+// }
+
+// alert(text.textContent)
+
+
+// addEventListener('keydown',(e) => {
+//     console.log(e.key);
+//     if (e.key == 'f') {
+//         console.log('presionaste la letra f');
+//     }
+
+// })
+
+const timeOut = setTimeout(() => {
+    console.log('Pasaron 2 segundos');  
+}, 2000); //Tiempo en milisegundos
+
+clearTimeout(timeOut)
+
+const interval = setInterval(() => {
+    console.log('Intervalo');     
+}, 1000);
+
+
+setTimeout(() => {
+    clearInterval(interval)
+}, 10000);
+
+

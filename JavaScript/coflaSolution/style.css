@@ -1,0 +1,78 @@
+body{
+    background: violet;
+    color: white;
+    font-family: "Glory";
+    box-sizing: border-box;
+}
+
+.title{
+    font-size: 3rem;
+    font-stretch: extra-condensed;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form input {
+    display: block;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    transition: background 0.6s, color 0.3s;
+}
+
+form label {
+    font-size: 1.3rem;
+}
+
+input[type='submit']{
+    background: rgb(150,100,255);
+    color: white;
+    padding: 1.1rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+input[type='submit']:hover{
+    background: rgb(255,255,255);
+    color: rgb(100,100,255);
+    padding: 1.5rem;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+input::placeholder{
+    font-weight: 600;
+    color: rgb(100,100,255);
+}
+
+input:focus{
+    background: #000;
+    color: rgb(255,255,255);
+}
+input:focus::placeholder{
+    color: rgb(0,0,0);
+}
+input:valid{
+    color: pink;
+    font-weight: bold;
+}
+
+.green{
+    color: rgb(0, 100, 0);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.red{
+    color: rgb(200, 0, 0);
+    font-size: 2rem;
+    font-weight: bold;
+}

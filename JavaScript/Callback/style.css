@@ -1,0 +1,11 @@
+body{
+    background: violet;
+    color: white;
+    font-family: "Glory";
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
