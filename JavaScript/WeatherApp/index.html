@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+
+
+    <!--    Parte Superior con los 3 iconos-->
+
+    <div class="info__top">
+        <div class="wrapper">
+            <img id="icon" src="/icon/humidity.svg" alt="" srcset="">
+            <p id="humidity"></p>
+        </div>
+        <div class="wrapper">
+            <img id="icon" src="/icon/wind.svg" alt="" srcset="">
+            <p id="pressure"></p>
+        </div>
+    </div>
+
+
+    <!--    Caja principal que contiene la info de temp y el icono y la ubicaion-->
+
+    <div class="main__box">
+
+        <!--        Contiene los grados y lo extra-->
+        <div class="temp__info">
+            <h2 id="temp"></h2>
+            <div class="temp__extra">
+                <span>°C</span>
+                <div class="wrapper">
+                    <img id="icon" src="/icon/high.svg" alt="">
+                    <p id="temp_max"></p>
+                </div>
+                <div class="wrapper">
+                    <img id="icon" src="/icon/high.svg" alt="">
+                    <p id="temp_min"></p>
+                </div>
+            </div>
+        </div>
+        <h1 id="location"></h1>
+        <figure class="icon">
+            <img id="img" src=" " alt="Hoal" srcset="">
+        </figure>
+
+        <h2 id="description"></h2>
+    </div>
+
+    <div id="date"></div>
+
+</div>
+
+
+<button id="trigger">Da click para mandar</button>
+<button id="getter">Da click para mostrar lo almacendao</button>
+
+</body>
+<script src="app.js"></script>
+</html>
