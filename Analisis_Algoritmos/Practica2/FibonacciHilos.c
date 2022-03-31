@@ -89,7 +89,7 @@ void *fibonacci(void *ags){
     Y finalmente devuelve el tiempo que tarda en ejecutarse el algoritmo.
     Nota: argv[1] DEBE SER MAYOR A 0.
 */
-void main(int argc, char *argv[]){
+int main(int argc, char *argv[]){
 	struct argumentos *margs = NULL;
 	pthread_t id1 = 0,id2 = 0;
 	int n = 0, target = 0, *numeros, i = 0;
