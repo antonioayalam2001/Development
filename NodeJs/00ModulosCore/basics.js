@@ -19,9 +19,57 @@ Usar camelCase
 			getElementById()
 			createServer()
 */
-'use strict'
-console.log('Hola Mundo desde NodeJS esto se vera en la terminal de comandos')
-console.log(2+2)
-setInterval(function () {
-    console.log('Hola a todos')
-},1000)
+// 'use strict'
+// console.log('Hola Mundo desde NodeJS esto se vera en la terminal de comandos')
+// console.log(2+2)
+// setInterval(function () {
+//     console.log('Hola a todos')
+// },1000)
+
+
+
+const object = [
+	{
+		id: 1,
+		name: "Tony Ayala",
+		lastname: "Garcia",
+	},
+	{
+		id: 2,
+		name: "Juan",
+		lastname: "Perez",
+	}
+]
+
+for (const iterator in object) {
+	console.log(object[iterator]);
+}
+
+object.forEach(element => {
+	console.log(element.name);
+});
+
+
+stringData =
+{
+	categories: [
+		{
+			name: "test 1",
+			department: "Information Technology",
+		},
+		{
+			name: "test 2",
+			department: "Computer Engineering",
+		},
+		{
+			name: "test 3",
+			department: "Information Technology",
+		},
+	]
+}
+
+console.log(stringData);
+console.log(JSON.stringify(stringData));
+infoJson = JSON.stringify(stringData);
+
+console.log(JSON.parse(infoJson));
