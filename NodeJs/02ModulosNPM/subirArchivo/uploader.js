@@ -9,7 +9,7 @@ const fse = require("fs-extra");
 function serverUploader(req, res) {
   if (req.method == "GET") {
     res.writeHead(200, { "Content-Type": "text/html" });
-    // Dado que se esta trabajando con archivos binarios se debe especificar  enctype="multipart/form-data"
+    // Dado que se esta trabajando con archivos binarios se debe especificar enctype="multipart/form-data"
     res.end(`
          <form action="/upload" method="post" enctype="multipart/form-data">
             <input type="file" name="upload">

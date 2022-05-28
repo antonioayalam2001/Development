@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/antonioayalam2001/Universidad#readme",
   "dependencies": {
+    "nodemon": "^2.0.16",
     "vite": "^2.9.6"
   }
 }
