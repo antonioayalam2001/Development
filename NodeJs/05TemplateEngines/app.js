@@ -1,9 +1,10 @@
 'use strict'
 const express = require("express"),
+  morgan = require('morgan'),
   app = express(),
   path = require("path"),
   favicon = require("serve-favicon"),
-  jade = require("jade"),
+  pug = require("pug"),
   routeIndex = require("./routes/index"),
   // Esta cachando todo lo que venga exportado de este modulo de la forma:
   // module.exports = router;
@@ -17,10 +18,13 @@ const express = require("express"),
 app
 // Setting up the views to our ptoject
    .set('views', viewsURL)
-   .set('view engine', 'jade')
+   .set('view engine', 'pug')
    .set('port', PORT)
    // Starting the middlewares
-   .use(favicon(logoURL))
+  .use(favicon(logoURL))
+  // Nos muestra las peticiones que se estan realizando por HTTP (cada que entramos a una página  se muestra como una petición)
+  // Es como el logger de recursos que aparece desde el navegador 
+  .use(morgan('dev'))
    .use(publicDir)
    // enrouter middleware
    .use('/',routeIndex)
