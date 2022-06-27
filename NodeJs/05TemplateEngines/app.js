@@ -3,7 +3,7 @@ const express = require("express"),
   app = express(),
   path = require("path"),
   favicon = require("serve-favicon"),
-  jade = require("jade"),
+  pug = require("pug"),
   routeIndex = require("./routes/index"),
   // Esta cachando todo lo que venga exportado de este modulo de la forma:
   // module.exports = router;
@@ -17,7 +17,7 @@ const express = require("express"),
 app
 // Setting up the views to our ptoject
    .set('views', viewsURL)
-   .set('view engine', 'jade')
+   .set('view engine', 'pug')
    .set('port', PORT)
    // Starting the middlewares
    .use(favicon(logoURL))
