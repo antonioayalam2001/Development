@@ -1,7 +1,16 @@
 'use strict'
 let express = require('express'),
    router = express.Router()
-      
+
+const pug = (req,res,next) => { 
+  let locals = {
+    title: 'Pug',
+    description: 'Pug is a template engine written in JavaScript.',
+
+  }
+  res.render("home", locals);
+}
+
 router
    // En el navegador : http://localhost:3000/home
   .get("/", (req, res) => {

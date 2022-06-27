@@ -1,5 +1,6 @@
 'use strict'
 const express = require("express"),
+  morgan = require('morgan'),
   app = express(),
   path = require("path"),
   favicon = require("serve-favicon"),
@@ -20,7 +21,10 @@ app
    .set('view engine', 'pug')
    .set('port', PORT)
    // Starting the middlewares
-   .use(favicon(logoURL))
+  .use(favicon(logoURL))
+  // Nos muestra las peticiones que se estan realizando por HTTP (cada que entramos a una página  se muestra como una petición)
+  // Es como el logger de recursos que aparece desde el navegador 
+  .use(morgan('dev'))
    .use(publicDir)
    // enrouter middleware
    .use('/',routeIndex)
