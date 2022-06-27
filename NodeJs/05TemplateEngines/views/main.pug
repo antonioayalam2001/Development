@@ -1,0 +1,15 @@
+html
+    head
+        link(rel="stylesheet" href="/css/style.css")
+        title= titulo ? 'Main' : 'Otra cosa'
+        body
+            h1 Bienvenido a la primera página con #{titulo}
+            h2= desc
+            a(href= `${link}`) Vamonos a la página de inicio
+            -let url = link
+            a(href=url) Vamonos a la página de inicio
+            h1 Utilizando Un array mandado mediante el servidor
+            -let array1= array
+                each number in array1
+                    p= number
+

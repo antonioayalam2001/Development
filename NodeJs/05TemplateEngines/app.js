@@ -9,6 +9,7 @@ const express = require("express"),
   // Esta cachando todo lo que venga exportado de este modulo de la forma:
   // module.exports = router;
   routeHome = require("./routes/home"),
+    routeFirstPage = require('./routes/firstPage'),
   viewsURL = path.join(__dirname, "views"),
   logoURL = `${__dirname}/public/img/logoCompleto.png`,
   publicDir = express.static(path.join(__dirname, "public")),
@@ -29,6 +30,7 @@ app
    // enrouter middleware
    .use('/',routeIndex)
    .use('/home', routeHome)
+    .use('/firstPage',routeFirstPage)
    
    module.exports = app;
 
