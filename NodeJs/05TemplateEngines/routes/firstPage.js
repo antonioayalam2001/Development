@@ -3,8 +3,8 @@ const express = require('express'),
 
 function firstPage (req,res){
     let locals = {
-        titulo:'Titulo de la pagina',
-        desc : 'This is a brief descriptcion about the content that youcan create',
+        titulo:'Realizando una página con PUG',
+        desc : 'This is a demo of how a website can be created using PUG',
         link : '/',
         array : [1,2,3]
     }

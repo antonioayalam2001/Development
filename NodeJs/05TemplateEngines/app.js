@@ -5,10 +5,12 @@ const express = require("express"),
   path = require("path"),
   favicon = require("serve-favicon"),
   pug = require("pug"),
+    ejs = require("ejs"),
   routeIndex = require("./routes/index"),
   // Esta cachando todo lo que venga exportado de este modulo de la forma:
   // module.exports = router;
   routeHome = require("./routes/home"),
+    routeEjs = require('./routes/ejsPage'),
     routeFirstPage = require('./routes/firstPage'),
   viewsURL = path.join(__dirname, "views"),
   logoURL = `${__dirname}/public/img/logoCompleto.png`,
@@ -19,7 +21,9 @@ const express = require("express"),
 app
 // Setting up the views to our ptoject
    .set('views', viewsURL)
-   .set('view engine', 'pug')
+   .set('view engine', 'ejs')
+   // Utilizar pug
+   // .set('view engine', 'pug')
    .set('port', PORT)
    // Starting the middlewares
   .use(favicon(logoURL))
@@ -31,6 +35,7 @@ app
    .use('/',routeIndex)
    .use('/home', routeHome)
     .use('/firstPage',routeFirstPage)
+    .use('/ejsPage', routeEjs)
    
    module.exports = app;
 

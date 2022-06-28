@@ -5,12 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/05TemplateEngines/routes/firstPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05TemplateEngines/views/fpLayout.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05TemplateEngines/views/lsdkjf.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05TemplateEngines/views/main.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05TemplateEngines/routes/ejsPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05TemplateEngines/views/content.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05TemplateEngines/views/estaciones.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05TemplateEngines/views/footer.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05TemplateEngines/views/header.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05TemplateEngines/views/logo.pug" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05TemplateEngines/views/pageEjs.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/05TemplateEngines/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/05TemplateEngines/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05TemplateEngines/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/05TemplateEngines/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05TemplateEngines/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/05TemplateEngines/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05TemplateEngines/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/05TemplateEngines/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05TemplateEngines/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/05TemplateEngines/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05TemplateEngines/routes/firstPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/05TemplateEngines/routes/firstPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05TemplateEngines/views/fpLayout.pug" beforeDir="false" afterPath="$PROJECT_DIR$/05TemplateEngines/views/fpLayout.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05TemplateEngines/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/05TemplateEngines/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05TemplateEngines/views/lsdkjf.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05TemplateEngines/views/main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/05TemplateEngines/views/main.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +31,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Pug File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -48,7 +59,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "watcher.settings",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -87,5 +98,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
