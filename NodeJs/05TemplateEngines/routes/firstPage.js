@@ -1,6 +1,18 @@
 const express = require('express'),
     router = express.Router();
 
+function error404(req,res,next){
+    let error = new Error(),
+        locals={
+            title:'Error',
+            description : 'Recurso no encontrado :(',
+            error : error
+        }
+    error.status = 404;
+    res.render('error',locals)
+    res.next()
+}
+
 function firstPage (req,res){
     let locals = {
         titulo:'Realizando una página con PUG',
@@ -13,7 +25,9 @@ function firstPage (req,res){
 
 router.get('/',(req,res)=>{
     res.end('<h1>Terminando configuraciones</h1>')
-}).get('/main',firstPage)
+})
+    .get('/main',firstPage)
+    .use(error404)
 
 
 module.exports = router;
