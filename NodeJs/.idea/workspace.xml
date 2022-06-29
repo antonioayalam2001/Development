@@ -4,40 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="Mas con EJS y una plantilla bien hecha con PUG">
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/public/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/public/img/Adobe_Illustrator-Logo.wine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/public/img/Adobe_XD-Logo.wine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/public/img/Asset 28@3x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/public/img/Bootstrap_(front-end_framework)-Logo.wine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/public/img/MySQL-Logo.wine.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/public/img/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/public/img/cook.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/public/img/g48.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/public/img/keysRSA.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/public/img/logo.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/public/img/logoBackground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/public/img/logoCompleto.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/public/img/photoshop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/public/img/playV.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/public/img/playV.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/public/img/pngwing.com.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/public/img/spotify-logo-png-7080.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/public/img/study.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/public/img/tony.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/public/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/public/js/prueba.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/routes/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/views/error.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/views/header.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HerokuDeploy/views/index.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05TemplateEngines/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/05TemplateEngines/server.js" afterDir="false" />
-    </list>
+    <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="Mas con EJS y una plantilla bien hecha con PUG" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
