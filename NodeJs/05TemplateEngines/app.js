@@ -21,9 +21,9 @@ const express = require("express"),
 app
 // Setting up the views to our ptoject
    .set('views', viewsURL)
-   .set('view engine', 'pug')
+   // .set('view engine', 'ejs')
    // Utilizar pug
-   // .set('view engine', 'pug')
+   .set('view engine', 'pug')
    .set('port', PORT)
    // Starting the middlewares
   .use(favicon(logoURL))
