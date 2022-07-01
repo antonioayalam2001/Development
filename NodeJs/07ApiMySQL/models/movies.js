@@ -6,7 +6,7 @@ const mySQL = require('mysql'),
     cbOptions = {
         host: 'localhost',
         user: 'root',
-        password: 'Jillvalentine1',
+        password: 'password',
         port: 3306,
         database: 'movies'
     };

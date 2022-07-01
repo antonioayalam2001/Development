@@ -1,6 +1,10 @@
-extends header
+doctype html
+html(lang=es)
+    head
+    include templates/header
 
-block content
-    h1 Oh no te has encontrado con un #{error}
-    h2 Este trata acerca de un #{description}
-    p el Stack del error es #{error.stack}
+body
+    include templates/navBar
+    h1 Oh no te has encontrado con un Error
+    p= error
+    a.button(href="/") Regresar
