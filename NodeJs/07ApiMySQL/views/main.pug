@@ -1,11 +1,16 @@
-extends header
-
+doctype html
+html(lang=es)
+    head
+    include templates/header
 //-Haciendo que herede de fpLayout
-block content
-    nav
-        include logo
-        h1 Movie Section
-        h2 Welcome to your first CRUD with NodeJs and Pug implementation
+body
+    include templates/navBar
+    section.options
+
+        form(method="get" action="/agregar")
+            button.button(type=submit name=movie value="Agregar") Agregar
+            button.button(type=submit name=movie value="Agregar") Eliminar
+
     section.container
         // -if(data.length)
         //     article.item
@@ -15,17 +20,22 @@ block content
         //                     a(href="/api/v1/users/" + data[i].id)= data[i].title
         //   -else
         //         p No hay datos
+
+
         -if(data.length)
-            article.item
-                each movie in data
-                    h3 Imagen
+            each movie in data
+                article.movie
+                    figure
+                        img(src=`${movie.image}`)
                     div.info
                         h2= movie.title
                         h2= movie.release_year
                         h2= movie.rating
-                        a(href=`/api/v1/users/${movie.title}`)= movie.title
+                        a(href=`/editar/?movie_id=${movie.movie_id}&year=${movie.release_year}`) Editar
+                        a(href=`/eliminar/?movie_id=${movie.movie_id}`) Eliminar
+
         -else
-                p No hay datos
+                h1 No hay datos
 
 
 
