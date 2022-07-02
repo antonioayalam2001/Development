@@ -12,19 +12,19 @@ const URL = [
     id: 1,
     route: "",
     output:
-      "/Users/tonyayala/Library/CloudStorage/OneDrive-Personal/Universidad/NodeJs/00ModulosCore/assets/index.html",
+      "./assets/index.html",
   },
   {
     id: 2,
     route: "contacto",
     output:
-      "/Users/tonyayala/Library/CloudStorage/OneDrive-Personal/Universidad/NodeJs/00ModulosCore/assets/contact.html",
+      "./assets/contact.html",
   },
   {
     id: 3,
     route: "acerca",
     output:
-      "/Users/tonyayala/Library/CloudStorage/OneDrive-Personal/Universidad/NodeJs/00ModulosCore/assets/about.html",
+      "./assets/about.html",
   },
 ];
 
@@ -40,7 +40,9 @@ http
     //   URL.parse (<urlAnalizar>,<opcionDeQueryString: true,false>)
     // if opctionDeQueryString is true this one gives us another object with all the parameters senden in the URL in this line of code we are getting the object and we are going to get the value of the parameter "id"
     let id = urlm.parse(req.url, true).query.id;
+    let nombre = urlm.parse(req.url, true).query.nombre;
     console.log(`La URL es: ${pathURL} y tiene un id de ${id}`);
+    console.log(`La URL es: ${pathURL} y tiene un nombre de ${nombre}`);
 
     //   This line of code provides the whole URL parameters in the object
     //   console.log(id);
@@ -61,7 +63,7 @@ http
       res.writeHead(404, { "Content-Type": "text/html" });
 
       fs.readFile(
-        "/Users/tonyayala/Library/CloudStorage/OneDrive-Personal/Universidad/NodeJs/00ModulosCore/assets/404.html",
+        "./assets/404.html",
         (err, data) => {
           if (err) throw err;
           res.end(data);

@@ -19,17 +19,13 @@ function error404 (req,res,next){
     }
     error.status = 404;
     res.render('error', locals);
-    // res.next()
 }
 router
     .use(dbConMov)
 router
     .get('/',(req,res)=>{
     req.getConnection((err,dbConMov)=>{
-        if(err){
-            console.log(err);
-            return;
-        }
+            if (err) next(new Error('No hay registros que mostrar'))
         dbConMov.query('SELECT * FROM movie',(err,movies)=>{
             if(err){
                 console.log(err);
@@ -50,6 +46,7 @@ router
 })
     .post('/',(req,res,next)=>{
         req.getConnection((err,dbConMov)=>{
+            if (err) next(new Error('No se pudo realizar la insercion'))
             let dataToAdd = {
                 movie_id : req.body.movie_id,
                 title : req.body.title,
@@ -83,7 +80,6 @@ router
         })
     })
     .post('/actualizar/:movieId',(req,res,next)=>{
-        console.log(req.params.movieId)
         let movieId = req.params.movieId
         req.getConnection((err,dbConMov)=>{
             let dataToAdd = {
@@ -115,8 +111,7 @@ router
             // ? -> Se reemplaza por el objeto que creamos de dataToAdd
             dbConMov.query('delete from movie  where movie_id = ?',movieId,(error,rows)=>{
                 console.log(error?error:rows)
-                res.cookie('prueba','prueba')
-                return error ? res.redirect('/agregar') : res.redirect('/')
+                return error ? next(new Error('Registro no encontrado')) : res.redirect('/')
             })
         })
     })

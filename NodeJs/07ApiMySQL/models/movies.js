@@ -3,11 +3,18 @@
 
 const mySQL = require('mysql'),
     //Utilizamos my-connection para poder implementarlo como Middleware en la ruta
+    //express-myconnection Permitia la conexion como un middleware
+    /*
+    * Ventaja : Manejar la conexion desde otras rutas
+    *
+    * Desventaja :
+    *                   Vuelve insegura a las conexiones
+    * */
     myConnection = require('express-myconnection'),
     dbOptions = {
         host: 'localhost',
         user: 'root',
-        password: 'password',
+        password: 'Jillvalentine1',
         port: 3306,
         database: 'movies'
     };
