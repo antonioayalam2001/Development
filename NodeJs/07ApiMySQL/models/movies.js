@@ -7,7 +7,7 @@ const mySQL = require('mysql'),
     dbOptions = {
         host: 'localhost',
         user: 'root',
-        password: 'Jillvalentine1',
+        password: 'password',
         port: 3306,
         database: 'movies'
     };
