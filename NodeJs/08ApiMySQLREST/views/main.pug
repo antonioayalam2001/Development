@@ -11,8 +11,10 @@ body
             button.button(type=submit name=movie value="Agregar") Agregar
         form(method="get" action="/agregar2")
             button.button(type=submit name=movie value="Agregar") Eliminar
-
-    section.container
+    section.containerLoader
+        div.item
+            i(class='loader --2')
+    section.container.hidden
         -if(data.length)
             each movie in data
                 article.movie
@@ -37,5 +39,5 @@ body
         -else
                 h1 No hay datos
 
-
+script(src= 'js/app.js')
 

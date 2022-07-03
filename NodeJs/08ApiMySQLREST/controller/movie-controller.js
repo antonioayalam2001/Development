@@ -7,7 +7,7 @@ let MovieModel = require('../models/movie-model'),
 //    This one takes charge of getting all the comunication between views  with the model
 //    The controller must have the same methods as the model
 MovieController.getAll = (req,res,next) => {
-    MovieModel.getAll( (err, datos) => {
+    MovieModel.getAll( (err, data) => {
         if (err) {
             let locals = {
                 title : 'Error',
@@ -16,7 +16,7 @@ MovieController.getAll = (req,res,next) => {
             res.render('error',locals)
         }
         let locals = {
-            data: datos,
+            data: data,
             title: 'Movies'
         }
         res.render('main', locals);

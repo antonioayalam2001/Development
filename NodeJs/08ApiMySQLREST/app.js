@@ -17,7 +17,6 @@ const express = require('express'),
     viewsURL = path.join(__dirname,'views'),
     logoURL = `${__dirname}/public/img/logoCompleto.png`,
     publicDir = express.static(path.join(__dirname,'public')),
-    dbConMov = require('./models/movie-model'),
     PORT = process.env.PORT || 3000
 
 //Routes declaration
