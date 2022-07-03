@@ -1,0 +1,10 @@
+{
+  "my-sql" : {
+    "host": "localhost",
+    "user": "root",
+    "password": "Jillvalentine1",
+    "port": 3306,
+    "database": "movies"
+  }
+}
+
