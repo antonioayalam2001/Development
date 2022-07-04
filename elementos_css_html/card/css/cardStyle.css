@@ -4,20 +4,33 @@
 }
 
 body {
-  display: flex;
+  background-color: #424B54FF;
+}
+
+.about {
+  height: 100vh;
+  background-color: #E2B4BDFF;
+}
+
+.workTeam {
+  padding: 3rem;
+  display: grid;
   align-items: center;
   justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1rem));
+  gap: 1rem;
   height: 100vh;
 }
 
 .card {
-  width: 450px;
+  width: 350px;
   height: 230px;
-  background-color: white;
+  background-color: #FFFFFFFF;
   position: relative;
-  border: 2px solid red;
+  border: 2px solid #E2B4BDFF;
   border-radius: 20px;
   transition: height 0.5s ease-in;
+  margin: 1rem;
 }
 .card .imgBox {
   height: 150px;
@@ -29,7 +42,8 @@ body {
   top: -30px;
   border-radius: 20px;
   overflow: hidden;
-  transition: 0.5s;
+  transition: 0.8s;
+  box-shadow: 0px 0px 10px 2px #E2B4BDFF;
 }
 .card .imgBox img {
   position: absolute;
@@ -45,30 +59,48 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 .card .info_container .info {
   text-align: center;
+  transform: translateY(140px);
   line-height: 0.5rem;
+  transition: transform 0.9s;
 }
 .card .info_container .info h1 {
   font-size: 1.4rem;
 }
 .card .info_container .info span {
-  font: italic bold 1rem Glory;
+  font: italic 300 1rem Glory;
 }
 .card .info_container .info span:nth-child(2) {
-  color: #e2b4bd;
+  color: #E2B4BDFF;
 }
 .card .info_container .info .social__media {
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 1rem;
+  color: #93A8ACFF;
+}
+.card .info_container .info .social__media .social p {
+  font: italic bolder 1rem Glory;
+}
+.card .info_container .info .social__media .social .icon {
+  width: 50px;
+}
+.card .info_container .info .social__media .social .icon img {
+  width: 100%;
 }
 .card:hover {
   height: 450px;
 }
 .card:hover .imgBox {
-  height: 250px;
-  width: 250px;
+  height: 220px;
+  width: 220px;
+}
+.card:hover .info {
+  transform: translateY(10px);
 }
 
 /*# sourceMappingURL=cardStyle.css.map */

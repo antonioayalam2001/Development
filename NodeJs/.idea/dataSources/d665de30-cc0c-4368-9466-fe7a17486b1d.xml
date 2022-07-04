@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="movies@localhost [2]">
-  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.39">
+  <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.40">
     <root id="1">
       <DefaultCasing>mixed/mixed</DefaultCasing>
       <DefaultEngine>InnoDB</DefaultEngine>
@@ -982,35 +982,5 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <user id="283" parent="1" name="root">
       <Host>localhost</Host>
     </user>
-    <table id="284" parent="274" name="movie">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </table>
-    <column id="285" parent="284" name="movie_id">
-      <DataType>varchar(9)|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="286" parent="284" name="title">
-      <DataType>varchar(100)|0s</DataType>
-      <Position>2</Position>
-    </column>
-    <column id="287" parent="284" name="release_year">
-      <DataType>varchar(4)|0s</DataType>
-      <Position>3</Position>
-    </column>
-    <column id="288" parent="284" name="rating">
-      <DataType>decimal(2,1 digit)|0s</DataType>
-      <Position>4</Position>
-    </column>
-    <column id="289" parent="284" name="image">
-      <DataType>varchar(255)|0s</DataType>
-      <Position>5</Position>
-    </column>
-    <key id="290" parent="284" name="PRIMARY">
-      <ColNames>movie_id</ColNames>
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-    </key>
   </database-model>
 </dataSource>
