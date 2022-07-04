@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  font-family: Glory;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  width: 450px;
+  height: 230px;
+  background-color: white;
+  position: relative;
+  border: 2px solid red;
+  border-radius: 20px;
+  transition: height 0.5s ease-in;
+}
+.card .imgBox {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -30px;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.card .imgBox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+}
+.card .info_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.card .info_container .info {
+  text-align: center;
+  line-height: 0.5rem;
+}
+.card .info_container .info h1 {
+  font-size: 1.4rem;
+}
+.card .info_container .info span {
+  font: italic bold 1rem Glory;
+}
+.card .info_container .info span:nth-child(2) {
+  color: #e2b4bd;
+}
+.card .info_container .info .social__media {
+  display: flex;
+  justify-content: space-around;
+}
+.card:hover {
+  height: 450px;
+}
+.card:hover .imgBox {
+  height: 250px;
+  width: 250px;
+}
+
+/*# sourceMappingURL=cardStyle.css.map */
