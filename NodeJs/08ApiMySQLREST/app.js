@@ -18,6 +18,9 @@ const express = require('express'),
     logoURL = `${__dirname}/public/img/logoCompleto.png`,
     publicDir = express.static(path.join(__dirname,'public')),
     PORT = process.env.PORT || 3000
+//_method -> elemento oculto  que estamos agregando al formulario
+//Lo podemos llamar como queramos
+
 
 //Routes declaration
 const routes = require('./routes/movie-router')

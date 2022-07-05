@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf5d3c8d-4e16-4c1f-a384-3dc88e1d4157" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/icons/instagram.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NodeJs/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NodeJs/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NodeJs/.idea/dataSources/d665de30-cc0c-4368-9466-fe7a17486b1d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NodeJs/.idea/dataSources/d665de30-cc0c-4368-9466-fe7a17486b1d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NodeJs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NodeJs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NodeJs/08ApiMySQLREST/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../NodeJs/08ApiMySQLREST/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/card/card.html" beforeDir="false" afterPath="$PROJECT_DIR$/card/card.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/card/css/cardStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/card/css/cardStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/card/css/cardStyle.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/card/css/cardStyle.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/card/css/cardStyle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/card/css/cardStyle.scss" afterDir="false" />
-    </list>
+    <list default="true" id="cf5d3c8d-4e16-4c1f-a384-3dc88e1d4157" name="Changes" comment="Cards" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,11 +42,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1656954657593</updated>
-      <workItem from="1656954658937" duration="2697000" />
+      <workItem from="1656954658937" duration="2960000" />
     </task>
+    <task id="LOCAL-00001" summary="Cards">
+      <created>1656957628583</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656957628583</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Cards" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cards" />
   </component>
 </project>

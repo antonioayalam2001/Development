@@ -16,6 +16,7 @@ body
                         label(for="movie_id") IMDB id:
                         input#movie_id(type="text", name="movie_id", required value= data?data[0].movie_id: '' disabled)
                         input#movie_id(type="text", name="movie_id", required value= data?data[0].movie_id: '' hidden)
+                        input(type="hidden", name="_method",value="PUT")
                     else
                         label(for="movie_id") IMDB id:
                         input#movie_id(type="text", name="movie_id", required value= data?data[0].movie_id: '' )

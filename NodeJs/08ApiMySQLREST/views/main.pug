@@ -6,7 +6,6 @@ html(lang=es)
 body
     include templates/navBar
     section.options
-
         form(method="get" action="/agregar")
             button.button(type=submit name=movie value="Agregar") Agregar
         form(method="get" action="/agregar2")
@@ -28,7 +27,7 @@ body
                         a(onclick="eliminar(this)") Eliminar
                 script.
                     const redirect = ()=>{
-                        window.location.href = `/eliminar/?movie_id=#{movie.movie_id}`
+                        window.location.href = `/eliminar/?movie_id=#{movie.movie_id}&_method=DELETE`
                     }
                     function eliminar(input) {
                         let accept = confirm('¿Confirmas la operacion?')

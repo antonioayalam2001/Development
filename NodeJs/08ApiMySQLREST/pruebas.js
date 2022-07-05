@@ -16,4 +16,13 @@ const adios = () =>{
 
 saludar(adios,'Tony')
 
+const objectToIterate = [
+{
+    name: 'Tony',
+    lastName: 'Tony',
+    age: 'Tony'
+}
+]
 
+const [object] = objectToIterate
+console.log(object)

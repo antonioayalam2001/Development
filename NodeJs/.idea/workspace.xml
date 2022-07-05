@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="Loader">
-      <change afterPath="$PROJECT_DIR$/../elementos_css_html/icons/instagram.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d665de30-cc0c-4368-9466-fe7a17486b1d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d665de30-cc0c-4368-9466-fe7a17486b1d.xml" afterDir="false" />
+    <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="REST FULL">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../elementos_css_html/card/card.html" beforeDir="false" afterPath="$PROJECT_DIR$/../elementos_css_html/card/card.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../elementos_css_html/card/css/cardStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/../elementos_css_html/card/css/cardStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../elementos_css_html/card/css/cardStyle.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../elementos_css_html/card/css/cardStyle.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../elementos_css_html/card/css/cardStyle.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../elementos_css_html/card/css/cardStyle.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/controller/movie-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/controller/movie-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/models/dbConf.json" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/models/dbConf.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/models/movie-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/models/movie-model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/pruebas.js" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/pruebas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/routes/movie-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/routes/movie-router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/views/add-movie.pug" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/views/add-movie.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/views/error.pug" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/views/error.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/views/main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/views/main.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elementos_css_html/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../elementos_css_html/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +70,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "watcher.settings",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   },
@@ -90,8 +93,11 @@
       <recent name="$PROJECT_DIR$/05TemplateEngines/views/firstPage" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="Node.js.functions.js">
     <configuration name="Unnamed" type="NodeJSConfigurationType" nameIsGenerated="true" working-dir="$PROJECT_DIR$/05TemplateEngines">
+      <method v="2" />
+    </configuration>
+    <configuration name="functions.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/functions.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -106,6 +112,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.functions.js" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>

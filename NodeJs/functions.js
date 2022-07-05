@@ -48,3 +48,10 @@ const doTask = (iterations) => new Promise((resolve, reject) => {
 doTask(10)
   .then((result) => console.log("Tiradas correctas: ", result))
   .catch((err) => console.error("Ha ocurrido algo: ", err.message));
+
+let array = [1,2,3]
+let arrayResult = []
+
+arrayResult = array.map(e=>e+10)
+console.log(arrayResult)
+console.log(array)

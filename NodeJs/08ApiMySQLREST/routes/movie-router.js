@@ -1,8 +1,6 @@
 //Solo se encarga de mandar a ejecutar peticion y generar vistas
 // Se comunica con el controlador
-const express = require('express'),
-    MovieController = require("../controller/movie-controller"),
-    router = express.Router()
+const express = require('express'), MovieController = require("../controller/movie-controller"), router = express.Router()
 
 //COOKIES
 //Para acceder a las cookies se debe de instalar el middleware
@@ -15,62 +13,16 @@ function error404(req, res, next) {
 
 //Este archivo solo deberia contener la rura y la funcion de ejecucion que realiza
 router
-    .get('/',MovieController.getAll)
-    .get('/agregar',MovieController.addForm)
-    .post('/',MovieController.insert)
-    .get('/editar', (req, res, next) => {
-        let movieId = req.query.movie_id
-        console.log(req.query.year)
-        req.getConnection((err, dbConMov) => {
-            dbConMov.query('select * from movie where movie_id = ? ', movieId, (err, rows) => {
-                if (err) {
-                    req.redirect('/')
-                } else {
-                    let locals = {
-                        title: 'Editar Pelicula',
-                        data: rows
-                    }
-                    res.render('add-movie', locals)
-                }
-            })
-        })
-    })
-    .post('/actualizar/:movieId', (req, res, next) => {
-        let movieId = req.params.movieId
-        req.getConnection((err, dbConMov) => {
-            let dataToAdd = {
-                movie_id: req.body.movie_id,
-                title: req.body.title,
-                release_year: req.body.release_year,
-                rating: req.body.rating,
-                image: req.body.image
-            }
-            // console.log(dataToAdd)
-            // ? -> Se reemplaza por el objeto que creamos de dataToAdd
-            dbConMov.query('update movie set ? where movie_id = ?', [dataToAdd, movieId], (error, rows) => {
-                console.log(error ? error : rows)
-                return error ? res.redirect('/agregar') : res.redirect('/')
-            })
-        })
-    })
-    .get('/eliminar', (req, res, next) => {
-        let movieId = req.query.movie_id
-        req.getConnection((err, dbConMov) => {
-            let dataToAdd = {
-                movie_id: req.body.movie_id,
-                title: req.body.title,
-                release_year: req.body.release_year,
-                rating: req.body.rating,
-                image: req.body.image
-            }
-            console.log(dataToAdd)
-            // ? -> Se reemplaza por el objeto que creamos de dataToAdd
-            dbConMov.query('delete from movie  where movie_id = ?', movieId, (error, rows) => {
-                console.log(error ? error : rows)
-                return error ? next(new Error('Registro no encontrado')) : res.redirect('/')
-            })
-        })
-    })
+    .get('/', MovieController.getAll)
+    .get('/agregar', MovieController.addForm)
+    .post('/', MovieController.save)
+    .get('/editar', MovieController.getOne)
+    // .post('/actualizar/:movieId',MovieController.update)
+    // .get('/eliminar',MovieController.delete)
+    //Antes de crear al metodo .save
+    // .put('/actualizar/:movieId',MovieController.update)
+    .put('/actualizar/:movieId', MovieController.save)
+    .delete('/eliminar', MovieController.delete)
     .use(MovieController.error404);
 
 module.exports = router
