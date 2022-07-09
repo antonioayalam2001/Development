@@ -8,6 +8,8 @@ export default function winner(button,selectors) {
         })
 
         let number = Math.round((Math.random()* (array.length))-1)
-        alert(array[number])
+
+        Swal.fire(`You got a Winner \n  ${array[number]}`
+        )
     })
 }

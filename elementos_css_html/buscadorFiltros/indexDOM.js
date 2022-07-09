@@ -1,5 +1,5 @@
-import searchFilters from "./filtroBusquedas.js";
-import winner from "./sorteo.js";
+import searchFilters from "./funcionModules/filtroBusquedas.js";
+import winner from "./funcionModules/sorteo.js";
 
 
 const d =document

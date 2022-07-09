@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf5d3c8d-4e16-4c1f-a384-3dc88e1d4157" name="Changes" comment="lottie">
-      <change afterPath="$PROJECT_DIR$/chartJs/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chartJs/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chartJs/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chartJs/style.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chartJs/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sweetAlertAndScrollReveal/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sweetAlertAndScrollReveal/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sweetAlertAndScrollReveal/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NodeJs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NodeJs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+    <list default="true" id="cf5d3c8d-4e16-4c1f-a384-3dc88e1d4157" name="Changes" comment="Perspectives">
+      <change beforePath="$PROJECT_DIR$/buscadorFiltros/filtroBusquedas.js" beforeDir="false" afterPath="$PROJECT_DIR$/buscadorFiltros/funcionModules/filtroBusquedas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buscadorFiltros/indexDOM.js" beforeDir="false" afterPath="$PROJECT_DIR$/buscadorFiltros/indexDOM.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buscadorFiltros/sorteo.js" beforeDir="false" afterPath="$PROJECT_DIR$/buscadorFiltros/funcionModules/sorteo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,23 +37,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/tonya/Desktop/ProgrammingLanguages/elementos_css_html",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tonya/Desktop/ProgrammingLanguages/elementos_css_html&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
