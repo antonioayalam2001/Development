@@ -4,19 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="REST FULL">
+    <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="REST FULL Completo">
+      <change afterPath="$PROJECT_DIR$/../elementos_css_html/chartJs/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elementos_css_html/chartJs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elementos_css_html/chartJs/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elementos_css_html/chartJs/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elementos_css_html/chartJs/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elementos_css_html/sweetAlertAndScrollReveal/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elementos_css_html/sweetAlertAndScrollReveal/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elementos_css_html/sweetAlertAndScrollReveal/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/controller/movie-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/controller/movie-controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/models/dbConf.json" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/models/dbConf.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/models/movie-model.js" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/models/movie-model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/pruebas.js" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/pruebas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/routes/movie-router.js" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/routes/movie-router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/views/add-movie.pug" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/views/add-movie.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/views/error.pug" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/views/error.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/views/main.pug" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/views/main.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../elementos_css_html/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../elementos_css_html/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,31 +55,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/tonya/Desktop/ProgrammingLanguages/elementos_css_html",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tonya/Desktop/ProgrammingLanguages/elementos_css_html&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs" />
@@ -135,6 +135,9 @@
       <workItem from="1656734368839" duration="93000" />
       <workItem from="1656779037528" duration="18359000" />
       <workItem from="1656943483218" duration="6000" />
+      <workItem from="1657042898450" duration="3170000" />
+      <workItem from="1657054532548" duration="596000" />
+      <workItem from="1657128999248" duration="614000" />
     </task>
     <task id="LOCAL-00001" summary="Cambio">
       <created>1656521549483</created>
@@ -171,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656859893267</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="REST FULL Completo">
+      <created>1656992339236</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656992339236</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,7 +207,8 @@
     <MESSAGE value="Mas con EJS y una plantilla bien hecha con PUG" />
     <MESSAGE value="Funciones completadas" />
     <MESSAGE value="Loader" />
-    <option name="LAST_COMMIT_MESSAGE" value="Loader" />
+    <MESSAGE value="REST FULL Completo" />
+    <option name="LAST_COMMIT_MESSAGE" value="REST FULL Completo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
