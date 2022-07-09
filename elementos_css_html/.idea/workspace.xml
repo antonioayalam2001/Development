@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf5d3c8d-4e16-4c1f-a384-3dc88e1d4157" name="Changes" comment="Card">
-      <change afterPath="$PROJECT_DIR$/perspectives/perspectives.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/perspectives/style.scss" afterDir="false" />
+    <list default="true" id="cf5d3c8d-4e16-4c1f-a384-3dc88e1d4157" name="Changes" comment="Perspectives">
+      <change afterPath="$PROJECT_DIR$/buscadorFiltros/filtroBusquedas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/buscadorFiltros/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/buscadorFiltros/indexDOM.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/buscadorFiltros/sorteo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/buscadorFiltros/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/card/css/cardStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/card/css/cardStyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="SCSS File" />
         <option value="HTML File" />
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -49,6 +52,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -61,6 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1656954657593</updated>
       <workItem from="1656954658937" duration="2960000" />
+      <workItem from="1657376155549" duration="5758000" />
     </task>
     <task id="LOCAL-00001" summary="Cards">
       <created>1656957628583</created>
@@ -69,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656957628583</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Perspectives">
+      <created>1657038107630</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1657038107630</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,6 +100,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Cards" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cards" />
+    <MESSAGE value="Perspectives" />
+    <option name="LAST_COMMIT_MESSAGE" value="Perspectives" />
   </component>
 </project>
