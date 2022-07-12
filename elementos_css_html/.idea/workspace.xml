@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf5d3c8d-4e16-4c1f-a384-3dc88e1d4157" name="Changes" comment="Perspectives">
-      <change afterPath="$PROJECT_DIR$/buscadorFiltros/deteccionDispositivos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buscadorFiltros/funcionModules/sorteo.js" beforeDir="false" afterPath="$PROJECT_DIR$/buscadorFiltros/funcionModules/sorteo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buscadorFiltros/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/buscadorFiltros/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buscadorFiltros/indexDOM.js" beforeDir="false" afterPath="$PROJECT_DIR$/buscadorFiltros/indexDOM.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NodeJs/.idea/shelf/Uncommitted_changes_before_Update_at_7_1_2022_5_45_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NodeJs/.idea/shelf/Uncommitted_changes_before_Update_at_7_1_2022_5_45_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NodeJs/.idea/shelf/Uncommitted_changes_before_Update_at_7_4_2022_11_47_AM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NodeJs/.idea/shelf/Uncommitted_changes_before_Update_at_7_4_2022_11_47_AM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NodeJs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NodeJs/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +78,7 @@
       <workItem from="1657054531908" duration="2008000" />
       <workItem from="1657119443196" duration="4392000" />
       <workItem from="1657548099274" duration="3043000" />
+      <workItem from="1657559154927" duration="71000" />
     </task>
     <task id="LOCAL-00001" summary="Cards">
       <created>1656957628583</created>
