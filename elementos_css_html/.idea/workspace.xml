@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf5d3c8d-4e16-4c1f-a384-3dc88e1d4157" name="Changes" comment="Perspectives">
-      <change afterPath="$PROJECT_DIR$/AJAX/Axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/style.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AJAX/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AJAX/ball-triangle.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../NodeJs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NodeJs/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AJAX/Fetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/Fetch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AJAX/Axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/Axios.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AJAX/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buscadorFiltros/funcionModules/filtroBusquedas.js" beforeDir="false" afterPath="$PROJECT_DIR$/buscadorFiltros/funcionModules/filtroBusquedas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buscadorFiltros/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/buscadorFiltros/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AJAX/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AJAX/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AJAX/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +82,7 @@
       <workItem from="1657119443196" duration="4392000" />
       <workItem from="1657548099274" duration="3043000" />
       <workItem from="1657559154927" duration="71000" />
-      <workItem from="1657647445973" duration="8854000" />
+      <workItem from="1657647445973" duration="11307000" />
     </task>
     <task id="LOCAL-00001" summary="Cards">
       <created>1656957628583</created>
@@ -114,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657390273276</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Perspectives">
+      <created>1657680746920</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657680746920</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

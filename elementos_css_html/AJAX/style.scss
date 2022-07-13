@@ -50,3 +50,12 @@ body{
 .filtro{
   display: none;
 }
+
+.loader{
+  background-color: #424B54;
+  padding: 1rem;
+  width: fit-content;
+  img{
+    width: 100%;
+  }
+}
