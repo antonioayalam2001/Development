@@ -2,24 +2,20 @@
 
     let fetchDOM = document.getElementById('fetch')
     let fragment = document.createDocumentFragment()
-
-
-
     //FORMA SIN ASYNC AWAIT
-
     fetch('https://gateway.marvel.com:443/v1/public/characters?ts=1&apikey=55bfb1504f1efc62d3523b2cdf3e5129&hash=e7ac7b03a621d6a4cd19a872d2fd9e47&limit=50').then(res=>{
         // console.log(res)
         return res.json()
     })
         .then(data=>{
             data = data.data.results
-            data.forEach(element =>{
-                // console.log(element)
-                const li = document.createElement('li')
-                li.innerHTML = `${element.id} ------> ${element.name}`
-                fragment.appendChild(li)
-            })
-            fetchDOM.appendChild(fragment)
+            // data.forEach(element =>{
+            //     // console.log(element)
+            //     const li = document.createElement('li')
+            //     li.innerHTML = `${element.id} ------> ${element.name}`
+            //     fragment.appendChild(li)
+            // })
+            // fetchDOM.appendChild(fragment)
     })
         .catch(error=>{
         console.log('Oops not the llama u were looking for')

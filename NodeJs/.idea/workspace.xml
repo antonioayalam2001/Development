@@ -5,46 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="REST FULL Completo">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d665de30-cc0c-4368-9466-fe7a17486b1d/storage_v2/_src_/schema/escuelaweb.GjJ-Bw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d665de30-cc0c-4368-9466-fe7a17486b1d/storage_v2/_src_/schema/escuelaweb.GjJ-Bw.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d665de30-cc0c-4368-9466-fe7a17486b1d/storage_v2/_src_/schema/information_schema.FNRwLQ.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d665de30-cc0c-4368-9466-fe7a17486b1d/storage_v2/_src_/schema/sakila.oXLGyQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d665de30-cc0c-4368-9466-fe7a17486b1d/storage_v2/_src_/schema/sakila.oXLGyQ.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d665de30-cc0c-4368-9466-fe7a17486b1d/storage_v2/_src_/schema/sys.zb4BAA.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_11_2022_12_05_PM_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_11_2022_12_05_PM__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/controller/movie-controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/models/dbConf.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/models/movie-connection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/models/movie-model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/models/movie-schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/public/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/public/css/style.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/public/css/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/public/img/logoCompleto.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/public/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/routes/movie-router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/views/add-movie.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/views/error.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/views/estaciones.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/views/main.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/views/templates/header.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/views/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/views/templates/logo.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09ApiMongoREST/views/templates/navBar.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d665de30-cc0c-4368-9466-fe7a17486b1d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d665de30-cc0c-4368-9466-fe7a17486b1d.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_1_2022_5_45_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_1_2022_5_45_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_4_2022_11_47_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_4_2022_11_47_AM__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elementos_css_html/AJAX/Axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elementos_css_html/AJAX/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elementos_css_html/AJAX/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elementos_css_html/AJAX/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../elementos_css_html/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../elementos_css_html/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elementos_css_html/AJAX/Fetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/../elementos_css_html/AJAX/Fetch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elementos_css_html/AJAX/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../elementos_css_html/AJAX/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elementos_css_html/buscadorFiltros/funcionModules/filtroBusquedas.js" beforeDir="false" afterPath="$PROJECT_DIR$/../elementos_css_html/buscadorFiltros/funcionModules/filtroBusquedas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elementos_css_html/buscadorFiltros/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../elementos_css_html/buscadorFiltros/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,33 +53,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.13.0",
-    "javascript.nodejs.core.library.typings.version": "16.11.43",
-    "last_opened_file_path": "C:/Users/tonya/Desktop/ProgrammingLanguages/NodeJs/09ApiMongoREST/controller",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.13.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.43&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tonya/Desktop/ProgrammingLanguages/NodeJs/09ApiMongoREST/controller&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\09ApiMongoREST\controller" />
@@ -173,7 +143,8 @@
       <workItem from="1657042898450" duration="3170000" />
       <workItem from="1657054532548" duration="596000" />
       <workItem from="1657128999248" duration="1837000" />
-      <workItem from="1657559098724" duration="16506000" />
+      <workItem from="1657559098724" duration="16525000" />
+      <workItem from="1657647108396" duration="930000" />
     </task>
     <task id="LOCAL-00001" summary="Cambio">
       <created>1656521549483</created>
@@ -217,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656992339236</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="REST FULL Completo">
+      <created>1657596902381</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1657596902385</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

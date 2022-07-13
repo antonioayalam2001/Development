@@ -1,9 +1,6 @@
 const d = document
 export default function searchFilters(input,selectors) {
     // d.querySelectorAll(selectors).forEach(card =>{card.classList.add('filter')})
-
-
-
     d.addEventListener('keyup',ev => {
         if (ev.target.matches(input)){
             d.querySelectorAll(selectors).forEach(card=>{
