@@ -4,12 +4,12 @@
 }
 
 body {
-  background-color: #424b54;
+  background-color: #424B54FF;
 }
 
 .about {
   height: 100vh;
-  background-color: #e2b4bd;
+  background-color: #E2B4BDFF;
 }
 
 .workTeam {
@@ -25,9 +25,9 @@ body {
 .card {
   width: 350px;
   height: 230px;
-  background-color: white;
+  background-color: #FFFFFFFF;
   position: relative;
-  border: 2px solid #e2b4bd;
+  border: 2px solid #E2B4BDFF;
   border-radius: 20px;
   transition: height 0.5s ease-in;
   margin: 1rem;
@@ -43,7 +43,7 @@ body {
   border-radius: 20px;
   overflow: hidden;
   transition: 0.8s;
-  box-shadow: 0px 0px 10px 2px #e2b4bd;
+  box-shadow: 0px 0px 10px 2px #E2B4BDFF;
 }
 .card .imgBox img {
   position: absolute;
@@ -74,14 +74,14 @@ body {
   font: italic 300 1rem Glory;
 }
 .card .info_container .info span:nth-child(2) {
-  color: #e2b4bd;
+  color: #E2B4BDFF;
 }
 .card .info_container .info .social__media {
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  color: #93a8ac;
+  color: #93A8ACFF;
 }
 .card .info_container .info .social__media .social p {
   font: italic bolder 1rem Glory;
