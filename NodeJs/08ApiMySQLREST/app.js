@@ -17,6 +17,7 @@ const express = require('express'),
     viewsURL = path.join(__dirname,'views'),
     logoURL = `${__dirname}/public/img/logoCompleto.png`,
     publicDir = express.static(path.join(__dirname,'public')),
+    fileUpload = require('express-fileupload'),
     PORT = process.env.PORT || 3000
 //_method -> elemento oculto  que estamos agregando al formulario
 //Lo podemos llamar como queramos
@@ -40,6 +41,7 @@ app.set('views',viewsURL)
     .use(bodyParser.urlencoded({extended:false}))
     .use(restfull)
     .use(publicDir)
+    .use(fileUpload({createParentPath: true}))
     .use(routes)
 
 

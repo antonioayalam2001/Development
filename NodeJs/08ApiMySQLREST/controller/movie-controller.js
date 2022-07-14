@@ -6,6 +6,7 @@ let MovieModel = require('../models/movie-model'),
 // Decide que es lo que necesita la vista y el modelo
 //    This one takes charge of getting all the comunication between views  with the model
 //    The controller must have the same methods as the model
+const fileUpload = require('express-fileupload');
 MovieController.getAll = (req, res, next) => {
     MovieModel.getAll((err, data) => {
         if (err) {
@@ -96,6 +97,23 @@ MovieController.delete = (req, res, next) => {
 }
 
 MovieController.save = (req, res, next) => {
+    let sampleFile;
+    let uploadPath;
+    console.log(req.files)
+    if (!req.files || Object.keys(req.files).length === 0) {
+        return res.status(400).send('No files were uploaded.');
+    }
+
+    // The name of the input field (i.e. "sampleFile") is used to retrieve the uploaded file
+    sampleFile = req.files.doc;
+    uploadPath = 'public/files/' + sampleFile.name;
+
+    // Use the mv() method to place the file somewhere on your server
+    sampleFile.mv(uploadPath, function(err) {
+        if (err)
+            return res.status(500).send(err);
+    })
+
     let data = {
         movie_id: req.body.movie_id,
         title: req.body.title,
