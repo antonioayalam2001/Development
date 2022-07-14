@@ -5,17 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="REST FULL Completo">
-      <change afterPath="$PROJECT_DIR$/08ApiMySQLREST/controller/files/Comando Packager.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d665de30-cc0c-4368-9466-fe7a17486b1d.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elementos_css_html/PokeApi/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../elementos_css_html/PokeApi/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/controller/movie-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/controller/movie-controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/models/dbConf.json" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/models/dbConf.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/08ApiMySQLREST/views/add-movie.pug" beforeDir="false" afterPath="$PROJECT_DIR$/08ApiMySQLREST/views/add-movie.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../elementos_css_html/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../elementos_css_html/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elementos_css_html/PokeApi/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../elementos_css_html/PokeApi/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elementos_css_html/PokeApi/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../elementos_css_html/PokeApi/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elementos_css_html/PokeApi/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../elementos_css_html/PokeApi/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elementos_css_html/PokeApi/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../elementos_css_html/PokeApi/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../elementos_css_html/PokeApi/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../elementos_css_html/PokeApi/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +150,7 @@
       <workItem from="1657128999248" duration="1837000" />
       <workItem from="1657559098724" duration="16525000" />
       <workItem from="1657647108396" duration="930000" />
-      <workItem from="1657721360373" duration="2183000" />
+      <workItem from="1657721360373" duration="3878000" />
     </task>
     <task id="LOCAL-00001" summary="Cambio">
       <created>1656521549483</created>
@@ -201,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657596902385</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="REST FULL Completo">
+      <created>1657723668511</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1657723668511</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

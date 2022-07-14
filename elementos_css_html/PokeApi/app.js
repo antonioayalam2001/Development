@@ -56,19 +56,15 @@ async function fullDOM(data) {
     }
     container.innerHTML = template
     container.style.gridTemplateColumns =  "repeat(auto-fit,minmax(450px,1rem))"
-    prevLink = data.previous ? `<a href ="${data.previous}"><--</a>` : ""
-    nextLink = data.next ? `<a href ="${data.next}">--></a>` : ""
-    nav.innerHTML = nextLink + prevLink
+    prevLink = data.previous ? `<a href ="${data.previous}"><i class="fa-solid fa-arrow-left"></i></a>` : ""
+    nextLink = data.next ? `<a href ="${data.next}"><i class="fa-solid fa-arrow-right"></i></a>` : ""
+    nav.innerHTML = prevLink + nextLink
 }
 
 button.addEventListener('click', () => {
-    
     getData('https://pokeapi.co/api/v2/pokemon/').then(data => {
         fullDOM(data).then(()=>{
-
         })
-            
-        
     })
 })
 
@@ -85,9 +81,7 @@ const filter = (e,cards)=>{
     cards.forEach(card =>{
         let pokeName = card.childNodes[3].childNodes[1].childNodes[1].textContent.toLowerCase()
         let inputValue = e.target.value.toLowerCase()
-        
         pokeName.includes(inputValue) ? card.classList.remove('filter') : card.classList.add('filter')
-        
     })
 }
 
@@ -95,7 +89,12 @@ d.addEventListener('keyup',e=>{
     if (e.target.matches('.form__input')){
         let cards = d.querySelectorAll('.card')
         console.log(cards)
-        cards.length == 0 ? alert('Aun no hay datos') : filter(e,cards)
+        cards.length == 0 ? Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'There are not data to look for try get the pokemons first!',
+            footer: '<a href="">Why do I have this issue?</a>'
+        }) : filter(e,cards)
     }
 })
 
