@@ -202,5 +202,10 @@ body{
       grid-column: 1/-1;
       margin: 0.4rem;
     }
+    p{
+      color: black;
+      border: 1px dotted $charcoal;
+      padding: 0.3rem;
+    }
 
   }

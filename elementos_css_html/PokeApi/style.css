@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #424B54FF;
+  background-color: #424b54;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -16,7 +16,7 @@ body h1 {
 
 .about {
   height: 100vh;
-  background-color: #E2B4BDFF;
+  background-color: #e2b4bd;
 }
 
 .search {
@@ -39,7 +39,7 @@ body h1 {
   width: 100%;
   padding: 0.4rem;
   position: absolute;
-  border: 3px solid #E2B4BDFF;
+  border: 3px solid #e2b4bd;
   background-color: transparent;
   color: white;
   border-radius: 10px;
@@ -91,9 +91,9 @@ body h1 {
 .card {
   width: 350px;
   height: 230px;
-  background-color: #FFFFFFFF;
+  background-color: white;
   position: relative;
-  border: 2px solid #E2B4BDFF;
+  border: 2px solid #e2b4bd;
   border-radius: 20px;
   transition: height 0.5s ease-in;
   margin: 1rem;
@@ -109,7 +109,7 @@ body h1 {
   border-radius: 20px;
   overflow: hidden;
   transition: 0.8s;
-  box-shadow: 0px 0px 10px 2px #E2B4BDFF;
+  box-shadow: 0px 0px 10px 2px #e2b4bd;
 }
 .card .imgBox img {
   position: absolute;
@@ -146,7 +146,7 @@ body h1 {
   font: italic 300 1rem Glory;
 }
 .card .info_container .info span:nth-child(2) {
-  color: #E2B4BDFF;
+  color: #e2b4bd;
 }
 .card:hover {
   height: 450px;
@@ -188,6 +188,11 @@ body h1 {
 .habilities h2 {
   grid-column: 1/-1;
   margin: 0.4rem;
+}
+.habilities p {
+  color: black;
+  border: 1px dotted #424b54;
+  padding: 0.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
