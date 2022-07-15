@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf5d3c8d-4e16-4c1f-a384-3dc88e1d4157" name="Changes" comment="Fetch Ajax">
-      <change afterPath="$PROJECT_DIR$/AJAX/ball-triangle.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../NodeJs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NodeJs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AJAX/Axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/Axios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AJAX/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AJAX/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/AJAX/style.scss" afterDir="false" />
-    </list>
+    <list default="true" id="cf5d3c8d-4e16-4c1f-a384-3dc88e1d4157" name="Changes" comment="Perspectives" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
