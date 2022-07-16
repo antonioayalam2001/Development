@@ -5,12 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="REST FULL Completo">
-      <change afterPath="$PROJECT_DIR$/../FreeCodeCamp/SpinalTapCase.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FreeCodeCamp/WhereforeArtThou.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/10socketIO/00Contador/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10socketIO/00Contador/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10socketIO/00Contador/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10socketIO/00Contador/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10socketIO/00Contador/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10socketIO/01Chat/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10socketIO/01Chat/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10socketIO/01Chat/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10socketIO/01Chat/public/chat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10socketIO/01Chat/public/chat.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10socketIO/01Chat/public/chat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10socketIO/01Chat/public/chat.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10socketIO/01Chat/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10socketIO/02ChatPropio/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10socketIO/02ChatPropio/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10socketIO/02ChatPropio/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10socketIO/02ChatPropio/public/chat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10socketIO/02ChatPropio/public/chat.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10socketIO/02ChatPropio/public/chat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10socketIO/02ChatPropio/public/chat.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10socketIO/02ChatPropio/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../elementos_css_html/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../elementos_css_html/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00ModulosCore/10-httpFileStatic.js" beforeDir="false" afterPath="$PROJECT_DIR$/00ModulosCore/10-httpFileStatic.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,11 +38,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Sass File" />
-        <option value="SCSS File" />
         <option value="Pug File" />
         <option value="package.json" />
-        <option value="HTML File" />
+        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -49,76 +66,74 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.13.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.44&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/tonya/Desktop/ProgrammingLanguages/FreeCodeCamp&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "16.13.0",
+    "javascript.nodejs.core.library.typings.version": "16.11.44",
+    "last_opened_file_path": "C:/Users/tonya/Desktop/ProgrammingLanguages/NodeJs/10socketIO/00Contador",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\10socketIO\00Contador" />
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\09ApiMongoREST\controller" />
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\09ApiMongoREST\models" />
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\09ApiMongoREST\views" />
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\09ApiMongoREST" />
-      <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\09ApiMongoREST\public" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\10socketIO" />
       <recent name="$PROJECT_DIR$/07ApiMySQL/views/templates" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/05TemplateEngines/views/firstPage" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.movie-connection.js (1)">
+  <component name="RunManager" selected="Node.js.app.js">
+    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NodeJs/10socketIO/01Chat/public/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="10-httpFileStatic.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/00ModulosCore/10-httpFileStatic.js" working-dir="$PROJECT_DIR$/00ModulosCore">
+      <method v="2" />
+    </configuration>
     <configuration name="Unnamed" type="NodeJSConfigurationType" nameIsGenerated="true" working-dir="$PROJECT_DIR$/05TemplateEngines">
       <method v="2" />
     </configuration>
-    <configuration name="functions.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/functions.js" working-dir="$PROJECT_DIR$">
+    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/10socketIO/01Chat/app.js" working-dir="$PROJECT_DIR$/10socketIO/01Chat">
       <method v="2" />
     </configuration>
-    <configuration name="movie-connection.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/08ApiMySQLREST/models/movie-connection.js" working-dir="$PROJECT_DIR$/08ApiMySQLREST/models">
+    <configuration name="chat.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/10socketIO/01Chat/public/chat.js" working-dir="$PROJECT_DIR$/10socketIO/01Chat/public">
       <method v="2" />
     </configuration>
-    <configuration name="movie-connection.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/09ApiMongoREST/models/movie-connection.js" working-dir="$PROJECT_DIR$/09ApiMongoREST/models">
-      <method v="2" />
-    </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/HerokuDeploy/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/10socketIO/00Contador/index.js" working-dir="$PROJECT_DIR$/10socketIO/00Contador">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.movie-connection.js (1)" />
-        <item itemvalue="Node.js.movie-connection.js" />
-        <item itemvalue="Node.js.functions.js" />
-        <item itemvalue="npm.start" />
+        <item itemvalue="Node.js.app.js" />
+        <item itemvalue="JavaScript Debug.index.html (1)" />
+        <item itemvalue="Node.js.chat.js" />
+        <item itemvalue="Node.js.index.js" />
+        <item itemvalue="Node.js.10-httpFileStatic.js" />
       </list>
     </recent_temporary>
   </component>
@@ -148,6 +163,8 @@
       <workItem from="1657721360373" duration="2183000" />
       <workItem from="1657818823923" duration="191000" />
       <workItem from="1657820031965" duration="18000" />
+      <workItem from="1657901135645" duration="14954000" />
+      <workItem from="1657923324907" duration="6764000" />
     </task>
     <task id="LOCAL-00001" summary="Cambio">
       <created>1656521549483</created>
