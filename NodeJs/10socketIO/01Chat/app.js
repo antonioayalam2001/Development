@@ -17,28 +17,81 @@ app
 http.listen(port, () => {
     console.log('Iniciando Express y Socket.IO en localhost:%d', port)
 })
+// usernames which are currently connected to the chat
+var usernames = {};
+var numUsers = 0;
 
-io.on('connection', (socket) => {
-    user++
-    socket.broadcast.emit('new user', {message : 'Ha entrado un usuario al Chat',username : `username ${user}`})
+io.on('connection', function (socket) {
+    var addedUser = false;
 
-    socket.on('new message', (message) => {
-        console.log(message)
-        io.emit('user says', {message : message,username : `username ${user}`})
-    })
+    // when the client emits 'new message', this listens and executes
+    socket.on('new message', function (data) {
+        // we tell the client to execute 'new message'
+        socket.broadcast.emit('new message', {
+            username: socket.username,
+            message: data
+        });
+    });
 
-    socket.on('disconnect', () => {
-        let data = {
-            message : 'Ha salido un usuario del Chat',
-            username : socket.username
+    ////////////////////INICIO////////////////////
+    socket.on('exists user', function (username, cb){
+        if( usernames.hasOwnProperty(username) )
+        {
+            console.log('User already exists!');
+            cb(false);
         }
-        console.log('Ha salido un usuario del Chat')
-        user--
-        socket.broadcast.emit('bye bye user', data)
-    })
+        else
+        {
+            console.log('User don\'t exist!');
+            cb(true);
+        }
+    });
+    ///////////////////  FIN  ///////////////////
 
-    socket.on('writting',()=>{
-        socket.broadcast.emit('escribiendo',{message : 'Un usuario esta escribiendo'})
-    })
+    // when the client emits 'add user', this listens and executes
+    socket.on('add user', function (username) {
+        // we store the username in the socket session for this client
+        socket.username = username;
+        // add the client's username to the global list
+        usernames[username] = username;
+        ++numUsers;
+        addedUser = true;
+        socket.emit('login', {
+            numUsers: numUsers
+        });
+        // echo globally (all clients) that a person has connected
+        socket.broadcast.emit('user joined', {
+            username: socket.username,
+            numUsers: numUsers
+        });
+    });
 
-})
+    // when the client emits 'typing', we broadcast it to others
+    socket.on('typing', function () {
+        socket.broadcast.emit('typing', {
+            username: socket.username
+        });
+    });
+
+    // when the client emits 'stop typing', we broadcast it to others
+    socket.on('stop typing', function () {
+        socket.broadcast.emit('stop typing', {
+            username: socket.username
+        });
+    });
+
+    // when the user disconnects.. perform this
+    socket.on('disconnect', function () {
+        // remove the username from global usernames list
+        if (addedUser) {
+            delete usernames[socket.username];
+            --numUsers;
+
+            // echo globally that this client has left
+            socket.broadcast.emit('user left', {
+                username: socket.username,
+                numUsers: numUsers
+            });
+        }
+    });
+});
