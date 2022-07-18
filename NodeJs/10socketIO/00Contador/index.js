@@ -16,7 +16,7 @@ let http = require('http').createServer(server),
 
 function server (req,res) {
     try{
-        const data = fs.readFileSync('index.html')
+        const data = fs.readFileSync('server.html')
         res.writeHead(200, { 'Content-Type': 'text/html' });
         res.end(data,'utf-8')
     }catch(error){

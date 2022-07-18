@@ -3,7 +3,7 @@
 let http = require("http");
 let fs = require("fs");
 let index;
-index = fs.createReadStream('/Users/tonyayala/Library/CloudStorage/OneDrive-Personal/Universidad/NodeJs/00ModulosCore/assets/index.html'); 
+index = fs.createReadStream('/Users/tonyayala/Library/CloudStorage/OneDrive-Personal/Universidad/NodeJs/00ModulosCore/assets/server.html');
 http
   .createServer(function (request, response) {
     response.writeHead(200, { "Content-Type": "text/html" });

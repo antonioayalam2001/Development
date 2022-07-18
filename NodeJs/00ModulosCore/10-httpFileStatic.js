@@ -3,10 +3,10 @@ let http = require('http');
 let fs = require("fs");
 let index;
 index = fs.createReadStream(
-  "./assets/index.html"
+  "./assets/server.html"
 );  
 let urlFile =
-  "./assets/index.html";
+  "./assets/server.html";
 
 
 http.createServer((req, res) => {

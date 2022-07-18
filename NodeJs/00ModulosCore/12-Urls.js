@@ -12,7 +12,7 @@ const URL = [
     id: 1,
     route: "",
     output:
-      "./assets/index.html",
+      "./assets/server.html",
   },
   {
     id: 2,

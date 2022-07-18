@@ -2,8 +2,8 @@
 let http = require("http");
 let fs = require("fs");
 let index;
-index = fs.createReadStream("./assets/index.html");
-let urlFile = "./assets/index.html";
+index = fs.createReadStream("./assets/server.html");
+let urlFile = "./assets/server.html";
 
 http
   .createServer((req, res) => {

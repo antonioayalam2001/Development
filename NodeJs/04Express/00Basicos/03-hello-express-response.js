@@ -4,7 +4,7 @@ const app = express();
 const port = 3000;
 app
    .get('/', (req, res) => { 
-      res.sendFile((__dirname + '/assets/index.html'));
+      res.sendFile((__dirname + '/assets/server.html'));
       console.log(__dirname);
    })
    .get('/home', (req, res) => { 
@@ -30,7 +30,7 @@ app
    // La vista no tiene nada que ver con la ruta
    .get('/render', (req, res) => { 
       // Renderizar la vista que estamos especificando, pero debe ser configurada previavemnte con las opciones correspondientes
-      res.render('assets/index.html')
+      res.render('assets/server.html')
    })
    .listen(port)
 
