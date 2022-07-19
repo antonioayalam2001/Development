@@ -15,6 +15,10 @@ app
    .get("/", (req, res) => {
       console.log(req.session);
       console.log(req.secret);
+      let string = 'mySecret'
+       if (string == req.secret){
+           console.log('Mismo')
+       }
       req.session.visitas || (req.session.visitas = 0);
       req.session.inicio || (req.session.inicio = 0);
       let n = req.session.visitas++ || 0;

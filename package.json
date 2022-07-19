@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/antonioayalam2001/Universidad#readme",
   "dependencies": {
+    "express": "^4.18.1",
     "nodemon": "^2.0.16",
+    "socket.io": "^4.5.1",
+    "supervisor": "^0.12.0",
     "sweetalert2": "^11.4.22",
     "vite": "^2.9.6"
   }
