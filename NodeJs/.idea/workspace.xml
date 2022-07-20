@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="REST FULL Completo">
-      <change afterPath="$PROJECT_DIR$/DrawApp/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DrawApp/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DrawApp/src/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DrawApp/src/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DrawApp/src/public/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DrawApp/src/public/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DrawApp/src/public/style.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DrawApp/src/public/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DrawApp/src/socket.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_11_2022_12_05_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_11_2022_12_05_PM__Changes_.xml" beforeDir="false" />
+    <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="App de Sreamig">
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento/Promises.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento/asyncAwait.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento/const-var-let.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento/const-var-let.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +55,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.13.0",
+    "javascript.nodejs.core.library.configured.version": "16.14.2",
     "javascript.nodejs.core.library.typings.version": "16.11.45",
     "last_opened_file_path": "C:/Users/tonya/Desktop/ProgrammingLanguages/NodeJs/FernandoHerrera",
     "list.type.of.created.stylesheet": "SCSS",
@@ -99,11 +90,11 @@
       <recent name="$PROJECT_DIR$/05TemplateEngines/views/firstPage" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.const-var-let.js">
-    <configuration name="Unnamed" type="NodeJSConfigurationType" nameIsGenerated="true" working-dir="$PROJECT_DIR$/05TemplateEngines">
+  <component name="RunManager" selected="Node.js.asyncAwait.js">
+    <configuration name="Promises.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento/Promises.js" working-dir="$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento">
       <method v="2" />
     </configuration>
-    <configuration name="app-non-blocking.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/FernandoHerrera/node-blocking-vs-non-blocking/app-non-blocking.js" working-dir="$PROJECT_DIR$/FernandoHerrera/node-blocking-vs-non-blocking">
+    <configuration name="Unnamed" type="NodeJSConfigurationType" nameIsGenerated="true" working-dir="$PROJECT_DIR$/05TemplateEngines">
       <method v="2" />
     </configuration>
     <configuration name="app1.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/FernandoHerrera/01-Hola-Mundo/app1.js" working-dir="$PROJECT_DIR$/FernandoHerrera/01-Hola-Mundo">
@@ -112,7 +103,7 @@
     <configuration name="app2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/FernandoHerrera/01-Hola-Mundo/app2.js" working-dir="$PROJECT_DIR$/FernandoHerrera/01-Hola-Mundo">
       <method v="2" />
     </configuration>
-    <configuration name="app.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/FernandoHerrera/01-Hola-Mundo/app.js" working-dir="$PROJECT_DIR$/FernandoHerrera/01-Hola-Mundo">
+    <configuration name="asyncAwait.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento/asyncAwait.js" working-dir="$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento">
       <method v="2" />
     </configuration>
     <configuration name="const-var-let.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento/const-var-let.js" working-dir="$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento">
@@ -120,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.asyncAwait.js" />
+        <item itemvalue="Node.js.Promises.js" />
         <item itemvalue="Node.js.const-var-let.js" />
         <item itemvalue="Node.js.app2.js" />
         <item itemvalue="Node.js.app1.js" />
-        <item itemvalue="Node.js.app.js (1)" />
-        <item itemvalue="Node.js.app-non-blocking.js" />
       </list>
     </recent_temporary>
   </component>
@@ -159,6 +150,7 @@
       <workItem from="1657995399098" duration="7937000" />
       <workItem from="1658153530052" duration="1795000" />
       <workItem from="1658162556686" duration="16587000" />
+      <workItem from="1658325666654" duration="2691000" />
     </task>
     <task id="LOCAL-00001" summary="Cambio">
       <created>1656521549483</created>
@@ -216,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657943236193</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="App de Sreamig">
+      <created>1658253863234</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1658253863234</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +242,8 @@
     <MESSAGE value="Funciones completadas" />
     <MESSAGE value="Loader" />
     <MESSAGE value="REST FULL Completo" />
-    <option name="LAST_COMMIT_MESSAGE" value="REST FULL Completo" />
+    <MESSAGE value="App de Sreamig" />
+    <option name="LAST_COMMIT_MESSAGE" value="App de Sreamig" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
