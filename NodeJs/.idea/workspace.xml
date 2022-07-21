@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="Nuevo Curso">
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento/Desestructuracion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento/arrowFunction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento/callback.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento/callbackHell.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/04-BasesDeNode/Temas.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/04-BasesDeNode/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/04-BasesDeNode/config/yargs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/04-BasesDeNode/modules/multiplicador.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/04-BasesDeNode/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/04-BasesDeNode/package.json" afterDir="false" />
+    <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="Curso">
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/Temas.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/helpers/messages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_07_22_9_02__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_07_22_9_02__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DrawApp/src/public/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/DrawApp/src/public/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +57,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.13.0",
+    "javascript.nodejs.core.library.configured.version": "16.14.2",
     "javascript.nodejs.core.library.typings.version": "16.11.45",
     "last_opened_file_path": "C:/Users/tonya/Desktop/ProgrammingLanguages/NodeJs/FernandoHerrera",
     "list.type.of.created.stylesheet": "SCSS",
@@ -74,7 +66,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Font",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   },
@@ -100,14 +92,14 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.app.js">
+  <component name="RunManager" selected="Node.js.app.js (1)">
     <configuration name="Promises.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento/Promises.js" working-dir="$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento">
       <method v="2" />
     </configuration>
     <configuration name="Unnamed" type="NodeJSConfigurationType" nameIsGenerated="true" working-dir="$PROJECT_DIR$/05TemplateEngines">
       <method v="2" />
     </configuration>
-    <configuration name="app2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/FernandoHerrera/01-Hola-Mundo/app2.js" working-dir="$PROJECT_DIR$/FernandoHerrera/01-Hola-Mundo">
+    <configuration name="app.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/app.js" working-dir="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal">
       <method v="2" />
     </configuration>
     <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/FernandoHerrera/04-BasesDeNode/app.js" working-dir="$PROJECT_DIR$/FernandoHerrera/04-BasesDeNode">
@@ -116,16 +108,16 @@
     <configuration name="asyncAwait.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento/asyncAwait.js" working-dir="$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento">
       <method v="2" />
     </configuration>
-    <configuration name="const-var-let.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento/const-var-let.js" working-dir="$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento">
+    <configuration name="messages.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/helpers/messages.js" working-dir="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/helpers">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.app.js (1)" />
+        <item itemvalue="Node.js.messages.js" />
         <item itemvalue="Node.js.app.js" />
         <item itemvalue="Node.js.asyncAwait.js" />
         <item itemvalue="Node.js.Promises.js" />
-        <item itemvalue="Node.js.const-var-let.js" />
-        <item itemvalue="Node.js.app2.js" />
       </list>
     </recent_temporary>
   </component>
@@ -163,6 +155,9 @@
       <workItem from="1658325666654" duration="2691000" />
       <workItem from="1658339683536" duration="155000" />
       <workItem from="1658339850025" duration="8798000" />
+      <workItem from="1658412214290" duration="73000" />
+      <workItem from="1658412294359" duration="696000" />
+      <workItem from="1658413015567" duration="959000" />
     </task>
     <task id="LOCAL-00001" summary="Cambio">
       <created>1656521549483</created>
