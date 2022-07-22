@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="Curso">
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/Temas.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/helpers/messages.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/db/tareas.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/db/tareas.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/helpers/inquirer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/helpers/saveFile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/models/tarea.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/models/tareas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_07_22_9_02__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_07_22_9_02__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/helpers/messages.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/helpers/messages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,33 +55,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.14.2",
-    "javascript.nodejs.core.library.typings.version": "16.11.45",
-    "last_opened_file_path": "C:/Users/tonya/Desktop/ProgrammingLanguages/NodeJs/FernandoHerrera",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.14.2&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.45&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tonya/Desktop/ProgrammingLanguages/NodeJs/FernandoHerrera&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera" />
@@ -93,9 +99,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Node.js.app.js (1)">
-    <configuration name="Promises.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento/Promises.js" working-dir="$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento">
-      <method v="2" />
-    </configuration>
     <configuration name="Unnamed" type="NodeJSConfigurationType" nameIsGenerated="true" working-dir="$PROJECT_DIR$/05TemplateEngines">
       <method v="2" />
     </configuration>
@@ -111,13 +114,16 @@
     <configuration name="messages.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/helpers/messages.js" working-dir="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/helpers">
       <method v="2" />
     </configuration>
+    <configuration name="tareas.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/models/tareas.js" working-dir="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/models">
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.app.js (1)" />
+        <item itemvalue="Node.js.tareas.js" />
         <item itemvalue="Node.js.messages.js" />
         <item itemvalue="Node.js.app.js" />
         <item itemvalue="Node.js.asyncAwait.js" />
-        <item itemvalue="Node.js.Promises.js" />
       </list>
     </recent_temporary>
   </component>
