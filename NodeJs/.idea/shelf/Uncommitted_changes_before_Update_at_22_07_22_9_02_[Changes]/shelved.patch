@@ -1,0 +1,119 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"8af48f9c-9ce4-42c6-8e51-1c152357d5a4\" name=\"Changes\" comment=\"Curso\">\n      <change afterPath=\"$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/Temas.md\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/app.js\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/helpers/messages.js\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/package.json\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/dataSources.local.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/dataSources.local.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Sass File\" />\n        <option value=\"Pug File\" />\n        <option value=\"package.json\" />\n        <option value=\"HTML File\" />\n        <option value=\"SCSS File\" />\n        <option value=\"JavaScript File\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"PREVIOUS_COMMIT_AUTHORS\">\n      <list>\n        <option value=\"antonioayalam2001 &lt;antonioayalam2001@gmail.com&gt;\" />\n      </list>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/..\" />\n    <option name=\"ROOT_SYNC\" value=\"SYNC\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2BA8l00BfYCPnmkTwMSbk4DMWzu\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"ASKED_ADD_EXTERNAL_FILES\": \"true\",\n    \"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\n    \"DefaultHtmlFileTemplate\": \"HTML File\",\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"WebServerToolWindowFactoryState\": \"false\",\n    \"javascript.nodejs.core.library.configured.version\": \"16.14.2\",\n    \"javascript.nodejs.core.library.typings.version\": \"16.11.45\",\n    \"last_opened_file_path\": \"C:/Users/tonya/Desktop/ProgrammingLanguages/NodeJs/FernandoHerrera\",\n    \"list.type.of.created.stylesheet\": \"SCSS\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"settings.editor.selected.configurable\": \"preferences.keymap\",\n    \"ts.external.directory.path\": \"C:\\\\Program Files\\\\JetBrains\\\\WebStorm 2022.1.2\\\\plugins\\\\JavaScriptLanguage\\\\jsLanguageServicesImpl\\\\external\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  },\n  \"keyToStringList\": {\n    \"DatabaseDriversLRU\": [\n      \"mysql\"\n    ]\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\tonya\\Desktop\\ProgrammingLanguages\\NodeJs\\FernandoHerrera\" />\n      <recent name=\"C:\\Users\\tonya\\Desktop\\ProgrammingLanguages\\NodeJs\\10socketIO\\03Streaming\" />\n      <recent name=\"C:\\Users\\tonya\\Desktop\\ProgrammingLanguages\\NodeJs\\10socketIO\\00Contador\" />\n      <recent name=\"C:\\Users\\tonya\\Desktop\\ProgrammingLanguages\\NodeJs\\09ApiMongoREST\\controller\" />\n      <recent name=\"C:\\Users\\tonya\\Desktop\\ProgrammingLanguages\\NodeJs\\09ApiMongoREST\\models\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\tonya\\Desktop\\ProgrammingLanguages\\NodeJs\\FernandoHerrera\" />\n      <recent name=\"$PROJECT_DIR$/DrawApp/src\" />\n      <recent name=\"C:\\Users\\tonya\\Desktop\\ProgrammingLanguages\\NodeJs\\10socketIO\" />\n      <recent name=\"$PROJECT_DIR$/07ApiMySQL/views/templates\" />\n      <recent name=\"$PROJECT_DIR$\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Node.js.app.js (1)\">\n    <configuration name=\"Promises.js\" type=\"NodeJSConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\" path-to-js-file=\"$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento/Promises.js\" working-dir=\"$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento\">\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"Unnamed\" type=\"NodeJSConfigurationType\" nameIsGenerated=\"true\" working-dir=\"$PROJECT_DIR$/05TemplateEngines\">\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"app.js (1)\" type=\"NodeJSConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\" path-to-js-file=\"$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/app.js\" working-dir=\"$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal\">\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"app.js\" type=\"NodeJSConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\" path-to-js-file=\"$PROJECT_DIR$/FernandoHerrera/04-BasesDeNode/app.js\" working-dir=\"$PROJECT_DIR$/FernandoHerrera/04-BasesDeNode\">\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"asyncAwait.js\" type=\"NodeJSConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\" path-to-js-file=\"$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento/asyncAwait.js\" working-dir=\"$PROJECT_DIR$/FernandoHerrera/02-Reforzamiento\">\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"messages.js\" type=\"NodeJSConfigurationType\" temporary=\"true\" nameIsGenerated=\"true\" path-to-js-file=\"$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/helpers/messages.js\" working-dir=\"$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/helpers\">\n      <method v=\"2\" />\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Node.js.app.js (1)\" />\n        <item itemvalue=\"Node.js.messages.js\" />\n        <item itemvalue=\"Node.js.app.js\" />\n        <item itemvalue=\"Node.js.asyncAwait.js\" />\n        <item itemvalue=\"Node.js.Promises.js\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"SvnConfiguration\">\n    <configuration>C:\\Users\\tonya\\AppData\\Roaming\\Subversion</configuration>\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"8af48f9c-9ce4-42c6-8e51-1c152357d5a4\" name=\"Changes\" comment=\"\" />\n      <created>1656337675984</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1656337675984</updated>\n      <workItem from=\"1656337677367\" duration=\"4201000\" />\n      <workItem from=\"1656425801611\" duration=\"2278000\" />\n      <workItem from=\"1656525268319\" duration=\"2186000\" />\n      <workItem from=\"1656612201933\" duration=\"2399000\" />\n      <workItem from=\"1656734368839\" duration=\"93000\" />\n      <workItem from=\"1656779037528\" duration=\"18359000\" />\n      <workItem from=\"1656943483218\" duration=\"6000\" />\n      <workItem from=\"1657042898450\" duration=\"3170000\" />\n      <workItem from=\"1657054532548\" duration=\"596000\" />\n      <workItem from=\"1657128999248\" duration=\"1837000\" />\n      <workItem from=\"1657559098724\" duration=\"16525000\" />\n      <workItem from=\"1657647108396\" duration=\"930000\" />\n      <workItem from=\"1657721360373\" duration=\"2183000\" />\n      <workItem from=\"1657818823923\" duration=\"191000\" />\n      <workItem from=\"1657820031965\" duration=\"18000\" />\n      <workItem from=\"1657901135645\" duration=\"14954000\" />\n      <workItem from=\"1657923324907\" duration=\"7028000\" />\n      <workItem from=\"1657995399098\" duration=\"7937000\" />\n      <workItem from=\"1658153530052\" duration=\"1795000\" />\n      <workItem from=\"1658162556686\" duration=\"16587000\" />\n      <workItem from=\"1658325666654\" duration=\"2691000\" />\n      <workItem from=\"1658339683536\" duration=\"155000\" />\n      <workItem from=\"1658339850025\" duration=\"8798000\" />\n      <workItem from=\"1658412214290\" duration=\"73000\" />\n      <workItem from=\"1658412294359\" duration=\"696000\" />\n      <workItem from=\"1658413015567\" duration=\"959000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Cambio\">\n      <created>1656521549483</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1656521549484</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Funciones completadas\">\n      <created>1656734392360</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1656734392360</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Funciones completadas\">\n      <created>1656734431822</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1656734431822</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"Funciones completadas\">\n      <created>1656734448919</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1656734448919</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"Loader\">\n      <created>1656859893267</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1656859893267</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"REST FULL Completo\">\n      <created>1656992339236</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1656992339236</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"REST FULL Completo\">\n      <created>1657596902381</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1657596902385</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"REST FULL Completo\">\n      <created>1657943236193</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1657943236193</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"App de Sreamig\">\n      <created>1658253863234</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1658253863234</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"10\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\n    <ignored-roots>\n      <path value=\"$PROJECT_DIR$/HerokuDeploy\" />\n    </ignored-roots>\n    <MESSAGE value=\"Cambio\" />\n    <MESSAGE value=\"Mas con EJS y una plantilla bien hecha con PUG\" />\n    <MESSAGE value=\"Funciones completadas\" />\n    <MESSAGE value=\"Loader\" />\n    <MESSAGE value=\"REST FULL Completo\" />\n    <MESSAGE value=\"App de Sreamig\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"App de Sreamig\" />\n  </component>\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\n    <expand />\n    <select />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision a7a8e6b542b05f2a538c2b59ac82e3cc8148fc31)
++++ b/.idea/workspace.xml	(date 1658498520119)
+@@ -4,14 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="Curso">
+-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/Temas.md" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/app.js" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/helpers/messages.js" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/package.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-    </list>
++    <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="Curso" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -49,33 +42,33 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ASKED_ADD_EXTERNAL_FILES": "true",
+-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "DefaultHtmlFileTemplate": "HTML File",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "WebServerToolWindowFactoryState": "false",
+-    "javascript.nodejs.core.library.configured.version": "16.14.2",
+-    "javascript.nodejs.core.library.typings.version": "16.11.45",
+-    "last_opened_file_path": "C:/Users/tonya/Desktop/ProgrammingLanguages/NodeJs/FernandoHerrera",
+-    "list.type.of.created.stylesheet": "SCSS",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "settings.editor.selected.configurable": "preferences.keymap",
+-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
++    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
++    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.14.2&quot;,
++    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.45&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/tonya/Desktop/ProgrammingLanguages/NodeJs/FernandoHerrera&quot;,
++    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
++    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   },
+-  "keyToStringList": {
+-    "DatabaseDriversLRU": [
+-      "mysql"
++  &quot;keyToStringList&quot;: {
++    &quot;DatabaseDriversLRU&quot;: [
++      &quot;mysql&quot;
+     ]
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera" />
+@@ -157,7 +150,7 @@
+       <workItem from="1658339850025" duration="8798000" />
+       <workItem from="1658412214290" duration="73000" />
+       <workItem from="1658412294359" duration="696000" />
+-      <workItem from="1658413015567" duration="959000" />
++      <workItem from="1658413015567" duration="1091000" />
+     </task>
+     <task id="LOCAL-00001" summary="Cambio">
+       <created>1656521549483</created>
+@@ -222,7 +215,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1658253863234</updated>
+     </task>
+-    <option name="localTasksCounter" value="10" />
++    <task id="LOCAL-00010" summary="Curso">
++      <created>1658414482096</created>
++      <option name="number" value="00010" />
++      <option name="presentableId" value="LOCAL-00010" />
++      <option name="project" value="LOCAL" />
++      <updated>1658414482096</updated>
++    </task>
++    <option name="localTasksCounter" value="11" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -250,7 +250,8 @@
+     <MESSAGE value="Loader" />
+     <MESSAGE value="REST FULL Completo" />
+     <MESSAGE value="App de Sreamig" />
+-    <option name="LAST_COMMIT_MESSAGE" value="App de Sreamig" />
++    <MESSAGE value="Curso" />
++    <option name="LAST_COMMIT_MESSAGE" value="Curso" />
+   </component>
+   <component name="XSLT-Support.FileAssociations.UIState">
+     <expand />

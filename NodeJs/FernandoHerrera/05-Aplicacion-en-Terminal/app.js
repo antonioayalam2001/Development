@@ -1,7 +1,7 @@
 'use strict'
 const colors = require('colors')
 // const {showMenu, pause} = require("./helpers/messages");
-const {inquirerMenu, pause, leerInput} = require("./helpers/inquirer");
+const {inquirerMenu, pause, leerInput, listadoTareasBorrar} = require("./helpers/inquirer");
 const Tareas = require("./models/tareas");
 const {saveDB, readDB} = require("./helpers/saveFile")
 
@@ -27,12 +27,17 @@ const main = async () => {
                         tareas.listadoCompleto()
                         break;
                   case '3' :
+                        tareas.listarPendientesCompletadas()
                         break;
                   case '4' :
+                        tareas.listarPendientesCompletadas(false)
                         break;
                   case '5' :
                         break;
                   case '6' :
+                        const id = await listadoTareasBorrar(tareas.listadoArr)
+
+                        tareas.borrarTarea(id)
                         break;
             }
 

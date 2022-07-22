@@ -59,8 +59,18 @@ class Tareas {
                   const indice = `${index+1}`.green
                   const {description , completed } = tarea
                   const estado = (completed!=null) ? 'Completado'.green.bold : 'Incompleto'.red.bold
-                  console.log(`${indice}\t\t${description} :: ${estado}`)
+                  if (completadas){
+                        if (completed)  console.log(`${indice}\t\t${description} :: ${estado}`)
+                  }else{
+                        if (!completed)
+                        console.log(`${indice}\t\t${description} :: ${estado}`)
+                  }
             })
+      }
+
+      borrarTarea(id = ''){
+            if (this._list[id])
+                  delete this._list[id]
       }
 
 
