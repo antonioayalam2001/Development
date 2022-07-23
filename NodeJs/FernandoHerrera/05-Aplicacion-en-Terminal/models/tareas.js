@@ -10,8 +10,6 @@ _list
 
 */
 const Tarea = require('./tarea')
-
-
 class Tareas {
       _list = {}
       get listadoArr () {
@@ -46,7 +44,7 @@ class Tareas {
                   const indice = `${index+1}`.green
                   const {description , completed } = tarea
                   const estado = (completed!=null) ? 'Completado'.green.bold : 'Incompleto'.red.bold
-                  console.log(`${indice}\t\t${description} :: ${estado}`)
+                  console.log(`${indice}  ${description} :: ${estado}`)
             })
       }
 
@@ -60,10 +58,10 @@ class Tareas {
                   const {description , completed } = tarea
                   const estado = (completed!=null) ? 'Completado'.green.bold : 'Incompleto'.red.bold
                   if (completadas){
-                        if (completed)  console.log(`${indice}\t\t${description} :: ${estado}`)
+                        if (completed)  console.log(`${indice}  ${description} :: ${estado} --->>Date : ${tarea.completed}`)
                   }else{
                         if (!completed)
-                        console.log(`${indice}\t\t${description} :: ${estado}`)
+                        console.log(`${indice}  ${description} :: ${estado}`)
                   }
             })
       }
@@ -71,6 +69,22 @@ class Tareas {
       borrarTarea(id = ''){
             if (this._list[id])
                   delete this._list[id]
+      }
+
+      toggleCompleted(ids = []){
+            ids.forEach(id => {
+                        const tarea = this._list[id];
+                        if (! tarea.completed){
+                              tarea.completed = new Date().toISOString().substring(0,10)
+                        }
+                })
+
+            this.listadoArr.forEach(tarea => {
+                  if (!ids.includes(tarea.id)){
+                        this._list[tarea.id].completed = null;
+                  }
+            })
+
       }
 
 

@@ -71,6 +71,16 @@ object = Object.entries(object).map(([prop,value])=>{
 
 console.log(object)
 
+export default  function suma (a,b){
+    return a+b
+}
+
+export function resta (a,b){
+    return a-b
+}
+export function division (a,b){
+    return a/b
+}
 
 
 
