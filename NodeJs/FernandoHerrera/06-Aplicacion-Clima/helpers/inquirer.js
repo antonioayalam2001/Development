@@ -63,16 +63,16 @@ const confirm = async (message) => {
       return submit
 }
 
-const listadoTareasBorrar = async (tareas = []) => {
+const listarLugares = async (lugares = []) => {
       //HACIENDO ESTE
       // {
       //       value: tarea.id
       //           name: `${'1'.green} Crear una Tarea`
       // },
-      const choices = tareas.map((tarea, index) => {
-            const {id, description} = tarea
+      const choices = lugares.map((tarea, index) => {
+            const {id, place_name} = tarea
             return {
-                  value: id, name: `${index + 1}`.green + `${description}`
+                  value: id, name: `${index + 1}`.green + `    ${place_name}`
             }
       })
       //Opcion de cancelar
@@ -80,27 +80,10 @@ const listadoTareasBorrar = async (tareas = []) => {
             value: 0, name: `Return`.red
       })
       const {id} = await inquirer.prompt([{
-            type: 'list', name: "id", message: "Elige que opcion deseeas borrar", choices: choices
+            type: 'list', name: "id", message: "Elige de que lugar deseas mas información: ", choices: choices
       }])
       return id
 }
 
-const mostrarListadoCheck = async (tareas = []) => {
-      const choices = tareas.map((tarea, index) => {
-            const {id, description, completed} = tarea
-            return {
-                  value: id, name: `${index + 1}`.green + `${description}`, checked: completed ? true : false
-            }
-      })
-      const pregunta = [{
-            type: 'checkbox',
-            name: "ids",
-            message: "Elige las opciones que desees Completar",
-            choices
-      }]
-      const {ids} = await inquirer.prompt(pregunta)
-      return ids
-}
 
-
-module.exports = {inquirerMenu, pause, leerInput, listadoTareasBorrar, confirm, mostrarListadoCheck}
+module.exports = {inquirerMenu, pause, leerInput, listarLugares, confirm}
