@@ -1,12 +1,15 @@
 //Default settings
 // const axios = require('axios').default;
 //Normal
+const fs = require('fs')
 const axios = require('axios');
+const path = require("path");
 const dotenv = require('dotenv').config()
 
 class Busquedas {
       //Limit 6
-      historial = ['Mexico', 'USA', 'Madrid'];
+      historial = ['Mexico', 'USA', 'Madrid','Canada'];
+      path = './db/dataBase.json'
 
       constructor() {
             // TODO: read DB if exists
@@ -85,6 +88,30 @@ class Busquedas {
             }
       }
 
+      agregarHistorial (place = '') {
+      //      Prevent duplicity
+            if (!this.historial.includes(place) && this.historial.length < 5) {
+                  this.historial.unshift(place);
+            }else if (this.historial.length === 5 && !this.historial.includes(place) ){
+                  this.historial.pop();
+                  this.historial.unshift(place);
+            }
+
+      //      Save on DB
+            this.saveDB()
+
+      }
+
+      saveDB () {
+            const payLoad = {
+                  historial : this.historial
+            }
+            fs.writeFileSync(this.path,JSON.stringify(payLoad))
+      }
+
+      readDB(){
+
+      }
 
 }
 
