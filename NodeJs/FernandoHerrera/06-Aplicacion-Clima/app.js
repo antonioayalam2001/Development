@@ -38,7 +38,7 @@ const main = async () => {
                         break
                   case 2:
 
-                        busquedas.historial.forEach((place,index)=>{
+                        busquedas.historyUpperCase.forEach((place,index)=>{
                               const idx = `${index+1}`.green;
                               console.log(`${idx} ${place}`);
                         })

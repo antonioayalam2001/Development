@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="Nuevo Curso">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_07_22_8_59__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_07_22_8_59__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FernandoHerrera/06-Aplicacion-Clima/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/06-Aplicacion-Clima/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FernandoHerrera/06-Aplicacion-Clima/db/dataBase.json" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/06-Aplicacion-Clima/db/dataBase.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FernandoHerrera/06-Aplicacion-Clima/models/busquedas.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/06-Aplicacion-Clima/models/busquedas.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
