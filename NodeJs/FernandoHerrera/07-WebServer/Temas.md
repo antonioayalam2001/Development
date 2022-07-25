@@ -17,8 +17,6 @@
       *     Aquello que nuestro servidor responde al cliente
       *      Lo que procesamos cuando pasamo por la request
       * */
-    
-
 
 ## Uso y configuración de Express
 ## Servir contenido estático

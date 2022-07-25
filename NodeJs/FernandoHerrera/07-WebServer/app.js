@@ -1,34 +1,23 @@
-const http = require('http')
-
-//MAS INFORMACION ACERCA DE LOS METODOS EN NOTION O EN EL DOCUMENTO DE TEMAS
-const server = http.createServer((req,res)=> {
-      // console.log(req);
-      //Accediendo a los headers
-      // console.log(req.headers);
-      //El token fue mandado mediante postman
-      let {token} = req.headers;
-      if(token){
-            res.writeHead(302, {
-                  'Location': 'http://google.com'
-            });
-            res.end();
-      }else if (!token){
-            // res.writeHead(202,{'Content-Type' : 'text/plain'})
-            // req.url === '/page2' ? res.write('Page number 2') :
-            //     res.write('Hola Mundo');
-            if (req.url === '/page-json'){
-                  const person = {
-                        name : 'Antonio,',
-                        age : 21
-                  }
-                  console.log('RESPONSE')
-                  res.writeHead(202,{'Content-Type' : 'application/json'})
-                  res.write(JSON.stringify(person))
-            }
-            //We must be specifying that we already finished
-            res.end();
-      }
+const express = require('express');
+const app = express();
+const PORT = 3000 | process.env.PORT;
+//Send static content
+//We are serving the index file
+app.use(express.static('public'))
+app
+    .get('/',(req,res)=>{
+      //    Never get executed cause this one wes ignored by the static path
+      // res.send('<h1>Hello World </h1>')
 })
-    server.listen(3000)
+    .get('/ruta2',(req,res)=>{
 
-console.log('Escuchando')
+      res.send('<h1>Route number 2 </h1>')
+})
+    .get('*',(req,res)=>{
+          // res.writeHead(404,{'Content-Type': 'text/html'});
+      res.sendFile(__dirname + '/public/404.html');
+})
+
+app.listen(PORT,()=>{
+      console.log('Listening on PORT : ' , PORT)
+})
