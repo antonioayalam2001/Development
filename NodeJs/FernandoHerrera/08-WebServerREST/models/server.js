@@ -1,9 +1,10 @@
 const express = require('express');
+const cors = require('cors');
 class Server {
-      constructor(){
+      constructor() {
             this.app = express();
             this.PORT = process.env.PORT;
-
+            this.usuariosRoutePath = '/api/users'
             //Middlewares
             //    Aquellos que se eejcutan siempre que se levanta el servidor
             this.middlewares()
@@ -11,23 +12,22 @@ class Server {
             this.routes();
       }
 
-      middlewares(){
-            this.app.use(express.static('public'))
+      middlewares() {
+            //CORS
+            this.app.use(cors());
+            //Lecture and parsing from the body
+            this.app.use(express.json())
+            //PUBLIC DIRECTORY
+            this.app.use(express.static('public'));
       }
 
-      routes(){
-            //ENDPOINT mas comunes: PUT REST POST DELETE
-            this.app.get('/api',(req,res)=>{
-                  res.status(403).json({
-                        ok : true,
-                        msg : "get API"
-                  });
-            });
+      routes() {
+            this.app.use(this.usuariosRoutePath,require('../routes/user'))
       };
 
-      start(){
-            this.app.listen(this.PORT,()=>{
-                  console.log('Listening from port numebr : ' , this.PORT);
+      start() {
+            this.app.listen(this.PORT, () => {
+                  console.log('Listening from port numebr : ', this.PORT);
             })
       }
 
