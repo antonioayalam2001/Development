@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="Nueva Seccion">
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/controllers/userController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/database/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/helpers/dbValidators.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/middleware/validate_fields.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/models/role.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/models/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/models/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/routes/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_20_2022_11_03_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_20_2022_11_03_AM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_07_22_9_02_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_07_22_9_02__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-WebServerREST/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-WebServerREST/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-WebServerREST/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-WebServerREST/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/controllers/userController.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,36 +47,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.13.0",
-    "javascript.nodejs.core.library.typings.version": "16.11.45",
-    "last_opened_file_path": "C:/Users/tonya/Desktop/ProgrammingLanguages/NodeJs/FernandoHerrera/08-ProjectAPI",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.13.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.45&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tonya/Desktop/ProgrammingLanguages/NodeJs/FernandoHerrera/08-ProjectAPI&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ],
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "JavaScript"
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JavaScript&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera\08-ProjectAPI" />

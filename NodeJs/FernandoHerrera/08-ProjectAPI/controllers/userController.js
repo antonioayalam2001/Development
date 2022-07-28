@@ -3,11 +3,16 @@ const Usuario = require('../models/user');
 const bcrypt = require('bcrypt');
 
 const usuariosGet = async(req, res) => {
-      const {limite , desde = 0 } = req.query;
-      const usuarios = await Usuario.find().limit(limite).skip(desde);
-      const usersCount =  await Usuario.find().count()
+      const {limite=5 , desde = 0 } = req.query;
+      // const usuarios = await Usuario.find({state:true}).limit(limite).skip(desde),;
+      // const usersCount =  await Usuario.countDocuments({state: true})
 
-      res.json({usuarios , usersCount, limite , desde})
+      const [users,total] = await Promise.all([
+            Usuario.find({state:true}).limit(limite).skip(desde),
+            Usuario.countDocuments({state: true})
+      ]);
+
+      res.json({total, limite , desde , users});
 }
 
 //Inserting a new User
