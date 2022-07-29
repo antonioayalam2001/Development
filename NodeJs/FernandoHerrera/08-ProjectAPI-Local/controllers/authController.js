@@ -7,6 +7,7 @@ const loginPost = async (req, res) => {
       try {
             //verificar si email existe
             const usuario = await Usuario.findOne({email});
+            console.log(usuario)
             if (!usuario) {
                   return res.status(400).json({
                         msg: "Usuario / Password incorrecto --> EMAIL",
@@ -26,6 +27,8 @@ const loginPost = async (req, res) => {
                   })
             }
             //Generar JSON Web Token
+
+
 
             res.json({
                   msg: "Login success",
