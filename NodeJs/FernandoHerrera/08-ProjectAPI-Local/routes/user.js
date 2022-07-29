@@ -1,5 +1,16 @@
+//NodeJS
 const {Router} = require('express');
 const {check, param} = require('express-validator');
+//Middlewares
+// const {validateField} = require("../middleware/validate_fields");
+// const {validateJWT} = require("../middleware/validateJWT");
+// const {validateAdminRole, tieneRol} = require("../middleware/validateRoles");
+
+
+const {validateField, validateJWT, validateAdminRole, tieneRol} = require('../middleware')
+const {isValidRole, emailExists, userExists} = require("../helpers/dbValidators");
+
+//Controller
 const {
       usuariosGet,
       usuariosPut,
@@ -7,8 +18,6 @@ const {
       usuariosPost,
       usuariosPatch
 } = require("../controllers/userController");
-const {validateField} = require("../middleware/validate_fields");
-const {isValidRole, emailExists, userExists} = require("../helpers/dbValidators");
 
 //Defining router
 const router = Router();
@@ -40,12 +49,16 @@ router.put('/:id',
 
 router.patch('/', usuariosPatch)
 
+//Recibimos el JWT por medio del header
 router.delete('/:id',
     [
+          validateJWT,
+          //Forzosamente administrador
+          // validateAdminRole,
+          tieneRol('ADMIN_ROLE', 'VENTAS_ROLE'),
           check('id', 'El ID ingresado no es valido para eliminar').isMongoId(),
           check('id').custom(userExists),
           validateField
-
     ], usuariosDelete);
 
 module.exports = router;

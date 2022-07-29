@@ -4,7 +4,7 @@
   "description": "Application of web server REST using node JS",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",

@@ -48,7 +48,8 @@ const usuarioSchema = Schema({
 //Sobreescribiendo metodo directamente del esquema
 // para que al momento de retornar nos devuelva solo las propiedades
 usuarioSchema.methods.toJSON = function (){
-      const {__v,password, ...usuario} =  this.toObject();
+      const {__v,password, _id:uid,...usuario} =  this.toObject();
+      usuario["uid"] = uid;
       return usuario
 }
 

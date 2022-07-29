@@ -6,12 +6,10 @@ const usuariosGet = async (req, res) => {
       const {limite = 5, desde = 0} = req.query;
       // const usuarios = await Usuario.find({state:true}).limit(limite).skip(desde),;
       // const usersCount =  await Usuario.countDocuments({state: true})
-
       const [users, total] = await Promise.all([
             Usuario.find({state: true}).limit(limite).skip(desde),
             Usuario.countDocuments({state: true})
       ]);
-
       res.json({total, limite, desde, users});
 }
 
@@ -57,6 +55,9 @@ const usuariosPatch = (req, res) => {
 }
 const usuariosDelete = async (req, res) => {
       const {id} = req.params;
+
+      // const uid= req.uid
+
       //Borrando usuario Físicamente poco recomendado dado que perdemos tola información de dicho usuario
       // la cual podría ser útil posteriormente
       /*    Elimina los usuarios de la base de datos devuelve la cantidad de Usuarios eliminados y falso o verdadero
@@ -67,13 +68,13 @@ const usuariosDelete = async (req, res) => {
       * Elimina al usuario, pero nos devuelve el objeto eliminado
       *  const user = await  Usuario.findByIdAndRemove(id)
       * */
-
       const usuario = await Usuario.findByIdAndUpdate(id , {$set : {state  : false}});
       // const usuario = await Usuario.findByIdAndUpdate(id , {state : false});
-
       res.status(403).json({
             msg: "delete API-Controller",
-            usuario
+            usuario,
+            usuarioAutenticado : req.user
+            // uid
       });
 }
 
