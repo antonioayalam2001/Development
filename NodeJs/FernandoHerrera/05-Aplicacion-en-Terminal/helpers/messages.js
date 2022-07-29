@@ -16,7 +16,6 @@ const showMenu = () => {
                   resolve(opt)
             })
       })
-
 }
 
 const pause = () => {
