@@ -1,11 +1,13 @@
 require('dotenv').config();
 const JWT = require('jsonwebtoken');
 const Usuario = require('../models/user');
-const cookieparser = require('cookie-parser');
 
 const validateJWT = async (req,res,next) => {
       // console.log(req.session)
-      // const token = req.cookies.token || req.headers['x-token']
+
+      //Realizando la comprobación mediante el token en la cabecera
+                  // const token = req.cookies.token || req.headers['x-token']
+      //Realizando la comprobación mediante la cookie almacenada en una session
       const token = req.session.token;
       if(!token){
             return res.status(401).json({
@@ -30,7 +32,6 @@ const validateJWT = async (req,res,next) => {
             }
             req.user = usuario;
             req.uid = uid;
-            //Agregando información a nuestra session
             next();
       }catch (e) {
             console.log(e)
@@ -38,7 +39,6 @@ const validateJWT = async (req,res,next) => {
                   msg : "Token no valido"
             })
       }
-
 
 }
 

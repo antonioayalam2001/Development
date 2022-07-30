@@ -39,7 +39,7 @@ class Server {
             this.app.use(express.json())
             //Configurando sesiones
             this.app.use(session(sessionConfig))
-
+            //Permite realizar la lecutra de las cookies
             this.app.use(cookieparser())
             //PUBLIC DIRECTORY
             this.app.use(express.static('public'));

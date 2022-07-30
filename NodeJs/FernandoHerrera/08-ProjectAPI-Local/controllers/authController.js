@@ -35,8 +35,10 @@ const loginPost = async (req, res) => {
             res.setHeader("cookie",token);
             res.cookie('token',token);
             // console.log(req.session)
+            //Agregando información a nuestra session
             req.session.token = token;
             req.session.usuario = usuario;
+
             res.json({
                   msg: "Login success",
                   usuario,
