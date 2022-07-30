@@ -1,6 +1,7 @@
 const {request: req, response: res} = require('express');
 const Usuario = require('../models/user')
 const bcrypt = require('bcrypt');
+const cookieparser = require('cookie-parser');
 const {JsonWebTokenGenerator} = require("../helpers/jsonWebTokenGenerator");
 
 const loginPost = async (req, res) => {
@@ -31,7 +32,11 @@ const loginPost = async (req, res) => {
             const token = await JsonWebTokenGenerator(usuario._id);
             // console.log(usuario)
             //Retirando el id del usuario dado que ya contamos con el en el JWT
-            res.setHeader("token",token)
+            res.setHeader("cookie",token);
+            res.cookie('token',token);
+            // console.log(req.session)
+            req.session.token = token;
+            req.session.usuario = usuario;
             res.json({
                   msg: "Login success",
                   usuario,
@@ -43,11 +48,6 @@ const loginPost = async (req, res) => {
             });
       }
 }
-
-const ruta2 = async (req, res) => {
-      console.log(res.headers)
-}
-
 
 module.exports = {
       loginPost

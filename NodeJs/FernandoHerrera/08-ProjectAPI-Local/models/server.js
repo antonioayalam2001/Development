@@ -1,5 +1,7 @@
 const express = require('express');
 const cors = require('cors');
+const cookieparser = require('cookie-parser');
+const session = require('express-session')
 const {dbConnection} = require("../database/config");
 
 class Server {
@@ -22,17 +24,30 @@ class Server {
       }
 
       middlewares() {
+            const sessionConfig = {
+                  name:"session",
+                  secret : process.env.SECRETORPUBLICKEY,
+                  cookie : {
+                        maxAge: 1000 * 60 * 60,
+                        secure: false,
+                        httpOnly : true
+                  },
+            }
             //CORS
             this.app.use(cors());
             //Lecture and parsing from the body
             this.app.use(express.json())
+            //Configurando sesiones
+            this.app.use(session(sessionConfig))
+
+            this.app.use(cookieparser())
             //PUBLIC DIRECTORY
             this.app.use(express.static('public'));
       }
 
       routes() {
-            this.app.use(this.usuariosRoutePath, require('../routes/user'))
             this.app.use(this.authPath, require('../routes/auth'))
+            this.app.use(this.usuariosRoutePath, require('../routes/user'))
       };
 
       start() {

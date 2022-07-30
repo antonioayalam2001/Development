@@ -22,7 +22,10 @@ const {
 //Defining router
 const router = Router();
 //ENDPOINT mas comunes: PUT REST POST DELETE
-router.get('/', usuariosGet);
+router.get('/', [
+    validateJWT,
+    validateField
+],usuariosGet);
 //Mandando los Middlewares necesarios
 router.post('/',
     [

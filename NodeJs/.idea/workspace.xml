@@ -5,18 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="API Local">
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/middleware/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/middleware/validateJWT.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/middleware/validateRoles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_07_22_9_02_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_07_22_9_02__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_07_22_9_03__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_29_07_22_9_03__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/controllers/authController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/controllers/userController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/database/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/database/config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/helpers/jsonWebTokenGenerator.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/helpers/jsonWebTokenGenerator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/middleware/validateJWT.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/middleware/validateJWT.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/models/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/models/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/routes/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,14 +63,14 @@
     "full.screen.before.presentation.mode": "true",
     "javascript.nodejs.core.library.configured.version": "16.13.0",
     "javascript.nodejs.core.library.typings.version": "16.11.45",
-    "last_opened_file_path": "C:/Users/tonya/Desktop/ProgrammingLanguages/NodeJs/FernandoHerrera/08-ProjectAPI-Local",
+    "last_opened_file_path": "C:/Users/tonya/Desktop/ProgrammingLanguages/NodeJs/FernandoHerrera/08-ProjectAPI",
     "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   },
@@ -89,8 +85,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera\08-ProjectAPI-Local" />
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera\08-ProjectAPI" />
+      <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera\08-ProjectAPI-Local" />
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera" />
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera\06-Aplicacion-Clima\helpers" />
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera\06-Aplicacion-Clima" />
@@ -296,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659065588373</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="API Local">
+      <created>1659126647205</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1659126647205</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
