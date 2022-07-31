@@ -5,14 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="Implementacion de Sesion">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_22_2022_1_04_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_22_2022_1_04_PM__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/.example.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/Temas.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/controllers/authController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/controllers/userController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/database/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/helpers/dbValidators.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/helpers/jsonWebTokenGenerator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/middleware/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/middleware/validateJWT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/middleware/validateRoles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/middleware/validate_fields.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/models/role.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/models/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/models/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/public/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/routes/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/routes/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/controllers/authController.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/controllers/authController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/controllers/userController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/middleware/validateJWT.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/middleware/validateJWT.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/models/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/models/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/routes/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FernandoHerrera/10-JWT/TemasSeccion.md" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/10-JWT/TemasSeccion.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FernandoHerrera/10-JWT/parse-jwt.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI-Local/10-JWT/parse-jwt.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +44,8 @@
         <option value="Pug File" />
         <option value="SCSS File" />
         <option value="package.json" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -62,7 +80,7 @@
     "full.screen.before.presentation.mode": "true",
     "javascript.nodejs.core.library.configured.version": "16.13.0",
     "javascript.nodejs.core.library.typings.version": "16.11.45",
-    "last_opened_file_path": "C:/Users/tonya/Desktop/ProgrammingLanguages/NodeJs/FernandoHerrera/08-ProjectAPI",
+    "last_opened_file_path": "C:/Users/tonya/Desktop/ProgrammingLanguages/NodeJs/FernandoHerrera/11-Google-Sign-In",
     "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -84,21 +102,24 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera\11-Google-Sign-In" />
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera\08-ProjectAPI" />
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera\08-ProjectAPI-Local" />
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera" />
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera\06-Aplicacion-Clima\helpers" />
-      <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera\06-Aplicacion-Clima" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera\08-ProjectAPI-Local" />
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera\07-WebServerDeployAngular\public" />
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera\07-WebServerDeployReact\public" />
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera\07-WebServer-Ejercicio\public" />
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera\07-WebServer-Ejercicio\public\template" />
-      <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera\06-Aplicacion-Clima" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NodeJs/FernandoHerrera/11-Google-Sign-In/public/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NodeJs/FernandoHerrera/07-WebServerDeployReact/public/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -106,9 +127,6 @@
       <method v="2" />
     </configuration>
     <configuration name="app.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/app.js" working-dir="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal">
-      <method v="2" />
-    </configuration>
-    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/FernandoHerrera/04-BasesDeNode/app.js" working-dir="$PROJECT_DIR$/FernandoHerrera/04-BasesDeNode">
       <method v="2" />
     </configuration>
     <configuration name="messages.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/helpers/messages.js" working-dir="$PROJECT_DIR$/FernandoHerrera/05-Aplicacion-en-Terminal/helpers">
@@ -119,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="Node.js.app.js (1)" />
         <item itemvalue="Node.js.tareas.js" />
         <item itemvalue="Node.js.messages.js" />
-        <item itemvalue="Node.js.app.js" />
       </list>
     </recent_temporary>
   </component>
@@ -171,7 +189,7 @@
       <workItem from="1658941415736" duration="843000" />
       <workItem from="1658942795850" duration="2356000" />
       <workItem from="1658945208458" duration="14679000" />
-      <workItem from="1659197965164" duration="3275000" />
+      <workItem from="1659197965164" duration="13174000" />
     </task>
     <task id="LOCAL-00001" summary="Cambio">
       <created>1656521549483</created>
@@ -306,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659152570811</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Implementacion de Sesion">
+      <created>1659202508098</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1659202508098</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

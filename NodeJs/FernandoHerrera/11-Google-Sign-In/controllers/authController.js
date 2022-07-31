@@ -52,15 +52,15 @@ const loginPost = async (req, res) => {
 }
 
 const googleSign =  async (req,res) => {
-      const {id_token} = req.body;
-      console.log("hola")
+      // const {id_token} = req.body;
+      // console.log(req.body)
+      // console.log(req.query)
+      // console.log(id_token)
       res.json({
-            id_token,
+            // id_token,
             msg : "Todo correcto"
       })
-
 }
-
 
 module.exports = {
       loginPost,

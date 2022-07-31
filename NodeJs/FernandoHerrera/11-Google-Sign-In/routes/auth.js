@@ -12,11 +12,11 @@ router.post('/login',
     ]
     ,loginPost);
 
-
 router.post('/google',
     [
           check('token','El ID Token es necesario'),
           validateField
     ]
     ,googleSign);
+
 module.exports = router;
