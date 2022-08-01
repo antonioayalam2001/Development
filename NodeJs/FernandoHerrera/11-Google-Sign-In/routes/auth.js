@@ -14,7 +14,7 @@ router.post('/login',
 
 router.post('/google',
     [
-          check('token','El ID Token es necesario'),
+          check('token','El ID Token es necesario').not().isEmpty(),
           validateField
     ]
     ,googleSign);
