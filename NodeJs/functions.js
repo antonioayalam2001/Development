@@ -58,33 +58,80 @@
 //
 
 let object = {
-    nombre : 'Tony',
-    Apellido : 'Mora',
-    Edad : 18
+      nombre: 'Tony',
+      Apellido: 'Mora',
+      Edad: 18
 }
 let object2
-object = Object.entries(object).map(([prop,value])=>{
-    return {
-        [prop]:typeof value === 'string' ? value.toUpperCase() : value
-    }
+object = Object.entries(object).map(([prop, value]) => {
+      return {
+            [prop]: typeof value === 'string' ? value.toUpperCase() : value
+      }
 })
 
 console.log(object)
+//
+// export default function suma(a, b) {
+//       return a + b
+// }
+//
+// export function resta(a, b) {
+//       return a - b
+// }
+//
+// export function division(a, b) {
+//       return a / b
+// }
 
-export default  function suma (a,b){
-    return a+b
+
+const validateJWT = async  () => {
+      // console.log(req.session)
+      //Realizando la comprobación mediante el token en la cabecera
+      const token = "req.session.token || req.headers['x-token']"
+      //Realizando la comprobación mediante la cookie almacenada en una session
+      // const token = req.session.token;
+      if (!token) {
+            return res.status(401).json({
+                  msg: 'No hay token en la petición :('
+            })
+      }
+      try {
+            // JWT.verify(token,process.env.SECRETORPUBLICKEY)
+            // const {uid} = JWT.decode(token, process.env.SECRETORPUBLICKEY);
+            //leer usuario que corresponde al uid
+            // const usuario = await Usuario.findOne({_id:uid});
+            const usuario = {
+                  name: "Antonio"
+            }
+            if (!usuario) {
+                  return ({
+                        msg: "El usuario no existe en la base de Datos"
+                  })
+            }
+            //Verificar si el uid no esta dado de baja state : false
+            // if (!usuario.state) {
+            //     return res.status(401).json({
+            //         msg : "El usuario no esta dado de alta"
+            //     })
+            // }
+            return "hols";
+            // req.user = usuario;
+            // req.uid = uid;
+            // next();
+      } catch (e) {
+      }
+
 }
-
-export function resta (a,b){
-    return a-b
+const getData = async()=>{
+    try{
+        return  await validateJWT()
+    }catch (e) {
+        return e
+    }
 }
-export function division (a,b){
-    return a/b
-}
-
-
-
-
+getData().then(user=>{
+    console.log(user)
+}).catch(e=> console.log(e) )
 
 
 

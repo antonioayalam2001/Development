@@ -3,6 +3,7 @@ const Usuario = require('../models/user');
 const bcrypt = require('bcrypt');
 
 const usuariosGet = async (req, res) => {
+      console.log(req.session.usuario);
       const {limite = 5, desde = 0} = req.query;
       // const usuarios = await Usuario.find({state:true}).limit(limite).skip(desde),;
       // const usersCount =  await Usuario.countDocuments({state: true})
@@ -28,7 +29,9 @@ const usuariosPost = async (req, res) => {
       // delete resultado.password
       // delete resultado.__v
       // console.log(resultado)
-      res.status(403).json({
+      //Mandando a otra página
+      // res.redirect('http://google.com')
+      res.status(200).json({
             usuario
       });
 }
@@ -54,7 +57,6 @@ const usuariosPatch = (req, res) => {
       });
 }
 const usuariosDelete = async (req, res) => {
-      console.log(req.headers)
       const {id} = req.params;
 
       //Borrando usuario Físicamente poco recomendado dado que perdemos tola información de dicho usuario
@@ -67,7 +69,8 @@ const usuariosDelete = async (req, res) => {
       * Elimina al usuario, pero nos devuelve el objeto eliminado
       *  const user = await  Usuario.findByIdAndRemove(id)
       * */
-      const usuario = await Usuario.findByIdAndUpdate(id , {$set : {state  : false}});
+      const options = {returnDocument : 'after'}
+      const usuario = await Usuario.findByIdAndUpdate(id , {$set : {state  : false}},options);
       // const usuario = await Usuario.findByIdAndUpdate(id , {state : false});
       res.status(403).json({
             msg: "delete API-Controller",

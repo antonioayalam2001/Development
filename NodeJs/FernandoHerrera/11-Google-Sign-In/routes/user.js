@@ -58,7 +58,7 @@ router.delete('/:id',
           validateJWT,
           //Forzosamente administrador
           // validateAdminRole,
-          tieneRol('ADMIN_ROLE', 'VENTAS_ROLE'),
+          tieneRol('ADMIN_ROLE', 'SALES_ROLE'),
           check('id', 'El ID ingresado no es valido para eliminar').isMongoId(),
           check('id').custom(userExists),
           validateField

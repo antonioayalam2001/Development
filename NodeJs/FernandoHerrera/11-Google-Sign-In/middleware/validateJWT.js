@@ -4,11 +4,10 @@ const Usuario = require('../models/user');
 
 const validateJWT = async (req,res,next) => {
       // console.log(req.session)
-
       //Realizando la comprobación mediante el token en la cabecera
-                  // const token = req.cookies.token || req.headers['x-token']
+      const token = req.session.token || req.headers['x-token']
       //Realizando la comprobación mediante la cookie almacenada en una session
-      const token = req.session.token;
+      // const token = req.session.token;
       if(!token){
             return res.status(401).json({
                   msg:'No hay token en la petición :('

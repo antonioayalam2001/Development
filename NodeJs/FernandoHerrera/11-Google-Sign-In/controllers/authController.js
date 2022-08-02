@@ -1,11 +1,13 @@
 const {request: req, response: res} = require('express');
 const Usuario = require('../models/user')
 const bcrypt = require('bcrypt');
-const cookieparser = require('cookie-parser');
 const {JsonWebTokenGenerator} = require("../helpers/jsonWebTokenGenerator");
 const {googleVerify} = require("../helpers/googleVerify");
+const path = require('path');
 
-
+const usuarioRegister = (req,res) =>{
+      res.sendFile(path.join(__dirname, '/../public/register.html'))
+}
 const loginPost = async (req, res) => {
       const {email, password} = req.body
       try {
@@ -35,12 +37,13 @@ const loginPost = async (req, res) => {
             // console.log(usuario)
             //Retirando el id del usuario dado que ya contamos con el en el JWT
             res.setHeader("cookie", token);
-            res.cookie('token', token);
+            //Insertando en una cookie
+            // res.cookie('token', token);
             // console.log(req.session)
             //Agregando información a nuestra session
             req.session.token = token;
             req.session.usuario = usuario;
-
+            // console.log(req.session)
             res.json({
                   msg: "Login success",
                   usuario,
@@ -54,28 +57,49 @@ const loginPost = async (req, res) => {
 }
 
 const googleSign = async (req, res) => {
-      const {token} = req.body;
+      const {token : googleToken} = req.body;
       //Recuperando información del token
       try {
-            const {nombre,img,email} = await googleVerify(token);
-            console.log(googleUser);
+            const {nombre, img, email} = await googleVerify(googleToken);
+            // console.log(googleUser);
             let usuario = await Usuario.findOne({email});
-            if (!usuario){
+            if (!usuario) {
                   const data = {
                         nombre,
                         email,
-                        password : 'noImportaria',
+                        password: 'noImportaria',
                         img,
-                        google : true
+                        google: true,
                   }
-                  usuario = new Usuario(data)
-                  await usuario.save()
-            }else{
-            //      Realizar actualización de los campos correspondientes a los de Google
+                  usuario = new Usuario(data);
+                  await usuario.save();
+            } else {
+                  console.log(`USUARIO ENCONTRADO EN LA BASE DE DATOS ACTUALIZANDO INFORMACIÓN : con los datos 
+                        ${nombre}
+                        ${img}
+                        ${email}
+                  `)
+                  if (!usuario.state){
+                        //401 -> No autorizado
+                        return res.status(401).json({
+                              msg : 'Hable con el administrador para hacer revisión de su estado en la aplicación'
+                        })
+                  }
+                  usuario = await Usuario.findOneAndUpdate({email}, {nombre, img, email, google: false});
+                  console.log('Usuario actualizado')
+                  console.log(usuario)
             }
+
+            const token = await JsonWebTokenGenerator(usuario._id);
+            // console.log(token)
+            // console.log(usuario)
+            req.session.token = token;
+            req.session.usuario = usuario;
+
             res.json({
+                  msg: "Todo correcto, Google Sign in complete",
                   token,
-                  msg: "Todo correcto, Google Sign in complete"
+                  user : usuario
             })
 
       } catch (e) {
@@ -85,7 +109,32 @@ const googleSign = async (req, res) => {
       }
 }
 
+const logOut = (req,res) => {
+      if (!req.session.usuario) {
+            return res.json({
+                  msg: "Lo siento tienes que ingresar primero"
+            })
+      }
+      req.session.usuario = null
+      req.session.save(function (err) {
+            if (err) console.log(err)
+            // regenerate the session, which is good practice to help
+            // guard against forms of session fixation
+            req.session.regenerate(function (err) {
+                  res.redirect('http://localhost:3000')
+            })
+      })
+      // res.json({
+      //       msg: "Exito",
+      // })
+      // res.session.destroy(err=>{
+      //       console.log(err)})
+      // res.redirect("http://localhost:3000");
+}
+
 module.exports = {
       loginPost,
-      googleSign
+      googleSign,
+      usuarioRegister,
+      logOut
 }

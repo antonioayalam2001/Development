@@ -8,7 +8,7 @@ const JsonWebTokenGenerator = (uid = '') => {
             const payload = {uid}
             //process.env.SECRETORPUBLICKEY -> Llave que utilizamos para poder firmar y corroborar que somos nosotros
             JWT.sign(payload, process.env.SECRETORPUBLICKEY, {
-                  expiresIn: 10
+                  expiresIn: 12000
             }, (error, token) => {
                   if (error) {
                         console.log(error);

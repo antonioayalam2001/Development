@@ -3,9 +3,7 @@ const cors = require('cors');
 const cookieparser = require('cookie-parser');
 const session = require('express-session')
 const bodyparser = require('body-parser')
-
 const {dbConnection} = require("../database/config");
-const {body} = require("express-validator");
 
 class Server {
       constructor() {
@@ -13,6 +11,7 @@ class Server {
             this.PORT = process.env.PORT;
             this.usuariosRoutePath = '/api/users'
             this.authPath = '/api/auth'
+            this.categoryPath = '/api/categories'
             //DB connection
             this.dbConnection()
             //Middlewares
@@ -55,6 +54,7 @@ class Server {
       routes() {
             this.app.use(this.authPath, require('../routes/auth'))
             this.app.use(this.usuariosRoutePath, require('../routes/user'))
+            this.app.use(this.categoryPath, require('../routes/categories'))
       };
 
       start() {
@@ -62,7 +62,6 @@ class Server {
                   console.log('Listening from port number : ', this.PORT);
             })
       }
-
-};
+}
 
 module.exports = Server;
