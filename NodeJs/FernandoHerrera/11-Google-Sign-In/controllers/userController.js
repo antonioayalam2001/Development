@@ -76,7 +76,6 @@ const usuariosDelete = async (req, res) => {
             msg: "delete API-Controller",
             usuario,
             usuarioAutenticado : req.user
-            // uid
       });
 }
 

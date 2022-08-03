@@ -4,6 +4,7 @@ const validateAdminRole = (req, res, next) => {
                   msg: "Se quiere  verificar el rol sin validar el token primero"
             })
       }
+
       const {role, nombre} = req.user;
 
       if (role !== 'ADMIN_ROLE') {

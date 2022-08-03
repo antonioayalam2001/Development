@@ -1,6 +1,6 @@
 require('dotenv').config();
 const JWT = require('jsonwebtoken');
-const Usuario = require('../models/user');
+const {Usuario} = require('../models/');
 
 const validateJWT = async (req,res,next) => {
       // console.log(req.session)

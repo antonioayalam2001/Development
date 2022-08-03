@@ -6,7 +6,6 @@ const {check, param} = require('express-validator');
 // const {validateJWT} = require("../middleware/validateJWT");
 // const {validateAdminRole, tieneRol} = require("../middleware/validateRoles");
 
-
 const {validateField, validateJWT, validateAdminRole, tieneRol} = require('../middleware')
 const {isValidRole, emailExists, userExists} = require("../helpers/dbValidators");
 
