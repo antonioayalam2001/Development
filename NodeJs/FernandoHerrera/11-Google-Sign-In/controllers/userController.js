@@ -58,7 +58,6 @@ const usuariosPatch = (req, res) => {
 }
 const usuariosDelete = async (req, res) => {
       const {id} = req.params;
-
       //Borrando usuario Físicamente poco recomendado dado que perdemos tola información de dicho usuario
       // la cual podría ser útil posteriormente
       /*    Elimina los usuarios de la base de datos devuelve la cantidad de Usuarios eliminados y falso o verdadero
