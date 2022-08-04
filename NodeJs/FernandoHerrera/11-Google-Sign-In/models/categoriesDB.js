@@ -22,7 +22,7 @@ const categorySchema = Schema({
 })
 
 categorySchema.methods.toJSON = function () {
-      const {_id,__v, ...category} = this.toObject();
+      const {_id,__v, state ,...category} = this.toObject();
       return category;
 }
 

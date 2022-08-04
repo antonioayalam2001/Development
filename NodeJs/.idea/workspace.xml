@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="Implementacion de Sesion">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_22_9_02_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_07_22_9_02__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/controllers/categoriesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/controllers/categoriesController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/controllers/userController.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/controllers/userController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/middleware/validateJWT.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/middleware/validateJWT.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/middleware/validateRoles.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/middleware/validateRoles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/models/categoriesDB.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/models/categoriesDB.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/routes/categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/11-Google-Sign-In/routes/categories.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +172,7 @@
       <workItem from="1659369563990" duration="23834000" />
       <workItem from="1659459190153" duration="2182000" />
       <workItem from="1659493403929" duration="4046000" />
-      <workItem from="1659546556067" duration="13438000" />
+      <workItem from="1659546556067" duration="14598000" />
     </task>
     <task id="LOCAL-00001" summary="Cambio">
       <created>1656521549483</created>
@@ -349,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659498116082</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Implementacion de Sesion">
+      <created>1659584186990</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1659584186990</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
