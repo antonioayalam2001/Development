@@ -24,9 +24,10 @@ const getCategoryById = async (req, res) => {
 const insertCategory = async (req, res) => {
       const {name, description} = req.body;
       const categoryDB = await Category.findOne({name: name.toUpperCase()});
-      if (categoryDB) {
-            res.status(400).json({
-                  msg: "Category already in DB"
+      if (categoryDB && categoryDB.state ===false) {
+            await Category.findOneAndUpdate({name:name.toUpperCase()},{state:true});
+            res.status(200).json({
+                  msg: "Category inserted again successfully "
             })
       }
       //data to storage
@@ -102,7 +103,7 @@ const deleteCategoryById = async (req, res) => {
       })
 }
 
-const deleteCollection = async (req, res) => {
+const deleteCollectionCat = async (req, res) => {
       const success = await Category.deleteMany({});
       res.status(200).json({
             msg: 'Puedes borrar',
@@ -116,5 +117,5 @@ module.exports = {
       insertCategory,
       updateCategoryById,
       deleteCategoryById,
-      deleteCollection
+      deleteCollectionCat
 }

@@ -16,7 +16,7 @@ const {
       usuariosDelete,
       usuariosPost,
       usuariosPatch
-} = require("../controllers/userController");
+} = require("../controllers");
 
 //Defining router
 const router = Router();

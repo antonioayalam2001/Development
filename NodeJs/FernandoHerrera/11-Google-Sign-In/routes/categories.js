@@ -8,8 +8,9 @@ const {
       getCategoryById,
       insertCategory,
       updateCategoryById,
-      deleteCategoryById, deleteCollection
-} = require("../controllers/categoriesController");
+      deleteCategoryById,
+      deleteCollectionCat
+} = require("../controllers");
 const router = Router()
 
 //Route to access /api/categories
@@ -21,7 +22,7 @@ router.get('/deleteAll', [
       validateJWT,
       validateAdminRole,
       validateField
-], deleteCollection)
+], deleteCollectionCat)
 
 //Get id Getting just one category per ID
 router.get('/:id', [

@@ -17,6 +17,11 @@ const validateAdminRole = (req, res, next) => {
 
 const tieneRol = (...roles) => {
       return (req, res, next) => {
+            if (!req.user){
+                  return res.status(401).json({
+                        msg: `You're trying to validate a role without a valid token`
+                  })
+            }
             const {role, nombre} = req.user;
             if (!roles.includes(role)) {
                   return res.status(401).json({
