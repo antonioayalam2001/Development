@@ -9,6 +9,7 @@ const isValidRole = async (role = '') => {
             //Error personalizado del mismo Express Validator, no romple la aplicacion
             throw new Error('El role no se encuentra registrado en la base de Datos')
       }
+      return true;
 }
 
 const emailExists = async (email = '') => {
@@ -17,6 +18,7 @@ const emailExists = async (email = '') => {
       if (exists) {
             throw new Error(`El correo : ${email}  ya se encuentra registrado en la base de datos`)
       }
+      return true;
 }
 
 const userExists = async (id) => {
@@ -24,6 +26,7 @@ const userExists = async (id) => {
       if (!user) {
             throw new Error(`El ${id} no se encuentra en la base de datos`)
       }
+      return true;
 }
 
 const categoryExists = async (id) => {
@@ -31,6 +34,7 @@ const categoryExists = async (id) => {
       if (!category) {
             throw new Error(`El ${id} no se encuentra en la base de datos`)
       }
+      return true;
 }
 
 const productExists = async (id) => {
@@ -38,6 +42,7 @@ const productExists = async (id) => {
       if (!product) {
             throw new Error(`This ${id} is not registered in the Database system `)
       }
+      return true;
 }
 const categoryName = async (category) => {
       const categoryExists = await Category.findOne({name: category.toUpperCase(), state: true});
@@ -46,9 +51,17 @@ const categoryName = async (category) => {
       }
 }
 
+// const allowedCollections = (collection = "" , allowedCollections = [] ) => {
+//       if (! allowedCollections.includes(collection)){
+//             throw new Error('This category is not allowed to this operation')
+//       }
+//       return true;
+// }
+
 module.exports = {
-      isValidRole,
+      // allowedCollections,
       emailExists,
+      isValidRole,
       userExists,
       categoryExists,
       categoryName,

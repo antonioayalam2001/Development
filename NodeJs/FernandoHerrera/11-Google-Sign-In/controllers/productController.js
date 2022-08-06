@@ -31,7 +31,7 @@ const getProductById = async (req, res) => {
 const insertProduct = async (req, res) => {
       const {name, description, price, category} = req.body;
       const productDB = await Product.findOne({name: name.toUpperCase()});
-      const categoryDB = await Category.findOne({name: category.toUpperCase()});
+      const categoryDB = await Category.findOne({name: category.toUpperCase(), state:true});
       if (productDB) {
             return res.status(400).json({
                   msg: "Product already in DB"

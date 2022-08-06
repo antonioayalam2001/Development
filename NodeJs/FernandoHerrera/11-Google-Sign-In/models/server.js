@@ -3,6 +3,7 @@ const cors = require('cors');
 const cookieparser = require('cookie-parser');
 const session = require('express-session')
 const bodyparser = require('body-parser')
+const fileUpload = require('express-fileupload')
 const {dbConnection} = require("../database/config");
 
 class Server {
@@ -12,6 +13,7 @@ class Server {
             this.paths = {
                   authPath: '/api/auth',
                   categoriesPath: '/api/categories',
+                  fileUpload: '/api/uploads',
                   productsPath: '/api/products',
                   userPath: '/api/users',
                   searchPath: '/api/search'
@@ -19,7 +21,7 @@ class Server {
             //DB connection
             this.dbConnection()
             //Middlewares
-            //    Aquellos que se eejcutan siempre que se levanta el servidor
+            //    Aquellos que se ejecutan siempre que se levanta el servidor
             this.middlewares()
             //Rutas de la aplicacion
             this.routes();
@@ -53,12 +55,19 @@ class Server {
             this.app.use(cookieparser())
             //PUBLIC DIRECTORY
             this.app.use(express.static('public'));
+            //File Uploader
+            this.app.use(fileUpload({
+                  useTempFiles : true,
+                  tempFileDir : '/tmp/',
+                  createParentPath: true
+            }));
       }
 
       routes() {
             this.app.use(this.paths.authPath, require('../routes/auth'));
-            this.app.use(this.paths.searchPath,require('../routes/search'))
             this.app.use(this.paths.categoriesPath, require('../routes/categories'));
+            this.app.use(this.paths.fileUpload, require('../routes/uploads'));
+            this.app.use(this.paths.searchPath, require('../routes/search'))
             this.app.use(this.paths.productsPath, require('../routes/product'));
             this.app.use(this.paths.userPath, require('../routes/user'));
       };

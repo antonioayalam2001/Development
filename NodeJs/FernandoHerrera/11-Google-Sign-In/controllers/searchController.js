@@ -84,7 +84,6 @@ const searchCategory = async (search = '',res) => {
             results : categories,
             total
       })
-
 }
 
 const search = async (req, res) => {
@@ -117,6 +116,21 @@ const search = async (req, res) => {
 }
 
 
+const productByCategory  =async (req,res)=>{
+      const {categoryName,product} = req.params;
+      const category = await Category.find({name:categoryName.toUpperCase() , state : true});
+      const regExp = new RegExp(product,'i')
+      const products = await Product.find({category : ObjectId(category[0]._id), name : regExp})
+
+      res.json({
+            categoryName,
+            product,
+            category,
+            products
+      })
+}
+
 module.exports = {
-      search
+      search,
+      productByCategory
 }
