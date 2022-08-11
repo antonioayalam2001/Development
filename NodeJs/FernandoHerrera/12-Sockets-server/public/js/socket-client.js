@@ -25,9 +25,9 @@ btnSend.addEventListener('click', () => {
             dateString : new Date(new Date().getTime())
       }
 
-      socket.emit('send-message', payload , ({id = "No fue proporcionado",date})=> {
-            console.log('Desde el server', id);
-            console.log('Desde el server', new Date(date));
+      socket.emit('send-message', payload , (objectFromServer)=> {
+            console.log('Desde el server', objectFromServer.id);
+            console.log('Desde el server', new Date(objectFromServer.date));
       });
 })
 

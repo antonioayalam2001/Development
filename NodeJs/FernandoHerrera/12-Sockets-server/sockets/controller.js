@@ -7,11 +7,11 @@ const socketController = (socket) => {
 
             socket.on('send-message',(payload,callback)=>{
                   // console.log(payload);
-                  const id = 1234
-                  callback({id , date : new Date().getTime()});
-
-                  //Just sending the message to the socket who make the send-message event
-                  // socket.emit('send-message',payload)
+                  const objectFromServer = {
+                        id : 1234,
+                        date : new Date().getTime()
+                  }
+                  callback(objectFromServer);
                   //Send to multiple users except the socket self
                   socket.broadcast.emit('send-message',payload)
             })
