@@ -35,8 +35,10 @@ const loginPost = async (req, res) => {
             res.setHeader("cookie",token);
             res.cookie('token',token);
             // console.log(req.session)
+            //Agregando información a nuestra session
             req.session.token = token;
             req.session.usuario = usuario;
+
             res.json({
                   msg: "Login success",
                   usuario,
@@ -49,6 +51,18 @@ const loginPost = async (req, res) => {
       }
 }
 
+const googleSign =  async (req,res) => {
+      const {id_token} = req.body;
+      console.log("hola")
+      res.json({
+            id_token,
+            msg : "Todo correcto"
+      })
+
+}
+
+
 module.exports = {
-      loginPost
+      loginPost,
+      googleSign
 }

@@ -10,9 +10,13 @@ app
       // res.send('<h1>Hello World </h1>')
 })
     .get('/ruta2',(req,res)=>{
-
       res.send('<h1>Route number 2 </h1>')
 })
+    .get('/ruta3',(req, res) => {
+          res.sendFile(__dirname + '/public/ruta3.html');
+    })
+
+
     .get('*',(req,res)=>{
           // res.writeHead(404,{'Content-Type': 'text/html'});
       res.sendFile(__dirname + '/public/404.html');

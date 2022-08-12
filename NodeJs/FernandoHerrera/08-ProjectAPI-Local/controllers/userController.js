@@ -1,10 +1,8 @@
 const {response: res, request: req} = require('express');
 const Usuario = require('../models/user');
 const bcrypt = require('bcrypt');
-const cookieparser = require('cookie-parser');
 
 const usuariosGet = async (req, res) => {
-      console.log(req.user)
       const {limite = 5, desde = 0} = req.query;
       // const usuarios = await Usuario.find({state:true}).limit(limite).skip(desde),;
       // const usersCount =  await Usuario.countDocuments({state: true})
@@ -58,8 +56,6 @@ const usuariosPatch = (req, res) => {
 const usuariosDelete = async (req, res) => {
       console.log(req.headers)
       const {id} = req.params;
-      // console.log('cookies', req.cookies);
-      // const uid= req.uid
 
       //Borrando usuario Físicamente poco recomendado dado que perdemos tola información de dicho usuario
       // la cual podría ser útil posteriormente
