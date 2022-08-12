@@ -8,7 +8,7 @@ const {Usuario} = require('../models/');
 * */
 
 const validateJWT = async (req, res, next) => {
-      console.log(req.headers)
+      // console.log(req.headers)
       //Realizando la comprobación mediante el token en la cabecera
       const token = req.session.token || req.headers['x-token']
       //Realizando la comprobación mediante la cookie almacenada en una session

@@ -1,7 +1,14 @@
 const googleSignOut = document.getElementById('google_SignOut');
 const buttonLogin = document.querySelector('.buttonLogin');
+const buttonSignUp = document.querySelector('.buttonSignUp');
 const buttonValidateToken = document.querySelector('.buttonValidateToken');
 const myForm = document.querySelector('form');
+
+buttonSignUp.addEventListener('click',evt => {
+      evt.preventDefault();
+      localStorage.clear('token')
+      location.reload();
+})
 
 
 googleSignOut.onclick = () => {
@@ -36,10 +43,12 @@ myForm.addEventListener('submit', async e => {
       //Extraer únicamente el JWT
       const {msg, token} = await response.json();
       if (!token) {
+            alert(msg)
             return console.error(msg)
       }
       localStorage.setItem('token', token);
       buttonValidateToken.style.display = "block"
+      window.location = "chat.html"
 })
 
 // buttonValidateToken.addEventListener('click', async evt => {
@@ -87,6 +96,7 @@ async function handleCredentialResponse(response) {
             localStorage.setItem("email", data.user.email);
             localStorage.setItem('token', data.token);
             // console.log(localStorage)
+            window.location = "chat.html";
       } catch (e) {
       }
 }

@@ -136,7 +136,7 @@ const renewToken = async (req,res) => {
       //ValidateJWT permite tener en el req a nuestro user
       const {_id} = req.user;
       const token = await JsonWebTokenGenerator(_id);
-      console.log(token);
+      // console.log(token);
       res.json({
             msg : "Bienvenido",
             token,
