@@ -1,19 +1,30 @@
+//NodeJS
 const {Router} = require('express');
 const {check, param} = require('express-validator');
+//Middlewares
+// const {validateField} = require("../middleware/validate_fields");
+// const {validateJWT} = require("../middleware/validateJWT");
+// const {validateAdminRole, tieneRol} = require("../middleware/validateRoles");
+
+const {validateField, validateJWT, validateAdminRole, tieneRol} = require('../middleware')
+const {isValidRole, emailExists, userExists} = require("../helpers/dbValidators");
+
+//Controller
 const {
       usuariosGet,
       usuariosPut,
       usuariosDelete,
       usuariosPost,
       usuariosPatch
-} = require("../controllers/userController");
-const {validateField} = require("../middleware/validate_fields");
-const {isValidRole, emailExists, userExists} = require("../helpers/dbValidators");
+} = require("../controllers");
 
 //Defining router
 const router = Router();
 //ENDPOINT mas comunes: PUT REST POST DELETE
-router.get('/', usuariosGet);
+router.get('/', [
+    validateJWT,
+    validateField
+],usuariosGet);
 //Mandando los Middlewares necesarios
 router.post('/',
     [
@@ -30,13 +41,26 @@ router.post('/',
           validateField
     ]
     , usuariosPost);
-router.put('/:id', [
-      check('id', 'No es un ID valido').isMongoId(),
-      check('id').custom(userExists),
-      check('role').custom((role) => isValidRole(role)),
-      validateField
-], usuariosPut);
+router.put('/:id',
+    [
+          // check('id', 'No es un ID valido').isMongoId(),
+          check('id').custom(userExists),
+          check('role').custom((role) => isValidRole(role)),
+          validateField
+    ], usuariosPut);
+
 router.patch('/', usuariosPatch)
-router.delete('/', usuariosDelete);
+
+//Recibimos el JWT por medio del header
+router.delete('/:id',
+    [
+          validateJWT,
+          //Forzosamente administrador
+          // validateAdminRole,
+          tieneRol('ADMIN_ROLE', 'SALES_ROLE'),
+          check('id', 'El ID ingresado no es valido para eliminar').isMongoId(),
+          check('id').custom(userExists),
+          validateField
+    ], usuariosDelete);
 
 module.exports = router;

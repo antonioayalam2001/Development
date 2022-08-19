@@ -6,7 +6,7 @@
 <% let users = ["Tony", "Ramon", "Mom"]
 users.forEach(e=>{
 %>
-<h1><%= e %></h1>
+    <h1><%= e %></h1>
 <%
 })
 %>
@@ -14,12 +14,12 @@ users.forEach(e=>{
 <h1> <%= char %></h1>
 
 <div class="estaciones">
-<% char.forEach(function(character) { %>
-    <div class="item">
-        <p> <strong><%= character.name %></strong>
-        is <%= character.designation %> at hogwarts.</p>
-    </div>
-<% }); %>
+    <% char.forEach(function(character) { %>
+        <div class="item">
+            <p><strong><%= character.name %></strong>
+                is <%= character.designation %> at hogwarts.</p>
+        </div>
+    <% }); %>
 </div>
 
 <script src="js/app.js"></script>

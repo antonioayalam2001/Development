@@ -4,5 +4,6 @@
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$/FernandoHerrera/07-WebServer-Ejercicio" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/FernandoHerrera/HerokuDeploys/12-Sockets-server" vcs="Git" />
   </component>
 </project>
