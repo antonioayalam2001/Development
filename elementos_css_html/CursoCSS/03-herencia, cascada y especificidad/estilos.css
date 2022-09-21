@@ -1,0 +1,20 @@
+body{
+    border: 3px solid orange;
+    font-family: cursive;
+    color: steelblue;
+}
+
+.title{
+    color: hotpink;
+    border: inherit;
+}
+h1.title{
+    color: red;
+}
+/*Especificidad 1 + 10 == 11*/
+
+input{
+    font-size: 25px;
+    color: inherit;
+    font-family: inherit;
+}

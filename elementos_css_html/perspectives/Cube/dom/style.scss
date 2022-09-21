@@ -1,0 +1,67 @@
+body{
+   min-height: 100vh;
+   display: flex;
+   background-color: black;
+}
+
+.contenedor{
+   margin: auto;
+   perspective: 1700px;
+   perspective-origin: 0px -600px;
+}
+
+.cubo {
+    animation: rotate 6s infinite linear;
+    width: 200px;
+    height: 200px;
+    position: relative;
+   // perspective: 700px;
+    transform-style: preserve-3d;
+    
+ }
+
+.cara {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+}
+
+#face1 {
+   background-color: lightyellow;
+   transform: translateZ(100px);
+}
+
+#face2 {
+   background-color: lightblue;
+   transform: translateX(100px) rotateY(90deg);
+}
+
+#face3 {
+   background-color: lightpink;
+   transform: translateX(-100px) rotateY(90deg);
+}
+
+#face4 {
+   background-color: lightcyan;
+   transform: translateZ(-100px);
+}
+
+#face5 {
+   background-color: lightgreen;
+   transform: translateY(100px) rotateX(90deg) ;
+}
+
+#face6 {
+   background-color: lightgoldenrodyellow;
+   transform: translateY(-100px) rotateX(90deg);
+}
+
+@keyframes rotate {
+   from {
+      transform: rotateY(0deg);
+   }
+
+   to {
+      transform: rotateY(360deg);
+   }
+}

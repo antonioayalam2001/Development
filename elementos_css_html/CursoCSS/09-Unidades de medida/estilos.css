@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: Arial;
+    height: 500px;
+}
+
+.container{
+    padding: 40px;
+    height: 50%;
+    background-color: yellow;
+}
+
+.container-child{
+    
+}
+
+
+
+.title{
+    font-size:3em;
+}
+

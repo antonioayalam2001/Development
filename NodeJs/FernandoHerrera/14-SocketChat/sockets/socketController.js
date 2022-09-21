@@ -7,6 +7,7 @@ const socketController = async (socket, io) => {
       // console.log(socket)
       //Getting token from Client
       const token = socket.handshake.headers['x-token']
+      //Validar que el usuario con JSON Web Token se encuentre activo y este en la base de datos
       const user = await validateJWT(token);
       if (!user) {
             return socket.disconnect();

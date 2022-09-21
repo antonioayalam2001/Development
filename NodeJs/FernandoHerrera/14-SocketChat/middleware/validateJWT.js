@@ -1,12 +1,9 @@
 require('dotenv').config();
 const JWT = require('jsonwebtoken');
 const {Usuario} = require('../models/');
-
-
 /*
 *  Inserta al usuario autenticado en nuestro objeto de request
 * */
-
 const validateJWT = async (req, res, next) => {
       // console.log(req.headers)
       //Realizando la comprobación mediante el token en la cabecera

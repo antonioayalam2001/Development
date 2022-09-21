@@ -22,7 +22,6 @@ const JsonWebTokenGenerator = (uid = '') => {
 }
 
 const validateJWT = async (token = ' ') => {
-
       try {
             if (token < 10) {
                   return null;
