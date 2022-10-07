@@ -4,629 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="Aplicacion REST">
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/public/css/formStyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/public/css/formStyle.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/public/css/formStyle.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/14-SocketChat/public/css/chat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/14-SocketChat/public/css/chat.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_07_22_9_05_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_30_07_22_9_05__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/public/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/public/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/public/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/public/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/public/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/08-ProjectAPI/public/register.html" afterDir="false" />
-=======
     <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="Implementacion de Sesion">
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/ExpressProject/models/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/background/Thumbs.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/background/error-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/background/login-register.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/background/megamenubg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/background/profile-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/background/socialbg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/background/user-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/background/user-info.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/background/weatherbg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/users/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/users/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/users/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/users/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/users/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/users/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/users/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/users/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/users/d1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/users/d2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/users/d3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/users/d4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/users/d5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/images/users/profile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/plugins/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/plugins/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/plugins/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/plugins/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/plugins/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/plugins/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/plugins/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/plugins/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/plugins/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/plugins/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/plugins/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/plugins/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/plugins/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/plugins/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/plugins/bootstrap/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/plugins/bootstrap/js/popper.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/assets/plugins/jquery/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/chat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/chat.old.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/css/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/css/chat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/css/colors/blue-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/css/colors/blue.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/css/colors/default-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/css/colors/default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/css/colors/green-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/css/colors/green.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/css/colors/megna-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/css/colors/megna.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/css/colors/purple-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/css/colors/purple.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/css/colors/red-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/css/colors/red.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/css/icons/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/css/icons/font-awesome/old/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/css/icons/simple-line-icons/css/simple-line-icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/css/icons/themify-icons/themify-icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/css/pages/chat-app-page.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/css/pages/login-register-lock.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/css/spinners.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/index.old.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/js/libs/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/js/scrollBottom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/js/socket-chat-jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/js/socket-chat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/old/chat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/old/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/old/js/socket-chat.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flag-icon.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ad.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ae.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/af.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ag.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ai.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/al.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/am.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ao.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/aq.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/as.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/at.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/au.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/aw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ax.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/az.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ba.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/bb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/bd.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/be.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/bf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/bg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/bh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/bi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/bj.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/bl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/bm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/bn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/bo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/bq.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/br.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/bs.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/bt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/bv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/bw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/by.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/bz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ca.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/cc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/cd.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/cf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/cg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ch.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ci.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ck.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/cl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/cm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/cn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/co.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/cr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/cu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/cv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/cw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/cx.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/cy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/cz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/de.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/dj.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/dk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/dm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/do.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/dz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ec.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ee.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/eg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/eh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/er.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/es.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/et.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/fi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/fj.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/fk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/fm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/fo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/fr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ga.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/gb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/gd.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ge.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/gf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/gg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/gh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/gi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/gl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/gm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/gn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/gp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/gq.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/gr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/gs.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/gt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/gu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/gw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/gy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/hk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/hm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/hn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/hr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ht.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/hu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/id.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ie.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/il.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/im.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/in.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/io.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/iq.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ir.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/is.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/it.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/je.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/jm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/jo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/jp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ke.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/kg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/kh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ki.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/km.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/kn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/kp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/kr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/kw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ky.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/kz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/la.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/lb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/lc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/li.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/lk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/lr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ls.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/lt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/lu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/lv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ly.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ma.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/mc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/md.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/me.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/mf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/mg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/mh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/mk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ml.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/mm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/mn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/mo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/mp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/mq.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/mr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ms.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/mt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/mu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/mv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/mw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/mx.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/my.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/mz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/na.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/nc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ne.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/nf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ng.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ni.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/nl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/no.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/np.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/nr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/nu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/nz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/om.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/pa.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/pe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/pf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/pg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ph.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/pk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/pl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/pm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/pn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/pr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ps.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/pt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/pw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/py.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/qa.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/re.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ro.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/rs.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ru.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/rw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/sa.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/sb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/sc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/sd.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/se.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/sg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/sh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/si.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/sj.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/sk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/sl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/sm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/sn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/so.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/sr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ss.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/st.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/sv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/sx.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/sy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/sz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/tc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/td.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/tf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/tg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/th.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/tj.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/tk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/tl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/tm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/tn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/to.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/tr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/tt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/tv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/tw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/tz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ua.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ug.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/um.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/us.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/uy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/uz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/va.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/vc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ve.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/vg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/vi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/vn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/vu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/wf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ws.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/ye.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/yt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/za.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/zm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/flag-icon-css/flags/zw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/less/animated.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/less/bordered-pulled.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/less/core.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/less/fixed-width.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/less/font-awesome.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/less/icons.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/less/larger.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/less/list.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/less/mixins.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/less/path.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/less/rotated-flipped.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/less/screen-reader.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/less/stacked.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/less/variables.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/.bower.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/.npmignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/HELP-US-OUT.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/bower.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/fonts/fontawesome-webfont-old.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/less/animated.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/less/bordered-pulled.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/less/core.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/less/extras.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/less/fixed-width.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/less/font-awesome.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/less/icons.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/less/larger.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/less/list.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/less/mixins.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/less/path.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/less/rotated-flipped.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/less/spinning.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/less/stacked.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/less/variables.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/scss/_animated.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/scss/_bordered-pulled.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/scss/_core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/scss/_extras.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/scss/_fixed-width.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/scss/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/scss/_larger.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/scss/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/scss/_path.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/scss/_rotated-flipped.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/scss/_spinning.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/scss/_stacked.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/scss/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/scss/font-awesome.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/old/scss/font-awesome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/scss/_animated.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/scss/_core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/scss/_fixed-width.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/scss/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/scss/_larger.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/scss/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/scss/_path.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/scss/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/scss/_stacked.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/scss/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/scss/font-awesome.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/font-awesome/scss/font-awesome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-arrows-10.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-arrows-10.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-arrows-10.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-arrows-10.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-basic-10.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-basic-10.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-basic-10.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-basic-10.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-basic-elaboration-10.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-basic-elaboration-10.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-basic-elaboration-10.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-basic-elaboration-10.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-ecommerce-10.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-ecommerce-10.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-ecommerce-10.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-ecommerce-10.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-music-10.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-music-10.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-music-10.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-music-10.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-software-10.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-software-10.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-software-10.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-software-10.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-weather-10.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-weather-10.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-weather-10.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/fonts/linea-weather-10.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/linea.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/linea.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/linea-icons/linea.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/material-design-iconic-font/css/material-design-iconic-font.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/material-design-iconic-font/css/material-design-iconic-font.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/material-design-iconic-font/css/materialdesignicons.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/material-design-iconic-font/fonts/materialdesignicons-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/simple-line-icons/css/simple-line-icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/simple-line-icons/fonts/Simple-Line-Icons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/simple-line-icons/fonts/Simple-Line-Icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/simple-line-icons/fonts/Simple-Line-Icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/simple-line-icons/fonts/Simple-Line-Icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/simple-line-icons/fonts/Simple-Line-Icons.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/simple-line-icons/less/simple-line-icons.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/simple-line-icons/scss/simple-line-icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/simple-line-icons/scss/simple-line-icons.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/simple-line-icons/scss/simple-line-icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/themify-icons/fonts/themify.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/themify-icons/fonts/themify.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/themify-icons/fonts/themify.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/themify-icons/fonts/themify.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/themify-icons/ie7/ie7.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/themify-icons/ie7/ie7.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/themify-icons/themify-icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/themify-icons/themify-icons.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/css/weather-icons-core.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/css/weather-icons-variables.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/css/weather-icons-wind.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/css/weather-icons-wind.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/css/weather-icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/css/weather-icons.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/fonts/weathericons-regular-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/fonts/weathericons-regular-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/fonts/weathericons-regular-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/fonts/weathericons-regular-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/fonts/weathericons-regular-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/css/variables-beaufort.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/css/variables-day.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/css/variables-direction.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/css/variables-misc.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/css/variables-moon.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/css/variables-neutral.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/css/variables-night.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/css/variables-time.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/css/variables-wind-names.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/icon-classes/classes-beaufort.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/icon-classes/classes-day.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/icon-classes/classes-direction.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/icon-classes/classes-misc.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/icon-classes/classes-moon-aliases.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/icon-classes/classes-moon.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/icon-classes/classes-neutral.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/icon-classes/classes-night.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/icon-classes/classes-time.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/icon-classes/classes-wind-aliases.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/icon-classes/classes-wind-degrees.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/icon-classes/classes-wind.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/icon-variables/variables-beaufort.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/icon-variables/variables-day.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/icon-variables/variables-direction.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/icon-variables/variables-misc.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/icon-variables/variables-moon.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/icon-variables/variables-neutral.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/icon-variables/variables-night.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/icon-variables/variables-time.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/icon-variables/variables-wind-names.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/mappings/wi-forecast-io.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/mappings/wi-owm.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/mappings/wi-wmo4680.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/mappings/wi-yahoo.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/weather-icons-classes.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/weather-icons-core.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/weather-icons-variables.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/weather-icons-wind.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/weather-icons-wind.min.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/weather-icons.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/less/weather-icons.min.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/icon-classes/classes-beaufort.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/icon-classes/classes-day.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/icon-classes/classes-direction.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/icon-classes/classes-misc.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/icon-classes/classes-moon-aliases.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/icon-classes/classes-moon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/icon-classes/classes-neutral.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/icon-classes/classes-night.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/icon-classes/classes-time.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/icon-classes/classes-wind-aliases.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/icon-classes/classes-wind-degrees.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/icon-classes/classes-wind.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/icon-variables/variables-beaufort.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/icon-variables/variables-day.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/icon-variables/variables-direction.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/icon-variables/variables-misc.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/icon-variables/variables-moon.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/icon-variables/variables-neutral.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/icon-variables/variables-night.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/icon-variables/variables-time.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/icon-variables/variables-wind-names.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/mappings/wi-forecast-io.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/mappings/wi-owm.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/mappings/wi-wmo4680.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/mappings/wi-yahoo.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/weather-icons-classes.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/weather-icons-core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/weather-icons-variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/weather-icons-wind.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/weather-icons-wind.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/weather-icons-wind.min.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/weather-icons-wind.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/weather-icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/weather-icons.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/weather-icons.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/weather-icons.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/weather-icons.min.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/public/scss/icons/weather-icons/sass/weather-icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/server/Classes/Usuarios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/server/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/server/sockets/socket.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FernandoHerrera/SocketChatV2/server/utils/utilities.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/app.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/controller/usersController.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/db/connection.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/directory/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/directory/app.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/directory/controller/usersController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/directory/controller/usersController.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/directory/helpers/dbValidators.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/directory/helpers/dbValidators.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/directory/middlewares/dbValidators.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/directory/middlewares/dbValidators.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/directory/middlewares/validateFields.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/directory/middlewares/validateFields.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/directory/models/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/directory/models/server.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/directory/routes/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/directory/routes/user.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/helpers/dbValidators.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/middlewares/validateFields.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/models/User.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/models/server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/routes/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TypeScript/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../elementos_css_html/buscadorFiltros/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../elementos_css_html/buscadorFiltros/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../elementos_css_html/buscadorFiltros/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeerArchivoExcelAJSON/Controllers/uploadFileC.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeerArchivoExcelAJSON/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeerArchivoExcelAJSON/models/Server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeerArchivoExcelAJSON/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeerArchivoExcelAJSON/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeerArchivoExcelAJSON/routes/uploadFile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeerArchivoExcelAJSON/views/index.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proxys/index.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Proxys/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4feb02a5-327c-4a97-8c70-fc26a6719c28.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4feb02a5-327c-4a97-8c70-fc26a6719c28.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05TemplateEngines/views/pageEjs.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/05TemplateEngines/views/pageEjs.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/14-SocketChat/helpers/jsonWebTokenGenerator.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/14-SocketChat/helpers/jsonWebTokenGenerator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/14-SocketChat/middleware/validateJWT.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/14-SocketChat/middleware/validateJWT.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/14-SocketChat/sockets/socketController.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/14-SocketChat/sockets/socketController.js" afterDir="false" />
->>>>>>> 8eea4f1795c3cc790d6456a3439656d41c81d8d4
+      <change beforePath="$PROJECT_DIR$/05TemplateEngines/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/05TemplateEngines/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/09ApiMongoREST/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/09ApiMongoREST/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FernandoHerrera/07-WebServer/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/07-WebServer/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FernandoHerrera/07-WebServer/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/07-WebServer/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FernandoHerrera/07-WebServer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/07-WebServer/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -671,29 +66,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-<<<<<<< HEAD
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;true&quot;,
-    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.13.0&quot;,
-    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.47&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/tonya/Desktop/ProgrammingLanguages/NodeJs/FernandoHerrera&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.1.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-=======
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
@@ -703,9 +75,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "full.screen.before.presentation.mode": "true",
-    "javascript.nodejs.core.library.configured.version": "16.13.0",
-    "javascript.nodejs.core.library.typings.version": "16.11.47",
-    "last_opened_file_path": "C:/Users/tonya/Desktop/ProgrammingLanguages/NodeJs",
+    "javascript.nodejs.core.library.configured.version": "18.8.0",
+    "javascript.nodejs.core.library.typings.version": "18.7.20",
+    "last_opened_file_path": "C:/Users/tonya/Desktop/GitHub/Dev/NodeJs",
     "list.type.of.created.stylesheet": "SCSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -715,17 +87,16 @@
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "ts.external.directory.path": "C:\\Users\\tonya\\Desktop\\ProgrammingLanguages\\NodeJs\\TypeScript\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
->>>>>>> 8eea4f1795c3cc790d6456a3439656d41c81d8d4
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ],
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;JavaScript&quot;
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JavaScript"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera\SocketChatV2" />
@@ -742,7 +113,7 @@
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera\08-ProjectAPI-Local" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.chat.html">
+  <component name="RunManager" selected="Node.js.index.mjs">
     <configuration name="chat.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NodeJs/FernandoHerrera/SocketChatV2/public/chat.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -758,16 +129,16 @@
     <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/TypeScript/directory/app.js" working-dir="$PROJECT_DIR$/TypeScript/directory">
       <method v="2" />
     </configuration>
-    <configuration name="scratch.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$APPLICATION_CONFIG_DIR$/scratches/scratch.js" working-dir="$PROJECT_DIR$">
+    <configuration name="index.mjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Proxys/index.mjs" working-dir="$PROJECT_DIR$/Proxys">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.index.mjs" />
         <item itemvalue="JavaScript Debug.chat.html" />
         <item itemvalue="Node.js.app.js" />
         <item itemvalue="JavaScript Debug.register.html" />
         <item itemvalue="JavaScript Debug.index.html (2)" />
-        <item itemvalue="Node.js.scratch.js" />
       </list>
     </recent_temporary>
   </component>
@@ -835,6 +206,11 @@
       <workItem from="1660513212327" duration="6406000" />
       <workItem from="1660599443398" duration="686000" />
       <workItem from="1660859882780" duration="681000" />
+      <workItem from="1664072770777" duration="1183000" />
+      <workItem from="1664315344284" duration="5648000" />
+      <workItem from="1664376115405" duration="3076000" />
+      <workItem from="1664388563699" duration="4796000" />
+      <workItem from="1664558187340" duration="5022000" />
     </task>
     <task id="LOCAL-00001" summary="Cambio">
       <created>1656521549483</created>
