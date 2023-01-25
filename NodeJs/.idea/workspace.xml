@@ -4,24 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="Implementacion de Sesion">
-      <change afterPath="$PROJECT_DIR$/LeerArchivoExcelAJSON/Controllers/uploadFileC.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeerArchivoExcelAJSON/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeerArchivoExcelAJSON/models/Server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeerArchivoExcelAJSON/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeerArchivoExcelAJSON/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeerArchivoExcelAJSON/routes/uploadFile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeerArchivoExcelAJSON/views/index.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Proxys/index.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Proxys/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4feb02a5-327c-4a97-8c70-fc26a6719c28.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/4feb02a5-327c-4a97-8c70-fc26a6719c28.xml" afterDir="false" />
+    <list default="true" id="8af48f9c-9ce4-42c6-8e51-1c152357d5a4" name="Changes" comment="Leer archivos de Excel">
+      <change afterPath="$PROJECT_DIR$/LeerArchivoExcelAJSON/uploads/tables.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prueba.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_08_22_9_44_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_12_08_22_9_44__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05TemplateEngines/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/05TemplateEngines/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09ApiMongoREST/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/09ApiMongoREST/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/07-WebServer/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/07-WebServer/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/07-WebServer/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/07-WebServer/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FernandoHerrera/07-WebServer/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FernandoHerrera/07-WebServer/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeerArchivoExcelAJSON/Controllers/uploadFileC.js" beforeDir="false" afterPath="$PROJECT_DIR$/LeerArchivoExcelAJSON/Controllers/uploadFileC.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeerArchivoExcelAJSON/routes/uploadFile.js" beforeDir="false" afterPath="$PROJECT_DIR$/LeerArchivoExcelAJSON/routes/uploadFile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,37 +57,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "full.screen.before.presentation.mode": "true",
-    "javascript.nodejs.core.library.configured.version": "18.8.0",
-    "javascript.nodejs.core.library.typings.version": "18.7.20",
-    "last_opened_file_path": "C:/Users/tonya/Desktop/GitHub/Dev/NodeJs",
-    "list.type.of.created.stylesheet": "SCSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Users\\tonya\\Desktop\\ProgrammingLanguages\\NodeJs\\TypeScript\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;true&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.8.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.7.20&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tonya/Desktop/GitHub/Dev/NodeJs&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\tonya\\Desktop\\GitHub\\Dev\\NodeJs\\TypeScript\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ],
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "JavaScript"
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;JavaScript&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera\SocketChatV2" />
@@ -113,11 +104,8 @@
       <recent name="C:\Users\tonya\Desktop\ProgrammingLanguages\NodeJs\FernandoHerrera\08-ProjectAPI-Local" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.index.mjs">
+  <component name="RunManager" selected="Node.js.functions.js">
     <configuration name="chat.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NodeJs/FernandoHerrera/SocketChatV2/public/chat.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="index.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NodeJs/FernandoHerrera/08-ProjectAPI/public/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="register.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/NodeJs/FernandoHerrera/08-ProjectAPI/public/register.html" useBuiltInWebServerPort="true">
@@ -129,16 +117,19 @@
     <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/TypeScript/directory/app.js" working-dir="$PROJECT_DIR$/TypeScript/directory">
       <method v="2" />
     </configuration>
+    <configuration name="functions.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/functions.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="index.mjs" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Proxys/index.mjs" working-dir="$PROJECT_DIR$/Proxys">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.functions.js" />
         <item itemvalue="Node.js.index.mjs" />
         <item itemvalue="JavaScript Debug.chat.html" />
         <item itemvalue="Node.js.app.js" />
         <item itemvalue="JavaScript Debug.register.html" />
-        <item itemvalue="JavaScript Debug.index.html (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +201,9 @@
       <workItem from="1664315344284" duration="5648000" />
       <workItem from="1664376115405" duration="3076000" />
       <workItem from="1664388563699" duration="4796000" />
-      <workItem from="1664558187340" duration="5022000" />
+      <workItem from="1664558187340" duration="7616000" />
+      <workItem from="1664570023249" duration="996000" />
+      <workItem from="1664574131476" duration="1029000" />
     </task>
     <task id="LOCAL-00001" summary="Cambio">
       <created>1656521549483</created>
@@ -408,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659757164404</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Leer archivos de Excel">
+      <created>1664566934396</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1664566934396</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,7 +441,8 @@
     <MESSAGE value="Nueva Seccion" />
     <MESSAGE value="API Local" />
     <MESSAGE value="Implementacion de Sesion" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementacion de Sesion" />
+    <MESSAGE value="Leer archivos de Excel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Leer archivos de Excel" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
