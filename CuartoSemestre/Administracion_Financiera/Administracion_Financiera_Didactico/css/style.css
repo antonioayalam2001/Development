@@ -1,0 +1,82 @@
+.bck{
+ background-color:"white";
+ background-attachment: fixed;
+ font-size:12px;
+}
+
+.portada{
+	color: #000000;
+	
+}
+.titl{
+	font-family: 'Dancing Script', cursive;
+	font-size: 25px;
+}
+.btnmarg{
+	margin: 5px;
+}
+
+.pestanas a{
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	padding: 15px 10px;
+	font-size: 17px;
+	/*margin: 0px 10px;*/
+	width: 100px;
+text-align: center;
+font-size: 15px;
+
+}
+.pestanas img{
+	height :45px;
+	display: inline-block;
+	margin: 0px	0px 0px 20px;
+}
+.pestanas a:hover{
+	background-color: #5B6F7B;
+}
+.pestanas a:hover,a:active,a:focus{
+	color:white;
+}
+
+.contbody{
+	margin-top: 100px;
+	margin-bottom: 20px;
+	background-color: #fff;
+}
+
+.contbody h3{
+	color:#0B615E;
+}
+
+.pestanas{
+	display: inline;
+	float: right !important;
+/*margin-left: 20px;*/
+}
+
+hr{
+	border-top: 2px solid #3E5C7E66 !important;
+}
+
+.headtr{
+background-color: #1C1C1C;
+color:white;
+}
+
+tbody{
+	font-size: 11px;
+}
+
+.overflw{
+	overflow-y:auto; 
+}
+p {
+    font-size: 18px;
+    text-align: justify;
+  }
+  .listas{
+
+  	font-size: 18px;
+  }

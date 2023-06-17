@@ -1,0 +1,102 @@
+.menu{
+   list-style: none;
+   line-height:60px;
+   margin-left:.5em;
+   padding-left: 0;
+width: 25em;
+padding-right: .50em;
+
+}
+
+.menuicon{
+	height: 20px;
+	margin-right: 15px
+}
+
+.menu a{
+  color: white;
+   display: block;
+   width: 100%;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 13px;
+}
+.menu >li{
+
+	box-shadow: 3px 0 #0489B1 inset;
+	margin-bottom: 15px;
+	padding-left: 1.5em;
+	--webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition:all .3s;
+	margin-top: 10px;
+}
+
+.menu li:hover{
+	box-shadow: 30em 0 #0489B1 inset;
+}
+.menu li ul{
+	display:none;
+	margin:0;
+	padding: 0;
+	
+	
+}
+.menu li:hover ul{
+display:block;	
+
+}
+.menu li ul li{
+list-style: none;
+}
+
+nav{
+	position:fixed;
+	left: -31em;
+	z-index: 20;
+	height: 100%;
+ 	background-color:#1C1C1C;
+ 	transition:all .2s;
+}
+
+nav.mostrar{
+	left: 0px;
+}
+
+#mostrar-nav{
+background: url(../menu.png);
+background-position: center;
+background-size: cover;
+cursor: pointer;
+borde: 1em;
+z-index: 30;
+height: 35px;
+width: 35px;
+margin-left: 10px;
+margin-bottom: 7px;
+margin-top: 7px;
+}
+
+.logo{
+height: 45px;
+width: 35px;
+margin-right: 10px;
+margin-top: 7px;
+}
+
+.fixd{
+	position: fixed;
+	background-color: #1C1C1C;
+	left: 0px;
+	right: 0px;
+	top:0px;
+	z-index: 999;
+}
+
+.titluni{
+display: block;
+color: #ffffff;
+margin-top: 10px;
+font-family: initial;
+font-size: 18px;
+}

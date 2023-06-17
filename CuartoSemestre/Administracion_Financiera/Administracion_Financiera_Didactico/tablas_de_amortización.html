@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width">
+  <title>Administracion</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/menu.css">
+</head>
+<body class="bck">
+		<header class="fixd">
+      <div class="row ">
+        <div class="col-xs-12">          
+          <div class="row">
+            <div class="col-xs-2">
+              <img id="mostrar-nav" src="icon/menu.png">
+            </div>
+            <div class="col-xs-4">
+              <h3 class="titluni">Tablas de amortización</h3>
+            </div>
+            <div class="col-xs-6">
+              <div class="pestanas">
+                     <a href="tablas_de_amortización.html">Fundamentos</a>
+            <a href="punto_tda_calc.html">Simulador</a>
+              </div>
+            </div>
+          </div>  
+         
+        </div>
+
+      </div>
+<nav class="">
+<ul class="menu">
+   <li><a href="index.html" ><img src="icon/homeicon.png" class="menuicon ">Inicio </a></li>
+  
+     <li><a><img src="icon/encicon.png" class="menuicon ">Presentación <span class="caret"></span></a>
+      <ul>
+      <li><a href="introduccion_y_bienvenida.html"><img src="icon/intricon.png" class="menuicon ">Introducción y Bienvenida </a></li>
+      <li><a href="objetivo_y_metodologia.html"><img src="icon/objeticon.png" class="menuicon ">Objetivo y Metodología </a></li>
+      <li><a href="criterios_de_evaluación.html"><img src="icon/evaluicon.png" class="menuicon ">Criterios de Evaluación </a></li>
+      <li><a href="bibliografia.html"><img src="icon/biblicon.png" class="menuicon ">Bibliografia </a></li>
+      </ul>
+    </li>
+    
+  <li><a><img src="icon/practicon.png" class="menuicon ">Practicas <span class="caret"></span></a>
+      <ul>
+        <li><p><a href="Doc\practica_punto_de_equilibrio.docx"><img src="icon/docicon.png" class="menuicon ">Prac. Punto de Equilibrio </a></li>
+        <li><p><a href="Doc\practica_tablas_de_amortizacion.docx"><img src="icon/docicon.png" class="menuicon ">Prac. Tablas de Amortización </a></li>
+        <li><p><a href="Doc\practica_evaluacion_de_proyectos.docx"><img src="icon/docicon.png" class="menuicon ">Prac. Evaluación de Proyectos </a></li>
+      </ul>
+    </li>
+    
+    <li><a><img src="icon/simulicon.png" class="menuicon ">Simulador <span class="caret"></span></a>
+      <ul>
+    <li><a href="punto_de_equilibrio.html"><img src="icon/puntoicon.png" class="menuicon ">Punto de Equilibrio </a></li>
+    <li><a href="tablas_de_amortización.html"><img src="icon/tablaicon.png" class="menuicon ">Tablas de Amortizacion</a></li>
+    <li><a href="evaluacion_de_proyectos.html"><img src="icon/proyectoicon.png" class="menuicon ">Evaluacion de Proyectos</a></li>
+      </ul>
+    </li>
+
+    <li><a><img src="icon/anicon.png" class="menuicon ">Anexos <span class="caret"></span></a>
+      <ul>
+    <li><a href="Doc\manual.pdf"><img src="icon/manualicon.png" class="menuicon ">Manual de Usuario</a></li>
+    <li><a href="Doc\codigo.pdf"><img src="icon/codeicon.png" class="menuicon ">Código Fuente</a></li>
+    <li><a href="Doc\glosario.pdf"><img src="icon/glosaricon.png" class="menuicon ">Glosario</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</header> 	
+<div class="container-fluid">
+		
+				<div class="row">
+					<div class="contbody col-xs-12">
+						<h3 style="color:black">Introducción</h3>
+						<p align="justify" style="">Esta sección llamada Tablas de Amortización ayuda al usuario a decidir sobre que esquema es el más conveniente apra el empresario en cuanto a la toma de desición que tiene que hacer sobre el proyecto en el cual está invirtiendo así como que conlleva el préstamo que está pidiendo.
+							<br><br>Para un mejor entendimiento de lo que trata este apartado le sugerimos leer los siguientes apartados:</p>
+						
+            <h3>Conceptos básicos</h3>
+						<br>
+						
+            <h4>Tabla de amortización</h4>
+						<ul class="listas">
+                           <li>La tabla de amortización es un despliegue completo de los pagos que deben hacerse hasta la extinción de la deuda. Una vez que conocemos todos los datos del problema de amortización (saldo de la deuda, valor del pago regular, tasa de interés y número de periodos), construimos la tabla con el saldo inicial de la deuda, desglosamos el pago regular en intereses y pago del principal, deducimos este último del saldo de la deuda en el período anterior, repitiéndose esta mecánica hasta el último período de pago.</li>
+
+						   
+						   <br>
+						  
+						   
+						   
+						</ul>
+                        <h4>Existen principalmente 4 tipos de esquemas que podemos utilizar como criterio:</h4>
+                        <ul class="listas">
+                          <li>Esquema de amortizaciones iguales</li>
+                          <li>Esquema tipo Bullet</li>
+                          <li>Esquema de pagos crecientes</li>
+                          <li>Esquema de pagos iguales</li>
+                        </ul>
+                        
+
+                        <h3>Simbología</h3>
+                        <ul class="listas">
+                        	<li>Pre   = Prestamo.</li>
+                        	<li>TN    = Tasa Nominal.</li>
+                        	<li>P     = Periodo (en meses).</li>
+                          <li>TE    = Tasa de Interés </li>
+                          <li>CapIn = Capital inicial</li>
+                      
+
+                        </ul>
+
+                        <h3>Fórmulas</h3>
+                        <ul class="listas">
+                           
+                           <h4>Esquema de amortizaciones iguales</h4>
+                           <li>Amortización (Am) = Pre/P </li>
+                           <li>Interés (Int) = Cap*TE</li>
+                           <li>Pago (Pg) = Am + Int</li>
+                           <li>Capital final (CapFin) = CapIn - Am</li>
+
+                           <h4>Esquema tipo Bullet</h4>
+                           <li>Interés (Int) = Cap*TE</li>
+
+                           <h4>Esquema de pagos crecientes</h4>
+                           <li>Pago (Pg) = (Pre/P)*[(1+i)^n]  donde i=interéses</li>
+                           <li>Interés (Int) = Cap*TE</li>
+                           <li>Amortización (Am) = Pg - Int</li>
+
+
+                           <h4>Esquema de pagos iguales</h4>
+                           <li>Pago (Pg) = Monto del prestamo(i%/[1-(1+i)^-n])  donde i = interes y n es P</li>
+                           
+                           
+                           <li>Margen de contribución total: Ingreso-v</li>
+                           <li>Utilidad neta en operación: C-F</li>
+                           
+                        </ul>
+                        <br>
+                        <br>
+
+					</div>
+				</div>
+	
+</div>
+
+<script src="js/jquery.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/docjs.js"></script>
+</body>
+</html>

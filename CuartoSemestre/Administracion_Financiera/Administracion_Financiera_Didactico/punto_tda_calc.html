@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width">
+  <title>Administracion</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/menu.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+</head>
+<body class="bck">
+  <header class="fixd">
+  <div class="row ">
+    <div class="col-xs-12">          
+      <div class="row">
+        <div class="col-xs-2">
+          <img id="mostrar-nav" src="icon/menu.png">
+        </div>
+        <div class="col-xs-4">
+          <h3 class="titluni">Tablas de amortización</h3>
+        </div>
+        <div class="col-xs-6">
+          <div class="pestanas">
+             <a href="tablas_de_amortización.html">Fundamentos</a>
+            <a href="punto_tda_calc.html">Simulador</a>
+          </div>
+        </div>
+      </div>  
+     
+    </div>
+
+  </div>
+<nav class="">
+<ul class="menu">
+   <li><a href="index.html" ><img src="icon/homeicon.png" class="menuicon ">Inicio </a></li>
+  
+     <li><a><img src="icon/encicon.png" class="menuicon ">Presentación <span class="caret"></span></a>
+      <ul>
+      <li><a href="introduccion_y_bienvenida.html"><img src="icon/intricon.png" class="menuicon ">Introducción y Bienvenida </a></li>
+      <li><a href="objetivo_y_metodologia.html"><img src="icon/objeticon.png" class="menuicon ">Objetivo y Metodología </a></li>
+      <li><a href="criterios_de_evaluación.html"><img src="icon/evaluicon.png" class="menuicon ">Criterios de Evaluación </a></li>
+      <li><a href="bibliografia.html"><img src="icon/biblicon.png" class="menuicon ">Bibliografia </a></li>
+      </ul>
+    </li>
+    
+  <li><a><img src="icon/practicon.png" class="menuicon ">Practicas <span class="caret"></span></a>
+      <ul>
+        <li><p><a href="Doc\practica_punto_de_equilibrio.docx"><img src="icon/docicon.png" class="menuicon ">Prac. Punto de Equilibrio </a></li>
+        <li><p><a href="Doc\practica_tablas_de_amortizacion.docx"><img src="icon/docicon.png" class="menuicon ">Prac. Tablas de Amortización </a></li>
+        <li><p><a href="Doc\practica_evaluacion_de_proyectos.docx"><img src="icon/docicon.png" class="menuicon ">Prac. Evaluación de Proyectos </a></li>
+      </ul>
+    </li>
+    
+    <li><a><img src="icon/simulicon.png" class="menuicon ">Simulador <span class="caret"></span></a>
+      <ul>
+    <li><a href="punto_de_equilibrio.html"><img src="icon/puntoicon.png" class="menuicon ">Punto de Equilibrio </a></li>
+    <li><a href="tablas_de_amortización.html"><img src="icon/tablaicon.png" class="menuicon ">Tablas de Amortizacion</a></li>
+    <li><a href="evaluacion_de_proyectos.html"><img src="icon/proyectoicon.png" class="menuicon ">Evaluacion de Proyectos</a></li>
+      </ul>
+    </li>
+
+    <li><a><img src="icon/anicon.png" class="menuicon ">Anexos <span class="caret"></span></a>
+      <ul>
+    <li><a href="Doc\manual.pdf"><img src="icon/manualicon.png" class="menuicon ">Manual de Usuario</a></li>
+    <li><a href="Doc\codigo.pdf"><img src="icon/codeicon.png" class="menuicon ">Código Fuente</a></li>
+    <li><a href="Doc\glosario.pdf"><img src="icon/glosaricon.png" class="menuicon ">Glosario</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</header> 
+
+<!--Desmadre -->
+
+<div class="container-fluid">
+    
+        <div class="row">
+          <div class="contbody col-xs-12">
+            <div id="requestinfo">
+            <h3 style="color:black">Tablas de amortización</h3>                       
+            
+            <form action="">
+              <div class="form-group">                                       
+                 <label style="font-size:14px" >Préstamo:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">$</div>
+                 <input type="number" class="form-control" id="prestamo">
+               </div>
+             </div>
+
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Tasa nominal (30 días):</label>
+               <div class="input-group">
+                 <div class="input-group-addon">%</div>
+                 <input type="number" class="form-control" id="tasanom">
+               </div>
+             </div>
+
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Pediodo:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">meses</div>
+     
+                 <select name="months"  id="meses" class="form-control" style="width: 70px; height: 30px; font-size: 15px">
+                   <option>1</option>
+                   <option>3</option>
+                   <option>6</option>
+                   <option>12</option>
+                   <option>24</option>
+                   <option>36</option>
+                   <option>48</option>
+                   <option>60</option>
+                   <option>72</option>
+                </select>
+
+                
+               </div>
+             </div>
+             <div class="form-group form-group-sm">                              
+               <label for="untadv" class="labl">Fecha:</label>
+               <input type="text"  placeholder="dd/mm/yyyy" name="untadv" class="form-control" id="untadv">
+             </div>
+
+             <button type="button" onclick="getAllVars();" data-toggle="modal"  data-target="#info" class="btn btnmarg btn-secondary">Todos los esquemas.</button>
+             <button type="button" onclick="getPagosIguales();" data-toggle="modal"  data-target="#info" class="btn btnmarg btn-primary">Amortizaciones iguales.</button>
+             <button type="button" onclick="getBullet();" data-toggle="modal"  data-target="#info" class="btn btnmarg btn-info"> Esquema Bullet.</button>
+             <button type="button" onclick="getPagosCrecientes();" data-toggle="modal"  data-target="#info" class="btn btnmarg btn-primary">Pagos crecientes.</button>
+             <button type="button" onclick="getAmortizacionesIguales();" data-toggle="modal"  data-target="#info" class="btn btnmarg btn-info">Pagos iguales.</button>
+             </form>
+            </div>
+
+            <div id="datos" style="display:none" class="col-xs-12">
+             <!-- <hr>
+              <p id="param1"></p>
+              <p id="param2"></p>
+              <p id="param3"></p>
+              <p id="param4"></p>
+             <p id="param5"></p>-->
+               <hr>
+            <div id="pagosiguales" style="display:none" class="col-xs-12">
+                 <div class="row">
+                    <h4>Esquema de amortizaciones iguales:</h4>
+                     <div class="col-xs-12">
+                       <div class="overflw table-responsive">
+                         <table class="table table-condensed table-bordered table-responsive">
+                          <thead>
+                            <tr  class="headtr">
+                              <td>Numero de pago</td>
+                              <td>Fecha</td>
+                              <td>Capital Inicial</td>
+                              <td>Amortizacion</td>
+                              <td>Interes</td>
+                              <td>Pago</td>
+                              <td>Capital Final</td>
+                            </tr>
+                          </thead>
+                          <tbody id="esquemaamortigual" class="bodytr">
+                            
+                          </tbody>
+                        </table>
+
+                        <p id="sumaesquemaigual" style="font-size: 14px;color: blue;"></p>
+                       </div>
+                      
+                    </div>
+                  </div> 
+              <hr>
+            </div>
+            <div id="bullet" style="display:none" class="col-xs-12">
+                <div class="row">
+                  <h4>Esquema de amortizaciones tipo Bullet:</h4>
+                   <div class="col-xs-12">
+                     <div class="overflw table-responsive"> 
+                     <!-- aquivan los url si se requieren-->
+                       <table class="table table-condensed table-bordered table-responsive">
+                        <thead>
+                          <tr  class="headtr">
+                            <td>Numero de pago</td>
+                            <td>Fecha</td>
+                            <td>Capital Inicial</td>
+                            <td>Amortizacion</td>
+                            <td>Interes</td>
+                            <td>Pago</td>
+                            <td>Capital Final</td>
+                          </tr>
+                        </thead>
+                        <tbody id="esquemaamortbullet" class="bodytr">
+                          
+                        </tbody>
+                      </table>
+
+                     </div>
+                    
+                  </div>
+                </div> 
+              <hr>
+            </div>
+            <div id="pagoscrecientes" style="display:none" class="col-xs-12">
+                <div class="row">
+                  <h4>Esquema de pago crecientes:</h4>
+                   <div class="col-xs-12">
+                     <div class="overflw table-responsive">
+                        <!-- aquivan los url si se requieren-->
+                       <table class="table table-condensed table-bordered table-responsive">
+                        <thead>
+                          <tr  class="headtr">
+                            <td>Numero de pago</td>
+                            <td>Fecha</td>
+                            <td>Capital Inicial</td>
+                            <td>Amortizacion</td>
+                            <td>Interes</td>
+                            <td>Pago</td>
+                            <td>Capital Final</td>
+                          </tr>
+                        </thead>
+                        <tbody id="esquemapagocrec" class="bodytr">
+                          
+                        </tbody>
+                      </table>
+
+                      <p id="sumaesquemapago" style="font-size: 14px;color: blue;"></p>
+                     </div>
+                    
+                  </div>
+                </div> 
+              <hr>
+            </div>
+            <div id="igualamor" style="display:none" class="col-xs-12">
+                <div class="row">
+                  <h4>Esquema de pago iguales:</h4>
+                   <div class="col-xs-12">
+                     <div class="overflw table-responsive">
+                       <table class="table table-condensed table-bordered table-responsive">
+                        <thead>
+                          <tr  class="headtr">
+                            <td>Numero de pago</td>
+                            <td>Fecha</td>
+                            <td>Capital Inicial</td>
+                            <td>Amortizacion</td>
+                            <td>Interes</td>
+                            <td>Pago</td>
+                            <td>Capital Final</td>
+                          </tr>
+                        </thead>
+                        <tbody id="esquemapagoigual" class="bodytr">
+                          
+                        </tbody>
+                      </table>
+
+                      <p id="sumaesquemapagoigual" style="font-size: 14px;color: blue;"></p>
+                     </div>
+                    
+                  </div>
+              </div>
+              <hr>
+            </div>
+            <!-- boton de regreso-->
+               <p id="result" style="font-size: 16px;color: red;"></p>
+              <div class="col-xs-8 col-xs-offset-2">
+                <button class="btn btn-success" style="width:100%;height:40px;" onclick="history.go(0)">Regresar</button>
+              </div>
+              <div style="height:70px;"></div>        
+          </div> <!-- //datos-->
+        </div> <!-- //contbody -->
+      </div> <!-- //row-->
+
+ <link rel="stylesheet" href="css/jquery-ui.css">
+<script src="js/jquery.js"></script>
+ <script src="js/jquery-ui.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/docjs.js"></script>
+<script type="text/javascript">
+
+$( "#untadv" ).datepicker({
+     dateFormat: 'MM dd yy',
+      defaultDate: "+1w",
+      changeMonth: true,
+      numberOfMonths: 1
+});
+
+var prestamo;
+var tasa;
+var periodo;
+var TE;
+var amortizacion;
+var interes;
+var pagot1;
+var capitalfinalt1;
+var datet;
+var date;
+var sumapago,sumapagot3,sumapagot4;
+
+function retrn(){
+  $("#requestinfo").show();
+  $("#datos").hiden();
+  $("#pagosiguales").hiden();
+  $("#bullet").hiden();
+  $("#pagoscrecientes").hiden();
+  $("#igualamor").hiden();
+}
+
+function getAllVars(){
+date=new Date($("#untadv").val());
+datet=new Date($("#untadv").val());
+  prestamo=document.getElementById("prestamo").value
+  tasa=document.getElementById("tasanom").value
+  periodo=document.getElementById("meses").value
+  tasa=tasa/100;    
+  TE=tasa*(30/360);
+  amortizacion=prestamo/periodo;
+  interes=prestamo*TE;
+  pagot1=amortizacion+interes;
+  capitalfinalt1=prestamo-amortizacion;
+//  setparam();
+  $("#requestinfo").hide();
+  $("#datos").show();
+  $("#pagosiguales").show();
+  $("#bullet").show();
+  $("#pagoscrecientes").show();
+  $("#igualamor").show();
+  esquemaamortigual();
+}
+
+function getPagosIguales(){
+date=new Date($("#untadv").val());
+datet=new Date($("#untadv").val());
+  prestamo=document.getElementById("prestamo").value
+  tasa=document.getElementById("tasanom").value
+  periodo=document.getElementById("meses").value
+  tasa=tasa/100;    
+  TE=tasa*(30/360);
+  amortizacion=prestamo/periodo;
+  interes=prestamo*TE;
+  pagot1=amortizacion+interes;
+  capitalfinalt1=prestamo-amortizacion;
+ // setparam();
+  $("#requestinfo").hide();
+  $("#datos").show();
+  $("#pagosiguales").show();
+  esquemaamortigual();
+}
+
+
+function getBullet(){
+date=new Date($("#untadv").val());
+datet=new Date($("#untadv").val());
+  prestamo=document.getElementById("prestamo").value
+  tasa=document.getElementById("tasanom").value
+  periodo=document.getElementById("meses").value
+  tasa=tasa/100;    
+  TE=tasa*(30/360);
+  amortizacion=prestamo/periodo;
+  interes=prestamo*TE;
+  pagot1=amortizacion+interes;
+  capitalfinalt1=prestamo-amortizacion;
+ // setparam();
+  $("#requestinfo").hide();
+  $("#datos").show();
+  $("#bullet").show();
+  esquemaamortigual();
+}
+
+
+function getPagosCrecientes(){
+date=new Date($("#untadv").val());
+datet=new Date($("#untadv").val());
+  prestamo=document.getElementById("prestamo").value
+  tasa=document.getElementById("tasanom").value
+  periodo=document.getElementById("meses").value
+  tasa=tasa/100;    
+  TE=tasa*(30/360);
+  amortizacion=prestamo/periodo;
+  interes=prestamo*TE;
+  pagot1=amortizacion+interes;
+  capitalfinalt1=prestamo-amortizacion;
+ // setparam();
+  $("#requestinfo").hide();
+  $("#datos").show();
+  $("#pagoscrecientes").show();
+  esquemaamortigual();
+}
+
+
+function getAmortizacionesIguales(){
+date=new Date($("#untadv").val());
+datet=new Date($("#untadv").val());
+  prestamo=document.getElementById("prestamo").value
+  tasa=document.getElementById("tasanom").value
+  periodo=document.getElementById("meses").value
+  tasa=tasa/100;    
+  TE=tasa*(30/360);
+  amortizacion=prestamo/periodo;
+  interes=prestamo*TE;
+  pagot1=amortizacion+interes;
+  capitalfinalt1=prestamo-amortizacion;
+ // setparam();
+  $("#requestinfo").hide();
+  $("#datos").show();
+  $("#igualamor").show();
+  esquemaamortigual();
+}
+
+/*
+function setparam(){
+  $("#param1").html("TE: "+parseFloat(TE).toFixed(6));
+  $("#param2").html("Amortizacion: "+parseFloat(amortizacion).toFixed(2));
+  $("#param3").html("Interes: "+parseFloat(interes).toFixed(2));
+  $("#param4").html("Pago: "+parseFloat(pagot1).toFixed(2));
+  
+}*/
+
+function esquemaamortigual(){
+  sumapago=0;
+  tabla=document.getElementById("esquemaamortigual");
+  tr="<tr>"
+  tr+="<td>1</td><td>"+date.toUTCString().slice(4,16)+"</td><td>$ "+parseFloat(prestamo).toFixed(2)+"</td><td>$ "+parseFloat(amortizacion).toFixed(2)+"</td><td>$ "+parseFloat(interes).toFixed(2)+"</td><td>$ "+parseFloat(pagot1).toFixed(2)+"</td><td>$ "+parseFloat(capitalfinalt1).toFixed(2)+"</td>"
+  tr+="</tr>"
+  sumapago+=pagot1;
+  for (var i = 2; i <= periodo; i++) {
+    tr+="</tr>"
+    interes=capitalfinalt1*TE
+    date1=new Date(date.setMonth(date.getMonth() + 1))
+    tr+="<td>"+i+"</td> <td>"+date1.toUTCString().slice(4,16)+"</td> <td>$ "+parseFloat(capitalfinalt1).toFixed(2)+"</td> <td>$ "+parseFloat(amortizacion).toFixed(2)+"</td> <td>$ "+parseFloat(capitalfinalt1*TE).toFixed(2)+"</td> <td>$ "+parseFloat(amortizacion+interes).toFixed(2)+"</td> <td>$ "+parseFloat(capitalfinalt1-amortizacion).toFixed(2)+"</td>"
+    sumapago+=parseFloat(amortizacion)+parseFloat(interes);
+    capitalfinalt1=capitalfinalt1-amortizacion;
+    tr+="</tr>"
+  };
+  
+tabla.innerHTML=tr;
+$("#sumaesquemaigual").html("Suma de pagos: "+parseFloat(sumapago).toFixed(2));
+
+esquemaamortbullet();
+
+}
+
+function esquemaamortbullet(){
+  date=datet;
+tabla=document.getElementById("esquemaamortbullet");
+tr="";
+for (var i = 1; i < periodo ; i++) {
+
+    date1=date
+  tr+="<tr>"
+  tr+="<td>"+i+"</td><td>"+date1.toUTCString().slice(4,16)+"</td><td>$ "+parseFloat(prestamo).toFixed(2)+"</td><td>$  - </td><td>$ "+parseFloat(interes).toFixed(2)+"</td><td>$ "+parseFloat(interes).toFixed(2)+"</td><td>$ "+parseFloat(prestamo).toFixed(2)+"</td>"
+tr+="</tr>"
+ date1=new Date(date.setMonth(date.getMonth() + 1))
+};
+
+    date1=new Date(date.setMonth(date.getMonth() + 1))
+ tr+="<tr>"
+  tr+="<td>"+periodo+"</td><td>"+date1.toUTCString().slice(4,16)+"</td><td>$ "+parseFloat(prestamo).toFixed(2)+"</td><td>$ "+parseFloat(prestamo).toFixed(2)+"</td><td>$ "+parseFloat(interes).toFixed(2)+"</td><td>$ "+parseFloat(interes).toFixed(2)+"</td><td>$ 0</td>"
+tr+="</tr>"
+tabla.innerHTML=tr
+esquemapagoscrec();
+}
+
+
+function esquemapagoscrec(){
+  date=datet;
+tabla=document.getElementById("esquemapagocrec");
+tr="<tr>"
+
+date1=date
+capitalinit3=prestamo;
+pagot3=(prestamo/periodo)*Math.pow((1+TE),1);
+interest3=prestamo*TE;
+amortizaciont3=pagot3-interest3;
+capitalfinalt3=capitalinit3-amortizaciont3
+sumapagot3=pagot3;
+tr+="<td>"+1+"</td><td>"+date1.toUTCString().slice(4,16)+"</td><td>$ "+parseFloat(capitalinit3).toFixed(2)+"</td><td>$"+parseFloat(amortizaciont3).toFixed(2)+"</td><td>$ "+parseFloat(interest3).toFixed(2)+"</td><td>$ "+parseFloat(pagot3).toFixed(2)+"</td><td>$ "+parseFloat(capitalfinalt3).toFixed(2)+"</td>"
+
+tr+="</tr>";
+
+for (var i = 2; i <= periodo; i++) {
+  capitalinit3=capitalfinalt3;
+pagot3=(prestamo/periodo)*Math.pow((1+TE),i);
+interest3=capitalinit3*TE;
+amortizaciont3=pagot3-interest3;
+capitalfinalt3=capitalinit3-amortizaciont3
+sumapagot3+=pagot3;
+  date1=new Date(date.setMonth(date.getMonth() + 1))
+tr+="<tr>"
+tr+="<td>"+i+"</td><td>"+date1.toUTCString().slice(4,16)+"</td><td>$ "+parseFloat(capitalinit3).toFixed(2)+"</td><td>$"+parseFloat(amortizaciont3).toFixed(2)+"</td><td>$ "+parseFloat(interest3).toFixed(2)+"</td><td>$ "+parseFloat(pagot3).toFixed(2)+"</td><td>$ "+parseFloat(capitalfinalt3).toFixed(2)+"</td>"
+tr+="</tr>"
+};
+tabla.innerHTML=tr
+$("#sumaesquemapago").html("Suma de pagos: "+parseFloat(sumapagot3).toFixed(2));
+esquemapagosigual()
+
+}
+
+
+
+
+function esquemapagosigual(){
+date=datet;
+tabla=document.getElementById("esquemapagoigual");
+tr="<tr>"
+pagot4=prestamo*(TE/(1-Math.pow((1+TE),-periodo)))
+
+date1=date
+capitalinit4=prestamo;
+interest4=prestamo*TE;
+amortizaciont4=pagot4-interest4;
+capitalfinalt4=capitalinit4-amortizaciont4
+
+tr+="<td>"+1+"</td><td>"+date1.toUTCString().slice(4,16)+"</td><td>$ "+parseFloat(capitalinit4).toFixed(2)+"</td><td>$"+parseFloat(amortizaciont4).toFixed(2)+"</td><td>$ "+parseFloat(interest4).toFixed(2)+"</td><td>$ "+parseFloat(pagot4).toFixed(2)+"</td><td>$ "+parseFloat(capitalfinalt4).toFixed(2)+"</td>"
+
+tr+="</tr>";
+
+for (var i = 2; i <= periodo; i++) {
+  capitalinit4=capitalfinalt4;
+interest4=capitalinit4*TE;
+amortizaciont4=pagot4-interest4;
+capitalfinalt4=capitalinit4-amortizaciont4
+
+  date1=new Date(date.setMonth(date.getMonth() + 1))
+tr+="<tr>"
+tr+="<td>"+i+"</td><td>"+date1.toUTCString().slice(4,16)+"</td><td>$ "+parseFloat(capitalinit4).toFixed(2)+"</td><td>$"+parseFloat(amortizaciont4).toFixed(2)+"</td><td>$ "+parseFloat(interest4).toFixed(2)+"</td><td>$ "+parseFloat(pagot4).toFixed(2)+"</td><td>$ "+parseFloat(capitalfinalt4).toFixed(2)+"</td>"
+tr+="</tr>"
+};
+tabla.innerHTML=tr
+sumapagot4=pagot4*periodo
+$("#sumaesquemapagoigual").html("Suma de pagos: "+parseFloat(pagot4*periodo).toFixed(2));
+
+getResult();
+}
+
+
+function getResult(){
+ if ((sumapago<sumapagot3) && (sumapago<sumapagot4))
+{
+  cad="Esquema de amortizaciones iguales"
+}
+if ((sumapagot3<sumapagot4) && (sumapagot3<sumapagot4))
+{
+  cad="Esquema de pago crecientes"
+}
+if ((sumapagot4<sumapagot3) && (sumapagot4<sumapagot3))
+{
+  cad="Esquema de pago iguales"
+}  
+
+  $("#result").html("El esquema que mas conviene aplicar es: "+cad);
+}
+
+
+</script>
+
+</html>

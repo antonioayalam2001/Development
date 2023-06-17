@@ -1,0 +1,145 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <string.h>
+#include <errno.h>
+#include <sys/stat.h>
+
+char rutacopiado[34] = {"/home/jomiantc/Escritorio/arc0.txt"};
+char ruta[53] = {"/home/jomiantc/Escritorio/Programas/Punto_8/arc0.txt"};
+char save[1];
+char cadena[46];
+
+int variable, i, j, pausa;
+char buf[46];
+mode_t mode = S_IRUSR | S_IWUSR;
+
+void leer();
+void impricontent();
+
+int main(void){
+
+	do{
+
+		printf("Que deseas hacer?\n");
+		printf("1 - Leer contenido de archivo\n");
+		printf("2 - Copiar archivos\n\n");
+
+		printf("0 - Salir del programa\n\n");
+
+		printf("Digite el numero de la accion: \t");
+
+		scanf("%d", &i);
+
+		system("clear");
+
+		if(i == 0){
+
+			i = -1;
+
+		}
+
+		else{
+
+			leer();
+		}
+
+		system("clear");
+
+	}while(i != -1);
+
+}
+
+void leer(){
+
+	do{
+
+		if(i == 1) printf("De cual archivo desear ver el contenido?\n");
+		if(i == 2) printf("Que archivo desea copiar?\n");
+		printf("1 - arc0.txt\n");
+		printf("2 - arc1.txt\n");
+		printf("3 - arc2.txt\n");
+		printf("4 - arc3.txt\n");
+		printf("5 - arc4.txt\n");
+		printf("6 - arc5.txt\n");
+		printf("7 - arc6.txt\n");
+		printf("8 - arc7.txt\n");
+		printf("9 - arc8.txt\n");
+		printf("10 - arc9.txt\n\n");
+
+		printf("0 Regresar al menu anterior\n\n");
+
+		printf("Digite el numero del archivo: \t");
+
+		scanf("%d", &j);
+
+		system("clear");
+
+		if(j == 0){
+
+			j = -1;
+			pausa = 0;
+		}
+
+		else{
+
+			impricontent();
+		}
+
+		if(pausa == 10){
+
+			printf("Digite 0 para continuar: \t");
+
+			scanf("%d", &i);
+
+			system("clear");
+
+		}
+
+
+	}while(j != -1);
+}
+
+void impricontent(){
+
+	j--;
+
+	sprintf(save,"%d",j);
+
+	ruta[47] = save[0];
+
+	variable = open(ruta, O_RDONLY);
+
+	read(variable, buf, 46);
+
+	close(variable);
+
+
+	if(i == 1){ 
+
+		printf("Contenido: %s\n", buf);
+
+	}
+
+	if(i == 2){
+
+		strcpy(cadena, buf);
+
+		rutacopiado[29] = save[0];
+
+		variable = creat(rutacopiado, mode);
+
+		variable = open(rutacopiado, O_WRONLY);
+
+		write(variable, &cadena, sizeof(cadena));
+
+		close(variable);
+
+		printf("El contenido se ah copiado en el Escritorio con exito \n");
+	}
+
+	pausa = 10;
+
+	j = -1;
+}

@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width">
+  <title>Administracion</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/menu.css">
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet"> 
+</head>
+<body class="bck">
+		<header class="fixd">
+  <div class="row ">
+    <div class="col-xs-12">          
+      <div class="row">
+        <div class="col-xs-2">
+          <img id="mostrar-nav" src="icon/menu.png">
+        </div>
+        <div class="col-xs-4">
+          <h3 class="titluni">Punto de equilibrio</h3>
+        </div>
+        <div class="col-xs-6">
+          <div class="pestanas">
+           <a href="punto_de_equilibrio.html">Fundamentos</a>
+            <a href="punto_eq_calc.html">Simulador</a>
+
+          </div>
+        </div>
+      </div>  
+     
+    </div>
+
+  </div>
+<nav class="">
+<ul class="menu">
+   <li><a href="index.html" ><img src="icon/homeicon.png" class="menuicon ">Inicio </a></li>
+  
+     <li><a><img src="icon/encicon.png" class="menuicon ">Presentación <span class="caret"></span></a>
+      <ul>
+      <li><a href="introduccion_y_bienvenida.html"><img src="icon/intricon.png" class="menuicon ">Introducción y Bienvenida </a></li>
+      <li><a href="objetivo_y_metodologia.html"><img src="icon/objeticon.png" class="menuicon ">Objetivo y Metodología </a></li>
+      <li><a href="criterios_de_evaluación.html"><img src="icon/evaluicon.png" class="menuicon ">Criterios de Evaluación </a></li>
+      <li><a href="bibliografia.html"><img src="icon/biblicon.png" class="menuicon ">Bibliografia </a></li>
+      </ul>
+    </li>
+    
+  <li><a><img src="icon/practicon.png" class="menuicon ">Practicas <span class="caret"></span></a>
+      <ul>
+        <li><p><a href="Doc\practica_punto_de_equilibrio.docx"><img src="icon/docicon.png" class="menuicon ">Prac. Punto de Equilibrio </a></li>
+        <li><p><a href="Doc\practica_tablas_de_amortizacion.docx"><img src="icon/docicon.png" class="menuicon ">Prac. Tablas de Amortización </a></li>
+        <li><p><a href="Doc\practica_evaluacion_de_proyectos.docx"><img src="icon/docicon.png" class="menuicon ">Prac. Evaluación de Proyectos </a></li>
+      </ul>
+    </li>
+    
+    <li><a><img src="icon/simulicon.png" class="menuicon ">Simulador<span class="caret"></span></a>
+      <ul>
+    <li><a href="punto_de_equilibrio.html"><img src="icon/puntoicon.png" class="menuicon ">Punto de Equilibrio </a></li>
+    <li><a href="tablas_de_amortización.html"><img src="icon/tablaicon.png" class="menuicon ">Tablas de Amortizacion</a></li>
+    <li><a href="evaluacion_de_proyectos.html"><img src="icon/proyectoicon.png" class="menuicon ">Evaluacion de Proyectos</a></li>
+      </ul>
+    </li>
+
+    <li><a><img src="icon/anicon.png" class="menuicon ">Anexos <span class="caret"></span></a>
+      <ul>
+    <li><a href="Doc\manual.pdf"><img src="icon/manualicon.png" class="menuicon ">Manual de Usuario</a></li>
+    <li><a href="Doc\codigo.pdf"><img src="icon/codeicon.png" class="menuicon ">Código Fuente</a></li>
+    <li><a href="Doc\glosario.pdf"><img src="icon/glosaricon.png" class="menuicon ">Glosario</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</header>  
+<div class="container-fluid">		
+				<div class="row">
+					<div class="contbody col-xs-12">
+                  <h3 style="color:black">Calculadora de Punto de Equilibrio.</h3>
+                  <h4 style="color:#0B615E" id="titulo" class="">Un solo producto.</h4>
+                
+                     <form class="form-inline">
+                        <div id="prods">
+                           <div id="prod1">
+                              <br>
+                                 <h4 id="no1" class="subtitle"></h4>
+                              <br>
+                                 <div class="form-group">
+                                       
+                                       <label style="font-size:14px">   Precio de venta:</label>
+                                     <div class="input-group">
+                                       <div class="input-group-addon">$</div>
+                                       <input type="number" class="form-control precio" id="prec">
+                                     </div>
+                                   </div>
+                                   <br>
+                                   <div class="form-group">
+                                       <label style="font-size:14px"  >Costo variable por unidad:</label>
+                                     <div class="input-group">
+                                       <div class="input-group-addon">$</div>
+                                       <input type="number" class="form-control costov" id="cvu" >
+                                     </div>
+                                   </div>                                   
+                                    <br>
+                                   <div class="form-group" id="prodprop" style="display:none">
+                                       <label style="font-size:14px" >Proporción de producción:</label>
+                                     <div class="input-group">
+                                       <div class="input-group-addon">%</div>
+                                       <input type="number" class="form-control proporc" id="prop" >
+                                     </div>
+                                   </div>
+                                 </div>
+                              </div>
+
+                               
+                                 <br> 
+                                 <hr>
+                                   <div class="form-group">
+                                       <label style="font-size:14px">Costo fijo:</label>
+                                     <div class="input-group">
+                                       <div class="input-group-addon">$</div>
+                                       <input type="number" class="form-control costof" id="cf" >
+                                     </div>
+                                   </div>
+
+                                  <br>
+                                   <div  class="form-group">
+                                       <label style="font-size:14px" for="ue1" >Utilidad Esperada:</label>
+                                     <div class="input-group">
+                                       <div class="input-group-addon">$</div>
+                                       <input onchange="util(this);" type="number" class="form-control" id="ue1">
+                                     </div>
+                                 </div>
+                                 <br>
+                                 <hr>
+                                 <div id="chkb"  class="form-group">
+                                   <div class="checkbox">
+                                    <label style="font-size:15px">
+                                      <input type="checkbox"  id="apal" value="" onchange="radioc(this);">
+                                      Calcular Grado de Apalancamiento de este Producto 
+                                    </label>
+                                  </div>
+                                </div>
+                                <br>
+                                <br>
+                                <div id="gradapal" style="display:none">
+                                  <div class="form-group">
+                                       <label style="font-size:14px">Cantidad 1:</label>
+                                     <div class="input-group">
+                                       <div class="input-group-addon">$</div>
+                                       <input type="number" class="form-control cant1" id="cant1" >
+                                     </div>
+                                   </div>
+
+                                  <br>
+                                   <div class="form-group">
+                                       <label style="font-size:14px" for="ue1" >Cantidad 2:</label>
+                                     <div class="input-group">
+                                       <div class="input-group-addon">$</div>
+                                       <input type="number" class="form-control cant2" id="cant2">
+                                     </div>
+                                   </div>
+                                  <br>
+                                </div>
+                             <br><br>
+                              <button type="button" onclick="agregar();" class="btn btnmarg btn-primary">Agregar Producto.</button>
+                             <br>  
+                            <button type="button" onclick="eliminar();" class="btn btnmarg btn-danger">Eliminar Producto.</button><br>
+                           <button type="button" onclick="vertab();" data-toggle="modal"  data-target="#info" class="btn btnmarg btn-success">Resultados.</button>
+                              <br>                   
+                         
+                           
+                           
+                     </form>
+                     <div style="height:30px;"></div>
+					</div>
+				</div>	
+</div>
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+ <div class="modal fade" id="info" role="dialog">
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Información:</h4>
+        </div>
+        <div class="modal-body">
+         <div class="row">
+            <div class="col-xs-12" id="opera">
+            </div>
+         </div>
+       </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+<script src="js/jquery.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="js/docjs.js"></script>
+<script>
+
+   var contador=1;
+   var sw=0;
+
+function radioc(who){
+if (who.checked==true) {
+document.getElementById('gradapal').style="display:block";
+}else{
+document.getElementById('gradapal').style="display:none";
+}
+}
+
+$(document).ready(function() {
+    $("input").keydown(function (e) {
+        // Allow: backspace, delete, tab, escape, enter and .
+        if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||
+             // Allow: Ctrl+A, Command+A
+            (e.keyCode === 65 && (e.ctrlKey === true || e.metaKey === true)) || 
+             // Allow: home, end, left, right, down, up
+            (e.keyCode >= 35 && e.keyCode <= 40)) {
+                 // let it happen, don't do anything
+                 return;
+        }
+        // Ensure that it is a number and stop the keypress
+        if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+            e.preventDefault();
+        }
+    });
+});
+
+   function eliminar(){
+      if (contador==1) {
+         alert("No se pueden eliminar mas productos");
+      }else if(contador==2){
+        document.getElementById('chkb').style="display:block";
+        document.getElementById('apal').checked=false;
+          $('#prod'+contador).remove();
+          document.getElementById("titulo").innerHTML="Un solo Producto"; 
+         document.getElementById("prodprop").style="display:none";
+         contador--;
+      }else{
+         $('#prod'+contador).remove();
+        contador--;
+      }
+      
+
+   }
+
+   function agregar(){
+      contt=contador+1;
+      contm=contador-1;
+      
+
+      if (contador==1) {
+        document.getElementById('gradapal').style="display:none";
+        document.getElementById('chkb').style="display:none";
+         document.getElementById("prodprop").style="display:block";
+           $( "#prods" ).append( '<div id="prod'+(contt)+'"></div>' );
+      $( "#prod"+contt ).append( $('#prod1').html() );
+      $( "#prod"+contt+" > .subtitle" ).html( 'Producto No: '+contt+'' );
+         document.getElementById("no1").innerHTML="Producto No: "+contador;
+         document.getElementById("titulo").innerHTML="Varios Productos";
+          $( "#prop" )[0].focus();
+      }else{
+
+         $( "#prods" ).append( '<div id="prod'+(contt)+'"></div>' );
+         $( "#prod"+contt ).append( $('#prod1').html() );
+         $( "#prod"+contt+" > .subtitle" ).html( 'Producto No: '+contt+'' );
+      }
+      contador++;
+   }
+
+   function util(a){
+
+      if (a.value==""|| /^\s*$/.test(a.value)) {
+         sw=0;
+         if (contador==1) {
+            document.getElementById("titulo").innerHTML="Un solo producto.";
+         }else{
+             document.getElementById("titulo").innerHTML="Varios Productos.";
+         }
+         
+      }else{
+         sw=1;
+         if (contador==1) {
+            document.getElementById("titulo").innerHTML="Un solo producto con Utilidad Esperada.";
+         }else{
+             document.getElementById("titulo").innerHTML="Varios Productos con Utilidad Esperada.";
+         }
+          
+      }
+       
+   }
+
+
+function value100(fort){
+  ax=0;
+  for (var i = 0; i < fort.length; i++) {
+    if (fort[i].value=='') {continue};
+   ax+= parseInt(fort[i].value)
+  };
+
+   if (parseInt(ax)<100||parseInt(ax)>100) {
+    alert("La suma de la Proporción de producción debe ser igual a 100%")
+    return 0
+  };
+  return 1;
+}
+
+
+
+function vertab(){
+    divoperac=document.getElementById("opera").innerHTML="";
+
+      if (contador==1) {
+         if (sw==1) {
+          onewithoutue(parseFloat(document.getElementById('ue1').value));
+
+         }else{
+            onewithoutue();
+         }
+      }else{
+        if(value100(document.getElementsByClassName('proporc'))){
+           if (sw==1) {
+            others(parseFloat(document.getElementById('ue1').value));
+           }else{
+             others(); 
+           }
+         }
+         else{
+          return 0;
+         }
+      }
+   }
+
+
+$('#info').on('shown.bs.modal', function () {
+chart.setSize(document.getElementById('grap').offsetWidth,document.getElementById('grap').offsetHeight,false)
+});
+
+
+function others(ute){
+divoperac=document.getElementById("opera");
+allprecio=(document.getElementsByClassName("precio"));
+allcostova=(document.getElementsByClassName("costov"));
+allproprod=(document.getElementsByClassName('proporc'))
+costofi=parseFloat(document.getElementsByClassName("costof")[0].value);
+tex="Punto de Equilibrio c/(UE)"
+if (ute == undefined){
+  ute = parseInt(0); 
+  tex="Punto de Equilibrio"
+}
+var contrmarg = [];
+var margpond = [];
+var q=[]
+var margponprm=0;
+htm="<div class='table-responsive'><table class='table table-bordered'><thead><tr class='info'><td>Producto</td>"
+  for (var i =0; i < contador; i++) {
+    htm+="<td>"+(i+1)+"</td>"
+  };
+  htm+='</tr></thead><tbody><tr ><td>Contribución Marginal</td>'
+for (var i =0; i < contador; i++) {
+  contrmarg[i]=(allprecio[i].value)-(allcostova[i].value);
+    htm+="<td>"+contrmarg[i].toFixed(2)+"</td>"
+  };
+htm+='</tr><tr><td>Contribución Marginal Ponderada</td>'
+for (var i =0; i < contador; i++) {
+ mr=contrmarg[i]*((allproprod[i].value)/100);
+    margponprm+=(mr);
+    htm+="<td>"+mr.toFixed(2)+"</td>"
+  };
+  htm+='</tr></tbody></table></div>'
+divoperac.innerHTML=htm;
+ divoperac.innerHTML+="<p>Contribución Marginal Ponderada Promedio: "+margponprm.toFixed(2)+"</p>"
+ unimez=(costofi+ute)/margponprm;
+ divoperac.innerHTML+="<p>Unidades Mezcladas: "+unimez.toFixed(2)+"</p>"
+
+qmas=0;
+
+ htm="<br /> <br /> <div class='table-responsive'><table class='table table-bordered'><thead><tr class='info'><td>Producto</td>"
+  for (var i =0; i < contador; i++) {
+    htm+="<td>"+(i+1)+"</td>"
+  };
+  htm+='</tr></thead><tbody><tr ><td>Punto de Equilibrio en Unidades (Q)</td>'
+
+for (var i =0; i < contador; i++) {
+  q[i]=(unimez)*((allproprod[i].value)/100);
+  qmas+=q[i]
+    htm+="<td>"+q[i].toFixed(2)+"</td>"
+  };
+  htm+='</tr></tbody></table></div>'
+divoperac.innerHTML+=htm;
+divoperac.innerHTML+="<br /> <p style='color:#337AB7; text-decoration:underline; font-size:14px;'>Punto de Equilibrio en Unidades (Q): "+qmas.toFixed(2)+" unidades</p><br />"
+divoperac.innerHTML+="<h5>Comprobación:</h5>"
+
+ing=[];
+cvtu=[];
+
+
+ htm="<br /> <div class='table-responsive'><table class='table table-bordered'><thead><tr class='info'><td>Producto</td>"
+  for (var i =0; i < contador; i++) {
+    htm+="<td>"+(i+1)+"</td>"
+  };
+  htm+='</tr></thead><tbody><tr><td>Ingreso</td>'
+ingtot=0;
+for (var i =0; i < contador; i++) {
+  ing[i]=q[i]*allprecio[i].value
+  ingtot+=ing[i]
+    htm+="<td>"+ing[i].toFixed(2)+"</td>"
+  };
+  cvtutt=0;
+htm+='</tr><tr><td>Costos Variables Totales por Unidad</td>'
+for (var i =0; i < contador; i++) {
+ cvtu[i]=allcostova[i].value*q[i];
+ cvtutt+=cvtu[i];
+    htm+="<td>"+cvtu[i].toFixed(2)+"</td>"
+  };
+  margcontrib=[];
+  margcotrtot=0;
+  htm+='</tr><tr><td>Margen de Contribucion</td>'
+for (var i =0; i < contador; i++) {
+  margcontrib[i]=ing[i]-cvtu[i];
+  margcotrtot+=margcontrib[i];
+    htm+="<td>"+margcontrib[i].toFixed(2)+"</td>"
+  };
+  htm+='</tr><tr><td>(Sumando)</td>'
+  
+  htm+="<td colspan='"+contador+"'>"+margcotrtot.toFixed(2)+"</td>"
+ htm+='</tr><tr><td>Costo Fijo</td>'
+  htm+="<td colspan='"+contador+"'>"+(costofi)+"</td>"
+  htm+='</tr><tr><td>Utilidad/Perdida</td>'
+  htm+="<td colspan='"+contador+"'>"+(margcotrtot.toFixed(2)-costofi)+"</td>"
+  htm+='</tr></tbody></table></div>'
+
+  htm+='<br /><p style="color:#337AB7; text-decoration:underline; font-size:14px;">Punto de Equilibrio en Efectivo (TR*): $ '+ingtot.toFixed(2)+'</p><br />'
+  htm+='<h5>Grafica:</h5> <div id="grap"></div>'
+divoperac.innerHTML+=htm;
+
+costto=cvtutt+costofi;
+qmas2=qmas*2;
+cvtu2=[];
+cvtutt2=0;
+for (var i =0; i < contador; i++) {
+ cvtu2[i]=allcostova[i].value*(q[i]*2);
+ cvtutt2+=cvtu2[i];
+ }
+ ing2=[];
+ ingtot2=0;
+for (var i =0; i < contador; i++) {
+  ing2[i]=q[i]*2*allprecio[i].value
+  ingtot2+=ing2[i]
+  };
+costto2=cvtutt2+costofi;
+chart = new Highcharts.Chart('grap',{
+         title:{
+            text:'Punto de Equilibrio Varios Productos',            
+            x:-20
+         },
+         yAxis:{
+            title:{
+               text:"Valores"
+            },
+        
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#666666'
+            },{
+              color: 'red',
+              dashStyle: 'longdashdot',
+              value: costto,
+              width: 2,
+                label: {
+                    text: tex,
+                    align: 'left',
+                    x: 0
+                }   
+            }]
+         },
+
+            plotOptions: {
+                line: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            },
+         tooltip:{
+            valueSuffix:'$'
+         },
+         xAxis:{
+            title:{
+               text:'Unidades vendidas'
+            },
+  plotLines: [{
+    color: 'red', // Color value
+    dashStyle: 'longdashdot', // Style of the plot line. Default to solid
+    value: qmas, // Value of where the line will appear
+    width: 2 // Width of the line    
+  }]
+        
+         },
+
+        plotOptions: {
+            series: {
+                enableMouseTracking: false
+            }
+        },
+
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+
+          series: [{
+            name: 'Costo Total',
+            data: [[0,costofi],  [qmas,costto],[qmas2,costto2]]
+        }, {
+            name: 'Ingresos',
+            data: [[0,0], { marker: {
+                    fillColor: '#FF0000',
+                    lineWidth: 3,
+                    radius:7,
+                    lineColor: "#FF0000" // inherit from series
+            },y:ingtot,x:qmas},[qmas2,ingtot2]]
+        }, {
+            name: 'Costo Fijo',
+            data: [[0,costofi], [qmas2,costofi]]
+        }],
+
+
+                responsive: {
+            rules: [{
+                condition: {
+                    maxWidth: 500
+                },
+                chartOptions: {
+                    legend: {
+                        align: 'center',
+                        verticalAlign: 'bottom',
+                        layout: 'horizontal'
+                    },
+                    yAxis: {
+                        labels: {
+                            align: 'left',
+                            x: 0,
+                            y: -5
+                        },
+                        title: {
+                            text: null
+                        }
+                    },
+                    subtitle: {
+                        text: null
+                    },
+                    credits: {
+                        enabled: false
+                    }
+                }
+            }]
+        }
+
+      });
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+   function onewithoutue(ute){
+      precio=parseFloat(document.getElementsByClassName("precio")[0].value);
+      costova=parseFloat(document.getElementsByClassName("costov")[0].value);
+      costofi=parseFloat(document.getElementsByClassName("costof")[0].value);
+
+      if (ute == undefined)
+      {
+      ute = parseInt(0);
+      tex='Punto de Equilibrio';
+      }else{
+        tex='Punto de Equilibrio c/(UE)';
+      }
+
+      divoperac=document.getElementById("opera");
+      margcont=precio-costova;
+      divoperac.innerHTML="<p>Margen de contribución por unidad (c): $ "+margcont.toFixed(2)+"<p>";
+      
+      q=(costofi+ute)/margcont;
+      q2=q*2
+      divoperac.innerHTML+="<p>Cantidad de punto de equilibrio de las unidades (Q*): "+q.toFixed(2)+" unidades</p>"
+      divoperac.innerHTML+="<br /><p>Punto de equilibrio en efectivo (TR*): $ "+(precio*q).toFixed(2)+"</p>"
+      divoperac.innerHTML+="<br /><h5>Comprobación:</h5>";
+       tab="<table class='table table-bordered' ><tbody><tr><td>P*Q</td><td>Ingreso por venta: </td><td>"+(precio*q).toFixed(2)+"</td></tr><tr><td> - vQ</td><td>Costos variables totales:</td><td>"+(costova*q).toFixed(2)+"</td></tr><tr><td> = </td><td>Margen de Contribucion (C): </td><td>"+((precio*q)-(costova*q)).toFixed(2)+"</td></tr><tr><td> - </td><td>Costos Fijos: </td><td>"+costofi.toFixed(2)+"</td></tr><tr><td> = </td><td>Ingreso neto de operación: </td><td>"+(((precio*q)-(costova*q))-costofi).toFixed(2)+"</td></tr>  </tbody></table><br /> ";
+      divoperac.innerHTML+=tab;
+      divoperac.innerHTML+='<br /><h5>Grafica:</h5><div id="grap" style="width:100%;margin: 0 auto"></div>'
+      costto=(costofi+(costova*q))      
+      ingrven=(precio*q)
+      costto2=(costofi+(costova*q2)) 
+       ingrven2=(precio*q2)
+
+
+    
+
+if (document.getElementById('apal').checked==true) {
+  val1=parseFloat(document.getElementById('cant1').value)
+  val2=parseFloat(document.getElementById('cant2').value)
+  iv1=val1*precio
+  iv2=val2*precio
+  cv1=costova*val1
+  cv2=costova*val2
+  mc1=iv1-cv1
+  mc2=iv2-cv2
+
+  htm="<br /><br /><hr /><h5>Grado de Apalancamiento</h5><table class='table table-bordered'><thead><tr class='info'>"
+  htm+="<td></td><td>Unidades Vendidas</td><td>"+val1+"</td><td>"+val2+"</td></tr>"
+htm+="</thead><tbody><tr><td>P*Q</td><td>Ingreso por Venta</td><td>"+iv1.toFixed(2)+"</td><td>"+iv2.toFixed(2)+"</td>"
+htm+="</tr><tr><td>-vQ</td><td>Costos Variables Totales</td><td>"+cv1.toFixed(2)+"</td><td>"+cv2.toFixed(2)+"</td></tr>"
+htm+="<tr><td>=</td><td>Margen de Contribucion (C)</td><td>"+mc1.toFixed(2)+"</td><td>"+mc2.toFixed(2)+"</td></tr>"
+htm+="<tr><td>-</td><td>Costos Fijos (F)</td><td colspan='2'>"+costofi+"</td></tr><tr><td>=</td><td>Ingreso Neto en Operacion (x)</td>"
+htm+="<td>"+(mc1-costofi).toFixed(2)+"</td><td>"+(mc2-costofi).toFixed(2)+"</td></tr></tbody></table>"
+delingr=((mc2-costofi)-(mc1-costofi))/(mc1-costofi)
+delq=(val2-val1)/(val1)
+htm+='<p>Grado de Apalancamiento = <img src="apalf.png" style="height: 60px;" alt="" /> = '+delingr.toFixed(2)+'/'+delq.toFixed(2)+' = '+(delingr/delq).toFixed(2)+'</p>'
+gradapalanca=(delingr/delq)
+stto='un aumento'
+if (gradapalanca<0) {
+stto='una disminucion'
+};
+htm+="<p style='font-size:14px; text-decoration:underline;'>Un cambio de "+(delingr*100).toFixed(0)+" % en un volumen de ventas experimenta "+stto+" de utilidades del "+(delq*100).toFixed(0)+" %</p>"
+divoperac.innerHTML+=htm;
+};
+
+  chart = new Highcharts.Chart('grap',{
+         title:{
+            text:tex,            
+            x:-20
+         },
+         yAxis:{
+            title:{
+               text:"Valores"
+            },
+        
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#666666'
+            },{
+              color: 'red',
+              dashStyle: 'longdashdot',
+              value: costto,
+              width: 2,
+                label: {
+                    text: tex,
+                    align: 'left',
+                    x: 0
+                }   
+            }]
+         },
+
+            plotOptions: {
+                line: {
+                    marker: {
+                        enabled: false
+                    }
+                }
+            },
+         tooltip:{
+            valueSuffix:'$'
+         },
+         xAxis:{
+            title:{
+               text:'Unidades vendidas'
+            },
+  plotLines: [{
+    color: 'red', // Color value
+    dashStyle: 'longdashdot', // Style of the plot line. Default to solid
+    value: q, // Value of where the line will appear
+    width: 2 // Width of the line    
+  }]
+        
+         },
+
+        plotOptions: {
+            series: {
+                enableMouseTracking: false
+            }
+        },
+
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+
+          series: [{
+            name: 'Costo Total',
+            data: [[0,costofi],  [q,costto],[q2,costto2]]
+        }, {
+            name: 'Ingresos',
+            data: [[0,0], { marker: {
+                    fillColor: '#FF0000',
+                    lineWidth: 3,
+                    radius:7,
+                    lineColor: "#FF0000" // inherit from series
+            },y:ingrven,x:q},[q2,ingrven2]]
+        }, {
+            name: 'Costo Fijo',
+            data: [[0,costofi], [q2,costofi]]
+        }],
+
+
+                responsive: {
+            rules: [{
+                condition: {
+                    maxWidth: 500
+                },
+                chartOptions: {
+                    legend: {
+                        align: 'center',
+                        verticalAlign: 'bottom',
+                        layout: 'horizontal'
+                    },
+                    yAxis: {
+                        labels: {
+                            align: 'left',
+                            x: 0,
+                            y: -5
+                        },
+                        title: {
+                            text: null
+                        }
+                    },
+                    subtitle: {
+                        text: null
+                    },
+                    credits: {
+                        enabled: false
+                    }
+                }
+            }]
+        }
+
+      });
+
+
+   }
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

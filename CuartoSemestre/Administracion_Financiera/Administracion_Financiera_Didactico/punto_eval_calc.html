@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width">
+  <title>Administracion</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/menu.css">
+
+</head>
+<body class="bck">
+  <header class="fixd">
+  <div class="row ">
+    <div class="col-xs-12">          
+      <div class="row">
+        <div class="col-xs-2">
+          <img id="mostrar-nav" src="icon/menu.png">
+        </div>
+        <div class="col-xs-4">
+          <h3 class="titluni">Evaluación de proyectos</h3>
+        </div>
+        <div class="col-xs-6">
+          <div class="pestanas">
+            <a href="evaluacion_de_proyectos.html">Fundamentos</a>
+            <a href="punto_eval_calc.html">Simulador</a>
+          </div>
+        </div>
+      </div>  
+     
+    </div>
+
+  </div>
+
+<nav class="">
+<ul class="menu">
+   <li><a href="index.html" ><img src="icon/homeicon.png" class="menuicon ">Inicio </a></li>
+  
+     <li><a><img src="icon/encicon.png" class="menuicon ">Presentación <span class="caret"></span></a>
+      <ul>
+      <li><a href="introduccion_y_bienvenida.html"><img src="icon/intricon.png" class="menuicon ">Introducción y Bienvenida </a></li>
+      <li><a href="objetivo_y_metodologia.html"><img src="icon/objeticon.png" class="menuicon ">Objetivo y Metodología </a></li>
+      <li><a href="criterios_de_evaluación.html"><img src="icon/evaluicon.png" class="menuicon ">Criterios de Evaluación </a></li>
+      <li><a href="bibliografia.html"><img src="icon/biblicon.png" class="menuicon ">Bibliografia </a></li>
+      </ul>
+    </li>
+    
+  <li><a><img src="icon/practicon.png" class="menuicon ">Practicas <span class="caret"></span></a>
+      <ul>
+        <li><p><a href="Doc\practica_punto_de_equilibrio.docx"><img src="icon/docicon.png" class="menuicon ">Prac. Punto de Equilibrio </a></li>
+        <li><p><a href="Doc\practica_tablas_de_amortizacion.docx"><img src="icon/docicon.png" class="menuicon ">Prac. Tablas de Amortización </a></li>
+        <li><p><a href="Doc\practica_evaluacion_de_proyectos.docx"><img src="icon/docicon.png" class="menuicon ">Prac. Evaluación de Proyectos </a></li>
+      </ul>
+    </li>
+    
+    <li><a><img src="icon/simulicon.png" class="menuicon ">Simulador <span class="caret"></span></a>
+      <ul>
+    <li><a href="punto_de_equilibrio.html"><img src="icon/puntoicon.png" class="menuicon ">Punto de Equilibrio </a></li>
+    <li><a href="tablas_de_amortización.html"><img src="icon/tablaicon.png" class="menuicon ">Tablas de Amortizacion</a></li>
+    <li><a href="evaluacion_de_proyectos.html"><img src="icon/proyectoicon.png" class="menuicon ">Evaluacion de Proyectos</a></li>
+      </ul>
+    </li>
+
+    <li><a><img src="icon/anicon.png" class="menuicon ">Anexos <span class="caret"></span></a>
+      <ul>
+    <li><a href="Doc\manual.pdf"><img src="icon/manualicon.png" class="menuicon ">Manual de Usuario</a></li>
+    <li><a href="Doc\codigo.pdf"><img src="icon/codeicon.png" class="menuicon ">Código Fuente</a></li>
+    <li><a href="Doc\glosario.pdf"><img src="icon/glosaricon.png" class="menuicon ">Glosario</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</header> 
+
+
+<div class="container-fluid">
+		
+				<div class="row">
+					<div class="contbody col-xs-12">
+            <div id="requestinfo">
+            <h3 style="color:black">Evaluador de proyectos</h3>                       
+            <form action="">
+              <div class="form-group">                                       
+                 <label style="font-size:14px" >Años del proyecto:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">Años</div>
+                 <input type="number" class="form-control" id="anios">
+               </div>
+             </div>
+
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Límite producción de unidades por año:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">U</div>
+                 <input type="number" class="form-control" id="maximaproduccion">
+               </div>
+             </div>
+
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Precio por unidad extra producida por terceros:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">$</div>
+                 <input type="number" class="form-control" id="preciounidadextra">
+               </div>
+             </div>
+
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Tasa mínima de aceptacion del proyecto:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">%</div>
+                 <input type="number" class="form-control" id="tasaminimaaceptacion">
+               </div>
+             </div>
+
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Unidades vendidas esperadas:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">U</div>
+                 <input type="number" class="form-control" id="unidades">
+               </div>
+             </div>
+            
+            <div class="form-group">                                       
+                 <label style="font-size:14px" >Tasa de crecimiento anual de unidades:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">%</div>
+                 <input type="number" class="form-control" id="tasaanualunidades">
+               </div>
+             </div>
+
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Precio por unidad:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">$</div>
+                 <input type="number" class="form-control" id="precio">
+               </div>
+             </div>
+
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Tasa de crecimiento anual del precio:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">%</div>
+                 <input type="number" class="form-control" id="tasaanualprecio">
+               </div>
+             </div>
+
+             <hr>
+
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Gastos de administración por unidad:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">$</div>
+                 <input type="number" class="form-control" id="gastoadministracion">
+               </div>
+             </div>
+
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Incremento anual esperado de los gastos de administración:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">%</div>
+                 <input type="number" class="form-control" id="incrementoanualgastoadministracion">
+               </div>
+             </div>
+
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Gastos de venta por unidad:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">$</div>
+                 <input type="number" class="form-control" id="gastoventa">
+               </div>
+             </div>
+
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Incremento anual esperado de los gastos de venta:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">%</div>
+                 <input type="number" class="form-control" id="incrementoanualgastoventa">
+               </div>
+             </div>
+
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Costo de materia prima A por unidad:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">$</div>
+                 <input type="number" class="form-control" id="costomateriaA">
+               </div>
+             </div>
+            
+            <div class="form-group">                                       
+                 <label style="font-size:14px" >Incremento anual esperado del costo de materia prima A:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">%</div>
+                 <input type="number" class="form-control" id="incrementocostomateriaA">
+               </div>
+             </div>
+
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Costo de materia prima B por unidad:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">$</div>
+                 <input type="number" class="form-control" id="costomateriaB">
+               </div>
+             </div>
+            
+            <div class="form-group">                                       
+                 <label style="font-size:14px" >Incremento anual esperado del costo de materia prima B:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">%</div>
+                 <input type="number" class="form-control" id="incrementocostomateriaB">
+               </div>
+            </div>
+
+            <div class="form-group">                                       
+                 <label style="font-size:14px" >Costo de materiales por unidad:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">$</div>
+                 <input type="number" class="form-control" id="costomateriales">
+               </div>
+             </div>
+
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Incremento anual del costo de materiales:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">%</div>
+                 <input type="number" class="form-control" id="incrementocostomateriales">
+               </div>
+             </div>
+
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Costo de mano de obra por unidad:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">$</div>
+                 <input type="number" class="form-control" id="costomanoobra">
+               </div>
+             </div>
+
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Incremento anual del costo de mano de obra:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">%</div>
+                 <input type="number" class="form-control" id="incrementocostomanoobra">
+               </div>
+             </div>
+
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Costo anual de mantenimiento de equipo :</label>
+               <div class="input-group">
+                 <div class="input-group-addon">$</div>
+                 <input type="number" class="form-control" id="costomantenimientoequipo">
+               </div>
+             </div>
+
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Incremento anual de costo de mantenimiento de equipo:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">%</div>
+                 <input type="number" class="form-control" id="incrementocostomantenimientoequipo">
+               </div>
+             </div> 
+            
+            <hr>
+
+            <div class="form-group">                                       
+                 <label style="font-size:14px" >Valor del Terreno:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">$</div>
+                 <input type="number" class="form-control" id="terreno">
+               </div></div><!--
+             </div>
+            <div class="form-group">                                       
+                 <label style="font-size:14px" >Valor de recuperacion del terreno:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">$</div>
+                 <input type="number" class="form-control" id="recuperacionterreno">
+               </div>
+             </div> 
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Vida util de terreno:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">Años</div>
+                 <input type="number" class="form-control" id="vidautilterreno">
+               </div>
+             </div> -->
+
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Valor del Edificio:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">$</div>
+                 <input type="number" class="form-control" id="edificio">
+               </div>
+             </div>
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Valor de recuperacion del Edificio:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">$</div>
+                 <input type="number" class="form-control" id="recuperacionedificio">
+               </div>
+             </div> 
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Vida util de Edificio:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">Años</div>
+                 <input type="number" class="form-control" id="vidautiledificio">
+               </div>
+             </div> 
+
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Valor del Equipo:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">$</div>
+                 <input type="number" class="form-control" id="equipo">
+               </div>
+             </div>
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Valor de recuperacion del equipo:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">$</div>
+                 <input type="number" class="form-control" id="recuperacionequipo">
+               </div>
+             </div> 
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Vida util de equipo:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">Años</div>
+                 <input type="number" class="form-control" id="vidautilequipo">
+               </div>
+             </div> 
+
+             <hr>
+
+             <div class="form-group">                                       
+                 <label style="font-size:14px" >Capital de trabajo:</label>
+               <div class="input-group">
+                 <div class="input-group-addon">$</div>
+                 <input type="number" class="form-control" id="capital">
+               </div>
+             </div> 
+
+
+
+             <br>
+             <button type="button" onclick="getAllVars();" data-toggle="modal"  data-target="#info" class="btn btnmarg btn-info">Generar resultados.</button>
+            </form>
+            </div>
+
+
+
+
+
+            <div id="results" style="display:none" class="col-xs-12">
+            
+              <div class="row">
+                 <div class="col-xs-12">
+                  <hr>
+                  <p id="invInicial"></p>
+                  <p id="tasaminac"></p>
+                  <hr>                  
+                </div>
+              </div>
+
+              <div class="row">
+            <h4>Determinacion de las unidades y el precio para cada año y otros calculos:</h4>
+             <div class="col-xs-12">
+               <div class="overflw table-responsive">
+                 <table class="table table-condensed table-bordered table-responsive">
+                  <thead>
+                    <tr class="headtr" id="headdeteruniyprecio">
+                    </tr>
+                  </thead>
+                  <tbody id="deteruniyprecio" class="bodytr">
+                   
+                  </tbody>
+                </table>
+               </div>
+              
+            </div>
+          </div>
+
+          <hr>
+            <div class="row">
+            <h4>Calculo de Depreciación:</h4>
+             <div class="col-xs-12">
+               <div class="overflw table-responsive">
+                 <table class="table table-condensed table-bordered table-responsive">
+                  <thead>
+                    <tr class="headtr" id="headdepreciacion">
+                    </tr>
+                  </thead>
+                  <tbody id="depreciaciont" class="bodytr">
+                    
+                  </tbody>
+                </table>
+               </div>
+              
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <h4>Calculo de gastos de produccion:</h4>
+             <div class="col-xs-12">
+               <div class="overflw table-responsive">
+                 <table class="table table-condensed table-bordered table-responsive">
+                  <thead>
+                    <tr class="headtr" id="headcalculogastprod">
+                    </tr>
+                  </thead>
+                  <tbody id="calculogastprod" class="bodytr">
+                   
+                  </tbody>
+                </table>
+               </div>
+              
+            </div>
+          </div>
+
+          <div class="row">
+            <h4>Calculo de unidades adicionales:</h4>
+             <div class="col-xs-12">
+               <div class="overflw table-responsive">
+                 <table class="table table-condensed table-bordered table-responsive">
+                  <thead>
+                    <tr class="headtr" id="headcalculounidad">
+                    </tr>
+                  </thead>
+                  <tbody id="calculounidad" class="bodytr">
+                   
+                  </tbody>
+                </table>
+               </div>
+              
+            </div>
+          </div>
+
+          <div class="row">
+            <h4>Estado de resultados:</h4>
+             <div class="col-xs-12">
+               <div class="overflw table-responsive">
+                 <table class="table table-condensed table-bordered table-responsive">
+                  <thead>
+                    <tr class="headtr" id="headestadoresultado">
+                    </tr>
+                  </thead>
+                  <tbody id="estadoresultado" class="bodytr">
+                   
+                  </tbody>
+                </table>
+               </div>
+              
+            </div>
+          </div>
+            <hr>
+          <div class="row">
+            <h4>Ingresos:</h4>
+             <div class="col-xs-12">
+               <div class="overflw table-responsive">
+                 <table class="table table-condensed table-bordered table-responsive">
+                  <thead>
+                    <tr class="headtr" id="headingresos">
+                    </tr>
+                  </thead>
+                  <tbody id="ingresos" class="bodytr">
+                   
+                  </tbody>
+                </table>
+               </div>
+              
+            </div>
+          </div>
+          <div class="row">
+            <h4>Egresos:</h4>
+             <div class="col-xs-12">
+               <div class="overflw table-responsive">
+                 <table class="table table-condensed table-bordered table-responsive">
+                  <thead>
+                    <tr class="headtr" id="headegresos">
+                    </tr>
+                  </thead>
+                  <tbody id="egresos" class="bodytr">
+                   
+                  </tbody>
+                </table>
+               </div>
+              
+            </div>
+          </div>
+          <div class="row">
+            <h4>Flujo de efectivo de operacion:</h4>
+             <div class="col-xs-12">
+               <div class="overflw table-responsive">
+                 <table class="table table-condensed table-bordered table-responsive">
+                  <thead>
+                    <tr class="headtr" id="headflujooper">
+                    </tr>
+                  </thead>
+                  <tbody id="flujooper" class="bodytr">
+                   
+                  </tbody>
+                </table>
+               </div>
+              
+            </div>
+          </div>
+          <div class="row">
+            <h4>Flujo de efectivo de financiamiento:</h4>
+             <div class="col-xs-12">
+               <div class="overflw table-responsive">
+                 <table class="table table-condensed table-bordered table-responsive">
+                  <thead>
+                    <tr class="headtr" id="headflujofinan">
+                    </tr>
+                  </thead>
+                  <tbody id="flujofinan" class="bodytr">
+                   
+                  </tbody>
+                </table>
+               </div>
+              
+            </div>
+          </div>
+          <hr>
+          <h4>Metodos de evaluacion de proyectos:</h4>
+          <div class="row">
+            <h5></h5>
+             <div class="col-xs-12">
+               <div class="overflw table-responsive">
+                 <table class="table table-condensed table-bordered table-responsive">
+                  <thead>
+                    <tr class="headtr" id="">
+                    </tr>
+                  </thead>
+                  <tbody id="" class="bodytr">
+                   
+                  </tbody>
+                </table>
+               </div>
+              
+            </div>
+          </div>
+          <div class="row">
+            <h5>Metodo de periodo de recuperacion de la inversión:</h5>
+             <div class="col-xs-12">
+               <div class="overflw table-responsive">
+                 <table class="table table-condensed table-bordered table-responsive">
+                  <thead>
+                    <tr class="headtr" id="headmetodorecuperacioninv">
+                    </tr>
+                  </thead>
+                  <tbody id="metodorecuperacioninv" class="bodytr">
+                   
+                  </tbody>
+                </table>
+               </div>
+              
+            </div>
+          </div>
+          <div class="row">
+            <h5>Metodo de periodo de recuperacion de la inversión descontado:</h5>
+             <div class="col-xs-12">
+               <div class="overflw table-responsive">
+                 <table class="table table-condensed table-bordered table-responsive">
+                  <thead>
+                    <tr class="headtr" id="headmetodorecuperacioninvdesc">
+                    </tr>
+                  </thead>
+                  <tbody id="metodorecuperacioninvdesc" class="bodytr">
+                   
+                  </tbody>
+                </table>
+               </div>
+              
+            </div>
+          </div>
+          <div class="row">
+            <h5>Metodo de rendimiento anual promedio:</h5>
+             <div class="col-xs-12">
+             <p id="rap"></p>              
+            </div>
+          </div>
+
+          <div class="row">
+            <h5>Metodo de indice de rentabilidad:</h5>
+             <div class="col-xs-12">
+             <p id="indicerenta"></p>              
+            </div>
+          </div>
+
+          <div class="row">
+            <h5>Metodo del valor presente neto:</h5>
+             <div class="col-xs-12">
+             <p id="metodovalorpresente"></p>              
+            </div>
+          </div>
+
+
+          <div class="col-xs-8 col-xs-offset-2">
+            <button class="btn btn-success" style="width:100%;height:40px;" onclick="retrn()">Regresar</button>
+          </div>
+          <div style="height:70px;"></div>
+
+
+         </div>
+
+
+			</div>
+		</div>
+
+	
+</div>
+
+<script src="js/jquery.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<script src="js/docjs.js"></script>
+
+<script>
+
+var anios;
+var maximaproduccion;
+var preciounidadextra;
+var tasaminimaaceptacion;
+var unidades;
+var tasaanualunidades;
+var precio;
+var tasaanualprecio;
+var gastoadministracion;
+var incrementoanualgastoadministracion;
+var gastoventa;
+var incrementoanualgastoventa;
+var costomateriaA;
+var incrementocostomateriaA;
+var costomateriaB;
+var incrementocostomateriaB;
+var costomateriales;
+var incrementocostomateriales;
+var costomanoobra;
+var incrementocostomanoobra;
+var costomantenimientoequipo;
+var incrementocostomantenimientoequipo;
+var terreno;
+//var recuperacionterreno;
+//var vidautilterreno;
+var edificio;
+var recuperacionedificio;
+var vidautiledificio;
+var equipo;
+var recuperacionequipo;
+var vidautilequipo;
+var capital;
+var inversioninicial;
+
+var unidadesporaño=[]
+var precioporaño=[]
+var gastoventaaño=[]
+var gastoadminaño=[]
+
+var costomateriaAaño=[]
+var costomateriaBaño=[]
+var totalcostomateriaAaño=[]
+var totalcostomateriaBaño=[]
+var costomaterialesaño=[]
+var totalcostomateriales=[]
+var costomanoobraaño=[]
+var totalcostomanoobraaño=[]
+var costomantenimientoequipoaño=[]
+var totalcostoproduccion=[]
+
+
+</script>
+
+<script src="js/getVarsEval.js"></script>
+
+
+<script>
+
+  function inversionInicial(){
+    inversioninicial=parseFloat(terreno)+parseFloat(edificio)+parseFloat(equipo);
+    $("#invInicial").html("Inversion Inicial: "+inversioninicial);
+    $("#tasaminac").html("Tasa Minima de aceptacion: "+tasaminimaaceptacion);  
+    $('#requestinfo').hide();
+    $('#results').show();  
+    otrosCalculos();
+  }
+
+function otrosCalculos(){
+     th="<td>Años</td>"
+
+  for (var i = 1; i <= anios; i++) {
+     th+="<td>"+i+"</td>"
+  };
+  document.getElementById("headdeteruniyprecio").innerHTML=th
+
+tr="<tr>"
+tr+="<td>Unidades</td>"
+unidadesporaño[0]=unidades;
+tr+="<td>"+parseFloat(unidadesporaño[0]).toFixed(2)+"</td>"
+for (var i = 1; i < anios; i++) {
+  
+  unidadesporaño[i]=unidadesporaño[i-1]*(1+parseFloat(tasaanualunidades));
+  tr+="<td>"+parseFloat(unidadesporaño[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<tr>"
+tr+="<td>Precio</td>"
+precioporaño[0]=precio;
+tr+="<td>"+parseFloat(precioporaño[0]).toFixed(2)+"</td>"
+for (var i = 1; i < anios; i++) {
+  
+  precioporaño[i]=precioporaño[i-1]*(1+parseFloat(tasaanualprecio));
+  tr+="<td>"+parseFloat(precioporaño[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<tr>"
+tr+="<td>Gastos de venta</td>"
+gastoventaaño[0]=gastoventa;
+tr+="<td>"+parseFloat(gastoventaaño[0]).toFixed(2)+"</td>"
+for (var i = 1; i < anios; i++) {
+  
+  gastoventaaño[i]=gastoventaaño[i-1]*(1+parseFloat(incrementoanualgastoventa));
+  tr+="<td>"+parseFloat(gastoventaaño[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<tr>"
+tr+="<td>Gastos de administracion</td>"
+gastoadminaño[0]=gastoadministracion;
+tr+="<td>"+parseFloat(gastoadminaño[0]).toFixed(2)+"</td>"
+for (var i = 1; i < anios; i++) {
+  
+  gastoadminaño[i]=gastoadminaño[i-1]*(1+parseFloat(incrementoanualgastoadministracion));
+  tr+="<td>"+parseFloat(gastoadminaño[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+ document.getElementById("deteruniyprecio").innerHTML=tr
+
+depreciacion()
+}
+
+
+var totalDepreciacion;
+
+function depreciacion(){
+tr="<tr>"
+  tr+="<td>Depreciacion de Edificio</td>"
+  depreedif=(parseFloat(edificio)-parseFloat(recuperacionedificio))/parseFloat(vidautiledificio)
+  tr+="<td>"+parseFloat(depreedif).toFixed(2)+"</td>"
+tr+="</tr>"
+
+tr+="<tr>"
+depreequi=(parseFloat(equipo)-parseFloat(recuperacionequipo))/parseFloat(vidautilequipo)
+  tr+="<td>Depreciacion de Equipo</td>"
+  tr+="<td>"+parseFloat(depreequi).toFixed(2)+"</td>"
+tr+="</tr>"
+
+tr+="<tr>"
+totalDepreciacion=parseFloat(depreedif)+parseFloat(depreequi);
+  tr+="<td>Total Depreciacion</td>"
+  tr+="<td>"+parseFloat(totalDepreciacion).toFixed(2)+"</td>"
+tr+="</tr>"
+
+document.getElementById("depreciaciont").innerHTML=tr;
+ calculogastosproduccion();
+}
+
+
+
+
+
+function calculogastosproduccion(){
+   th="<td>Años</td>"
+
+  for (var i = 1; i <= anios; i++) {
+     th+="<td>"+i+"</td>"
+  };
+ document.getElementById("headcalculogastprod").innerHTML=th;
+
+ tr="<tr>"
+
+tr+="<td>Costos de materia prima A</td>"
+costomateriaAaño[0]=costomateriaA;
+tr+="<td>"+parseFloat(costomateriaAaño[0]).toFixed(2)+"</td>"
+for (var i = 1; i < anios; i++) {
+  
+  costomateriaAaño[i]=costomateriaAaño[i-1]*(1+parseFloat(incrementocostomateriaA));
+  tr+="<td>"+parseFloat(costomateriaAaño[i]).toFixed(2)+"</td>"
+};
+ tr+="</tr>"
+
+
+tr+="<tr>"
+
+tr+="<td>Total de costos de materia prima A</td>"
+totalcostomateriaAaño[0]=parseFloat(unidadesporaño[0])*parseFloat(costomateriaAaño[0]);
+tr+="<td>"+parseFloat(totalcostomateriaAaño[0]).toFixed(2)+"</td>"
+for (var i = 1; i < anios; i++) {
+  
+  totalcostomateriaAaño[i]=parseFloat(unidadesporaño[i])*parseFloat(costomateriaAaño[i]);
+  tr+="<td>"+parseFloat(totalcostomateriaAaño[i]).toFixed(2)+"</td>"
+};
+
+ tr+="</tr>"
+
+
+ tr+="<tr>"
+
+tr+="<td>Costos de materia prima B</td>"
+costomateriaBaño[0]=costomateriaB;
+tr+="<td>"+parseFloat(costomateriaBaño[0]).toFixed(2)+"</td>"
+for (var i = 1; i < anios; i++) {
+  
+  costomateriaBaño[i]=costomateriaBaño[i-1]*(1+parseFloat(incrementocostomateriaB));
+  tr+="<td>"+parseFloat(costomateriaBaño[i]).toFixed(2)+"</td>"
+};
+ tr+="</tr>"
+
+
+tr+="<tr>"
+
+tr+="<td>Total de costos de materia prima B</td>"
+totalcostomateriaBaño[0]=parseFloat(unidadesporaño[0])*parseFloat(costomateriaBaño[0]);
+tr+="<td>"+parseFloat(totalcostomateriaBaño[0]).toFixed(2)+"</td>"
+for (var i = 1; i < anios; i++) {
+  
+  totalcostomateriaBaño[i]=parseFloat(unidadesporaño[i])*parseFloat(costomateriaBaño[i]);
+  tr+="<td>"+parseFloat(totalcostomateriaBaño[i]).toFixed(2)+"</td>"
+};
+
+ tr+="</tr>"
+
+
+ tr+="<tr>"
+
+tr+="<td>Costos de materiales</td>"
+costomaterialesaño[0]=costomateriales;
+tr+="<td>"+parseFloat(costomaterialesaño[0]).toFixed(2)+"</td>"
+for (var i = 1; i < anios; i++) {
+  
+  costomaterialesaño[i]=costomaterialesaño[i-1]*(1+parseFloat(incrementocostomateriales));
+  tr+="<td>"+parseFloat(costomaterialesaño[i]).toFixed(2)+"</td>"
+};
+ tr+="</tr>"
+
+
+tr+="<tr>"
+
+tr+="<td>Total de costos de materiales</td>"
+totalcostomateriales[0]=parseFloat(unidadesporaño[0])*parseFloat(costomaterialesaño[0]);
+tr+="<td>"+parseFloat(totalcostomateriales[0]).toFixed(2)+"</td>"
+for (var i = 1; i < anios; i++) {
+  
+  totalcostomateriales[i]=parseFloat(unidadesporaño[i])*parseFloat(costomaterialesaño[i]);
+  tr+="<td>"+parseFloat(totalcostomateriales[i]).toFixed(2)+"</td>"
+};
+
+ tr+="</tr>"
+
+tr+="<tr>"
+
+tr+="<td>Costos de mano de obra</td>"
+costomanoobraaño[0]=costomanoobra;
+tr+="<td>"+parseFloat(costomanoobraaño[0]).toFixed(2)+"</td>"
+for (var i = 1; i < anios; i++) {
+  
+  costomanoobraaño[i]=costomanoobraaño[i-1]*(1+parseFloat(incrementocostomanoobra));
+  tr+="<td>"+parseFloat(costomanoobraaño[i]).toFixed(2)+"</td>"
+};
+ tr+="</tr>"
+
+
+tr+="<tr>"
+
+tr+="<td>Total de costos de mano de obra</td>"
+totalcostomanoobraaño[0]=parseFloat(unidadesporaño[0])*parseFloat(costomanoobraaño[0]);
+tr+="<td>"+parseFloat(totalcostomanoobraaño[0]).toFixed(2)+"</td>"
+for (var i = 1; i < anios; i++) {
+  
+  totalcostomanoobraaño[i]=parseFloat(unidadesporaño[i])*parseFloat(costomanoobraaño[i]);
+  tr+="<td>"+parseFloat(totalcostomanoobraaño[i]).toFixed(2)+"</td>"
+};
+
+ tr+="</tr>"
+
+
+
+tr+="<tr>"
+
+tr+="<td>Costos de mantenimiento de equipo</td>"
+costomantenimientoequipoaño[0]=costomantenimientoequipo;
+tr+="<td>"+parseFloat(costomantenimientoequipoaño[0]).toFixed(2)+"</td>"
+for (var i = 1; i < anios; i++) {
+  
+  costomantenimientoequipoaño[i]=costomantenimientoequipoaño[i-1]*(1+parseFloat(incrementocostomantenimientoequipo));
+  tr+="<td>"+parseFloat(costomantenimientoequipoaño[i]).toFixed(2)+"</td>"
+};
+ tr+="</tr>"
+
+
+tr+="<tr>"
+
+tr+="<td>Total de costos de produccion</td>"
+for (var i =0; i < anios; i++) {
+  
+  totalcostoproduccion[i]=parseFloat(totalcostomateriaAaño[i])+parseFloat(totalcostomateriaBaño[i])+parseFloat(totalcostomateriales[i])+parseFloat(totalcostomanoobraaño)+parseFloat(costomantenimientoequipoaño[i]);
+  tr+="<td>"+parseFloat(totalcostoproduccion[i]).toFixed(2)+"</td>"
+};
+ tr+="</tr>"
+
+
+
+
+ document.getElementById("calculogastprod").innerHTML=tr
+ calculoUnidadesAdicionales()
+}
+
+var unidaesadicionalesaño=[]
+var cargoextraaño=[]
+var costoproducciontotalesaño=[]
+
+function calculoUnidadesAdicionales(){
+ th="<td>Años</td>"
+
+  for (var i = 1; i <= anios; i++) {
+     th+="<td>"+i+"</td>"
+  };
+document.getElementById("headcalculounidad").innerHTML=th
+
+tr="<tr>"
+tr+="<td>Unidades adicionales</td>"
+for (var i = 0; i < 5; i++) {
+  
+  unidaesadicionalesaño[i]=0;
+  tr+="<td>"+parseFloat(0).toFixed(2)+"</td>"
+};
+for (var i = 5; i < anios; i++) {
+  
+  unidaesadicionalesaño[i]=parseFloat(unidadesporaño[i])-parseFloat(maximaproduccion);
+  tr+="<td>"+parseFloat(unidaesadicionalesaño[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<tr>"
+tr+="<td>Cargo Extra</td>"
+for (var i = 0; i < 5; i++) {
+  
+  cargoextraaño[i]=0;
+  tr+="<td>"+parseFloat(0).toFixed(2)+"</td>"
+};
+for (var i = 5; i < anios; i++) {
+  
+  cargoextraaño[i]=parseFloat(unidaesadicionalesaño[i])*parseFloat(preciounidadextra);
+  tr+="<td>"+parseFloat(cargoextraaño[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<tr style='background-color:#00BA7F; color:white;'>"
+tr+="<td>Costos de produccion finales</td>"
+
+for (var i = 0; i < anios; i++) {
+  
+  costoproducciontotalesaño[i]=parseFloat(totalcostoproduccion[i])+parseFloat(cargoextraaño[i]);
+  tr+="<td>"+parseFloat(costoproducciontotalesaño[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+document.getElementById("calculounidad").innerHTML=tr
+
+estadoResultados();
+}
+
+
+var ventasedo=[]
+var ivaedo=[]
+var ventasnetasedo=[]
+var costosproduccionedo=[]
+var utilidadbrutaedo=[]
+var gastoventaedo=[]
+var gastoadminedo=[]
+var utilidadoperedo=[]
+var utilidadantesimpuedo=[]
+var impuestoedo=[]
+var utilidadperdidaedo=[]
+
+
+function estadoResultados(){
+ th="<td>Años</td>"
+
+  for (var i = 1; i <= anios; i++) {
+     th+="<td>"+i+"</td>"
+  };
+document.getElementById("headestadoresultado").innerHTML=th
+tr="<tr>"
+tr+="<td>Ventas</td>"
+for (var i = 0; i < anios; i++) {
+  
+  ventasedo[i]=parseFloat(unidadesporaño[i])*parseFloat(precioporaño[i]);
+  tr+="<td>"+parseFloat(ventasedo[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+for (var i = 0; i < anios; i++) {
+  
+  ventasnetasedo[i]=ventasedo[i]/1.16
+};
+
+for (var i = 0; i < anios; i++) {
+  
+  ivaedo[i]=parseFloat(ventasedo[i])-parseFloat(ventasnetasedo[i]);
+};
+
+
+
+tr+="<tr>"
+tr+="<td>IVA</td>"
+for (var i = 0; i < anios; i++) {
+  tr+="<td>"+parseFloat(ivaedo[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<tr>"
+tr+="<td>Ventas Netas</td>"
+for (var i = 0; i < anios; i++) {
+  tr+="<td>"+parseFloat(ventasnetasedo[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<tr>"
+tr+="<td>Costos de produccion</td>"
+
+for (var i = 0; i < anios; i++) {
+  costosproduccionedo[i]=parseFloat(costoproducciontotalesaño[i])
+  tr+="<td>"+parseFloat(costosproduccionedo[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<td>Depreciacion</td>"
+
+for (var i = 0; i < anios; i++) {
+  tr+="<td>"+parseFloat(totalDepreciacion).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<tr>"
+tr+="<td>Utilidad bruta</td>"
+
+for (var i = 0; i < anios; i++) {
+  utilidadbrutaedo[i]=parseFloat(ventasnetasedo[i])-parseFloat(costosproduccionedo[i])-parseFloat(totalDepreciacion);
+  tr+="<td>"+parseFloat(utilidadbrutaedo[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+
+tr+="<tr>"
+tr+="<td>Gastos de venta</td>"
+
+for (var i = 0; i < anios; i++) {
+  gastoventaedo[i]=parseFloat(gastoventaaño[i])*parseFloat(unidadesporaño);
+  tr+="<td>"+parseFloat(gastoventaedo[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<tr>"
+tr+="<td>Gastos de administracion</td>"
+
+for (var i = 0; i < anios; i++) {
+  gastoadminedo[i]=parseFloat(gastoadminaño[i])*parseFloat(unidadesporaño);
+  tr+="<td>"+parseFloat(gastoadminedo[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<tr>"
+tr+="<td>Utilida de operacion</td>"
+
+for (var i = 0; i < anios; i++) {
+  utilidadoperedo[i]=parseFloat(utilidadbrutaedo[i])-parseFloat(gastoadminedo[i])-parseFloat(gastoventaedo[i]);
+  tr+="<td>"+parseFloat(utilidadoperedo[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+/*
+tr+="<tr>"
+tr+="<td>Gastos financieros</td>"
+
+for (var i = 0; i < anios; i++) {
+  tr+="<td>"+parseFloat(0).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"*/
+
+tr+="<tr>"
+tr+="<td>Utilidad antes de impuestos</td>"
+
+for (var i = 0; i < anios; i++) {
+   utilidadantesimpuedo[i]=parseFloat(utilidadoperedo[i])-parseFloat(0);
+  tr+="<td>"+parseFloat(utilidadantesimpuedo[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<tr>"
+tr+="<td>Impuestos</td>"
+
+for (var i = 0; i < anios; i++) {
+  if (utilidadantesimpuedo[i]>=0  && utilidadantesimpuedo[i]<=999 ) {
+    impuestoedo[i]=utilidadantesimpuedo[i]*.05
+  }
+  else if(utilidadantesimpuedo[i]>=1000  && utilidadantesimpuedo[i]<=9999 ){
+    impuestoedo[i]=(utilidadantesimpuedo[i]*.10)-50
+  }else if(utilidadantesimpuedo[i]>=10000  && utilidadantesimpuedo[i]<=49999 ){
+    impuestoedo[i]=(utilidadantesimpuedo[i]*.15)-950
+  }else if(utilidadantesimpuedo[i]>=50000  && utilidadantesimpuedo[i]<=99999 ){
+    impuestoedo[i]=(utilidadantesimpuedo[i]*.20)-6950
+  }else if(utilidadantesimpuedo[i]>=100000  && utilidadantesimpuedo[i]<=499999 ){
+    impuestoedo[i]=(utilidadantesimpuedo[i]*.25)-16950
+  }else if(utilidadantesimpuedo[i]>=500000  && utilidadantesimpuedo[i]<=999999 ){
+    impuestoedo[i]=(utilidadantesimpuedo[i]*.30)-116949
+  }else if(utilidadantesimpuedo[i]>=1000000){
+    impuestoedo[i]=(utilidadantesimpuedo[i]*.35)-266949
+  }
+  tr+="<td>"+parseFloat(impuestoedo[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+
+tr+="<tr>"
+tr+="<td>Utilidad o perdida del ejercicio</td>"
+
+for (var i = 0; i < anios; i++) {
+   utilidadperdidaedo[i]=parseFloat(utilidadantesimpuedo[i])-parseFloat(impuestoedo[i]);
+  tr+="<td>"+parseFloat(utilidadperdidaedo[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+
+
+document.getElementById("estadoresultado").innerHTML=tr
+
+ingresos();
+
+}
+
+var totalIngresos=[]
+
+function ingresos(){
+   th="<td>Años</td>"
+
+  for (var i = 1; i <= anios; i++) {
+     th+="<td>"+i+"</td>"
+  };
+document.getElementById("headingresos").innerHTML=th;
+
+
+tr="<tr>"
+tr+="<td>Pronostico de ventas</td>"
+for (var i = 0; i < anios; i++) {
+  tr+="<td>"+parseFloat(ventasedo[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<tr>"
+tr+="<td>Total de ingresos</td>"
+for (var i = 0; i < anios; i++) {
+  totalIngresos[i]=ventasedo[i]
+  tr+="<td>"+parseFloat(ventasedo[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+document.getElementById("ingresos").innerHTML=tr
+
+egresos();
+}
+
+
+var equipoegreso=[]
+var totalEgreso=[]
+
+function egresos(){
+   th="<td>Años</td>"
+
+  for (var i = 1; i <= anios; i++) {
+     th+="<td>"+i+"</td>"
+  };
+document.getElementById("headegresos").innerHTML=th;
+
+
+tr="<tr>"
+tr+="<td>Costos de produccion</td>"
+for (var i = 0; i < anios; i++) {
+  tr+="<td>"+parseFloat(costoproducciontotalesaño[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<tr>"
+tr+="<td>Gastos por ventas</td>"
+for (var i = 0; i < anios; i++) {
+  tr+="<td>"+parseFloat(gastoventaedo[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<td>Gastos por administracion</td>"
+for (var i = 0; i < anios; i++) {
+  tr+="<td>"+parseFloat(gastoadminedo[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+/*
+tr+="<td>Gastos financieros</td>"
+for (var i = 0; i < anios; i++) {
+  tr+="<td>"+parseFloat(0).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"*/
+
+tr+="<td>IVA</td>"
+for (var i = 0; i < anios; i++) {
+  tr+="<td>"+parseFloat(ivaedo[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<td>Impuestos</td>"
+for (var i = 0; i < anios; i++) {
+  tr+="<td>"+parseFloat(impuestoedo[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<td>Equipo</td>"
+for (var i = 0; i < anios; i++) {
+  if ((i+1)%5==0) {
+    equipoegreso[i]=equipo
+tr+="<td>"+parseFloat(equipo).toFixed(2)+"</td>"
+  }else{
+    equipoegreso[i]=0
+    tr+="<td>"+parseFloat(0).toFixed(2)+"</td>"
+  }
+  
+};
+
+tr+="</tr>"
+
+tr+="<td>Total de egresos</td>"
+for (var i = 0; i < anios; i++) {
+  totalEgreso[i]=(parseFloat(costoproducciontotalesaño[i])+parseFloat(gastoventaedo[i])+parseFloat(gastoadminedo[i])+parseFloat(0)+parseFloat(ivaedo[i])+parseFloat(impuestoedo[i])+parseFloat(equipoegreso[i]))
+  tr+="<td>"+parseFloat(totalEgreso[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+document.getElementById("egresos").innerHTML=tr
+
+flujoefectivooperacion();
+
+}
+
+var fujototaloper=[]
+var prestamoreq=[]
+
+
+
+function flujoefectivooperacion(){
+
+  th="<td>Años</td>"
+
+  for (var i = 1; i <= anios; i++) {
+     th+="<td>"+i+"</td>"
+  };
+document.getElementById("headflujooper").innerHTML=th;
+
+
+tr="<tr>"
+tr+="<td>Total de ingresos</td>"
+for (var i = 0; i < anios; i++) {
+  tr+="<td>"+parseFloat(totalIngresos[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<tr>"
+tr+="<td>Total de egresos</td>"
+for (var i = 0; i < anios; i++) {
+  tr+="<td>"+parseFloat(totalEgreso[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<tr>"
+tr+="<td>Flujo total de operacion</td>"
+for (var i = 0; i < anios; i++) {
+  if (fujototaloper[i]<0) {
+      prestamoreq[i]=fujototaloper[i]*-1
+
+    }else{
+      prestamoreq[i]=0;
+    }
+  fujototaloper[i]=parseFloat(totalIngresos[i])-parseFloat(totalEgreso[i]);
+  tr+="<td>"+parseFloat(fujototaloper[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+document.getElementById("flujooper").innerHTML=tr
+  
+flujoefectivofinanciamiento();
+}
+
+
+var flujototalfinan=[]
+var flujoefecoperfinan=[]
+var efectivoinicial=[]
+var saldofinal=[]
+
+function flujoefectivofinanciamiento(){
+ th="<td>Años</td>"
+
+  for (var i = 1; i <= anios; i++) {
+     th+="<td>"+i+"</td>"
+  };
+document.getElementById("headflujofinan").innerHTML=th;
+
+/*tr="<tr>"
+tr+="<td>Prestamo requerido</td>"
+for (var i = 0; i < anios; i++) {
+  tr+="<td>"+parseFloat(prestamoreq[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<tr>"
+tr+="<td>Flujo total de financiamiento</td>"
+for (var i = 0; i < anios; i++) {
+  flujototalfinan[i]=prestamoreq[i]*-1;
+  tr+="<td>"+parseFloat(flujototalfinan[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"*/
+
+tr+="<tr>"
+tr+="<td>Flujo de efectivo de operacion</td>"
+for (var i = 0; i < anios; i++) {
+  flujoefecoperfinan[i]=parseFloat(fujototaloper[i]);
+  tr+="<td>"+parseFloat(flujoefecoperfinan[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+
+
+
+efectivoinicial[0]=0;
+  for (var i = 0; i < anios; i++) { 
+    saldofinal[i]=parseFloat(flujoefecoperfinan[i])+parseFloat(efectivoinicial[i]);
+    efectivoinicial[i+1]=saldofinal[i];   
+  };
+
+  tr+='<tr><td>Efectivo Inicial</td>'
+  tr+='<td>$ '+parseFloat(0).toFixed(2)+'</td>'
+  for (var i = 1; i < anios; i++) { 
+    tr+='<td>'+parseFloat(efectivoinicial[i]).toFixed(2)+'</td>'    
+  };
+  tr+='</tr>'
+
+  tr+='<tr><td>saldofinal</td>'
+  
+  for (var i = 0; i < anios; i++) { 
+    tr+='<td>'+parseFloat(saldofinal[i]).toFixed(2)+'</td>'   
+  };
+  tr+='</tr>'
+
+
+document.getElementById("flujofinan").innerHTML=tr
+
+metodorecuperacioninvr();
+
+}
+
+
+
+function metodorecuperacioninvr(){
+
+  th="<td>Años</td>"
+
+  for (var i = 1; i <= anios; i++) {
+     th+="<td>"+i+"</td>"
+  };
+document.getElementById("headmetodorecuperacioninv").innerHTML=th;
+
+
+tr="<tr>"
+tr+="<td>Flujo neto de efectivo</td>"
+for (var i = 0; i < anios; i++) {
+  tr+="<td>"+parseFloat(saldofinal[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<tr>"
+tr+="<td>Suma de los flujos</td>"
+for (var i = 0; i < anios; i++) {
+  sumaflujo=0;
+  for (var j = 0; j <= i; j++) {
+    sumaflujo+=saldofinal[j]
+  };
+
+  tr+="<td>"+parseFloat(sumaflujo).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+//falta algo XD
+
+
+document.getElementById("metodorecuperacioninv").innerHTML=tr
+  metodorecuperaciondescontado();
+
+}
+
+var flujoefecdesc=[]
+
+function metodorecuperaciondescontado(){
+
+
+ th="<td>Años</td>"
+
+  for (var i = 1; i <= anios; i++) {
+     th+="<td>"+i+"</td>"
+  };
+document.getElementById("headmetodorecuperacioninvdesc").innerHTML=th;
+
+
+tr="<tr>"
+tr+="<td>Flujo neto de efectivo</td>"
+for (var i = 0; i < anios; i++) {
+  tr+="<td>"+parseFloat(saldofinal[i]).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<tr>"
+tr+="<td>Flujo de efectivo descontado</td>"
+for (var i = 0; i < anios; i++) {
+flujoefecdesc[i]=parseFloat(saldofinal[i]/Math.pow((1+tasaminimaaceptacion),(i+1)));
+  tr+="<td>"+parseFloat(saldofinal[i]/Math.pow((1+tasaminimaaceptacion),(i+1))).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+tr+="<tr>"
+tr+="<td>Suma de los flujos descontados</td>"
+for (var i = 0; i < anios; i++) {
+ sumaflujo=0;
+  for (var j = 0; j <= i; j++) {
+    sumaflujo+=flujoefecdesc[j];
+  };
+
+  tr+="<td>"+parseFloat(sumaflujo).toFixed(2)+"</td>"
+};
+
+tr+="</tr>"
+
+
+document.getElementById("metodorecuperacioninvdesc").innerHTML=tr
+metodorendimientoprome();
+}
+
+
+var sumasaldofinal;
+var sumaflujoefecdesc;
+
+function metodorendimientoprome(){
+  sumasaldofinal=0
+for (var i = 0; i < anios; i++) {
+     sumasaldofinal+=saldofinal[i];
+  };
+
+  rap=(sumasaldofinal/anios)/inversioninicial
+  if (rap>tasaminimaaceptacion) {
+    $("#rap").html("Con un RAP de "+parseFloat(rap).toFixed(2)+" > "+tasaminimaaceptacion+" El proyecto se aprueba");
+  }else if(rap=tasaminimaaceptacion){
+    $("#rap").html("Con un RAP de "+parseFloat(rap).toFixed(2)+" = "+tasaminimaaceptacion+" El proyecto es indiferente");
+  }else{
+    $("#rap").html("Con un RAP de "+parseFloat(rap).toFixed(2)+" < "+tasaminimaaceptacion+" El proyecto se rechaza");
+  }
+inidicerentabilidad();
+}
+
+function inidicerentabilidad(){
+  sumaflujoefecdesc=0
+for (var i = 0; i < anios; i++) {
+     sumaflujoefecdesc+=flujoefecdesc[i];
+  };
+
+  ir=sumaflujoefecdesc/inversioninicial
+  if (ir>1) {
+    $("#indicerenta").html("Con un IR de "+parseFloat(ir).toFixed(2)+" > "+1+" El proyecto se aprueba");
+  }else if(ir=1){
+    $("#indicerenta").html("Con un IR de "+parseFloat(ir).toFixed(2)+" = "+1+" El proyecto es indiferente");
+  }else{
+    $("#indicerenta").html("Con un IR de "+parseFloat(ir).toFixed(2)+" < "+1+" El proyecto se rechaza");
+  }
+metodovalorpresente();
+}
+
+ 
+
+function metodovalorpresente(){
+ vpn=sumaflujoefecdesc-inversioninicial
+
+  if (vpn>1) {
+    $("#metodovalorpresente").html("Con un VPN de "+parseFloat(vpn).toFixed(2)+" > "+1+" El proyecto se aprueba");
+  }else if(vpn=1){
+    $("#metodovalorpresente").html("Con un VPN de "+parseFloat(vpn).toFixed(2)+" = "+1+" El proyecto es indiferente");
+  }else{
+    $("#metodovalorpresente").html("Con un VPN de "+parseFloat(vpn).toFixed(2)+" < "+1+" El proyecto se rechaza");
+  }
+metodovalorpresente();
+}
+
+
+function retrn(){
+  $('#requestinfo').show();
+    $('#results').hide();
+}
+</script>
+
+
+
+
+</body>
+</html>
