@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="todo-app-main">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/toDoApp/todo-app-main.zip!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
