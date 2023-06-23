@@ -1,0 +1,180 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+//Declaramos nuestras variables para el numero total de casos y para nuestro ciclos for
+int numCasos, i;
+
+//Declaramos nuestas variables para el tamano de la linea a cubrir, el numero de lineas que vamos a usar
+//el numero de linea resultado, la posicion actual donde estamos, el avance que tenemos si elegimos una linea
+//que se encuentra en el arreglo
+int tamLinea, numlineas, resultado, posActual, avance;
+
+//Tenemos nuestro arreglo que tendra el valor del inicio y el final de nuestras lineas
+//y un arreglo que tendra las lineas que se usaran para cubrir nuestra linea original
+int lineas[100005][2], lineasResultado[100005][2];
+
+//Tenemos la funcion que divide el arreglo del metodo de merge
+void merge(int l, int m, int r);
+
+//Tenemos la funcion principal del merge que hara los calculos y movera las posiciones
+//dentro del arreglo
+void mergeSort(int l, int r);
+
+//Tenemos una funcion que compara 2 valores y determina cual es el mas grande
+int max (int a, int b);
+
+int main(){
+
+    //Escaneamos el numero total de casos que se analizaran
+    scanf("%d", &numCasos);
+
+    //Tenemos un ciclo que se ejecutara hasta que hayamos analizado todos los casos
+    while (numCasos--){
+
+        //Inicilizamos nuestas variables del numero de lineas, el numero de lineas resultado y la posicion actual
+        numlineas = 0;
+        resultado = 0;
+        posActual = 0;
+
+        //Escaneamos el tamano de la linea a cubrir
+        scanf("%d", &tamLinea);
+
+        //Escanemos las lineas que cubriran nuestra linea original pero si son iguales a 0 0 amabs estas terminaran
+        while(scanf("%d %d", &lineas[numlineas][0], &lineas[numlineas][1]) && (lineas[numlineas][0] || lineas[numlineas][1])){
+            //Sumaremos en 1 el tamano total de lineas
+            numlineas++;
+        }
+
+        //Mandamos a llamar a merge para ordenar nuestro arreglo
+        mergeSort(0, numlineas-1);
+
+        //Ahora tendremos un ciclo que se ejecutara hasta hayamos escaneado todas nuestras lineas
+        // o hayamos cubierto toda la linea que debemos cubrir
+        for (i = 0; i < numlineas && posActual < tamLinea; i++){
+
+            //Si la linea que analizamos empieza despues desde nuestra posicion actual no la tomamos
+            if (lineas[i][0] > posActual) break;
+
+            //En caso contrario tomaremos la linea y la guardaremos en la posicion correpondiente
+            lineasResultado[resultado][0] = lineas[i][0];
+            lineasResultado[resultado][1] = lineas[i][1];
+
+            //Sumamos en 1 el total de lineas que vamos a usar
+            resultado++;
+
+            //Nuestra variable avance sera igual a el final de la linea que hayamos analizado
+            avance = lineas[i][1];
+
+            //Ahora ejecutaremos un ciclo que determinara si la linea que tomamos es la mejor que se pudo haber tomado
+            while (i + 1 < numlineas && lineas[i + 1][0] <= posActual){
+                
+                //Si encontramos una linea que cubra mayor area de nuestro linea a cubrir reemplazaremos la linea que
+                //escogimos anteriormente con la nueva que encotramos
+
+                // Si la linea siguiente tiene un final mayor a nuestro avance actual la reemplazaremos, en caso contrario
+                //no haremos nada
+                if (max(lineas[++i][1], avance))
+                {
+                    avance = lineas[i][1];
+                    lineasResultado[resultado-1][0] = lineas[i][0];
+                    lineasResultado[resultado-1][1] = lineas[i][1];
+                }
+            }
+
+            //Una vez escogida la primera mejor linea actualizamos la posicion actual hasta donde hemos avanzado
+            posActual = avance;
+        }
+
+        //Si nuestra posicion actual, es menor al final de la linea quiere decir que no hay linea que cubran nuestra linea
+        //a cubrir
+        if (posActual < tamLinea){
+
+            printf("0\n");
+        }
+        //En caso contrario
+        else{
+
+            // imprimiremos el numero total de lineas que usamos para cubrir
+            printf("%d\n", resultado);
+
+            //imprimiremos cuales son estas lineas que vamos a usar
+            for (i = 0; i < resultado; i++)
+                printf("%d %d\n", lineasResultado[i][0], lineasResultado[i][1]);
+        }
+
+        //En caso de que hayamos cubierto un caso imprimiremos un salto de linea como lo requiere el juez
+        if (numCasos) printf("\n");
+    }
+    
+    return 0;
+}
+
+void merge(int l, int m, int r){
+
+    int i, j, k;
+    int n1 = m - l + 1;
+    int n2 = r - m;
+  
+    int L[n1][2], R[n2][2];
+  
+    for (i = 0; i < n1; i++){
+
+        L[i][0] = lineas[l + i][0];
+        L[i][1] = lineas[l + i][1];
+    
+    }
+    for (j = 0; j < n2; j++){
+        R[j][0] = lineas[m + 1 + j][0];
+        R[j][1] = lineas[m + 1 + j][1];
+    }
+  
+    i = 0;
+    j = 0;
+    k = l;
+
+    while (i < n1 && j < n2) {
+        if (L[i][0] <= R[j][0]) {
+            lineas[k][0] = L[i][0];
+            lineas[k][1] = L[i][1];
+            i++;
+        }
+        else {
+            lineas[k][0] = R[j][0];
+            lineas[k][1] = R[j][1];
+            j++;
+        }
+        k++;
+    }
+  
+    while (i < n1) {
+        lineas[k][0] = L[i][0];
+        lineas[k][1] = L[i][1];
+        i++;
+        k++;
+    }
+  
+    while (j < n2) {
+        lineas[k][0] = R[j][0];
+        lineas[k][1] = R[j][1];
+        j++;
+        k++;
+    }
+}
+  
+void mergeSort(int l, int r){
+
+    if (l < r) {
+
+        int m = l + (r - l) / 2;
+
+        mergeSort(l, m);
+        mergeSort(m + 1, r);
+  
+        merge(l, m, r); 
+    }
+}
+
+int max (int a, int b){
+
+    return (a>b)?1:0;
+}

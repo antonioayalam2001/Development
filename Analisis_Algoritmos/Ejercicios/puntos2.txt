@@ -1,0 +1,1 @@
+plot (x**2)+4*x+2 lw 2 lc 4  title 'Mejor Caso (x**2)+4*x+2', 2*(x**2)+3*x+2 lt 7 lw 2  title 'Peor Caso 2*(x**2)+3*x+2' ,(3*(x**2)+7*x+4)/2 lc 3 lw 2 title 'Caso Medio (3*(x**2)+7*x+4)/2

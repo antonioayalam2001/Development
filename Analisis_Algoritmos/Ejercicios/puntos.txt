@@ -1,0 +1,2 @@
+set title 'Ejercicio7'
+plot 2*(x**2)+9*x lw 2 lc 4  title 'f(x)=2*(x**2)+9*x', (x**2) lw 2 lc 11 title 'g(x)=(x**2)',1*(x**2) lw 3 lc 6 title 'c1g(x)=1*(x**2)', 6*(x**2) lw 3 lc 2 title 'c2g(x)=6*(x**2)' 
